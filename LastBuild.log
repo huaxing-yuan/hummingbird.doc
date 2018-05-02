@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2017.5.15.0" projectFile="D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Hummingbird.TestFramework.Doc.shfbproj" started="02/04/2018 01:18:07">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2017.5.15.0" projectFile="D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Hummingbird.TestFramework.Doc.shfbproj" started="03/05/2018 00:38:03">
 <buildStep step="Initializing">
 Finding tools...
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
@@ -13,9 +13,6 @@ Loading and initializing plug-ins...
 Lightweight Website Style Version 2017.5.15.0
 Copyright &#169; 2006-2017, Eric Woodruff, All Rights Reserved
 Portions Copyright &#169; 2014, Sam Harwell, All Rights Reserved
-</buildStep>
-<buildStep step="ClearWorkFolder">
-Clearing working folder...
 -------------------------------
 Clearing any prior web/markdown output...
     Did not delete folder &#39;D:\Projets\Github\hummingbird.testframework.doc\.git&#39; as it contains read-only or hidden folders/files
@@ -29,7 +26,7 @@ Parsing project files
     Found assembly &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework\bin\Debug\Hummingbird.TestFramework.dll&#39;
 
 References to include (excluding framework assemblies):
-    None
+    Hummingbird.UI, Version=1.0.6693.802, Culture=neutral, processorArchitecture=MSIL
 
 Copying XML comments files
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework\bin\Debug\Hummingbird.TestFramework.XML -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Hummingbird.TestFramework.XML
@@ -37,16 +34,16 @@ Copying XML comments files
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, English (United States))...
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
-</plugIn>    Last step completed in 00:00:00,0033
+</plugIn>    Last step completed in 00:00:00,0077
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00,0030
+    Last step completed in 00:00:00,0088
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe - GenerateRefInfo.proj]
-Build started 02/04/2018 01:18:08.
+Build started 03/05/2018 00:38:04.
 Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\GenerateRefInfo.proj&quot; on node 1 (default targets).
 PrepareForBuild:
   Creating directory &quot;obj\Debug\&quot;.
@@ -55,20 +52,20 @@ GenerateRefInfo:
   Copyright ? 2006-2017, Microsoft Corporation, All Rights Reserved.
   Portions Copyright ? 2006-2016, Eric Woodruff, All Rights Reserved.
   No source code context base path specified.  Source context information is unavailable.
-  Loaded 1 assemblies for reflection and 1 dependency assemblies.
-  Wrote information on 15 namespaces, 172 types, and 1068 members
+  Loaded 1 assemblies for reflection and 2 dependency assemblies.
+  Wrote information on 15 namespaces, 174 types, and 1105 members
   Copying file from &quot;reflection.org&quot; to &quot;reflection.all&quot;.
   XslTransform (v2017.5.15.0)
   Copyright ? 2006-2017, Microsoft Corporation, All Rights Reserved.
   Portions Copyright ? 2006-2016, Eric Woodruff, All Rights Reserved.
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\MergeDuplicates.xsl&#39;.
 Done Building Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\GenerateRefInfo.proj&quot; (default targets).
-    Last step completed in 00:00:01,3591
+    Last step completed in 00:00:01,7938
 </buildStep>
 <buildStep step="TransformReflectionInfo">
 Transforming reflection output...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe - TransformManifest.proj]
-Build started 02/04/2018 01:18:09.
+Build started 03/05/2018 00:38:06.
 Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\TransformManifest.proj&quot; on node 1 (default targets).
 TransformManifest:
   XslTransform (v2017.5.15.0)
@@ -97,17 +94,17 @@ TransformManifest:
     Unique name M_Hummingbird_TestFramework_Extensibility_ObjectEditorBase_Sync_1 generated for M:Hummingbird.TestFramework.Extensibility.ObjectEditorBase.Sync(System.Int32)
     Unique name M_Hummingbird_TestFramework_Serialization_AbstractSerializer_Deserialize_1 generated for M:Hummingbird.TestFramework.Serialization.AbstractSerializer.Deserialize(System.String,System.Type,Hummingbird.TestFramework.Services.AbstractMetadata,System.Collections.Generic.List{Hummingbird.TestFramework.Serialization.SerializationException})
     Unique name M_Hummingbird_TestFramework_Serialization_AbstractSerializer_Serialize_1 generated for M:Hummingbird.TestFramework.Serialization.AbstractSerializer.Serialize(System.Object,System.Type,Hummingbird.TestFramework.Services.AbstractMetadata)
-    Unique name M_Hummingbird_TestFramework_Services_SoapBindings_GetBasicHttpBinding_1 generated for M:Hummingbird.TestFramework.Services.SoapBindings.GetBasicHttpBinding(Hummingbird.TestFramework.Services.AuthenticationMode,Hummingbird.TestFramework.Services.ProxyMode,System.Boolean,System.ServiceModel.WSMessageEncoding)
+    Unique name M_Hummingbird_TestFramework_Services_SoapBindings_GetBasicHttpBinding_1 generated for M:Hummingbird.TestFramework.Services.SoapBindings.GetBasicHttpBinding(Hummingbird.TestFramework.Services.AuthenticationMode,System.Boolean,Hummingbird.TestFramework.Services.ProxyMode,System.Boolean,System.ServiceModel.WSMessageEncoding)
   XslTransform (v2017.5.15.0)
   Copyright ? 2006-2017, Microsoft Corporation, All Rights Reserved.
   Portions Copyright ? 2006-2016, Eric Woodruff, All Rights Reserved.
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\ReflectionToManifest.xsl&#39;.
 Done Building Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\TransformManifest.proj&quot; (default targets).
-    Last step completed in 00:00:01,8559
+    Last step completed in 00:00:02,0582
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00,1021
+    Last step completed in 00:00:00,1074
 </buildStep>
 <buildStep step="GenerateInheritedDocumentation">
 Generating inherited documentation...
@@ -121,13 +118,13 @@ Inherited documentation will be written to &#39;_InheritedDocs_.xml&#39;
 Indexing C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\*.xml
 Indexing C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\.NETFramework\v4.0\4.3.1.0\*.xml
 Indexing D:\Projets\Github\hummingbird.testframework.doc\Working\Hummingbird.TestFramework.XML
-Indexed 151085 members in 122 file(s).  1 file(s) to scan for &lt;inheritdoc /&gt; tags.
+Indexed 151116 members in 122 file(s).  1 file(s) to scan for &lt;inheritdoc /&gt; tags.
 Merging inherited documentation...
 
 SHFB: Warning GID0004: No comments found for member &#39;F:Hummingbird.TestFramework.Serialization.XmlSerializer.Instance&#39;
 
 Documentation merged successfully
-    Last step completed in 00:00:01,1535
+    Last step completed in 00:00:01,1216
 </buildStep>
 <buildStep step="CopyConceptualContent">
 Copying conceptual content...
@@ -142,18 +139,20 @@ Generating conceptual topic files
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\VersionHistory\VersionHistory.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\f6c13f49-3bc8-42cd-9dae-a3756e715983.xml
     Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\VersionHistory\v1.0.0.0.aml&#39;
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\VersionHistory\v1.0.0.0.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\c5dcf625-414c-4037-bd0e-d0f45ec38bb1.xml
-    Last step completed in 00:00:00,0270
+    Last step completed in 00:00:00,2019
 </buildStep>
 <buildStep step="CreateConceptualTopicConfigs">
 Creating conceptual topic configuration files...
     Companion files
     _ContentMetadata_.xml
     Merging topic IDs into manifest.xml
-    Last step completed in 00:00:00,0126
+    Last step completed in 00:00:00,0166
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
+D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\icons\favicon.ico -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\icons\favicon.ico
 D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\icons\Help.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\icons\Help.png
+D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\styles\branding-Website.css -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\styles\branding-Website.css
 D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\styles\branding.css -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\styles\branding.css
 D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\icons\AlertCaution.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\icons\AlertCaution.png
 D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\icons\AlertNote.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\icons\AlertNote.png
@@ -194,16 +193,22 @@ D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\icons\p
 D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\icons\search.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\icons\search.png
 D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\icons\SectionCollapsed.gif -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\icons\SectionCollapsed.gif
 D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\icons\SectionExpanded.gif -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\icons\SectionExpanded.gif
-    Last step completed in 00:00:00,1289
+D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\icons\TocClose.gif -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\icons\TocClose.gif
+D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\icons\TocCollapsed.gif -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\icons\TocCollapsed.gif
+D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\icons\TocExpanded.gif -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\icons\TocExpanded.gif
+D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\icons\TocOpen.gif -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\icons\TocOpen.gif
+D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\styles\bg.jpg -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\styles\bg.jpg
+D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\styles\header_bg.jpg -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\styles\header_bg.jpg
+    Last step completed in 00:00:00,2464
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
-    Last step completed in 00:00:00,0010
+    Last step completed in 00:00:00,0000
 </buildStep>
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe - GenerateIntermediateTOC.proj]
-Build started 02/04/2018 01:18:13.
+Build started 03/05/2018 00:38:10.
 Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\GenerateIntermediateTOC.proj&quot; on node 1 (default targets).
 GenerateIntermediateTOC:
   XslTransform (v2017.5.15.0)
@@ -212,25 +217,27 @@ GenerateIntermediateTOC:
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\CreateVSToc.xsl&#39;.
 Done Building Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\GenerateIntermediateTOC.proj&quot; (default targets).
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00,3054
+    Last step completed in 00:00:00,2886
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
     sandcastle.config
-    Last step completed in 00:00:00,1862
+    Last step completed in 00:00:00,2092
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
 D:\Projets\Github\hummingbird.testframework.doc\Working\sandcastle.config
   Updating reference topic configurations.
+    Replacing default configuration for &#39;Code Block Component&#39; with the custom configuration
   Updating conceptual topic configurations.
+    Replacing default configuration for &#39;Code Block Component&#39; with the custom configuration
     Removing unused ExampleComponent.
-    Last step completed in 00:00:00,0030
+    Last step completed in 00:00:00,0068
 </buildStep>
 <buildStep step="BuildTopics">
 Building help topics...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe - BuildTopics.proj]
-Build started 02/04/2018 01:18:13.
+Build started 03/05/2018 00:38:10.
 Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj&quot; on node 1 (default targets).
 BuildTopics:
   BuildAssembler (v2017.5.15.0)
@@ -250,6 +257,8 @@ BuildAssembler : warning : ResolveReferenceLinksComponent: [M:Hummingbird.TestFr
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Utilities.GenerateId(System.Guid,System.String)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Utilities.GetDefinition(System.String)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Utilities.GetImageSourceFromString(System.String)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Utilities.GetType(System.String)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Utilities.GetType(System.String)] Missing &lt;param name=&quot;fullName&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Utilities.ParseObject(System.String)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Utilities.ParseObject(System.String)] Missing &lt;param name=&quot;pattern&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Utilities.ParseObject(System.String,System.Int64)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
@@ -259,6 +268,9 @@ BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Ut
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Utilities.SafeCreateInstance(System.Type)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Utilities.ToEnum``1(System.String)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Utilities.UncompressString(System.Byte[])] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Utilities.UninstallExtension(Hummingbird.TestFramework.Extensibility.ExtensionDefinition)] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Utilities.UninstallExtension(Hummingbird.TestFramework.Extensibility.ExtensionDefinition)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Utilities.UninstallExtension(Hummingbird.TestFramework.Extensibility.ExtensionDefinition)] Missing &lt;param name=&quot;ed&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Version.#ctor(System.Version)] Missing &lt;param name=&quot;ver&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [N:Hummingbird.TestFramework.Automation] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [T:Hummingbird.TestFramework.Automation.AsyncTestAction] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
@@ -533,8 +545,6 @@ BuildAssembler : warning : ShowMissingComponent: [N:Hummingbird.TestFramework.Co
 BuildAssembler : warning : ShowMissingComponent: [T:Hummingbird.TestFramework.CodeGenerator.MemoryLogger] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.CodeGenerator.ProjectGenerator.BuildProject(Hummingbird.TestFramework.ExtensionProject.Project,Microsoft.Build.Framework.ILogger)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.CodeGenerator.ProjectGenerator.GenerateProject(Hummingbird.TestFramework.ExtensionProject.Project,System.String,System.String@)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.CodeGenerator.WsdlServiceAnalyzer.GenerateWCFProxy(System.String,Hummingbird.TestFramework.CodeGenerator.WsdlServiceOptions,System.String@,System.Reflection.Assembly@,System.Byte[]@,System.ServiceModel.Description.ServiceEndpointCollection@)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.CodeGenerator.WsdlServiceAnalyzer.GenerateWCFProxy(System.String,Hummingbird.TestFramework.CodeGenerator.WsdlServiceOptions,System.String@,System.Reflection.Assembly@,System.Byte[]@,System.ServiceModel.Description.ServiceEndpointCollection@)] Missing &lt;param name=&quot;assemblyContent&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [N:Hummingbird.TestFramework.Configuration] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [P:Hummingbird.TestFramework.Configuration.History.AutomatedTestCreated] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [P:Hummingbird.TestFramework.Configuration.History.AutomatedTestExecuted] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
@@ -550,6 +560,8 @@ BuildAssembler : warning : ShowMissingComponent: [P:Hummingbird.TestFramework.Co
 BuildAssembler : warning : ShowMissingComponent: [P:Hummingbird.TestFramework.Configuration.History.OutgoingFailed] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [P:Hummingbird.TestFramework.Configuration.History.OutgoingSuccess] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Configuration.Profile.GetSavedResponses(System.Guid)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:Hummingbird.TestFramework.Configuration.SavedResponse.ErrorType] Unknown reference link target &#39;!:https://www.w3.org/TR/2000/NOTE-SOAP-20000508/#_Toc478383507&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:Hummingbird.TestFramework.Configuration.SavedResponse.ErrorType] Invalid reference link target &#39;!:https://www.w3.org/TR/2000/NOTE-SOAP-20000508/#_Toc478383507&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Configuration.Settings.GetCustomParameter(System.Guid,System.String)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [P:Hummingbird.TestFramework.Configuration.UsageStatistic.AutomatedTestCreated] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [P:Hummingbird.TestFramework.Configuration.UsageStatistic.AutomatedTestExecuted] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
@@ -626,6 +638,7 @@ BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Humming
 BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [Events.T:Hummingbird.TestFramework.Extensibility.CustomViewExtension] Unknown reference link target &#39;E:Hummingbird.UI.ModernContent.Closing&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [Events.T:Hummingbird.TestFramework.Extensibility.CustomViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Hummingbird.TestFramework.Extensibility.ExtensionDefinition.LoadedFrom] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.CommandArea&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
@@ -764,6 +777,7 @@ BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Ex
 BuildAssembler : warning : ShowMissingComponent: [N:Hummingbird.TestFramework.Messaging] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Messaging.MessageQueue.Add(Hummingbird.TestFramework.Messaging.Message)] Missing &lt;param name=&quot;message&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Messaging.MessageQueue.Load] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Messaging.MessageQueue.LoadAsync] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [N:Hummingbird.TestFramework.Serialization] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Serialization.AbstractSerializer.Deserialize(System.String,System.Type)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Serialization.AbstractSerializer.Deserialize(System.String,System.Type,Hummingbird.TestFramework.Services.AbstractMetadata,System.Collections.Generic.List{Hummingbird.TestFramework.Serialization.SerializationException})] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
@@ -867,18 +881,50 @@ BuildAssembler : warning : ResolveReferenceLinksComponent: [P:Hummingbird.TestFr
 BuildAssembler : warning : ResolveReferenceLinksComponent: [P:Hummingbird.TestFramework.Services.RequestData.UseMToM] Invalid reference link target &#39;!:https://www.w3.org/Submission/soap11mtom10&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.SoapDefaultReplyBehavior.FindMetadata(System.String,System.Type,System.Type)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.SoapDefaultReplyBehavior.Response(System.String,System.Object,System.Type,System.Type)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-  Processed 1494 topic(s)
-  629 warning(s)
+BuildAssembler : warning : ShowMissingComponent: [T:Hummingbird.TestFramework.Services.WCFEndpointBehavior] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFEndpointBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Channels.BindingParameterCollection)] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFEndpointBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Channels.BindingParameterCollection)] Missing &lt;param name=&quot;endpoint&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFEndpointBehavior.AddBindingParameters(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Channels.BindingParameterCollection)] Missing &lt;param name=&quot;bindingParameters&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFEndpointBehavior.ApplyClientBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFEndpointBehavior.ApplyClientBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)] Missing &lt;param name=&quot;endpoint&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFEndpointBehavior.ApplyClientBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.ClientRuntime)] Missing &lt;param name=&quot;clientRuntime&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFEndpointBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.EndpointDispatcher)] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFEndpointBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.EndpointDispatcher)] Missing &lt;param name=&quot;endpoint&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFEndpointBehavior.ApplyDispatchBehavior(System.ServiceModel.Description.ServiceEndpoint,System.ServiceModel.Dispatcher.EndpointDispatcher)] Missing &lt;param name=&quot;endpointDispatcher&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [P:Hummingbird.TestFramework.Services.WCFEndpointBehavior.BehaviorType] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFEndpointBehavior.CreateBehavior] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFEndpointBehavior.CreateBehavior] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFEndpointBehavior.Validate(System.ServiceModel.Description.ServiceEndpoint)] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFEndpointBehavior.Validate(System.ServiceModel.Description.ServiceEndpoint)] Missing &lt;param name=&quot;endpoint&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [T:Hummingbird.TestFramework.Services.WCFMessageInspector] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFMessageInspector.AfterReceiveReply(System.ServiceModel.Channels.Message@,System.Object)] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFMessageInspector.AfterReceiveReply(System.ServiceModel.Channels.Message@,System.Object)] Missing &lt;param name=&quot;reply&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFMessageInspector.AfterReceiveReply(System.ServiceModel.Channels.Message@,System.Object)] Missing &lt;param name=&quot;correlationState&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFMessageInspector.AfterReceiveRequest(System.ServiceModel.Channels.Message@,System.ServiceModel.IClientChannel,System.ServiceModel.InstanceContext)] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFMessageInspector.AfterReceiveRequest(System.ServiceModel.Channels.Message@,System.ServiceModel.IClientChannel,System.ServiceModel.InstanceContext)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFMessageInspector.AfterReceiveRequest(System.ServiceModel.Channels.Message@,System.ServiceModel.IClientChannel,System.ServiceModel.InstanceContext)] Missing &lt;param name=&quot;request&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFMessageInspector.AfterReceiveRequest(System.ServiceModel.Channels.Message@,System.ServiceModel.IClientChannel,System.ServiceModel.InstanceContext)] Missing &lt;param name=&quot;channel&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFMessageInspector.AfterReceiveRequest(System.ServiceModel.Channels.Message@,System.ServiceModel.IClientChannel,System.ServiceModel.InstanceContext)] Missing &lt;param name=&quot;instanceContext&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFMessageInspector.BeforeSendReply(System.ServiceModel.Channels.Message@,System.Object)] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFMessageInspector.BeforeSendReply(System.ServiceModel.Channels.Message@,System.Object)] Missing &lt;param name=&quot;reply&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFMessageInspector.BeforeSendReply(System.ServiceModel.Channels.Message@,System.Object)] Missing &lt;param name=&quot;correlationState&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFMessageInspector.BeforeSendRequest(System.ServiceModel.Channels.Message@,System.ServiceModel.IClientChannel)] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFMessageInspector.BeforeSendRequest(System.ServiceModel.Channels.Message@,System.ServiceModel.IClientChannel)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFMessageInspector.BeforeSendRequest(System.ServiceModel.Channels.Message@,System.ServiceModel.IClientChannel)] Missing &lt;param name=&quot;request&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.WCFMessageInspector.BeforeSendRequest(System.ServiceModel.Channels.Message@,System.ServiceModel.IClientChannel)] Missing &lt;param name=&quot;channel&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [F:Hummingbird.TestFramework.Services.WCFMessageInspector.Instance] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+  Processed 1529 topic(s)
+  668 warning(s)
   CopyFromIndexComponent: &quot;metadata&quot; in-memory cache entries used: 1 of 15.
   ResolveArtLinksComponent: Copying media files...
   CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 15 of 15.
-  CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 7 of 30.
+  CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 9 of 30.
 Done Building Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj&quot; (default targets).
-    Last step completed in 00:00:18,0211
+    Last step completed in 00:00:19,9812
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00,0130
+    Last step completed in 00:00:00,0117
 </buildStep>
 <buildStep step="ExtractingHtmlInfo">
 Extracting HTML info for HTML Help 1 and/or website...
@@ -890,15 +936,14 @@ E-Mail: Eric@EWoodruff.us
 Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
 
 Processing website files in D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website
-Processed 1494 HTML files
+Processed 1529 HTML files
 Sorting keywords and generating See Also indices
 Saving website keyword index to D:\Projets\Github\hummingbird.testframework.doc\Working\WebKI.xml
 Saving website table of contents to D:\Projets\Github\hummingbird.testframework.doc\Working\WebTOC.xml
-    Last step completed in 00:00:00,7558
+    Last step completed in 00:00:00,7815
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\favicon.ico -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\icons\favicon.ico
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\privextension.gif -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\icons\privextension.gif
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\protextension.gif -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\icons\protextension.gif
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\icons\SectionCollapsed.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\icons\SectionCollapsed.png
@@ -921,7 +966,6 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyle
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-pt-BR.css -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\styles\branding-pt-BR.css
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-ru-RU.css -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\styles\branding-ru-RU.css
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-tr-TR.css -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\styles\branding-tr-TR.css
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-Website.css -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\styles\branding-Website.css
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-CN.css -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\styles\branding-zh-CN.css
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\styles\branding-zh-TW.css -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\styles\branding-zh-TW.css
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\index.html -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\index.html
@@ -932,14 +976,10 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyle
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\Web.Config -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\Web.Config
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\html\GeneralError.htm -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\html\GeneralError.htm
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\html\PageNotFound.htm -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\html\PageNotFound.htm
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocClose.gif -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\icons\TocClose.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocCollapsed.gif -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\icons\TocCollapsed.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocExpanded.gif -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\icons\TocExpanded.gif
-C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\icons\TocOpen.gif -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\icons\TocOpen.gif
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\scripts\branding-Website.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\clipboard.min.js -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\scripts\clipboard.min.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-1.11.0.min.js -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\scripts\jquery-1.11.0.min.js
-    Last step completed in 00:00:00,1669
+    Last step completed in 00:00:00,5179
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating website table of contents file...
@@ -950,7 +990,7 @@ Generating full-text index for the website...
 
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
 Adding lightweight search and TOC elements to each topic...
-</plugIn>    Last step completed in 00:00:01,9103
+</plugIn>    Last step completed in 00:00:01,8977
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
@@ -959,16 +999,16 @@ Copied 500 files
 Copied 1000 files
 Copied 1500 files
 Copied 2000 files
-Copied 2051 files for the website content
-    Last step completed in 00:00:01,8377
+Copied 2094 files for the website content
+    Last step completed in 00:00:03,6428
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00,4156
+    Last step completed in 00:00:00,7874
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 02/04/2018 01:18:36.  Total time: 00:00:28,6874
+Build completed successfully at 03/05/2018 00:38:38.  Total time: 00:00:34,7625
 
 </buildStep>
 </shfbBuild>
