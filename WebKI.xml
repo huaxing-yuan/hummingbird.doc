@@ -2881,14 +2881,14 @@
   </HelpKINode>
   <HelpKINode Title="UseRegularExpression property" Url="html/P_Hummingbird_TestFramework_Automation_Assertions_AbstractValueCompareAssertion_UseRegularExpression.htm" />
   <HelpKINode Title="UserName enumeration member" Url="html/T_Hummingbird_TestFramework_Services_AuthenticationMode.htm" />
-  <HelpKINode Title="UserName property">
-    <HelpKINode Title="StartWindowsServiceTestStep.UserName Property " Url="html/P_Hummingbird_TestFramework_Automation_StartWindowsServiceTestStep_UserName.htm" />
-    <HelpKINode Title="AbstractSqlTestStep.UserName Property " Url="html/P_Hummingbird_TestFramework_Automation_AbstractSqlTestStep_UserName.htm" />
-  </HelpKINode>
   <HelpKINode Title="Username property">
     <HelpKINode Title="SecurityToken.Username Property " Url="html/P_Hummingbird_TestFramework_Configuration_SecurityToken_Username.htm" />
     <HelpKINode Title="Service.Username Property " Url="html/P_Hummingbird_TestFramework_ExtensionProject_Service_Username.htm" />
     <HelpKINode Title="WsdlServiceOptions.Username Property " Url="html/P_Hummingbird_TestFramework_CodeGenerator_WsdlServiceOptions_Username.htm" />
+  </HelpKINode>
+  <HelpKINode Title="UserName property">
+    <HelpKINode Title="AbstractSqlTestStep.UserName Property " Url="html/P_Hummingbird_TestFramework_Automation_AbstractSqlTestStep_UserName.htm" />
+    <HelpKINode Title="StartWindowsServiceTestStep.UserName Property " Url="html/P_Hummingbird_TestFramework_Automation_StartWindowsServiceTestStep_UserName.htm" />
   </HelpKINode>
   <HelpKINode Title="UseSoap12 property">
     <HelpKINode Title="RequestOptions.UseSoap12 Property " Url="html/P_Hummingbird_TestFramework_Services_RequestOptions_UseSoap12.htm" />
