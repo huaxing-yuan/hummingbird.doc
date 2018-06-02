@@ -654,11 +654,19 @@ div.mediaNear {
     margin-bottom: 1em;
 }
 
+    div.mediaNear img {
+        box-shadow: 0px 0px 10px #000;
+    }
+
 div.mediaFar {
     text-align: right;
     margin-top: 1em;
     margin-bottom: 1em;
 }
+
+    div.mediaFar img {
+        box-shadow: 0px 0px 10px #000;
+    }
 
 div.mediaCenter {
     text-align: center;
@@ -666,13 +674,13 @@ div.mediaCenter {
     margin-bottom: 1em;
 }
 
+    div.mediaCenter img {
+        box-shadow: 0px 0px 10px #000;
+    }
+
 span.captionLead {
     font-weight: bold;
     margin-right: .5em;
-}
-
-span.media img {
-    vertical-align: top;
 }
 
 /* Glossary styles */
