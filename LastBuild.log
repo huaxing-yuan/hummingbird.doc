@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2018.5.14.0" projectFile="D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Hummingbird.Doc.shfbproj" started="18/06/2018 00:23:59">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2018.5.14.0" projectFile="D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Hummingbird.Doc.shfbproj" started="29/07/2018 23:42:39">
 <buildStep step="Initializing">
 Finding tools...
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
@@ -29,7 +29,11 @@ Parsing project files
     Found assembly &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework\bin\Debug\Hummingbird.TestFramework.dll&#39;
 
 References to include (excluding framework assemblies):
-    Hummingbird.UI, Version=1.0.6721.35669, Culture=neutral, processorArchitecture=MSIL
+    ClosedXML, Version=0.93.0.0, Culture=neutral, processorArchitecture=MSIL
+    DocumentFormat.OpenXml, Version=2.8.1.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL
+    ExcelNumberFormat, Version=1.0.3.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL
+    FastMember.Signed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=9e8f22703bef9a29, processorArchitecture=MSIL
+    Hummingbird.UI, Version=1.0.6775.1725, Culture=neutral, processorArchitecture=MSIL
     Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL
 
 Copying XML comments files
@@ -38,16 +42,16 @@ Copying XML comments files
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, English (United States))...
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
-</plugIn>    Last step completed in 00:00:00,0059
+</plugIn>    Last step completed in 00:00:00,0664
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00,0117
+    Last step completed in 00:00:00,0110
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe - GenerateRefInfo.proj]
-Build started 18/06/2018 00:24:00.
+Build started 29/07/2018 23:42:43.
 Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\GenerateRefInfo.proj&quot; on node 1 (default targets).
 PrepareForBuild:
   Creating directory &quot;obj\Debug\&quot;.
@@ -56,20 +60,20 @@ GenerateRefInfo:
   Copyright ? 2006-2018, Microsoft Corporation, All Rights Reserved.
   Portions Copyright ? 2006-2018, Eric Woodruff, All Rights Reserved.
   No source code context base path specified.  Source context information is unavailable.
-  Loaded 1 assemblies for reflection and 3 dependency assemblies.
-  Wrote information on 15 namespaces, 164 types, and 1085 members
+  Loaded 1 assemblies for reflection and 7 dependency assemblies.
+  Wrote information on 14 namespaces, 178 types, and 1167 members
   Copying file from &quot;reflection.org&quot; to &quot;reflection.all&quot;.
   XslTransform (v2018.5.14.0)
   Copyright ? 2006-2018, Microsoft Corporation, All Rights Reserved.
   Portions Copyright ? 2006-2018, Eric Woodruff, All Rights Reserved.
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\MergeDuplicates.xsl&#39;.
 Done Building Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\GenerateRefInfo.proj&quot; (default targets).
-    Last step completed in 00:00:01,3892
+    Last step completed in 00:00:01,6496
 </buildStep>
 <buildStep step="TransformReflectionInfo">
 Transforming reflection output...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe - TransformManifest.proj]
-Build started 18/06/2018 00:24:02.
+Build started 29/07/2018 23:42:44.
 Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\TransformManifest.proj&quot; on node 1 (default targets).
 TransformManifest:
   XslTransform (v2018.5.14.0)
@@ -89,6 +93,7 @@ TransformManifest:
     Unique name M_Hummingbird_TestFramework_Log_WriteMessage_1 generated for M:Hummingbird.TestFramework.Log.WriteMessage(Hummingbird.TestFramework.LogMessage)
     Unique name M_Hummingbird_TestFramework_Utilities_ParseObject_1 generated for M:Hummingbird.TestFramework.Utilities.ParseObject(System.String,Hummingbird.TestFramework.Automation.AbstractTestItem)
     Unique name M_Hummingbird_TestFramework_Utilities_ParseObject_2 generated for M:Hummingbird.TestFramework.Utilities.ParseObject(System.String,System.Object,Hummingbird.TestFramework.Services.AbstractMetadata)
+    Unique name M_Hummingbird_TestFramework_Variable__ctor_1 generated for M:Hummingbird.TestFramework.Variable.#ctor(System.String,System.String)
     Unique name M_Hummingbird_TestFramework_Version__ctor_1 generated for M:Hummingbird.TestFramework.Version.#ctor(System.Int32,System.Int32)
     Unique name M_Hummingbird_TestFramework_Version__ctor_2 generated for M:Hummingbird.TestFramework.Version.#ctor(System.Int32,System.Int32,System.Int32)
     Unique name M_Hummingbird_TestFramework_Version__ctor_3 generated for M:Hummingbird.TestFramework.Version.#ctor(System.Version)
@@ -99,18 +104,21 @@ TransformManifest:
     Unique name M_Hummingbird_TestFramework_Configuration_Profile_Save_1 generated for M:Hummingbird.TestFramework.Configuration.Profile.Save(System.String)
     Unique name M_Hummingbird_TestFramework_Configuration_Profile_SetActiveEnvironment_1 generated for M:Hummingbird.TestFramework.Configuration.Profile.SetActiveEnvironment(System.String)
     Unique name M_Hummingbird_TestFramework_Configuration_Settings_Save_1 generated for M:Hummingbird.TestFramework.Configuration.Settings.Save(System.String)
-    Unique name M_Hummingbird_TestFramework_Extensibility_ObjectEditorBase__ctor_1 generated for M:Hummingbird.TestFramework.Extensibility.ObjectEditorBase.#ctor(Hummingbird.TestFramework.Serialization.AbstractSerializer,Hummingbird.TestFramework.Automation.AbstractTestItem)
+    Unique name M_Hummingbird_TestFramework_Extensibility_ObjectEditorBase__ctor_1 generated for M:Hummingbird.TestFramework.Extensibility.ObjectEditorBase.#ctor(Hummingbird.TestFramework.Serialization.AbstractSerializer)
+    Unique name M_Hummingbird_TestFramework_Extensibility_ObjectEditorBase__ctor_2 generated for M:Hummingbird.TestFramework.Extensibility.ObjectEditorBase.#ctor(Hummingbird.TestFramework.Serialization.AbstractSerializer,Hummingbird.TestFramework.Automation.AbstractTestItem)
     Unique name M_Hummingbird_TestFramework_Extensibility_ObjectEditorBase_Sync_1 generated for M:Hummingbird.TestFramework.Extensibility.ObjectEditorBase.Sync(System.Int32)
     Unique name M_Hummingbird_TestFramework_Messaging_Message_Dispose_1 generated for M:Hummingbird.TestFramework.Messaging.Message.Dispose(System.Boolean)
     Unique name M_Hummingbird_TestFramework_Serialization_AbstractSerializer_Deserialize_1 generated for M:Hummingbird.TestFramework.Serialization.AbstractSerializer.Deserialize(System.String,System.Type,Hummingbird.TestFramework.Services.AbstractMetadata,System.Collections.Generic.List{Hummingbird.TestFramework.Serialization.SerializationException})
     Unique name M_Hummingbird_TestFramework_Serialization_AbstractSerializer_Serialize_1 generated for M:Hummingbird.TestFramework.Serialization.AbstractSerializer.Serialize(System.Object,System.Type,Hummingbird.TestFramework.Services.AbstractMetadata)
+    Unique name M_Hummingbird_TestFramework_Services_HttpResponseEditor__ctor_1 generated for M:Hummingbird.TestFramework.Services.HttpResponseEditor.#ctor(Hummingbird.TestFramework.Automation.AbstractTestItem)
+    Unique name M_Hummingbird_TestFramework_Services_QueryFieldAttribute__ctor_1 generated for M:Hummingbird.TestFramework.Services.QueryFieldAttribute.#ctor(System.String,Hummingbird.TestFramework.Services.QueryFieldFormat)
     Unique name M_Hummingbird_TestFramework_Services_SoapBindings_GetBasicHttpBinding_1 generated for M:Hummingbird.TestFramework.Services.SoapBindings.GetBasicHttpBinding(Hummingbird.TestFramework.Services.RequestOptions,Hummingbird.TestFramework.Services.ProxyMode,System.Boolean,System.ServiceModel.WSMessageEncoding)
   XslTransform (v2018.5.14.0)
   Copyright ? 2006-2018, Microsoft Corporation, All Rights Reserved.
   Portions Copyright ? 2006-2018, Eric Woodruff, All Rights Reserved.
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\ReflectionToManifest.xsl&#39;.
 Done Building Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\TransformManifest.proj&quot; (default targets).
-    Last step completed in 00:00:02,4405
+    Last step completed in 00:00:02,9832
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
@@ -125,7 +133,7 @@ GenerateApiFilter
 GenerateReflectionInfo
 TransformReflectionInfo
 Completed
-</plugIn>    Last step completed in 00:00:02,3320
+</plugIn>    Last step completed in 00:00:03,2678
 </buildStep>
 <buildStep step="GenerateInheritedDocumentation">
 Generating inherited documentation...
@@ -143,14 +151,17 @@ Indexing C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFra
 Indexing C:\Program Files (x86)\Reference Assemblies\Microsoft\FSharp\.NETFramework\v4.0\4.3.1.0\*.xml
 Indexing D:\Projets\Github\hummingbird.testframework.doc\Working\Newtonsoft.Json.xml
 Indexing D:\Projets\Github\hummingbird.testframework.doc\Working\Hummingbird.UI.xml
+Indexing D:\Projets\Github\hummingbird.testframework.doc\Working\ExcelNumberFormat.xml
+Indexing D:\Projets\Github\hummingbird.testframework.doc\Working\DocumentFormat.OpenXml.xml
+Indexing D:\Projets\Github\hummingbird.testframework.doc\Working\ClosedXML.xml
 Indexing D:\Projets\Github\hummingbird.testframework.doc\Working\279BCA0E\Hummingbird.UI.XML
 Indexing D:\Projets\Github\hummingbird.testframework.doc\Working\Hummingbird.TestFramework.XML
-Indexed 153179 members in 125 file(s).  4 file(s) to scan for &lt;inheritdoc /&gt; tags.
+Indexed 200874 members in 128 file(s).  7 file(s) to scan for &lt;inheritdoc /&gt; tags.
 Merging inherited documentation...
 
 
 Documentation merged successfully
-    Last step completed in 00:00:01,4223
+    Last step completed in 00:00:01,8404
 </buildStep>
 <buildStep step="CopyConceptualContent">
 Copying conceptual content...
@@ -266,6 +277,14 @@ Generating conceptual topic files
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\ServiceSimulation\RegisterTcpPort.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\92011cd0-e0fe-41c5-9fc8-21df7bcae4a3.xml
     Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\SystemSettings.aml&#39;
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\SystemSettings.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\3842ef58-f825-4f5a-8cbf-f5f5dba28f66.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\SystemSettings\GeneralSettings.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\SystemSettings\GeneralSettings.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\a0bc4270-f160-48d5-be6d-0bbae11c721f.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\SystemSettings\Test Settings.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\SystemSettings\Test Settings.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\82e437e1-c9bf-449f-8ed3-28859423e766.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\SystemSettings\ManageTestProfiles.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\SystemSettings\ManageTestProfiles.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\def45c86-9ffa-4692-85bf-ef997b501e27.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\SystemSettings\ManageExtensions.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\SystemSettings\ManageExtensions.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\fb6150ac-4773-4457-afc2-e203cf917dc8.xml
     Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Statistics.aml&#39;
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Statistics.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\d67b78dd-d49c-4d49-a81a-a5699956cad2.xml
     Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\TestAutomation.aml&#39;
@@ -322,14 +341,14 @@ Generating conceptual topic files
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\VersionHistory\VersionHistory.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\f6c13f49-3bc8-42cd-9dae-a3756e715983.xml
     Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\VersionHistory\v0.1.aml&#39;
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\VersionHistory\v0.1.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\c5dcf625-414c-4037-bd0e-d0f45ec38bb1.xml
-    Last step completed in 00:00:00,4665
+    Last step completed in 00:00:02,3627
 </buildStep>
 <buildStep step="CreateConceptualTopicConfigs">
 Creating conceptual topic configuration files...
     Companion files
     _ContentMetadata_.xml
     Merging topic IDs into manifest.xml
-    Last step completed in 00:00:00,0320
+    Last step completed in 00:00:00,0573
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
@@ -382,16 +401,16 @@ D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\icons\T
 D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\icons\TocOpen.gif -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\icons\TocOpen.gif
 D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\styles\bg.jpg -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\styles\bg.jpg
 D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\styles\header_bg.jpg -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\styles\header_bg.jpg
-    Last step completed in 00:00:00,1639
+    Last step completed in 00:00:00,3774
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
-    Last step completed in 00:00:00,0000
+    Last step completed in 00:00:00,0040
 </buildStep>
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe - GenerateIntermediateTOC.proj]
-Build started 18/06/2018 00:24:09.
+Build started 29/07/2018 23:42:55.
 Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\GenerateIntermediateTOC.proj&quot; on node 1 (default targets).
 GenerateIntermediateTOC:
   XslTransform (v2018.5.14.0)
@@ -400,14 +419,14 @@ GenerateIntermediateTOC:
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\CreateVSToc.xsl&#39;.
 Done Building Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\GenerateIntermediateTOC.proj&quot; (default targets).
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00,3006
+    Last step completed in 00:00:00,3094
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
 <plugIn name="Additional Reference Links" behavior="Before" priority="1000">
 Adding additional reference link namespaces...
 </plugIn>    sandcastle.config
-    Last step completed in 00:00:00,2451
+    Last step completed in 00:00:00,3910
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
@@ -422,12 +441,12 @@ D:\Projets\Github\hummingbird.testframework.doc\Working\sandcastle.config
 <plugIn name="Additional Reference Links" behavior="After" priority="1000">
 
 Adding references to D:\Projets\Github\hummingbird.testframework.doc\Working\sandcastle.config...
-</plugIn>    Last step completed in 00:00:00,0098
+</plugIn>    Last step completed in 00:00:00,0170
 </buildStep>
 <buildStep step="BuildTopics">
 Building help topics...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe - BuildTopics.proj]
-Build started 18/06/2018 00:24:09.
+Build started 29/07/2018 23:42:56.
 Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj&quot; on node 1 (default targets).
 BuildTopics:
   BuildAssembler (v2018.5.14.0)
@@ -450,21 +469,17 @@ BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Ut
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Utilities.ParseObject(System.String)] Missing &lt;param name=&quot;pattern&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Utilities.ParseObject(System.String,Hummingbird.TestFramework.Automation.AbstractTestItem)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Utilities.ParseObject(System.String,System.Object,Hummingbird.TestFramework.Services.AbstractMetadata)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Utilities.SafeCreateInstance(System.Type)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Utilities.ToEnum``1(System.String)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Utilities.UncompressString(System.Byte[])] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Version.#ctor(System.Version)] Missing &lt;param name=&quot;ver&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [N:Hummingbird.TestFramework.Automation] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Automation.AbstractSqlTestStep.TestConnectivity(System.String@)] Missing &lt;param name=&quot;errorMessage&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Automation.AutomationProject.LoadAsync(System.String)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Automation.AutomationProject.Save] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Automation.AutomationProject.SaveAs(System.String)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Automation.CommandLineTestStep.Run] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Automation.DotNetScriptTestStepBase.Compile(System.String,System.Collections.Generic.List{System.CodeDom.Compiler.CompilerError}@)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Automation.DotNetScriptTestStepBase.GetCodeDomProvider(System.String,System.CodeDom.Compiler.CompilerParameters@)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Automation.DotNetScriptTestStepBase.Run] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Automation.ScriptTestStepBase.Execute(Hummingbird.TestFramework.Automation.TestStepBase)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Automation.SqlQueryTestStep.Run] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Automation.SqlStoredProcedureTestStep.Run] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [N:Hummingbird.TestFramework.Automation.Assertions] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Automation.Assertions.AbstractAssertion.Clone] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Automation.Assertions.ContainsAssertion.InternalContains(Hummingbird.TestFramework.Automation.TestStepBase,System.String)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
@@ -480,15 +495,11 @@ BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Co
 BuildAssembler : warning : ShowMissingComponent: [N:Hummingbird.TestFramework.Configuration] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Configuration.History.GetSavedRequests(System.Guid)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Configuration.History.Load] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Configuration.Profile.DeleteProfile(System.String)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Configuration.Profile.GetProfile(System.String)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Configuration.Settings.GetCustomParameter(System.Guid,System.String)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [N:Hummingbird.TestFramework.Cryptography] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [N:Hummingbird.TestFramework.Extensibility] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomViewExtension] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowToastNotification(System.String,Hummingbird.UI.NotificationLevel,System.Action)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomViewExtension] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowToastNotification(System.String,Hummingbird.UI.NotificationLevel,System.Action)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowToastNotification(System.String,Hummingbird.UI.NotificationLevel,System.Action)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowToastNotification(System.String,Hummingbird.UI.NotificationLevel,System.Action)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowToastNotification(System.String,Hummingbird.UI.NotificationLevel,System.Action)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowToastNotification(System.String,Hummingbird.UI.NotificationLevel,System.Action)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Extensibility.ObjectEditorBase.Sync(System.Int32)] Missing &lt;param name=&quot;requestLength&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [N:Hummingbird.TestFramework.ExtensionProject] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.ExtensionProject.ExtensionNode.AnalyzeAsync] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
@@ -525,34 +536,24 @@ BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Se
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Serialization.XmlSerializerExtraTypes.Serialize(System.Object,System.Type,Hummingbird.TestFramework.Services.AbstractMetadata)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Serialization.XmlSerializerWithoutXmlns.Deserialize(System.String,System.Type,Hummingbird.TestFramework.Services.AbstractMetadata,System.Collections.Generic.List{Hummingbird.TestFramework.Serialization.SerializationException})] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Serialization.XmlSerializerWithoutXmlns.Serialize(System.Object,System.Type,Hummingbird.TestFramework.Services.AbstractMetadata)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowToastNotification(System.String,Hummingbird.UI.NotificationLevel,System.Action)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowToastNotification(System.String,Hummingbird.UI.NotificationLevel,System.Action)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.DefaultHttpRequestHandlers.GenericHttpMessageHandler(System.Net.HttpListenerRequest,Hummingbird.TestFramework.Services.HttpResponseMetadata,System.Boolean,Hummingbird.TestFramework.Messaging.Message@)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.HttpResponseEditor.#ctor(Hummingbird.TestFramework.Automation.AbstractTestItem)] Missing &lt;param name=&quot;testItem&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.Parameter.Clone] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.SoapDefaultReplyBehavior.Response(System.String,System.Object,System.Type,System.Type)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [N:Hummingbird.TestFramework.Util] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Util.FastReplacer.InsertAfter(System.String,System.String)] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Util.FastReplacer.InsertAfter(System.String,System.String)] Missing &lt;param name=&quot;token&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Util.FastReplacer.InsertAfter(System.String,System.String)] Missing &lt;param name=&quot;text&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Util.FastReplacer.InsertBefore(System.String,System.String)] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Util.FastReplacer.InsertBefore(System.String,System.String)] Missing &lt;param name=&quot;token&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Util.FastReplacer.InsertBefore(System.String,System.String)] Missing &lt;param name=&quot;text&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Util.FastReplacer.Replace(System.String,System.String)] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Util.FastReplacer.Replace(System.String,System.String)] Missing &lt;param name=&quot;token&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Util.FastReplacer.Replace(System.String,System.String)] Missing &lt;param name=&quot;text&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [G:Hummingbird.TestFramework.Automation] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-  Processed 1541 topic(s)
-  106 warning(s)
+  Processed 1660 topic(s)
+  87 warning(s)
   CopyFromIndexComponent: &quot;metadata&quot; in-memory cache entries used: 1 of 15.
   ResolveArtLinksComponent: Copying media files...
+  ResolveReferenceLinksComponent: 1 entries added to the MSDN content ID cache.  New cache size: 777 entries
   CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 15 of 15.
-  CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 11 of 30.
+  CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 10 of 30.
 Done Building Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj&quot; (default targets).
-    Last step completed in 00:00:20,5873
+    Last step completed in 00:00:21,9849
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00,0127
+    Last step completed in 00:00:00,0090
 </buildStep>
 <buildStep step="ExtractingHtmlInfo">
 Extracting HTML info for HTML Help 1 and/or website...
@@ -564,11 +565,11 @@ E-Mail: Eric@EWoodruff.us
 Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
 
 Processing website files in D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website
-Processed 1541 HTML files
+Processed 1660 HTML files
 Sorting keywords and generating See Also indices
 Saving website keyword index to D:\Projets\Github\hummingbird.testframework.doc\Working\WebKI.xml
 Saving website table of contents to D:\Projets\Github\hummingbird.testframework.doc\Working\WebTOC.xml
-    Last step completed in 00:00:00,8973
+    Last step completed in 00:00:01,0362
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -607,18 +608,18 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyle
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\scripts\branding-Website.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\clipboard.min.js -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\scripts\clipboard.min.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-1.11.0.min.js -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\scripts\jquery-1.11.0.min.js
-    Last step completed in 00:00:00,1609
+    Last step completed in 00:00:00,3463
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating website table of contents file...
-    Last step completed in 00:00:00,0010
+    Last step completed in 00:00:00,0000
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
 Adding lightweight search and TOC elements to each topic...
-</plugIn>    Last step completed in 00:00:02,6572
+</plugIn>    Last step completed in 00:00:02,4700
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
@@ -627,16 +628,16 @@ Copied 500 files
 Copied 1000 files
 Copied 1500 files
 Copied 2000 files
-Copied 2108 files for the website content
-    Last step completed in 00:00:02,1855
+Copied 2258 files for the website content
+    Last step completed in 00:00:05,6764
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:01,3904
+    Last step completed in 00:00:00,4821
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 18/06/2018 00:24:37.  Total time: 00:00:37,8934
+Build completed successfully at 29/07/2018 23:43:28.  Total time: 00:00:48,6218
 
 </buildStep>
 </shfbBuild>
