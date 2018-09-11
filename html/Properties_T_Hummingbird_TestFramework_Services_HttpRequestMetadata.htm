@@ -20,9 +20,10 @@
             Gets or set the HTTP Method: GET, POST, PUT, ... The default value is POST
             </div></td></tr><tr data="public;declared;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Hummingbird_TestFramework_Services_HttpRequestMetadata_HttpVersion.htm">HttpVersion</a></td><td><div class="summary">
             HttpVersion, Default value is HttpVersion11, that represents HTTP/1.1
-            </div></td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Hummingbird_TestFramework_Services_AbstractMetadata_Id.htm">Id</a></td><td><div class="summary">
-            The unique identifier of the service (either as injector or simulator).
-            </div> (Inherited from <a href="T_Hummingbird_TestFramework_Services_AbstractMetadata.htm">AbstractMetadata</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Hummingbird_TestFramework_Services_AbstractMetadata_IsUniqueMethodOfService.htm">IsUniqueMethodOfService</a></td><td><div class="summary">
+            </div></td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Hummingbird_TestFramework_Identifier_Id.htm">Id</a></td><td><div class="summary">
+            This property must be initialized in the constructor of derived class and must be given a fixed GUID.
+            the GUID must be a constant in code, and should not equals to any other classes derived from AbstractService.
+            </div> (Inherited from <a href="T_Hummingbird_TestFramework_Identifier.htm">Identifier</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Hummingbird_TestFramework_Services_AbstractMetadata_IsUniqueMethodOfService.htm">IsUniqueMethodOfService</a></td><td><div class="summary">
             If there are no different Method (MethodName) in the same Service (ServiceName) =&gt; true,
             Else false;
             </div> (Inherited from <a href="T_Hummingbird_TestFramework_Services_AbstractMetadata.htm">AbstractMetadata</a>.)</td></tr><tr data="public;inherited;notNetfw;"><td><img src="../icons/pubproperty.gif" alt="Public property" title="Public property" /></td><td><a href="P_Hummingbird_TestFramework_Services_AbstractMetadata_OperationName.htm">OperationName</a></td><td><div class="summary">
