@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2018.5.14.0" projectFile="D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Hummingbird.Doc.shfbproj" started="12/09/2018 00:39:44">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2018.5.14.0" projectFile="D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Hummingbird.Doc.shfbproj" started="12/09/2018 23:26:05">
 <buildStep step="Initializing">
 Finding tools...
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
@@ -16,9 +16,6 @@ Copyright &#169; 2006-2018, Eric Woodruff, All Rights Reserved
 Lightweight Website Style Version 2018.5.14.0
 Copyright &#169; 2006-2018, Eric Woodruff, All Rights Reserved
 Portions Copyright &#169; 2014, Sam Harwell, All Rights Reserved
-</buildStep>
-<buildStep step="ClearWorkFolder">
-Clearing working folder...
 -------------------------------
 Clearing any prior web/markdown output...
     Did not delete folder &#39;D:\Projets\Github\hummingbird.testframework.doc\.git&#39; as it contains read-only or hidden folders/files
@@ -45,16 +42,16 @@ Copying XML comments files
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, English (United States))...
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
-</plugIn>    Last step completed in 00:00:00,0035
+</plugIn>    Last step completed in 00:00:00,0075
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00,0085
+    Last step completed in 00:00:00,0095
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe - GenerateRefInfo.proj]
-Build started 12/09/2018 00:39:45.
+Build started 12/09/2018 23:26:08.
 Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\GenerateRefInfo.proj&quot; on node 1 (default targets).
 PrepareForBuild:
   Creating directory &quot;obj\Debug\&quot;.
@@ -71,12 +68,12 @@ GenerateRefInfo:
   Portions Copyright ? 2006-2018, Eric Woodruff, All Rights Reserved.
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\MergeDuplicates.xsl&#39;.
 Done Building Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\GenerateRefInfo.proj&quot; (default targets).
-    Last step completed in 00:00:01,4812
+    Last step completed in 00:00:01,6012
 </buildStep>
 <buildStep step="TransformReflectionInfo">
 Transforming reflection output...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe - TransformManifest.proj]
-Build started 12/09/2018 00:39:47.
+Build started 12/09/2018 23:26:10.
 Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\TransformManifest.proj&quot; on node 1 (default targets).
 TransformManifest:
   XslTransform (v2018.5.14.0)
@@ -121,7 +118,7 @@ TransformManifest:
   Portions Copyright ? 2006-2018, Eric Woodruff, All Rights Reserved.
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\ReflectionToManifest.xsl&#39;.
 Done Building Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\TransformManifest.proj&quot; (default targets).
-    Last step completed in 00:00:02,7709
+    Last step completed in 00:00:02,8617
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
@@ -136,7 +133,7 @@ GenerateApiFilter
 GenerateReflectionInfo
 TransformReflectionInfo
 Completed
-</plugIn>    Last step completed in 00:00:02,5843
+</plugIn>    Last step completed in 00:00:03,6399
 </buildStep>
 <buildStep step="GenerateInheritedDocumentation">
 Generating inherited documentation...
@@ -163,7 +160,7 @@ Merging inherited documentation...
 
 
 Documentation merged successfully
-    Last step completed in 00:00:01,7975
+    Last step completed in 00:00:01,8273
 </buildStep>
 <buildStep step="CopyConceptualContent">
 Copying conceptual content...
@@ -171,6 +168,7 @@ Copying standard token shared content file...
 Checking for other token files...
 Checking for code snippets files...
 Copying images and creating the media map file...
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\btn_options.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\media\btn_options.png
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\edit_request_message.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\media\edit_request_message.png
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\image001.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\media\image001.png
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\image001.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\media\image001.png (Always copied)
@@ -243,6 +241,7 @@ Copying images and creating the media map file...
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\ServerReplies.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\media\ServerReplies.png
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\ServerReplies.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\media\ServerReplies.png (Always copied)
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\serviceselector.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\media\serviceselector.png
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\service_options.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\media\service_options.png
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\startservice.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\media\startservice.png
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\startservice.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\media\startservice.png (Always copied)
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\uac.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\media\uac.png
@@ -362,14 +361,14 @@ Generating conceptual topic files
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\VersionHistory\VersionHistory.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\f6c13f49-3bc8-42cd-9dae-a3756e715983.xml
     Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\VersionHistory\v0.1.aml&#39;
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\VersionHistory\v0.1.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\c5dcf625-414c-4037-bd0e-d0f45ec38bb1.xml
-    Last step completed in 00:00:00,6463
+    Last step completed in 00:00:00,5945
 </buildStep>
 <buildStep step="CreateConceptualTopicConfigs">
 Creating conceptual topic configuration files...
     Companion files
     _ContentMetadata_.xml
     Merging topic IDs into manifest.xml
-    Last step completed in 00:00:00,0492
+    Last step completed in 00:00:00,0464
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
@@ -422,16 +421,16 @@ D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\icons\T
 D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\icons\TocOpen.gif -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\icons\TocOpen.gif
 D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\styles\bg.jpg -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\styles\bg.jpg
 D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\styles\header_bg.jpg -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\styles\header_bg.jpg
-    Last step completed in 00:00:00,1864
+    Last step completed in 00:00:00,1876
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
-    Last step completed in 00:00:00,0030
+    Last step completed in 00:00:00,0005
 </buildStep>
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe - GenerateIntermediateTOC.proj]
-Build started 12/09/2018 00:39:55.
+Build started 12/09/2018 23:26:19.
 Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\GenerateIntermediateTOC.proj&quot; on node 1 (default targets).
 GenerateIntermediateTOC:
   XslTransform (v2018.5.14.0)
@@ -440,14 +439,14 @@ GenerateIntermediateTOC:
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\CreateVSToc.xsl&#39;.
 Done Building Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\GenerateIntermediateTOC.proj&quot; (default targets).
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00,3192
+    Last step completed in 00:00:00,3244
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
 <plugIn name="Additional Reference Links" behavior="Before" priority="1000">
 Adding additional reference link namespaces...
 </plugIn>    sandcastle.config
-    Last step completed in 00:00:00,3765
+    Last step completed in 00:00:00,3744
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
@@ -462,12 +461,12 @@ D:\Projets\Github\hummingbird.testframework.doc\Working\sandcastle.config
 <plugIn name="Additional Reference Links" behavior="After" priority="1000">
 
 Adding references to D:\Projets\Github\hummingbird.testframework.doc\Working\sandcastle.config...
-</plugIn>    Last step completed in 00:00:00,0180
+</plugIn>    Last step completed in 00:00:00,0120
 </buildStep>
 <buildStep step="BuildTopics">
 Building help topics...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe - BuildTopics.proj]
-Build started 12/09/2018 00:39:56.
+Build started 12/09/2018 23:26:19.
 Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj&quot; on node 1 (default targets).
 BuildTopics:
   BuildAssembler (v2018.5.14.0)
@@ -477,15 +476,7 @@ BuildTopics:
   Processing topics...
 BuildAssembler : warning : ResolveArtLinksComponent: [a58d6d26-1331-4fad-ab62-991d6e0153ba] Unknown art target &#39;request error&#39; [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ResolveConceptualLinksComponent: [f6c13f49-3bc8-42cd-9dae-a3756e715983] Unknown conceptual link target &#39;e187b06f-bc8b-410e-87a6-3167752f008f&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ResolveReferenceLinksComponent: [N:Hummingbird.TestFramework] Unknown reference link target &#39;!:AbstractService&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ResolveReferenceLinksComponent: [N:Hummingbird.TestFramework] Invalid reference link target &#39;!:AbstractService&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ResolveReferenceLinksComponent: [N:Hummingbird.TestFramework] Unknown reference link target &#39;!:AbstractMetadata&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ResolveReferenceLinksComponent: [N:Hummingbird.TestFramework] Invalid reference link target &#39;!:AbstractMetadata&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.ExtensionMethods.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Identifier] Unknown reference link target &#39;!:AbstractService&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Identifier] Invalid reference link target &#39;!:AbstractService&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Identifier] Unknown reference link target &#39;!:AbstractMetadata&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Identifier] Invalid reference link target &#39;!:AbstractMetadata&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Log.GetMessages] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.ParsingFunctions.CurrentDate(System.String)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Utilities.CopyExtensionToInstall(System.String)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
@@ -571,17 +562,17 @@ BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Se
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.SoapDefaultReplyBehavior.Response(System.String,System.Object,System.Type,System.Type)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [G:Hummingbird.TestFramework.Automation] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
   Processed 1675 topic(s)
-  95 warning(s)
+  87 warning(s)
   CopyFromIndexComponent: &quot;metadata&quot; in-memory cache entries used: 1 of 15.
   ResolveArtLinksComponent: Copying media files...
   CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 15 of 15.
   CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 9 of 30.
 Done Building Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj&quot; (default targets).
-    Last step completed in 00:00:21,1066
+    Last step completed in 00:00:21,0362
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00,0085
+    Last step completed in 00:00:00,0160
 </buildStep>
 <buildStep step="ExtractingHtmlInfo">
 Extracting HTML info for HTML Help 1 and/or website...
@@ -597,7 +588,7 @@ Processed 1675 HTML files
 Sorting keywords and generating See Also indices
 Saving website keyword index to D:\Projets\Github\hummingbird.testframework.doc\Working\WebKI.xml
 Saving website table of contents to D:\Projets\Github\hummingbird.testframework.doc\Working\WebTOC.xml
-    Last step completed in 00:00:00,9578
+    Last step completed in 00:00:01,0200
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -636,7 +627,7 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyle
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\scripts\branding-Website.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\clipboard.min.js -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\scripts\clipboard.min.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-1.11.0.min.js -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\scripts\jquery-1.11.0.min.js
-    Last step completed in 00:00:00,3613
+    Last step completed in 00:00:00,3727
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating website table of contents file...
@@ -647,7 +638,7 @@ Generating full-text index for the website...
 
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
 Adding lightweight search and TOC elements to each topic...
-</plugIn>    Last step completed in 00:00:03,0697
+</plugIn>    Last step completed in 00:00:02,6004
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
@@ -656,16 +647,16 @@ Copied 500 files
 Copied 1000 files
 Copied 1500 files
 Copied 2000 files
-Copied 2292 files for the website content
-    Last step completed in 00:00:04,2052
+Copied 2294 files for the website content
+    Last step completed in 00:00:02,7427
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00,9864
+    Last step completed in 00:00:00,5764
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 12/09/2018 00:40:26.  Total time: 00:00:41,8855
+Build completed successfully at 12/09/2018 23:26:48.  Total time: 00:00:42,3613
 
 </buildStep>
 </shfbBuild>
