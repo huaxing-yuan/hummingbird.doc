@@ -656,6 +656,8 @@ div.mediaNear {
 
     div.mediaNear img {
         box-shadow: 0px 0px 10px #000;
+        max-width: 100%;
+        max-height: 100%;
     }
 
 div.mediaFar {
@@ -666,6 +668,8 @@ div.mediaFar {
 
     div.mediaFar img {
         box-shadow: 0px 0px 10px #000;
+        max-width: 100%;
+        max-height: 100%;
     }
 
 div.mediaCenter {
@@ -676,6 +680,8 @@ div.mediaCenter {
 
     div.mediaCenter img {
         box-shadow: 0px 0px 10px #000;
+        max-width: 100%;
+        max-height: 100%;
     }
 
 span.captionLead {
