@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2018.7.8.0" projectFile="D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Hummingbird.Doc.shfbproj" started="04/11/2018 22:59:40">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2018.7.8.0" projectFile="D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Hummingbird.Doc.shfbproj" started="05/11/2018 22:55:28">
 <buildStep step="Initializing">
 Finding tools...
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
@@ -47,16 +47,16 @@ Copying XML comments files
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, English (United States))...
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
-</plugIn>    Last step completed in 00:00:00,0149
+</plugIn>    Last step completed in 00:00:00,0100
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00,0100
+    Last step completed in 00:00:00,0110
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe - GenerateRefInfo.proj]
-Build started 04/11/2018 22:59:48.
+Build started 05/11/2018 22:55:31.
 Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\GenerateRefInfo.proj&quot; on node 1 (default targets).
 PrepareForBuild:
   Creating directory &quot;obj\Debug\&quot;.
@@ -66,19 +66,19 @@ GenerateRefInfo:
   Portions Copyright ? 2006-2018, Eric Woodruff, All Rights Reserved.
   No source code context base path specified.  Source context information is unavailable.
   Loaded 1 assemblies for reflection and 12 dependency assemblies.
-  Wrote information on 17 namespaces, 211 types, and 1418 members
+  Wrote information on 17 namespaces, 211 types, and 1419 members
   Copying file from &quot;reflection.org&quot; to &quot;reflection.all&quot;.
   XslTransform (v2018.7.8.0)
   Copyright ? 2006-2018, Microsoft Corporation, All Rights Reserved.
   Portions Copyright ? 2006-2018, Eric Woodruff, All Rights Reserved.
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\MergeDuplicates.xsl&#39;.
 Done Building Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\GenerateRefInfo.proj&quot; (default targets).
-    Last step completed in 00:00:01,8486
+    Last step completed in 00:00:02,2005
 </buildStep>
 <buildStep step="TransformReflectionInfo">
 Transforming reflection output...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe - TransformManifest.proj]
-Build started 04/11/2018 22:59:50.
+Build started 05/11/2018 22:55:33.
 Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\TransformManifest.proj&quot; on node 1 (default targets).
 TransformManifest:
   XslTransform (v2018.7.8.0)
@@ -116,13 +116,13 @@ TransformManifest:
     Unique name M_Hummingbird_TestFramework_Serialization_AbstractSerializer_Serialize_1 generated for M:Hummingbird.TestFramework.Serialization.AbstractSerializer.Serialize(System.Object,System.Type,Hummingbird.TestFramework.Services.AbstractMetadata)
     Unique name M_Hummingbird_TestFramework_Services_HttpResponseEditor__ctor_1 generated for M:Hummingbird.TestFramework.Services.HttpResponseEditor.#ctor(Hummingbird.TestFramework.Automation.AbstractTestItem)
     Unique name M_Hummingbird_TestFramework_Services_QueryFieldAttribute__ctor_1 generated for M:Hummingbird.TestFramework.Services.QueryFieldAttribute.#ctor(System.String,Hummingbird.TestFramework.Services.QueryFieldFormat)
-    Unique name M_Hummingbird_TestFramework_Services_SoapBindings_GetBasicHttpBinding_1 generated for M:Hummingbird.TestFramework.Services.SoapBindings.GetBasicHttpBinding(Hummingbird.TestFramework.Services.RequestOptions,Hummingbird.TestFramework.Services.ProxyMode,System.Boolean,System.ServiceModel.WSMessageEncoding)
+    Unique name M_Hummingbird_TestFramework_Services_SoapBindings_GetBasicHttpBinding_1 generated for M:Hummingbird.TestFramework.Services.SoapBindings.GetBasicHttpBinding(Hummingbird.TestFramework.Services.RequestOptions,System.Boolean,System.ServiceModel.WSMessageEncoding)
   XslTransform (v2018.7.8.0)
   Copyright ? 2006-2018, Microsoft Corporation, All Rights Reserved.
   Portions Copyright ? 2006-2018, Eric Woodruff, All Rights Reserved.
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\ReflectionToManifest.xsl&#39;.
 Done Building Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\TransformManifest.proj&quot; (default targets).
-    Last step completed in 00:00:03,4169
+    Last step completed in 00:00:03,1274
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
@@ -137,7 +137,7 @@ GenerateApiFilter
 GenerateReflectionInfo
 TransformReflectionInfo
 Completed
-</plugIn>    Last step completed in 00:00:03,6368
+</plugIn>    Last step completed in 00:00:03,9956
 </buildStep>
 <buildStep step="GenerateInheritedDocumentation">
 Generating inherited documentation...
@@ -161,12 +161,12 @@ Indexing D:\Projets\Github\hummingbird.testframework.doc\Working\DocumentFormat.
 Indexing D:\Projets\Github\hummingbird.testframework.doc\Working\ClosedXML.xml
 Indexing D:\Projets\Github\hummingbird.testframework.doc\Working\279BCA0E\Hummingbird.UI.XML
 Indexing D:\Projets\Github\hummingbird.testframework.doc\Working\Hummingbird.TestFramework.XML
-Indexed 210553 members in 135 file(s).  9 file(s) to scan for &lt;inheritdoc /&gt; tags.
+Indexed 210554 members in 135 file(s).  9 file(s) to scan for &lt;inheritdoc /&gt; tags.
 Merging inherited documentation...
 
 
 Documentation merged successfully
-    Last step completed in 00:00:02,4072
+    Last step completed in 00:00:02,3171
 </buildStep>
 <buildStep step="CopyConceptualContent">
 Copying conceptual content...
@@ -174,12 +174,14 @@ Copying standard token shared content file...
 Checking for other token files...
 Checking for code snippets files...
 Copying images and creating the media map file...
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\automation_execution.gif -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\media\automation_execution.gif
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\btn_options.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\media\btn_options.png
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\compare.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\media\compare.png
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\editor_search.gif -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\media\editor_search.gif
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\edit_request_message.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\media\edit_request_message.png
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\edit_trigger.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\media\edit_trigger.png
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\edit_trigger_object.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\media\edit_trigger_object.png
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\extension_designer.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\media\extension_designer.png
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\find.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\media\find.png
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\image001.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\media\image001.png
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\image001.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\media\image001.png (Always copied)
@@ -212,6 +214,7 @@ Copying images and creating the media map file...
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\multi_reply.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\media\multi_reply.png
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\profile_management.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\media\profile_management.png
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\request_object.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\media\request_object.png
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\service_list.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\media\service_list.png
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\test_runner.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\media\test_runner.png
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\test_runner.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\media\test_runner.png (Always copied)
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\media\image016.png -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\media\image016.png
@@ -276,6 +279,8 @@ Generating conceptual topic files
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\Installation\WindowsInstaller.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\f7a36b1b-4cf2-4130-99c9-460787e5b2fe.xml
     Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\Installation\Zip Archive.aml&#39;
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\Installation\Zip Archive.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\cb60599c-39e3-48df-b079-03533657ba3a.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\NightlyOrStable.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\NightlyOrStable.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\a28565f7-10ec-48ca-9251-efd6cab90c8d.xml
     Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp.aml&#39;
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\b7e96bd4-1139-4eaf-bab6-1376c4cf7a39.xml
     Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\ManualTesting.aml&#39;
@@ -322,22 +327,92 @@ Generating conceptual topic files
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\SystemSettings\ManageExtensions.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\fb6150ac-4773-4457-afc2-e203cf917dc8.xml
     Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Statistics.aml&#39;
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Statistics.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\d67b78dd-d49c-4d49-a81a-a5699956cad2.xml
-    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\TestAutomation.aml&#39;
-    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\TestAutomation.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\9ff0530d-805e-41f8-9a47-7e9f0b148986.xml
-    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\PerformanceTest.aml&#39;
-    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\PerformanceTest.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\6ce70faa-33cc-43b6-b432-2e34c2dfba08.xml
-    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\IntegratedTools.aml&#39;
-    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\IntegratedTools.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\3257f138-3965-4572-b1b0-71bea0f30c58.xml
-    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\ExtensionDesigner.aml&#39;
-    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\ExtensionDesigner.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\e78cf04c-f791-428d-9774-285da3299fb4.xml
-    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdCli.aml&#39;
-    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdCli.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\2e6d1708-8537-4394-9166-93fd258026db.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\TestAutomation.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\TestAutomation.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\9ff0530d-805e-41f8-9a47-7e9f0b148986.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\AutomationProjectOrganization.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\AutomationProjectOrganization.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\00a512e0-20a6-44c5-a074-90292eb3d15e.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\Test variables.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\Test variables.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\4095bfa1-de0f-4bb3-8d01-a342cb75970b.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\TestSuite.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\TestSuite.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\32acde8a-8896-4478-ab9f-695b8cf8b996.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\TestCase.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\TestCase.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\bcabaa26-de5c-4ba6-9aa4-afeb75f0f93b.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\DataDrivenTestCase.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\DataDrivenTestCase.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\ad599380-0a49-4a75-9cde-5a909bd5c5f7.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\TestSteps.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\TestSteps.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\52612865-a9c0-42da-9918-404c1185502f.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\Call a service test step.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\Call a service test step.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\27a87929-6f39-498e-bf18-44ca27e621bb.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\Coded Test Step CS.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\Coded Test Step CS.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\87776400-f558-4333-a140-ab004eb22c95.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\Coded Test Step VB.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\Coded Test Step VB.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\d5703e45-9614-4d72-9ccb-fdf6621e8ba8.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\Extract Property test step.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\Extract Property test step.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\e0280de6-9180-4cd7-8be3-2acbbb59ab94.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\Run command line test step.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\Run command line test step.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\751622a1-2660-4209-b316-410d6be3163d.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\Run SQL Query test step.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\Run SQL Query test step.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\bf192fa5-b493-43cd-9736-15237aa90633.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\Service simulation control test step.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\Service simulation control test step.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\1358e8c0-984a-4d28-a930-bf5d1dca1ffc.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\Update service simulation data test step.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\Update service simulation data test step.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\adf4a3dd-8393-4a39-9c48-3bb4f13f23a9.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\Windows service controller test step.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\Windows service controller test step.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\64edb9fe-ae4e-4d09-b162-f957c15c002a.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\Variable data generator test step.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\Variable data generator test step.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\624fb338-0aee-4017-9a63-cc98df773e48.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\View test report.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\View test report.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\6fddf818-3ff3-459e-be6b-fdf7c8c1e258.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\Export test report.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\Export test report.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\7ad36a65-c4fe-4ec8-aaaa-86798c78a3db.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\test profile.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Automation\test profile.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\99fc60b8-a87a-4446-a32c-6cd295998794.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Performance\PerformanceTest.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Performance\PerformanceTest.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\6ce70faa-33cc-43b6-b432-2e34c2dfba08.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Performance\Load configuration and load graph.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Performance\Load configuration and load graph.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\bf94f281-14d4-4bff-99a2-a756ba832f3c.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Performance\Use generator to variabilise test data.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Performance\Use generator to variabilise test data.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\bd122bdb-ecb5-4843-b7ab-094eeeac7c79.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Performance\Basic load test.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Performance\Basic load test.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\1090146e-8de2-436b-aa2d-0723dc384fe0.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Performance\StressTest.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Performance\StressTest.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\1b898ce4-712b-4277-9b7b-b9fb82b828f4.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Performance\Spike test.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Performance\Spike test.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\95d63e39-f326-426c-a55e-38b8a94bff18.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Performance\real time monitoring.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Performance\real time monitoring.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\544454ba-e0ea-4861-822d-69b4537585e4.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Performance\view test report.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\Performance\view test report.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\596579b8-a72d-40b8-9906-dacb6cf83b82.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\tools\IntegratedTools.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\tools\IntegratedTools.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\3257f138-3965-4572-b1b0-71bea0f30c58.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\tools\Extension designer.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\tools\Extension designer.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\ec66f221-52f0-4163-b38a-625ba7068625.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\regular expression tool.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\regular expression tool.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\aabbf083-c695-4641-a842-9110849f9764.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\hash and cryptography tool.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\hash and cryptography tool.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\517e1d6c-4f27-44ed-ba9d-942150de4e2e.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\base 64 tool.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\base 64 tool.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\287ac45f-d0f8-40f5-94c2-b7e69bd4f168.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\xml compare.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\xml compare.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\6d2f8757-2347-4c5e-b0c2-eec95c9e76f7.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\xpath validator.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\xpath validator.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\2310fc25-502c-4c3e-84cd-1c994d0779c4.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\extension designer\ExtensionDesigner.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\extension designer\ExtensionDesigner.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\e78cf04c-f791-428d-9774-285da3299fb4.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\extension designer\import wsdl.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\extension designer\import wsdl.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\39b195cc-f022-42a9-9717-f7ebf6566989.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\extension designer\import opanapi.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdApp\extension designer\import opanapi.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\bad61af6-1854-4946-b44a-83c1bc5ef839.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdCLI\HummingbirdCli.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdCLI\HummingbirdCli.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\2e6d1708-8537-4394-9166-93fd258026db.xml
     Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdCLI\RunTests.aml&#39;
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdCLI\RunTests.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\e65ca291-07ab-44fb-9125-ebe92420a911.xml
     Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdCLI\ConvertReports.aml&#39;
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdCLI\ConvertReports.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\068f06ff-ff8a-4dab-a5f4-7818452ec3c6.xml
     Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdCLI\StartServiceSimulation.aml&#39;
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdCLI\StartServiceSimulation.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\92f20cb5-8ade-4b52-9eeb-46f0fa6c5ced.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdCLI\install extension.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\HummingbirdCLI\install extension.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\54e2ecbf-fdf8-4152-be79-13a47adb39b0.xml
     Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\ReportViewer.aml&#39;
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\ReportViewer.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\19acd7ec-541f-489d-9e6d-5676fa17e619.xml
     Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\AdvancedCustomization.aml&#39;
@@ -372,20 +447,26 @@ Generating conceptual topic files
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\CICD\PublishReports.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\99da60ac-a12e-4d3d-a355-33cd0b1e2f7a.xml
     Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\CommunityExtensions.aml&#39;
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\CommunityExtensions.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\9b00346a-3452-4358-9b23-a723ca895eda.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\AuxiliaryProjects.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\AuxiliaryProjects.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\8976ef7f-8241-49fb-bd22-6de1214a0f89.xml
     Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\Terminologies.aml&#39;
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\Terminologies.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\b7ea64b1-c391-4c21-bb04-436cde134a1f.xml
     Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\VersionHistory\VersionHistory.aml&#39;
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\VersionHistory\VersionHistory.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\f6c13f49-3bc8-42cd-9dae-a3756e715983.xml
-    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\VersionHistory\v0.1.aml&#39;
-    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\VersionHistory\v0.1.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\c5dcf625-414c-4037-bd0e-d0f45ec38bb1.xml
-    Last step completed in 00:00:01,9407
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\VersionHistory\201812.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\VersionHistory\201812.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\73e3e7d8-6d8e-4f07-84b8-5302e38cd7af.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\VersionHistory\201810.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\VersionHistory\201810.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\c5dcf625-414c-4037-bd0e-d0f45ec38bb1.xml
+    Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\VersionHistory\201808.aml&#39;
+    D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\VersionHistory\201808.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\fe99fdbe-e2f7-4ae0-ba47-bfa257c51467.xml
+    Last step completed in 00:00:01,0182
 </buildStep>
 <buildStep step="CreateConceptualTopicConfigs">
 Creating conceptual topic configuration files...
     Companion files
     _ContentMetadata_.xml
     Merging topic IDs into manifest.xml
-    Last step completed in 00:00:00,0540
+    Last step completed in 00:00:00,0623
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
@@ -438,16 +519,16 @@ D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\icons\T
 D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\icons\TocOpen.gif -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\icons\TocOpen.gif
 D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\styles\bg.jpg -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\styles\bg.jpg
 D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\styles\header_bg.jpg -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\styles\header_bg.jpg
-    Last step completed in 00:00:00,3166
+    Last step completed in 00:00:00,1961
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
-    Last step completed in 00:00:00,0040
+    Last step completed in 00:00:00,0010
 </buildStep>
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe - GenerateIntermediateTOC.proj]
-Build started 04/11/2018 23:00:02.
+Build started 05/11/2018 22:55:44.
 Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\GenerateIntermediateTOC.proj&quot; on node 1 (default targets).
 GenerateIntermediateTOC:
   XslTransform (v2018.7.8.0)
@@ -456,14 +537,14 @@ GenerateIntermediateTOC:
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\CreateVSToc.xsl&#39;.
 Done Building Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\GenerateIntermediateTOC.proj&quot; (default targets).
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00,4012
+    Last step completed in 00:00:00,4030
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
 <plugIn name="Additional Reference Links" behavior="Before" priority="1000">
 Adding additional reference link namespaces...
 </plugIn>    sandcastle.config
-    Last step completed in 00:00:00,4443
+    Last step completed in 00:00:00,4427
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
@@ -478,12 +559,12 @@ D:\Projets\Github\hummingbird.testframework.doc\Working\sandcastle.config
 <plugIn name="Additional Reference Links" behavior="After" priority="1000">
 
 Adding references to D:\Projets\Github\hummingbird.testframework.doc\Working\sandcastle.config...
-</plugIn>    Last step completed in 00:00:00,0170
+</plugIn>    Last step completed in 00:00:00,0100
 </buildStep>
 <buildStep step="BuildTopics">
 Building help topics...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe - BuildTopics.proj]
-Build started 04/11/2018 23:00:03.
+Build started 05/11/2018 22:55:45.
 Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj&quot; on node 1 (default targets).
 BuildTopics:
   BuildAssembler (v2018.7.8.0)
@@ -641,15 +722,14 @@ BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Se
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.Parameter.Clone] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.SoapDefaultReplyBehavior.Response(System.String,System.Object,System.Type,System.Type)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [G:Hummingbird.TestFramework.Automation] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-  Processed 2012 topic(s)
+  Processed 2052 topic(s)
   150 warning(s)
   CopyFromIndexComponent: &quot;metadata&quot; in-memory cache entries used: 1 of 15.
   ResolveArtLinksComponent: Copying media files...
-  ResolveReferenceLinksComponent: 1 entries added to the MSDN content ID cache.  New cache size: 788 entries
   CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 15 of 15.
   CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 9 of 30.
 Done Building Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj&quot; (default targets).
-    Last step completed in 00:00:32,6633
+    Last step completed in 00:00:23,2664
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
@@ -665,11 +745,11 @@ E-Mail: Eric@EWoodruff.us
 Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
 
 Processing website files in D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website
-Processed 2012 HTML files
+Processed 2052 HTML files
 Sorting keywords and generating See Also indices
 Saving website keyword index to D:\Projets\Github\hummingbird.testframework.doc\Working\WebKI.xml
 Saving website table of contents to D:\Projets\Github\hummingbird.testframework.doc\Working\WebTOC.xml
-    Last step completed in 00:00:02,0853
+    Last step completed in 00:00:01,3875
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -708,7 +788,7 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyle
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\scripts\branding-Website.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\clipboard.min.js -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\scripts\clipboard.min.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-1.11.0.min.js -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\scripts\jquery-1.11.0.min.js
-    Last step completed in 00:00:00,3969
+    Last step completed in 00:00:01,2090
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating website table of contents file...
@@ -719,7 +799,7 @@ Generating full-text index for the website...
 
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
 Adding lightweight search and TOC elements to each topic...
-</plugIn>    Last step completed in 00:00:05,3663
+</plugIn>    Last step completed in 00:00:03,9460
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
@@ -729,16 +809,16 @@ Copied 1000 files
 Copied 1500 files
 Copied 2000 files
 Copied 2500 files
-Copied 2724 files for the website content
-    Last step completed in 00:00:05,5272
+Copied 2770 files for the website content
+    Last step completed in 00:00:04,9690
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:00,9937
+    Last step completed in 00:00:02,0715
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 04/11/2018 23:00:50.  Total time: 00:01:09,5428
+Build completed successfully at 05/11/2018 22:56:21.  Total time: 00:00:53,2881
 
 </buildStep>
 </shfbBuild>
