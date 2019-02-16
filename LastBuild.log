@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2018.7.8.0" projectFile="D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Hummingbird.Doc.shfbproj" started="07/02/2019 21:27:43">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2018.7.8.0" projectFile="D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Hummingbird.Doc.shfbproj" started="16/02/2019 11:47:07">
 <buildStep step="Initializing">
 Finding tools...
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
@@ -10,12 +10,14 @@ Locating components in the following folder(s):
 Using framework reflection data for &#39;.NET Framework 4.6&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\Data\.NETFramework&#39;
 Using presentation style &#39;VS2013&#39; located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013&#39;
 Loading and initializing plug-ins...
+Additional Reference Links plug-in is disabled and will not be loaded
 Additional Content Only plug-in is disabled and will not be loaded
-Additional Reference Links Version 2018.7.8.0
-Copyright &#169; 2006-2018, Eric Woodruff, All Rights Reserved
 Lightweight Website Style Version 2018.7.8.0
 Copyright &#169; 2006-2018, Eric Woodruff, All Rights Reserved
 Portions Copyright &#169; 2014, Sam Harwell, All Rights Reserved
+</buildStep>
+<buildStep step="ClearWorkFolder">
+Clearing working folder...
 -------------------------------
 Clearing any prior web/markdown output...
     Did not delete folder &#39;D:\Projets\Github\hummingbird.testframework.doc\.git&#39; as it contains read-only or hidden folders/files
@@ -33,7 +35,7 @@ References to include (excluding framework assemblies):
     DocumentFormat.OpenXml, Version=2.9.0.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL
     ExcelNumberFormat, Version=1.0.3.0, Culture=neutral, PublicKeyToken=23c6f5d73be07eca, processorArchitecture=MSIL
     FastMember.Signed, Version=1.3.0.0, Culture=neutral, PublicKeyToken=9e8f22703bef9a29, processorArchitecture=MSIL
-    Hummingbird.UI, Version=1.2.205.2, Culture=neutral, processorArchitecture=MSIL
+    Hummingbird.UI, Version=1.2.1042.2, Culture=neutral, processorArchitecture=MSIL
     Microsoft.OpenApi, Version=1.1.2.0, Culture=neutral, PublicKeyToken=3f5743946376f042, processorArchitecture=MSIL
     Microsoft.OpenApi.Readers, Version=1.1.2.0, Culture=neutral, PublicKeyToken=3f5743946376f042, processorArchitecture=MSIL
     Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL
@@ -56,7 +58,7 @@ Generating API filter for MRefBuilder...
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe - GenerateRefInfo.proj]
-Build started 07/02/2019 21:27:44.
+Build started 16/02/2019 11:47:08.
 Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\GenerateRefInfo.proj&quot; on node 1 (default targets).
 PrepareForBuild:
   Creating directory &quot;obj\Debug\&quot;.
@@ -66,20 +68,19 @@ GenerateRefInfo:
   Portions Copyright ? 2006-2018, Eric Woodruff, All Rights Reserved.
   No source code context base path specified.  Source context information is unavailable.
   Loaded 1 assemblies for reflection and 12 dependency assemblies.
-  Using automatic redirect &#39;Hummingbird.UI, Version=1.2.205.2, Culture=neutral, PublicKeyToken=null&#39; in place of &#39;Hummingbird.UI, Version=1.1.1209.1, Culture=neutral, PublicKeyToken=null&#39;
-  Wrote information on 17 namespaces, 221 types, and 1498 members
+  Wrote information on 17 namespaces, 226 types, and 1531 members
   Copying file from &quot;reflection.org&quot; to &quot;reflection.all&quot;.
   XslTransform (v2018.7.8.0)
   Copyright ? 2006-2018, Microsoft Corporation, All Rights Reserved.
   Portions Copyright ? 2006-2018, Eric Woodruff, All Rights Reserved.
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\MergeDuplicates.xsl&#39;.
 Done Building Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\GenerateRefInfo.proj&quot; (default targets).
-    Last step completed in 00:00:02,1145
+    Last step completed in 00:00:01,7423
 </buildStep>
 <buildStep step="TransformReflectionInfo">
 Transforming reflection output...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe - TransformManifest.proj]
-Build started 07/02/2019 21:27:46.
+Build started 16/02/2019 11:47:10.
 Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\TransformManifest.proj&quot; on node 1 (default targets).
 TransformManifest:
   XslTransform (v2018.7.8.0)
@@ -104,6 +105,7 @@ TransformManifest:
     Unique name M_Hummingbird_TestFramework_Version__ctor_3 generated for M:Hummingbird.TestFramework.Version.#ctor(System.Version)
     Unique name M_Hummingbird_TestFramework_Automation_AbstractTestItem_Dispose_1 generated for M:Hummingbird.TestFramework.Automation.AbstractTestItem.Dispose(System.Boolean)
     Unique name M_Hummingbird_TestFramework_Automation_DataSource_Dispose_1 generated for M:Hummingbird.TestFramework.Automation.DataSource.Dispose(System.Boolean)
+    Unique name M_Hummingbird_TestFramework_Automation_DataStorage_Dispose_1 generated for M:Hummingbird.TestFramework.Automation.DataStorage.Dispose(System.Boolean)
     Unique name M_Hummingbird_TestFramework_Automation_MeasurePoint__ctor_1 generated for M:Hummingbird.TestFramework.Automation.MeasurePoint.#ctor(System.Double,System.Double)
     Unique name M_Hummingbird_TestFramework_Automation_TestStepBase_Run_1 generated for M:Hummingbird.TestFramework.Automation.TestStepBase.Run(System.Int64,Hummingbird.TestFramework.Automation.TestCase,System.Collections.Generic.List{Hummingbird.TestFramework.Variable},Hummingbird.TestFramework.Configuration.Profile)
     Unique name M_Hummingbird_TestFramework_Automation_ResponseConditions_ResponseCondition_ToString_1 generated for M:Hummingbird.TestFramework.Automation.ResponseConditions.ResponseCondition.ToString(System.Int32)
@@ -124,34 +126,20 @@ TransformManifest:
   Portions Copyright ? 2006-2018, Eric Woodruff, All Rights Reserved.
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\ReflectionToManifest.xsl&#39;.
 Done Building Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\TransformManifest.proj&quot; (default targets).
-    Last step completed in 00:00:03,5559
+    Last step completed in 00:00:03,1553
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-<plugIn name="Additional Reference Links" behavior="Before" priority="1000">
-Performing partial builds on additional targets&#39; projects
-
-Building D:\Projets\Hummingbird.UI\Hummingbird.UI.Docs\Hummingbird.UI.Doc.shfbproj
-Initializing
-ValidatingDocumentationSources
-GenerateSharedContent
-GenerateApiFilter
-GenerateReflectionInfo
-TransformReflectionInfo
-Completed
-</plugIn>    Last step completed in 00:00:03,4319
+    Last step completed in 00:00:00,6053
 </buildStep>
 <buildStep step="GenerateInheritedDocumentation">
 Generating inherited documentation...
-<plugIn name="Additional Reference Links" behavior="Before" priority="1000">
-Adding references to D:\Projets\Github\hummingbird.testframework.doc\Working\GenerateInheritedDocs.config...
-</plugIn>[C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe - GenerateInheritedDocs.proj]
+[C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe - GenerateInheritedDocs.proj]
 Sandcastle Help File Builder and Tools, version 2018.7.8.0
 Copyright ? 2006-2018, Eric Woodruff, All Rights Reserved
 E-Mail: Eric@EWoodruff.us
 
 Reflection information will be retrieved from &#39;reflection.xml&#39;
-Reflection information will be retrieved from &#39;D:\Projets\Github\hummingbird.testframework.doc\Working\279BCA0E\reflection.xml&#39;
 Inherited documentation will be written to &#39;_InheritedDocs_.xml&#39;
 Indexing C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\*.xml
 Indexing D:\Projets\Github\hummingbird.testframework.doc\Working\SharpYaml.xml
@@ -161,14 +149,13 @@ Indexing D:\Projets\Github\hummingbird.testframework.doc\Working\Hummingbird.UI.
 Indexing D:\Projets\Github\hummingbird.testframework.doc\Working\ExcelNumberFormat.xml
 Indexing D:\Projets\Github\hummingbird.testframework.doc\Working\DocumentFormat.OpenXml.xml
 Indexing D:\Projets\Github\hummingbird.testframework.doc\Working\ClosedXML.xml
-Indexing D:\Projets\Github\hummingbird.testframework.doc\Working\279BCA0E\Hummingbird.UI.XML
 Indexing D:\Projets\Github\hummingbird.testframework.doc\Working\Hummingbird.TestFramework.XML
-Indexed 202858 members in 135 file(s).  9 file(s) to scan for &lt;inheritdoc /&gt; tags.
+Indexed 202909 members in 134 file(s).  8 file(s) to scan for &lt;inheritdoc /&gt; tags.
 Merging inherited documentation...
 
 
 Documentation merged successfully
-    Last step completed in 00:00:05,2023
+    Last step completed in 00:00:04,1236
 </buildStep>
 <buildStep step="CopyConceptualContent">
 Copying conceptual content...
@@ -482,14 +469,14 @@ Generating conceptual topic files
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\VersionHistory\201810.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\c5dcf625-414c-4037-bd0e-d0f45ec38bb1.xml
     Parsing topic file &#39;D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\VersionHistory\201808.aml&#39;
     D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\Content\VersionHistory\201808.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\ddueXml\fe99fdbe-e2f7-4ae0-ba47-bfa257c51467.xml
-    Last step completed in 00:00:00,9917
+    Last step completed in 00:00:04,1594
 </buildStep>
 <buildStep step="CreateConceptualTopicConfigs">
 Creating conceptual topic configuration files...
     Companion files
     _ContentMetadata_.xml
     Merging topic IDs into manifest.xml
-    Last step completed in 00:00:00,0670
+    Last step completed in 00:00:00,0606
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
@@ -542,16 +529,16 @@ D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\icons\T
 D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\icons\TocOpen.gif -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\icons\TocOpen.gif
 D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\styles\bg.jpg -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\styles\bg.jpg
 D:\Projets\Hummingbird ALM\Hummingbird ALM\Hummingbird.TestFramework.Doc\styles\header_bg.jpg -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\styles\header_bg.jpg
-    Last step completed in 00:00:00,2009
+    Last step completed in 00:00:00,3604
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
-    Last step completed in 00:00:00,0010
+    Last step completed in 00:00:00,0030
 </buildStep>
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe - GenerateIntermediateTOC.proj]
-Build started 07/02/2019 21:28:00.
+Build started 16/02/2019 11:47:23.
 Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\GenerateIntermediateTOC.proj&quot; on node 1 (default targets).
 GenerateIntermediateTOC:
   XslTransform (v2018.7.8.0)
@@ -560,14 +547,12 @@ GenerateIntermediateTOC:
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\CreateVSToc.xsl&#39;.
 Done Building Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\GenerateIntermediateTOC.proj&quot; (default targets).
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00,4539
+    Last step completed in 00:00:00,3981
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
-<plugIn name="Additional Reference Links" behavior="Before" priority="1000">
-Adding additional reference link namespaces...
-</plugIn>    sandcastle.config
-    Last step completed in 00:00:00,4629
+    sandcastle.config
+    Last step completed in 00:00:00,4184
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
@@ -579,15 +564,12 @@ D:\Projets\Github\hummingbird.testframework.doc\Working\sandcastle.config
     Replacing default configuration for &#39;Code Block Component&#39; with the custom configuration
     Replacing default configuration for &#39;Syntax Component&#39; with the custom configuration
     Removing unused ExampleComponent.
-<plugIn name="Additional Reference Links" behavior="After" priority="1000">
-
-Adding references to D:\Projets\Github\hummingbird.testframework.doc\Working\sandcastle.config...
-</plugIn>    Last step completed in 00:00:00,0140
+    Last step completed in 00:00:00,0149
 </buildStep>
 <buildStep step="BuildTopics">
 Building help topics...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe - BuildTopics.proj]
-Build started 07/02/2019 21:28:01.
+Build started 16/02/2019 11:47:23.
 Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj&quot; on node 1 (default targets).
 BuildTopics:
   BuildAssembler (v2018.7.8.0)
@@ -598,10 +580,15 @@ BuildTopics:
 BuildAssembler : warning : ResolveArtLinksComponent: [a58d6d26-1331-4fad-ab62-991d6e0153ba] Unknown art target &#39;request error&#39; [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ResolveConceptualLinksComponent: [d5124af7-8a51-4067-982b-2709d70b10bd] Unknown conceptual link target &#39;4525e5e3-a8e5-4795-9e28-e1765abec6ce&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ResolveConceptualLinksComponent: [f6c13f49-3bc8-42cd-9dae-a3756e715983] Unknown conceptual link target &#39;e187b06f-bc8b-410e-87a6-3167752f008f&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:Hummingbird.TestFramework.EditorTypeAttribute.Type] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.ExtensionMethods.ForEach``1(System.Collections.Generic.IEnumerable{``0},System.Action{``0})] Missing &lt;typeparam name=&quot;T&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:Hummingbird.TestFramework.Global.AssertionEditors] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [P:Hummingbird.TestFramework.Global.TestStepEditors] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Version.#ctor(System.Version)] Missing &lt;param name=&quot;ver&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [N:Hummingbird.TestFramework.Automation] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Automation.AbstractSqlTestStep.TestConnectivity(System.String@)] Missing &lt;param name=&quot;errorMessage&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Automation.CsvDataStorage.Save(Hummingbird.TestFramework.Automation.TestCase)] Missing &lt;param name=&quot;testCase&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Automation.DataStorage.Save(Hummingbird.TestFramework.Automation.TestCase)] Missing &lt;param name=&quot;testCase&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Automation.LoadTestCase.Run(System.Int64,Hummingbird.TestFramework.Configuration.Profile)] Missing &lt;param name=&quot;ThreadId&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Automation.LoadTestCase.Run(System.Int64,Hummingbird.TestFramework.Configuration.Profile)] Missing &lt;param name=&quot;profile&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [T:Hummingbird.TestFramework.Automation.SpikeTestCase] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
@@ -682,6 +669,303 @@ BuildAssembler : warning : ResolveReferenceLinksComponent: [P:Hummingbird.TestFr
 BuildAssembler : warning : ShowMissingComponent: [N:Hummingbird.TestFramework.Configuration] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [N:Hummingbird.TestFramework.Cryptography] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [N:Hummingbird.TestFramework.Extensibility] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [N:Hummingbird.TestFramework.Extensibility] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.CommandArea&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.ContentChanged&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.DetachedName&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.HasLoaded&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.IsDarkTheme&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.IsDetachable&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.ParentWindow&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.StatusBar&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.StrongName&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.CanBeClosed&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.Dispose&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.Dispose(System.Boolean)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.HasNoValidationError&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowInformation(System.String,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowMessageBox(System.String,System.String,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowMessageBox(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowToastNotification(System.String,Hummingbird.UI.NotificationLevel,System.Action,System.Int32)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;E:Hummingbird.UI.ModernContent.Closing&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.CanBeClosed&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.Dispose&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.Dispose(System.Boolean)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.HasNoValidationError&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowInformation(System.String,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowMessageBox(System.String,System.String,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowMessageBox(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowToastNotification(System.String,Hummingbird.UI.NotificationLevel,System.Action,System.Int32)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.CommandArea&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.ContentChanged&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.DetachedName&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.HasLoaded&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.IsDarkTheme&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.IsDetachable&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.ParentWindow&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.StatusBar&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.StrongName&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Events.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;E:Hummingbird.UI.ModernContent.Closing&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Events.T:Hummingbird.TestFramework.Extensibility.CustomMessageViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.CommandArea&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.ContentChanged&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.DetachedName&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.HasLoaded&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.IsDarkTheme&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.IsDetachable&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.ParentWindow&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.StatusBar&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.StrongName&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.CanBeClosed&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.Dispose&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.Dispose(System.Boolean)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.HasNoValidationError&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowInformation(System.String,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowMessageBox(System.String,System.String,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowMessageBox(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowToastNotification(System.String,Hummingbird.UI.NotificationLevel,System.Action,System.Int32)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;E:Hummingbird.UI.ModernContent.Closing&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.CanBeClosed&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.Dispose&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.Dispose(System.Boolean)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.HasNoValidationError&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowInformation(System.String,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowMessageBox(System.String,System.String,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowMessageBox(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowToastNotification(System.String,Hummingbird.UI.NotificationLevel,System.Action,System.Int32)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.CommandArea&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.ContentChanged&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.DetachedName&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.HasLoaded&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.IsDarkTheme&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.IsDetachable&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.ParentWindow&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.StatusBar&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.StrongName&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Events.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;E:Hummingbird.UI.ModernContent.Closing&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Events.T:Hummingbird.TestFramework.Extensibility.CustomObjectViewer] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomToolAttribute] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.CustomToolAttribute] Unknown reference link target &#39;T:Hummingbird.UI.ModernTile&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.CommandArea&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.ContentChanged&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.DetachedName&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.HasLoaded&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.IsDarkTheme&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.IsDetachable&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.ParentWindow&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.StatusBar&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.StrongName&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.CanBeClosed&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.Dispose&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.Dispose(System.Boolean)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.HasNoValidationError&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowInformation(System.String,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowMessageBox(System.String,System.String,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowMessageBox(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowToastNotification(System.String,Hummingbird.UI.NotificationLevel,System.Action,System.Int32)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;E:Hummingbird.UI.ModernContent.Closing&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.CanBeClosed&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.Dispose&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.Dispose(System.Boolean)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.HasNoValidationError&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowInformation(System.String,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowMessageBox(System.String,System.String,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowMessageBox(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowToastNotification(System.String,Hummingbird.UI.NotificationLevel,System.Action,System.Int32)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.CommandArea&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.ContentChanged&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.DetachedName&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.HasLoaded&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.IsDarkTheme&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.IsDetachable&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.ParentWindow&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.StatusBar&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.StrongName&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Events.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;E:Hummingbird.UI.ModernContent.Closing&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Events.T:Hummingbird.TestFramework.Extensibility.HtmlViewExtension] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Overload:Hummingbird.TestFramework.Extensibility.HtmlViewExtension.Dispose] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.Dispose&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Overload:Hummingbird.TestFramework.Extensibility.HtmlViewExtension.Dispose] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Overload:Hummingbird.TestFramework.Extensibility.HtmlViewExtension.Dispose] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.Dispose(System.Boolean)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.CommandArea&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.ContentChanged&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.DetachedName&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.HasLoaded&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.IsDarkTheme&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.IsDetachable&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.ParentWindow&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.StatusBar&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.StrongName&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.CanBeClosed&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.Dispose&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.Dispose(System.Boolean)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.HasNoValidationError&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowInformation(System.String,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowMessageBox(System.String,System.String,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowMessageBox(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowToastNotification(System.String,Hummingbird.UI.NotificationLevel,System.Action,System.Int32)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;E:Hummingbird.UI.ModernContent.Closing&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.CanBeClosed&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.Dispose&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.Dispose(System.Boolean)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.HasNoValidationError&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowInformation(System.String,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowMessageBox(System.String,System.String,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowMessageBox(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowToastNotification(System.String,Hummingbird.UI.NotificationLevel,System.Action,System.Int32)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.CommandArea&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.ContentChanged&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.DetachedName&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.HasLoaded&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.IsDarkTheme&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.IsDetachable&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.ParentWindow&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.StatusBar&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.StrongName&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Events.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;E:Hummingbird.UI.ModernContent.Closing&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Events.T:Hummingbird.TestFramework.Extensibility.ObjectEditorBase] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Extensibility.ObjectEditorBase.Sync(System.Int32)] Missing &lt;param name=&quot;requestLength&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [N:Hummingbird.TestFramework.ExtensionProject] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.ExtensionProject.ExtensionNode.AnalyzeAsync] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
@@ -695,21 +979,94 @@ BuildAssembler : warning : ResolveReferenceLinksComponent: [N:Hummingbird.TestFr
 BuildAssembler : warning : ResolveReferenceLinksComponent: [N:Hummingbird.TestFramework.Services] Unknown reference link target &#39;!:https://tools.ietf.org/html/rfc6750&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpBasicAuthenticationAttribute] Unknown reference link target &#39;!:https://tools.ietf.org/html/rfc7235&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpBearerAuthenticationAttribute] Unknown reference link target &#39;!:https://tools.ietf.org/html/rfc6750&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.CommandArea&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.ContentChanged&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.DetachedName&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.HasLoaded&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.IsDarkTheme&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.IsDetachable&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.ParentWindow&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.StatusBar&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.StrongName&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.CanBeClosed&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.Dispose&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.Dispose(System.Boolean)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.HasNoValidationError&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowInformation(System.String,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowMessageBox(System.String,System.String,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowMessageBox(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowToastNotification(System.String,Hummingbird.UI.NotificationLevel,System.Action,System.Int32)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;E:Hummingbird.UI.ModernContent.Closing&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.CanBeClosed&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.Dispose&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.Dispose(System.Boolean)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.HasNoValidationError&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowInformation(System.String,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowMessageBox(System.String,System.String,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowMessageBox(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.String)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;M:Hummingbird.UI.ModernContent.ShowToastNotification(System.String,Hummingbird.UI.NotificationLevel,System.Action,System.Int32)&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Methods.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.CommandArea&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.ContentChanged&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.DetachedName&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.HasLoaded&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.IsDarkTheme&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.IsDetachable&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.ParentWindow&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.StatusBar&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;P:Hummingbird.UI.ModernContent.StrongName&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Properties.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Events.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;E:Hummingbird.UI.ModernContent.Closing&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
+BuildAssembler : warning : ResolveReferenceLinksComponent: [Events.T:Hummingbird.TestFramework.Services.HttpResponseEditor] Unknown reference link target &#39;T:Hummingbird.UI.ModernContent&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Services.HttpResponseEditor.#ctor(Hummingbird.TestFramework.Automation.AbstractTestItem)] Missing &lt;param name=&quot;testItem&quot;/&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [G:Hummingbird.TestFramework.Automation] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj]
-  Processed 2166 topic(s)
-  102 warning(s)
+  Processed 2220 topic(s)
+  477 warning(s)
   CopyFromIndexComponent: &quot;metadata&quot; in-memory cache entries used: 1 of 15.
   ResolveArtLinksComponent: Copying media files...
-  ResolveReferenceLinksComponent: 2 entries added to the MSDN content ID cache.  New cache size: 795 entries
+  ResolveReferenceLinksComponent: 3 entries added to the MSDN content ID cache.  New cache size: 798 entries
   CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 15 of 15.
   CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 9 of 30.
 Done Building Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Working\BuildTopics.proj&quot; (default targets).
-    Last step completed in 00:00:29,9864
+    Last step completed in 00:00:25,4546
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00,0120
+    Last step completed in 00:00:00,0190
 </buildStep>
 <buildStep step="ExtractingHtmlInfo">
 Extracting HTML info for HTML Help 1 and/or website...
@@ -721,11 +1078,11 @@ E-Mail: Eric@EWoodruff.us
 Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
 
 Processing website files in D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website
-Processed 2166 HTML files
+Processed 2220 HTML files
 Sorting keywords and generating See Also indices
 Saving website keyword index to D:\Projets\Github\hummingbird.testframework.doc\Working\WebKI.xml
 Saving website table of contents to D:\Projets\Github\hummingbird.testframework.doc\Working\WebTOC.xml
-    Last step completed in 00:00:02,0533
+    Last step completed in 00:00:02,2323
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -764,18 +1121,18 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyle
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\scripts\branding-Website.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\clipboard.min.js -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\scripts\clipboard.min.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-1.11.0.min.js -&gt; D:\Projets\Github\hummingbird.testframework.doc\Working\Output\Website\scripts\jquery-1.11.0.min.js
-    Last step completed in 00:00:00,1749
+    Last step completed in 00:00:00,3829
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating website table of contents file...
-    Last step completed in 00:00:00,0000
+    Last step completed in 00:00:00,0010
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
 Adding lightweight search and TOC elements to each topic...
-</plugIn>    Last step completed in 00:00:05,1604
+</plugIn>    Last step completed in 00:00:03,7898
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
@@ -785,16 +1142,16 @@ Copied 1000 files
 Copied 1500 files
 Copied 2000 files
 Copied 2500 files
-Copied 2912 files for the website content
-    Last step completed in 00:00:05,2923
+Copied 2983 files for the website content
+    Last step completed in 00:00:07,6443
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:03,6348
+    Last step completed in 00:00:01,1366
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 07/02/2019 21:28:47.  Total time: 00:01:03,9288
+Build completed successfully at 16/02/2019 11:48:04.  Total time: 00:00:56,6013
 
 </buildStep>
 </shfbBuild>
