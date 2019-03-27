@@ -36,6 +36,13 @@
   <HelpKINode Title="AbstractClient.AbstractClient constructor" Url="html/M_Hummingbird_TestFramework_Services_AbstractClient__ctor.htm" />
   <HelpKINode Title="AbstractClient.SendRequest method" Url="html/M_Hummingbird_TestFramework_Services_AbstractClient_SendRequest.htm" />
   <HelpKINode Title="AbstractClient.SendRequestAsync method" Url="html/M_Hummingbird_TestFramework_Services_AbstractClient_SendRequestAsync.htm" />
+  <HelpKINode Title="AbstractCondition class">
+    <HelpKINode Title="AbstractCondition Class" Url="html/T_Hummingbird_TestFramework_Automation_FunctionalConditions_AbstractCondition.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_AbstractCondition__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hummingbird_TestFramework_Automation_FunctionalConditions_AbstractCondition.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AbstractCondition.AbstractCondition constructor" Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_AbstractCondition__ctor.htm" />
+  <HelpKINode Title="AbstractCondition.Evaluate method" Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_AbstractCondition_Evaluate.htm" />
   <HelpKINode Title="AbstractDataGenerator class">
     <HelpKINode Title="AbstractDataGenerator Class" Url="html/T_Hummingbird_TestFramework_Automation_DataGenerator_AbstractDataGenerator.htm" />
     <HelpKINode Title="constructor" Url="html/M_Hummingbird_TestFramework_Automation_DataGenerator_AbstractDataGenerator__ctor.htm" />
@@ -46,6 +53,13 @@
   <HelpKINode Title="AbstractDataGenerator.Generate method" Url="html/M_Hummingbird_TestFramework_Automation_DataGenerator_AbstractDataGenerator_Generate.htm" />
   <HelpKINode Title="AbstractDataGenerator.Name property" Url="html/P_Hummingbird_TestFramework_Automation_DataGenerator_AbstractDataGenerator_Name.htm" />
   <HelpKINode Title="AbstractDataGenerator.Reset method" Url="html/M_Hummingbird_TestFramework_Automation_DataGenerator_AbstractDataGenerator_Reset.htm" />
+  <HelpKINode Title="AbstractExpression class">
+    <HelpKINode Title="AbstractExpression Class" Url="html/T_Hummingbird_TestFramework_Automation_FunctionalConditions_AbstractExpression.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_AbstractExpression__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hummingbird_TestFramework_Automation_FunctionalConditions_AbstractExpression.htm" />
+  </HelpKINode>
+  <HelpKINode Title="AbstractExpression.AbstractExpression constructor" Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_AbstractExpression__ctor.htm" />
+  <HelpKINode Title="AbstractExpression.Evaluate method" Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_AbstractExpression_Evaluate.htm" />
   <HelpKINode Title="AbstractMetadata class">
     <HelpKINode Title="AbstractMetadata Class" Url="html/T_Hummingbird_TestFramework_Services_AbstractMetadata.htm" />
     <HelpKINode Title="constructor" Url="html/M_Hummingbird_TestFramework_Services_AbstractMetadata__ctor.htm" />
@@ -494,6 +508,18 @@
     <HelpKINode Title="Variable(T).CompareTo Method " Url="html/M_Hummingbird_TestFramework_Variable_1_CompareTo.htm" />
   </HelpKINode>
   <HelpKINode Title="Compile method" Url="html/M_Hummingbird_TestFramework_Automation_DotNetScriptTestStepBase_Compile.htm" />
+  <HelpKINode Title="ComplexExpression class">
+    <HelpKINode Title="ComplexExpression Class" Url="html/T_Hummingbird_TestFramework_Automation_FunctionalConditions_ComplexExpression.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_ComplexExpression__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hummingbird_TestFramework_Automation_FunctionalConditions_ComplexExpression.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hummingbird_TestFramework_Automation_FunctionalConditions_ComplexExpression.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ComplexExpression.ComplexExpression constructor" Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_ComplexExpression__ctor.htm" />
+  <HelpKINode Title="ComplexExpression.Evaluate method" Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_ComplexExpression_Evaluate.htm" />
+  <HelpKINode Title="ComplexExpression.Left property" Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_ComplexExpression_Left.htm" />
+  <HelpKINode Title="ComplexExpression.Operator property" Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_ComplexExpression_Operator.htm" />
+  <HelpKINode Title="ComplexExpression.Right property" Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_ComplexExpression_Right.htm" />
+  <HelpKINode Title="ComplexExpression.ToString method" Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_ComplexExpression_ToString.htm" />
   <HelpKINode Title="ComplexResponseCondition class">
     <HelpKINode Title="ComplexResponseCondition Class" Url="html/T_Hummingbird_TestFramework_Automation_ResponseConditions_ComplexResponseCondition.htm" />
     <HelpKINode Title="constructor" Url="html/M_Hummingbird_TestFramework_Automation_ResponseConditions_ComplexResponseCondition__ctor.htm" />
@@ -507,10 +533,26 @@
   <HelpKINode Title="ComplexResponseCondition.Operator property" Url="html/P_Hummingbird_TestFramework_Automation_ResponseConditions_ComplexResponseCondition_Operator.htm" />
   <HelpKINode Title="ComplexResponseCondition.ToString method" Url="html/Overload_Hummingbird_TestFramework_Automation_ResponseConditions_ComplexResponseCondition_ToString.htm" />
   <HelpKINode Title="CompressString method" Url="html/M_Hummingbird_TestFramework_Utilities_CompressString.htm" />
+  <HelpKINode Title="Condition property" Url="html/P_Hummingbird_TestFramework_Automation_ConditionalTestStep_Condition.htm" />
   <HelpKINode Title="Condition1 property" Url="html/P_Hummingbird_TestFramework_Automation_ResponseConditions_ComplexResponseCondition_Condition1.htm" />
   <HelpKINode Title="Condition2 property" Url="html/P_Hummingbird_TestFramework_Automation_ResponseConditions_ComplexResponseCondition_Condition2.htm" />
   <HelpKINode Title="ConditionalOperator enumeration" Url="html/T_Hummingbird_TestFramework_Automation_Operators_ConditionalOperator.htm" />
+  <HelpKINode Title="ConditionalTestStep class">
+    <HelpKINode Title="ConditionalTestStep Class" Url="html/T_Hummingbird_TestFramework_Automation_ConditionalTestStep.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hummingbird_TestFramework_Automation_ConditionalTestStep__ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_Hummingbird_TestFramework_Automation_ConditionalTestStep.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hummingbird_TestFramework_Automation_ConditionalTestStep.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hummingbird_TestFramework_Automation_ConditionalTestStep.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ConditionalTestStep.Condition property" Url="html/P_Hummingbird_TestFramework_Automation_ConditionalTestStep_Condition.htm" />
+  <HelpKINode Title="ConditionalTestStep.ConditionalTestStep constructor" Url="html/M_Hummingbird_TestFramework_Automation_ConditionalTestStep__ctor.htm" />
+  <HelpKINode Title="ConditionalTestStep.ConditionBehavoir property" Url="html/P_Hummingbird_TestFramework_Automation_ConditionalTestStep_ConditionBehavoir.htm" />
+  <HelpKINode Title="ConditionalTestStep.FalseSteps property" Url="html/P_Hummingbird_TestFramework_Automation_ConditionalTestStep_FalseSteps.htm" />
+  <HelpKINode Title="ConditionalTestStep.Run method" Url="html/Overload_Hummingbird_TestFramework_Automation_ConditionalTestStep_Run.htm" />
+  <HelpKINode Title="ConditionalTestStep.ToString method" Url="html/M_Hummingbird_TestFramework_Automation_ConditionalTestStep_ToString.htm" />
+  <HelpKINode Title="ConditionalTestStep.TrueSteps property" Url="html/P_Hummingbird_TestFramework_Automation_ConditionalTestStep_TrueSteps.htm" />
   <HelpKINode Title="ConditionBehavoir enumeration" Url="html/T_Hummingbird_TestFramework_Automation_ConditionBehavoir.htm" />
+  <HelpKINode Title="ConditionBehavoir property" Url="html/P_Hummingbird_TestFramework_Automation_ConditionalTestStep_ConditionBehavoir.htm" />
   <HelpKINode Title="CONNECT enumeration member" Url="html/T_Hummingbird_TestFramework_Services_HttpMethod.htm" />
   <HelpKINode Title="Console enumeration member" Url="html/T_Hummingbird_TestFramework_LogDestinations.htm" />
   <HelpKINode Title="ConsoleMessage class">
@@ -878,6 +920,7 @@
     <HelpKINode Title="AutomationProject.DeleteItem Method " Url="html/M_Hummingbird_TestFramework_Automation_AutomationProject_DeleteItem.htm" />
     <HelpKINode Title="TestCase.DeleteItem Method " Url="html/M_Hummingbird_TestFramework_Automation_TestCase_DeleteItem.htm" />
     <HelpKINode Title="TestStepBase.DeleteItem Method " Url="html/M_Hummingbird_TestFramework_Automation_TestStepBase_DeleteItem.htm" />
+    <HelpKINode Title="TestStepGroup.DeleteItem Method " Url="html/M_Hummingbird_TestFramework_Automation_TestStepGroup_DeleteItem.htm" />
     <HelpKINode Title="TestSuite.DeleteItem Method " Url="html/M_Hummingbird_TestFramework_Automation_TestSuite_DeleteItem.htm" />
   </HelpKINode>
   <HelpKINode Title="DeleteProfile method" Url="html/M_Hummingbird_TestFramework_Configuration_Profile_DeleteProfile.htm" />
@@ -892,22 +935,22 @@
   <HelpKINode Title="Des.Des constructor" Url="html/M_Hummingbird_TestFramework_Cryptography_Des__ctor.htm" />
   <HelpKINode Title="Des.Encrypt method" Url="html/M_Hummingbird_TestFramework_Cryptography_Des_Encrypt.htm" />
   <HelpKINode Title="Description property">
-    <HelpKINode Title="AbstractTestItem.Description Property " Url="html/P_Hummingbird_TestFramework_Automation_AbstractTestItem_Description.htm" />
-    <HelpKINode Title="SoapClientService.Description Property " Url="html/P_Hummingbird_TestFramework_Services_SoapClientService_Description.htm" />
-    <HelpKINode Title="SoapServerService.Description Property " Url="html/P_Hummingbird_TestFramework_Services_SoapServerService_Description.htm" />
-    <HelpKINode Title="AbstractMetadata.Description Property " Url="html/P_Hummingbird_TestFramework_Services_AbstractMetadata_Description.htm" />
     <HelpKINode Title="AbstractService.Description Property " Url="html/P_Hummingbird_TestFramework_Services_AbstractService_Description.htm" />
+    <HelpKINode Title="AbstractTestItem.Description Property " Url="html/P_Hummingbird_TestFramework_Automation_AbstractTestItem_Description.htm" />
     <HelpKINode Title="ExtensionDefinition.Description Property " Url="html/P_Hummingbird_TestFramework_Extensibility_ExtensionDefinition_Description.htm" />
     <HelpKINode Title="ExtensionNode.Description Property " Url="html/P_Hummingbird_TestFramework_ExtensionProject_ExtensionNode_Description.htm" />
+    <HelpKINode Title="AbstractMetadata.Description Property " Url="html/P_Hummingbird_TestFramework_Services_AbstractMetadata_Description.htm" />
     <HelpKINode Title="OperationCode.Description Property " Url="html/P_Hummingbird_TestFramework_CodeGenerator_OperationCode_Description.htm" />
+    <HelpKINode Title="ProfileInformation.Description Property " Url="html/P_Hummingbird_TestFramework_Configuration_ProfileInformation_Description.htm" />
+    <HelpKINode Title="SoapClientService.Description Property " Url="html/P_Hummingbird_TestFramework_Services_SoapClientService_Description.htm" />
     <HelpKINode Title="Parameter.Description Property " Url="html/P_Hummingbird_TestFramework_Services_Parameter_Description.htm" />
     <HelpKINode Title="Profile.Description Property " Url="html/P_Hummingbird_TestFramework_Configuration_Profile_Description.htm" />
-    <HelpKINode Title="ProfileInformation.Description Property " Url="html/P_Hummingbird_TestFramework_Configuration_ProfileInformation_Description.htm" />
     <HelpKINode Title="ReportItem.Description Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_ReportItem_Description.htm" />
+    <HelpKINode Title="SoapServerService.Description Property " Url="html/P_Hummingbird_TestFramework_Services_SoapServerService_Description.htm" />
   </HelpKINode>
   <HelpKINode Title="description property">
-    <HelpKINode Title="testcaseType.description Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_testcaseType_description.htm" />
     <HelpKINode Title="testsuiteType.description Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_testsuiteType_description.htm" />
+    <HelpKINode Title="testcaseType.description Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_testcaseType_description.htm" />
   </HelpKINode>
   <HelpKINode Title="Deserialize method">
     <HelpKINode Title="AbstractSerializer.Deserialize Method " Url="html/Overload_Hummingbird_TestFramework_Serialization_AbstractSerializer_Deserialize.htm" />
@@ -925,6 +968,7 @@
     <HelpKINode Title="XmlSerializerWithoutXmlns.Deserialize Method " Url="html/Overload_Hummingbird_TestFramework_Serialization_XmlSerializerWithoutXmlns_Deserialize.htm" />
   </HelpKINode>
   <HelpKINode Title="Digest enumeration member" Url="html/T_Hummingbird_TestFramework_Services_AuthenticationModes.htm" />
+  <HelpKINode Title="Direction enumeration member" Url="html/T_Hummingbird_TestFramework_Automation_FunctionalConditions_MessagePart.htm" />
   <HelpKINode Title="Direction property" Url="html/P_Hummingbird_TestFramework_Messaging_Message_Direction.htm" />
   <HelpKINode Title="Disabled enumeration member" Url="html/T_Hummingbird_TestFramework_Extensibility_ExtensionLoadingStatus.htm" />
   <HelpKINode Title="DisabledExtensions property" Url="html/P_Hummingbird_TestFramework_Configuration_Settings_DisabledExtensions.htm" />
@@ -1082,10 +1126,17 @@
   <HelpKINode Title="ErrorTypes property" Url="html/P_Hummingbird_TestFramework_Services_AbstractMetadata_ErrorTypes.htm" />
   <HelpKINode Title="Escape method" Url="html/M_Hummingbird_TestFramework_Utilities_Escape.htm" />
   <HelpKINode Title="Evaluate method">
+    <HelpKINode Title="AbstractCondition.Evaluate Method " Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_AbstractCondition_Evaluate.htm" />
+    <HelpKINode Title="AbstractExpression.Evaluate Method " Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_AbstractExpression_Evaluate.htm" />
+    <HelpKINode Title="ComplexExpression.Evaluate Method " Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_ComplexExpression_Evaluate.htm" />
     <HelpKINode Title="ComplexResponseCondition.Evaluate Method " Url="html/M_Hummingbird_TestFramework_Automation_ResponseConditions_ComplexResponseCondition_Evaluate.htm" />
     <HelpKINode Title="ExtractPropertyTestStep.Evaluate Method " Url="html/M_Hummingbird_TestFramework_Automation_ExtractPropertyTestStep_Evaluate.htm" />
+    <HelpKINode Title="MessageQueueCondition.Evaluate Method " Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_MessageQueueCondition_Evaluate.htm" />
     <HelpKINode Title="ResponseCondition.Evaluate Method " Url="html/M_Hummingbird_TestFramework_Automation_ResponseConditions_ResponseCondition_Evaluate.htm" />
+    <HelpKINode Title="SimpleExpression.Evaluate Method " Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_SimpleExpression_Evaluate.htm" />
     <HelpKINode Title="SimpleResponseCondition.Evaluate Method " Url="html/M_Hummingbird_TestFramework_Automation_ResponseConditions_SimpleResponseCondition_Evaluate.htm" />
+    <HelpKINode Title="TestStepResultCondition.Evaluate Method " Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_TestStepResultCondition_Evaluate.htm" />
+    <HelpKINode Title="VariableValueCondition.Evaluate Method " Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_VariableValueCondition_Evaluate.htm" />
   </HelpKINode>
   <HelpKINode Title="EvaluateThreshold method" Url="html/M_Hummingbird_TestFramework_Automation_LoadTestCase_EvaluateThreshold.htm" />
   <HelpKINode Title="EvaluateThresholds method" Url="html/M_Hummingbird_TestFramework_Automation_LoadTestCase_EvaluateThresholds.htm" />
@@ -1103,19 +1154,37 @@
   <HelpKINode Title="ExcelDataSource.RangeName property" Url="html/P_Hummingbird_TestFramework_Automation_ExcelDataSource_RangeName.htm" />
   <HelpKINode Title="ExcelDataSource.RangeType property" Url="html/P_Hummingbird_TestFramework_Automation_ExcelDataSource_RangeType.htm" />
   <HelpKINode Title="ExcelDataSource.SheetName property" Url="html/P_Hummingbird_TestFramework_Automation_ExcelDataSource_SheetName.htm" />
+  <HelpKINode Title="ExcelDataStorage class">
+    <HelpKINode Title="ExcelDataStorage Class" Url="html/T_Hummingbird_TestFramework_Automation_ExcelDataStorage.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hummingbird_TestFramework_Automation_ExcelDataStorage__ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_Hummingbird_TestFramework_Automation_ExcelDataStorage.htm" />
+    <HelpKINode Title="fields" Url="html/Fields_T_Hummingbird_TestFramework_Automation_ExcelDataStorage.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hummingbird_TestFramework_Automation_ExcelDataStorage.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hummingbird_TestFramework_Automation_ExcelDataStorage.htm" />
+  </HelpKINode>
+  <HelpKINode Title="ExcelDataStorage.ExcelDataStorage constructor" Url="html/M_Hummingbird_TestFramework_Automation_ExcelDataStorage__ctor.htm" />
+  <HelpKINode Title="ExcelDataStorage.ExistingFileBehavior property" Url="html/P_Hummingbird_TestFramework_Automation_ExcelDataStorage_ExistingFileBehavior.htm" />
+  <HelpKINode Title="ExcelDataStorage.FileName property" Url="html/P_Hummingbird_TestFramework_Automation_ExcelDataStorage_FileName.htm" />
+  <HelpKINode Title="ExcelDataStorage.Save method" Url="html/M_Hummingbird_TestFramework_Automation_ExcelDataStorage_Save.htm" />
+  <HelpKINode Title="ExcelDataStorage.SheetName property" Url="html/P_Hummingbird_TestFramework_Automation_ExcelDataStorage_SheetName.htm" />
   <HelpKINode Title="Execute method" Url="html/M_Hummingbird_TestFramework_Automation_ScriptTestStepBase_Execute.htm" />
   <HelpKINode Title="executed property">
     <HelpKINode Title="testcaseType.executed Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_testcaseType_executed.htm" />
     <HelpKINode Title="testsuiteType.executed Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_testsuiteType_executed.htm" />
   </HelpKINode>
+  <HelpKINode Title="ExistingFileBehavior enumeration" Url="html/T_Hummingbird_TestFramework_Automation_ExistingFileBehavior.htm" />
+  <HelpKINode Title="ExistingFileBehavior property" Url="html/P_Hummingbird_TestFramework_Automation_ExcelDataStorage_ExistingFileBehavior.htm" />
   <HelpKINode Title="Exists enumeration member" Url="html/T_Hummingbird_TestFramework_Automation_Operators_ConditionalOperator.htm" />
   <HelpKINode Title="ExpectedLoad property" Url="html/P_Hummingbird_TestFramework_Automation_LoadTestCase_ExpectedLoad.htm" />
   <HelpKINode Title="ExpectedPeakLoad property" Url="html/P_Hummingbird_TestFramework_Automation_StressTestCase_ExpectedPeakLoad.htm" />
   <HelpKINode Title="ExpectedResult property" Url="html/P_Hummingbird_TestFramework_Automation_Assertions_AbstractValueCompareAssertion_ExpectedResult.htm" />
   <HelpKINode Title="ExpectedSpikeLoad property" Url="html/P_Hummingbird_TestFramework_Automation_SpikeTestCase_ExpectedSpikeLoad.htm" />
+  <HelpKINode Title="ExpectedStatus property" Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_TestStepResultCondition_ExpectedStatus.htm" />
+  <HelpKINode Title="ExpectedValue property" Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_VariableValueCondition_ExpectedValue.htm" />
   <HelpKINode Title="Export method" Url="html/M_Hummingbird_TestFramework_Automation_Report_AutomatedTestReport_Export.htm" />
   <HelpKINode Title="ExportJUnit method" Url="html/M_Hummingbird_TestFramework_Automation_Report_AutomatedTestReport_ExportJUnit.htm" />
   <HelpKINode Title="ExportNUnit method" Url="html/M_Hummingbird_TestFramework_Automation_Report_AutomatedTestReport_ExportNUnit.htm" />
+  <HelpKINode Title="Expression property" Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_MessageQueueCondition_Expression.htm" />
   <HelpKINode Title="EXTENDED enumeration member" Url="html/T_Hummingbird_TestFramework_Services_HttpMethod.htm" />
   <HelpKINode Title="ExtendedHttpMethod property" Url="html/P_Hummingbird_TestFramework_Services_GenericHttpRequest_ExtendedHttpMethod.htm" />
   <HelpKINode Title="ExtensionDefinition class">
@@ -1232,6 +1301,7 @@
   <HelpKINode Title="failureType.failureType constructor" Url="html/M_Hummingbird_TestFramework_Automation_Report_NUnit_failureType__ctor.htm" />
   <HelpKINode Title="failureType.message property" Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_failureType_message.htm" />
   <HelpKINode Title="failureType.stacktrace property" Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_failureType_stacktrace.htm" />
+  <HelpKINode Title="FalseSteps property" Url="html/P_Hummingbird_TestFramework_Automation_ConditionalTestStep_FalseSteps.htm" />
   <HelpKINode Title="FatalError enumeration member" Url="html/T_Hummingbird_TestFramework_Automation_ScenarioStatus.htm" />
   <HelpKINode Title="FaultReplied enumeration member" Url="html/T_Hummingbird_TestFramework_Messaging_MessageStatus.htm" />
   <HelpKINode Title="File enumeration member">
@@ -1243,6 +1313,7 @@
     <HelpKINode Title="CsvDataSource.FileName Property " Url="html/P_Hummingbird_TestFramework_Automation_CsvDataSource_FileName.htm" />
     <HelpKINode Title="CsvDataStorage.FileName Property " Url="html/P_Hummingbird_TestFramework_Automation_CsvDataStorage_FileName.htm" />
     <HelpKINode Title="ExcelDataSource.FileName Property " Url="html/P_Hummingbird_TestFramework_Automation_ExcelDataSource_FileName.htm" />
+    <HelpKINode Title="ExcelDataStorage.FileName Property " Url="html/P_Hummingbird_TestFramework_Automation_ExcelDataStorage_FileName.htm" />
   </HelpKINode>
   <HelpKINode Title="FindMetadata method" Url="html/M_Hummingbird_TestFramework_Utilities_FindMetadata.htm" />
   <HelpKINode Title="Finishing enumeration member" Url="html/T_Hummingbird_TestFramework_Automation_ScenarioStatus.htm" />
@@ -1506,8 +1577,8 @@
   <HelpKINode Title="History.Save method" Url="html/M_Hummingbird_TestFramework_Configuration_History_Save.htm" />
   <HelpKINode Title="History.SavedRequests property" Url="html/P_Hummingbird_TestFramework_Configuration_History_SavedRequests.htm" />
   <HelpKINode Title="History.UsageStatistic property" Url="html/P_Hummingbird_TestFramework_Configuration_History_UsageStatistic.htm" />
-  <HelpKINode Title="HostName property" Url="html/P_Hummingbird_TestFramework_Automation_Report_ReportItem_HostName.htm" />
   <HelpKINode Title="hostname property" Url="html/P_Hummingbird_TestFramework_Automation_Report_JUnit_testsuite_hostname.htm" />
+  <HelpKINode Title="HostName property" Url="html/P_Hummingbird_TestFramework_Automation_Report_ReportItem_HostName.htm" />
   <HelpKINode Title="HtmlViewExtension class">
     <HelpKINode Title="HtmlViewExtension Class" Url="html/T_Hummingbird_TestFramework_Extensibility_HtmlViewExtension.htm" />
     <HelpKINode Title="constructor" Url="html/M_Hummingbird_TestFramework_Extensibility_HtmlViewExtension__ctor.htm" />
@@ -1695,6 +1766,7 @@
   <HelpKINode Title="Hummingbird.TestFramework.Automation.Assertions.XPathValidationAssertion class" Url="html/T_Hummingbird_TestFramework_Automation_Assertions_XPathValidationAssertion.htm" />
   <HelpKINode Title="Hummingbird.TestFramework.Automation.AutomationProject class" Url="html/T_Hummingbird_TestFramework_Automation_AutomationProject.htm" />
   <HelpKINode Title="Hummingbird.TestFramework.Automation.CommandLineTestStep class" Url="html/T_Hummingbird_TestFramework_Automation_CommandLineTestStep.htm" />
+  <HelpKINode Title="Hummingbird.TestFramework.Automation.ConditionalTestStep class" Url="html/T_Hummingbird_TestFramework_Automation_ConditionalTestStep.htm" />
   <HelpKINode Title="Hummingbird.TestFramework.Automation.ConditionBehavoir enumeration" Url="html/T_Hummingbird_TestFramework_Automation_ConditionBehavoir.htm" />
   <HelpKINode Title="Hummingbird.TestFramework.Automation.CSharpScriptTestStep class" Url="html/T_Hummingbird_TestFramework_Automation_CSharpScriptTestStep.htm" />
   <HelpKINode Title="Hummingbird.TestFramework.Automation.CsvDataSource class" Url="html/T_Hummingbird_TestFramework_Automation_CsvDataSource.htm" />
@@ -1710,8 +1782,19 @@
   <HelpKINode Title="Hummingbird.TestFramework.Automation.DataStorage class" Url="html/T_Hummingbird_TestFramework_Automation_DataStorage.htm" />
   <HelpKINode Title="Hummingbird.TestFramework.Automation.DotNetScriptTestStepBase class" Url="html/T_Hummingbird_TestFramework_Automation_DotNetScriptTestStepBase.htm" />
   <HelpKINode Title="Hummingbird.TestFramework.Automation.ExcelDataSource class" Url="html/T_Hummingbird_TestFramework_Automation_ExcelDataSource.htm" />
+  <HelpKINode Title="Hummingbird.TestFramework.Automation.ExcelDataStorage class" Url="html/T_Hummingbird_TestFramework_Automation_ExcelDataStorage.htm" />
+  <HelpKINode Title="Hummingbird.TestFramework.Automation.ExistingFileBehavior enumeration" Url="html/T_Hummingbird_TestFramework_Automation_ExistingFileBehavior.htm" />
   <HelpKINode Title="Hummingbird.TestFramework.Automation.ExtractPropertyPair class" Url="html/T_Hummingbird_TestFramework_Automation_ExtractPropertyPair.htm" />
   <HelpKINode Title="Hummingbird.TestFramework.Automation.ExtractPropertyTestStep class" Url="html/T_Hummingbird_TestFramework_Automation_ExtractPropertyTestStep.htm" />
+  <HelpKINode Title="Hummingbird.TestFramework.Automation.FunctionalConditions namespace" Url="html/N_Hummingbird_TestFramework_Automation_FunctionalConditions.htm" />
+  <HelpKINode Title="Hummingbird.TestFramework.Automation.FunctionalConditions.AbstractCondition class" Url="html/T_Hummingbird_TestFramework_Automation_FunctionalConditions_AbstractCondition.htm" />
+  <HelpKINode Title="Hummingbird.TestFramework.Automation.FunctionalConditions.AbstractExpression class" Url="html/T_Hummingbird_TestFramework_Automation_FunctionalConditions_AbstractExpression.htm" />
+  <HelpKINode Title="Hummingbird.TestFramework.Automation.FunctionalConditions.ComplexExpression class" Url="html/T_Hummingbird_TestFramework_Automation_FunctionalConditions_ComplexExpression.htm" />
+  <HelpKINode Title="Hummingbird.TestFramework.Automation.FunctionalConditions.MessagePart enumeration" Url="html/T_Hummingbird_TestFramework_Automation_FunctionalConditions_MessagePart.htm" />
+  <HelpKINode Title="Hummingbird.TestFramework.Automation.FunctionalConditions.MessageQueueCondition class" Url="html/T_Hummingbird_TestFramework_Automation_FunctionalConditions_MessageQueueCondition.htm" />
+  <HelpKINode Title="Hummingbird.TestFramework.Automation.FunctionalConditions.SimpleExpression class" Url="html/T_Hummingbird_TestFramework_Automation_FunctionalConditions_SimpleExpression.htm" />
+  <HelpKINode Title="Hummingbird.TestFramework.Automation.FunctionalConditions.TestStepResultCondition class" Url="html/T_Hummingbird_TestFramework_Automation_FunctionalConditions_TestStepResultCondition.htm" />
+  <HelpKINode Title="Hummingbird.TestFramework.Automation.FunctionalConditions.VariableValueCondition class" Url="html/T_Hummingbird_TestFramework_Automation_FunctionalConditions_VariableValueCondition.htm" />
   <HelpKINode Title="Hummingbird.TestFramework.Automation.IPerformanceCounters interface" Url="html/T_Hummingbird_TestFramework_Automation_IPerformanceCounters.htm" />
   <HelpKINode Title="Hummingbird.TestFramework.Automation.LoadTestCase class" Url="html/T_Hummingbird_TestFramework_Automation_LoadTestCase.htm" />
   <HelpKINode Title="Hummingbird.TestFramework.Automation.LoadTestLogLevels enumeration" Url="html/T_Hummingbird_TestFramework_Automation_LoadTestLogLevels.htm" />
@@ -1766,6 +1849,7 @@
   <HelpKINode Title="Hummingbird.TestFramework.Automation.StressTestCase class" Url="html/T_Hummingbird_TestFramework_Automation_StressTestCase.htm" />
   <HelpKINode Title="Hummingbird.TestFramework.Automation.TestCase class" Url="html/T_Hummingbird_TestFramework_Automation_TestCase.htm" />
   <HelpKINode Title="Hummingbird.TestFramework.Automation.TestStepBase class" Url="html/T_Hummingbird_TestFramework_Automation_TestStepBase.htm" />
+  <HelpKINode Title="Hummingbird.TestFramework.Automation.TestStepGroup class" Url="html/T_Hummingbird_TestFramework_Automation_TestStepGroup.htm" />
   <HelpKINode Title="Hummingbird.TestFramework.Automation.TestSuite class" Url="html/T_Hummingbird_TestFramework_Automation_TestSuite.htm" />
   <HelpKINode Title="Hummingbird.TestFramework.Automation.ThresholdTypes enumeration" Url="html/T_Hummingbird_TestFramework_Automation_ThresholdTypes.htm" />
   <HelpKINode Title="Hummingbird.TestFramework.Automation.UpdateSimulationDataTestStep class" Url="html/T_Hummingbird_TestFramework_Automation_UpdateSimulationDataTestStep.htm" />
@@ -1927,11 +2011,11 @@
   <HelpKINode Title="Hummingbird.TestFramework.Variable&lt;T&gt; class" Url="html/T_Hummingbird_TestFramework_Variable_1.htm" />
   <HelpKINode Title="Hummingbird.TestFramework.Version class" Url="html/T_Hummingbird_TestFramework_Version.htm" />
   <HelpKINode Title="Id property">
-    <HelpKINode Title="AbstractTestItem.Id Property " Url="html/P_Hummingbird_TestFramework_Automation_AbstractTestItem_Id.htm" />
     <HelpKINode Title="AbstractAssertion.Id Property " Url="html/P_Hummingbird_TestFramework_Automation_Assertions_AbstractAssertion_Id.htm" />
-    <HelpKINode Title="Identifier.Id Property " Url="html/P_Hummingbird_TestFramework_Identifier_Id.htm" />
+    <HelpKINode Title="AbstractTestItem.Id Property " Url="html/P_Hummingbird_TestFramework_Automation_AbstractTestItem_Id.htm" />
     <HelpKINode Title="MetadataIdAttribute.Id Property " Url="html/P_Hummingbird_TestFramework_Extensibility_MetadataIdAttribute_Id.htm" />
     <HelpKINode Title="Project.Id Property " Url="html/P_Hummingbird_TestFramework_ExtensionProject_Project_Id.htm" />
+    <HelpKINode Title="Identifier.Id Property " Url="html/P_Hummingbird_TestFramework_Identifier_Id.htm" />
     <HelpKINode Title="ReportItem.Id Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_ReportItem_Id.htm" />
   </HelpKINode>
   <HelpKINode Title="id property" Url="html/P_Hummingbird_TestFramework_Automation_Report_JUnit_testsuitesTestsuite_id.htm" />
@@ -2061,7 +2145,10 @@
   <HelpKINode Title="IsAuthenticated property" Url="html/P_Hummingbird_TestFramework_Messaging_Message_IsAuthenticated.htm" />
   <HelpKINode Title="IsAutomatedTestRunning property" Url="html/P_Hummingbird_TestFramework_Global_IsAutomatedTestRunning.htm" />
   <HelpKINode Title="IsAutomationMessage property" Url="html/P_Hummingbird_TestFramework_Messaging_Message_IsAutomationMessage.htm" />
-  <HelpKINode Title="IsCaseSensitive property" Url="html/P_Hummingbird_TestFramework_Automation_Assertions_AbstractValueCompareAssertion_IsCaseSensitive.htm" />
+  <HelpKINode Title="IsCaseSensitive property">
+    <HelpKINode Title="AbstractValueCompareAssertion.IsCaseSensitive Property " Url="html/P_Hummingbird_TestFramework_Automation_Assertions_AbstractValueCompareAssertion_IsCaseSensitive.htm" />
+    <HelpKINode Title="VariableValueCondition.IsCaseSensitive Property " Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_VariableValueCondition_IsCaseSensitive.htm" />
+  </HelpKINode>
   <HelpKINode Title="IsClient property" Url="html/P_Hummingbird_TestFramework_ExtensionProject_ServiceConfiguration_IsClient.htm" />
   <HelpKINode Title="IsDefault property">
     <HelpKINode Title="ProfileInformation.IsDefault Property " Url="html/P_Hummingbird_TestFramework_Configuration_ProfileInformation_IsDefault.htm" />
@@ -2159,6 +2246,7 @@
   <HelpKINode Title="LastSaveDate property" Url="html/P_Hummingbird_TestFramework_Automation_AutomationProject_LastSaveDate.htm" />
   <HelpKINode Title="LastSavedBy property" Url="html/P_Hummingbird_TestFramework_Automation_AutomationProject_LastSavedBy.htm" />
   <HelpKINode Title="LastUpdatedTime property" Url="html/P_Hummingbird_TestFramework_Configuration_ProfileInformation_LastUpdatedTime.htm" />
+  <HelpKINode Title="Left property" Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_ComplexExpression_Left.htm" />
   <HelpKINode Title="LessEquals enumeration member" Url="html/T_Hummingbird_TestFramework_Automation_Operators_RelationalOperator.htm" />
   <HelpKINode Title="LessThan enumeration member" Url="html/T_Hummingbird_TestFramework_Automation_Operators_RelationalOperator.htm" />
   <HelpKINode Title="Level property" Url="html/P_Hummingbird_TestFramework_LogMessage_Level.htm" />
@@ -2370,15 +2458,15 @@
     <HelpKINode Title="methods" Url="html/Methods_T_Hummingbird_TestFramework_Messaging_Message.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Hummingbird_TestFramework_Messaging_Message.htm" />
   </HelpKINode>
-  <HelpKINode Title="Message property">
-    <HelpKINode Title="SerializationException.Message Property " Url="html/P_Hummingbird_TestFramework_Serialization_SerializationException_Message.htm" />
-    <HelpKINode Title="MessageAddedEventArgs.Message Property " Url="html/P_Hummingbird_TestFramework_Messaging_MessageAddedEventArgs_Message.htm" />
-  </HelpKINode>
   <HelpKINode Title="message property">
-    <HelpKINode Title="failureType.message Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_failureType_message.htm" />
     <HelpKINode Title="reasonType.message Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_reasonType_message.htm" />
     <HelpKINode Title="testsuiteTestcaseError.message Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_JUnit_testsuiteTestcaseError_message.htm" />
     <HelpKINode Title="testsuiteTestcaseFailure.message Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_JUnit_testsuiteTestcaseFailure_message.htm" />
+    <HelpKINode Title="failureType.message Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_failureType_message.htm" />
+  </HelpKINode>
+  <HelpKINode Title="Message property">
+    <HelpKINode Title="SerializationException.Message Property " Url="html/P_Hummingbird_TestFramework_Serialization_SerializationException_Message.htm" />
+    <HelpKINode Title="MessageAddedEventArgs.Message Property " Url="html/P_Hummingbird_TestFramework_Messaging_MessageAddedEventArgs_Message.htm" />
   </HelpKINode>
   <HelpKINode Title="Message.CreateDate property" Url="html/P_Hummingbird_TestFramework_Messaging_Message_CreateDate.htm" />
   <HelpKINode Title="Message.CreateDateString property" Url="html/P_Hummingbird_TestFramework_Messaging_Message_CreateDateString.htm" />
@@ -2430,8 +2518,14 @@
     <HelpKINode Title="SoapResponseMetadata.MessageEncoding Property " Url="html/P_Hummingbird_TestFramework_Services_SoapResponseMetadata_MessageEncoding.htm" />
     <HelpKINode Title="SoapServerService.MessageEncoding Property " Url="html/P_Hummingbird_TestFramework_Services_SoapServerService_MessageEncoding.htm" />
   </HelpKINode>
-  <HelpKINode Title="MessagePart enumeration" Url="html/T_Hummingbird_TestFramework_Messaging_MessagePart.htm" />
-  <HelpKINode Title="MessagePart property" Url="html/P_Hummingbird_TestFramework_Automation_Assertions_AbstractValueCompareAssertion_MessagePart.htm" />
+  <HelpKINode Title="MessagePart enumeration">
+    <HelpKINode Title="MessagePart Enumeration" Url="html/T_Hummingbird_TestFramework_Messaging_MessagePart.htm" />
+    <HelpKINode Title="MessagePart Enumeration" Url="html/T_Hummingbird_TestFramework_Automation_FunctionalConditions_MessagePart.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MessagePart property">
+    <HelpKINode Title="AbstractValueCompareAssertion.MessagePart Property " Url="html/P_Hummingbird_TestFramework_Automation_Assertions_AbstractValueCompareAssertion_MessagePart.htm" />
+    <HelpKINode Title="SimpleExpression.MessagePart Property " Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_SimpleExpression_MessagePart.htm" />
+  </HelpKINode>
   <HelpKINode Title="MessageQueue class">
     <HelpKINode Title="MessageQueue Class" Url="html/T_Hummingbird_TestFramework_Messaging_MessageQueue.htm" />
     <HelpKINode Title="events" Url="html/Events_T_Hummingbird_TestFramework_Messaging_MessageQueue.htm" />
@@ -2446,6 +2540,17 @@
   <HelpKINode Title="MessageQueue.Save method" Url="html/M_Hummingbird_TestFramework_Messaging_MessageQueue_Save.htm" />
   <HelpKINode Title="MessageQueue.UpdateInput method" Url="html/M_Hummingbird_TestFramework_Messaging_MessageQueue_UpdateInput.htm" />
   <HelpKINode Title="MessageQueue.UpdateOutput method" Url="html/M_Hummingbird_TestFramework_Messaging_MessageQueue_UpdateOutput.htm" />
+  <HelpKINode Title="MessageQueueCondition class">
+    <HelpKINode Title="MessageQueueCondition Class" Url="html/T_Hummingbird_TestFramework_Automation_FunctionalConditions_MessageQueueCondition.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_MessageQueueCondition__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hummingbird_TestFramework_Automation_FunctionalConditions_MessageQueueCondition.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hummingbird_TestFramework_Automation_FunctionalConditions_MessageQueueCondition.htm" />
+  </HelpKINode>
+  <HelpKINode Title="MessageQueueCondition.Evaluate method" Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_MessageQueueCondition_Evaluate.htm" />
+  <HelpKINode Title="MessageQueueCondition.Expression property" Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_MessageQueueCondition_Expression.htm" />
+  <HelpKINode Title="MessageQueueCondition.MessageQueueCondition constructor" Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_MessageQueueCondition__ctor.htm" />
+  <HelpKINode Title="MessageQueueCondition.Operator property" Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_MessageQueueCondition_Operator.htm" />
+  <HelpKINode Title="MessageQueueCondition.ToString method" Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_MessageQueueCondition_ToString.htm" />
   <HelpKINode Title="MessageReportItem class">
     <HelpKINode Title="MessageReportItem Class" Url="html/T_Hummingbird_TestFramework_Automation_Report_MessageReportItem.htm" />
     <HelpKINode Title="constructor" Url="html/M_Hummingbird_TestFramework_Automation_Report_MessageReportItem__ctor.htm" />
@@ -2485,10 +2590,24 @@
   <HelpKINode Title="MinFrameworkVersion property" Url="html/P_Hummingbird_TestFramework_Extensibility_ExtensionDefinition_MinFrameworkVersion.htm" />
   <HelpKINode Title="Minor property" Url="html/P_Hummingbird_TestFramework_Version_Minor.htm" />
   <HelpKINode Title="Mixed enumeration member" Url="html/T_Hummingbird_TestFramework_Automation_SqlAuthenticationMode.htm" />
+  <HelpKINode Title="Mixed_Blue enumeration member" Url="html/T_Hummingbird_TestFramework_Configuration_Theme.htm" />
+  <HelpKINode Title="Mixed_Gold enumeration member" Url="html/T_Hummingbird_TestFramework_Configuration_Theme.htm" />
+  <HelpKINode Title="Mixed_Green enumeration member" Url="html/T_Hummingbird_TestFramework_Configuration_Theme.htm" />
+  <HelpKINode Title="Mixed_Purple enumeration member" Url="html/T_Hummingbird_TestFramework_Configuration_Theme.htm" />
   <HelpKINode Title="MoveDown method" Url="html/M_Hummingbird_TestFramework_Automation_AbstractTestItem_MoveDown.htm" />
   <HelpKINode Title="MoveToBottom method" Url="html/M_Hummingbird_TestFramework_Automation_AbstractTestItem_MoveToBottom.htm" />
   <HelpKINode Title="MoveToTop method" Url="html/M_Hummingbird_TestFramework_Automation_AbstractTestItem_MoveToTop.htm" />
   <HelpKINode Title="MoveUp method" Url="html/M_Hummingbird_TestFramework_Automation_AbstractTestItem_MoveUp.htm" />
+  <HelpKINode Title="name property">
+    <HelpKINode Title="resultType.name Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_resultType_name.htm" />
+    <HelpKINode Title="testcaseType.name Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_testcaseType_name.htm" />
+    <HelpKINode Title="testsuiteType.name Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_testsuiteType_name.htm" />
+    <HelpKINode Title="categoryType.name Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_categoryType_name.htm" />
+    <HelpKINode Title="propertyType.name Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_propertyType_name.htm" />
+    <HelpKINode Title="testsuite.name Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_JUnit_testsuite_name.htm" />
+    <HelpKINode Title="testsuiteProperty.name Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_JUnit_testsuiteProperty_name.htm" />
+    <HelpKINode Title="testsuiteTestcase.name Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_JUnit_testsuiteTestcase_name.htm" />
+  </HelpKINode>
   <HelpKINode Title="Name property">
     <HelpKINode Title="AbstractAssertion.Name Property " Url="html/P_Hummingbird_TestFramework_Automation_Assertions_AbstractAssertion_Name.htm" />
     <HelpKINode Title="AbstractDataGenerator.Name Property " Url="html/P_Hummingbird_TestFramework_Automation_DataGenerator_AbstractDataGenerator_Name.htm" />
@@ -2512,16 +2631,7 @@
     <HelpKINode Title="UriPathAttribute.Name Property " Url="html/P_Hummingbird_TestFramework_Services_UriPathAttribute_Name.htm" />
     <HelpKINode Title="Variable(T).Name Property " Url="html/P_Hummingbird_TestFramework_Variable_1_Name.htm" />
     <HelpKINode Title="Variable.Name Property " Url="html/P_Hummingbird_TestFramework_Variable_Name.htm" />
-  </HelpKINode>
-  <HelpKINode Title="name property">
-    <HelpKINode Title="testsuiteProperty.name Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_JUnit_testsuiteProperty_name.htm" />
-    <HelpKINode Title="categoryType.name Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_categoryType_name.htm" />
-    <HelpKINode Title="propertyType.name Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_propertyType_name.htm" />
-    <HelpKINode Title="resultType.name Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_resultType_name.htm" />
-    <HelpKINode Title="testcaseType.name Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_testcaseType_name.htm" />
-    <HelpKINode Title="testsuite.name Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_JUnit_testsuite_name.htm" />
-    <HelpKINode Title="testsuiteTestcase.name Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_JUnit_testsuiteTestcase_name.htm" />
-    <HelpKINode Title="testsuiteType.name Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_testsuiteType_name.htm" />
+    <HelpKINode Title="VariableValueCondition.Name Property " Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_VariableValueCondition_Name.htm" />
   </HelpKINode>
   <HelpKINode Title="NamedRange enumeration member" Url="html/T_Hummingbird_TestFramework_Automation_SpreadsheetRangeType.htm" />
   <HelpKINode Title="Nand enumeration member" Url="html/T_Hummingbird_TestFramework_Automation_Operators_LogicalOperator.htm" />
@@ -2669,8 +2779,12 @@
   <HelpKINode Title="OperationName property" Url="html/P_Hummingbird_TestFramework_Services_AbstractMetadata_OperationName.htm" />
   <HelpKINode Title="Operations property" Url="html/P_Hummingbird_TestFramework_ExtensionProject_OpenApiServiceCategory_Operations.htm" />
   <HelpKINode Title="Operator property">
+    <HelpKINode Title="ComplexExpression.Operator Property " Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_ComplexExpression_Operator.htm" />
     <HelpKINode Title="ComplexResponseCondition.Operator Property " Url="html/P_Hummingbird_TestFramework_Automation_ResponseConditions_ComplexResponseCondition_Operator.htm" />
+    <HelpKINode Title="MessageQueueCondition.Operator Property " Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_MessageQueueCondition_Operator.htm" />
+    <HelpKINode Title="SimpleExpression.Operator Property " Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_SimpleExpression_Operator.htm" />
     <HelpKINode Title="SimpleResponseCondition.Operator Property " Url="html/P_Hummingbird_TestFramework_Automation_ResponseConditions_SimpleResponseCondition_Operator.htm" />
+    <HelpKINode Title="VariableValueCondition.Operator Property " Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_VariableValueCondition_Operator.htm" />
   </HelpKINode>
   <HelpKINode Title="OPTIONS enumeration member" Url="html/T_Hummingbird_TestFramework_Services_HttpMethod.htm" />
   <HelpKINode Title="Options property" Url="html/P_Hummingbird_TestFramework_ExtensionProject_OpenApiServiceCategory_Options.htm" />
@@ -2694,6 +2808,7 @@
     <HelpKINode Title="UsageStatistic.OutgoingSuccess Property " Url="html/P_Hummingbird_TestFramework_Configuration_UsageStatistic_OutgoingSuccess.htm" />
   </HelpKINode>
   <HelpKINode Title="OutputPath property" Url="html/P_Hummingbird_TestFramework_ExtensionProject_Project_OutputPath.htm" />
+  <HelpKINode Title="Overwrite enumeration member" Url="html/T_Hummingbird_TestFramework_Automation_ExistingFileBehavior.htm" />
   <HelpKINode Title="Overwrite property" Url="html/P_Hummingbird_TestFramework_Automation_DataStorage_Overwrite.htm" />
   <HelpKINode Title="package property" Url="html/P_Hummingbird_TestFramework_Automation_Report_JUnit_testsuitesTestsuite_package.htm" />
   <HelpKINode Title="Parameter class">
@@ -2717,6 +2832,7 @@
   </HelpKINode>
   <HelpKINode Title="ParameterType enumeration" Url="html/T_Hummingbird_TestFramework_Services_ParameterType.htm" />
   <HelpKINode Title="ParameterType property" Url="html/P_Hummingbird_TestFramework_Services_Parameter_ParameterType.htm" />
+  <HelpKINode Title="Parent property" Url="html/P_Hummingbird_TestFramework_Automation_TestStepGroup_Parent.htm" />
   <HelpKINode Title="ParsedUriTemplate property" Url="html/P_Hummingbird_TestFramework_Automation_SendRequestTestStep_ParsedUriTemplate.htm" />
   <HelpKINode Title="ParseMessage method" Url="html/M_Hummingbird_TestFramework_Extensibility_CustomMessageViewer_ParseMessage.htm" />
   <HelpKINode Title="ParseObject method">
@@ -3008,6 +3124,7 @@
   <HelpKINode Title="Remove(Of T) method" Url="html/M_Hummingbird_TestFramework_ExtensionMethods_Remove__1.htm" />
   <HelpKINode Title="Remove&lt;T&gt; method" Url="html/M_Hummingbird_TestFramework_ExtensionMethods_Remove__1.htm" />
   <HelpKINode Title="RemoveSavedRequest method" Url="html/M_Hummingbird_TestFramework_Configuration_History_RemoveSavedRequest.htm" />
+  <HelpKINode Title="Replace enumeration member" Url="html/T_Hummingbird_TestFramework_Automation_ExistingFileBehavior.htm" />
   <HelpKINode Title="Replied enumeration member" Url="html/T_Hummingbird_TestFramework_Messaging_MessageStatus.htm" />
   <HelpKINode Title="ReplyDelay property" Url="html/P_Hummingbird_TestFramework_Configuration_SavedResponse_ReplyDelay.htm" />
   <HelpKINode Title="ReportItem class">
@@ -3088,6 +3205,8 @@
   <HelpKINode Title="RequestOptions.UseSoap12 property" Url="html/P_Hummingbird_TestFramework_Services_RequestOptions_UseSoap12.htm" />
   <HelpKINode Title="RequestOptions.X509Certificate property" Url="html/P_Hummingbird_TestFramework_Services_RequestOptions_X509Certificate.htm" />
   <HelpKINode Title="RequestSerializer property" Url="html/P_Hummingbird_TestFramework_Services_AbstractMetadata_RequestSerializer.htm" />
+  <HelpKINode Title="RequestServiceName property" Url="html/P_Hummingbird_TestFramework_Automation_SendRequestTestStep_RequestServiceName.htm" />
+  <HelpKINode Title="RequestText enumeration member" Url="html/T_Hummingbird_TestFramework_Automation_FunctionalConditions_MessagePart.htm" />
   <HelpKINode Title="RequestText property">
     <HelpKINode Title="Message.RequestText Property " Url="html/P_Hummingbird_TestFramework_Messaging_Message_RequestText.htm" />
     <HelpKINode Title="ReportItem.RequestText Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_ReportItem_RequestText.htm" />
@@ -3130,6 +3249,7 @@
   </HelpKINode>
   <HelpKINode Title="Responses property" Url="html/P_Hummingbird_TestFramework_Automation_UpdateSimulationDataTestStep_Responses.htm" />
   <HelpKINode Title="ResponseSerializer property" Url="html/P_Hummingbird_TestFramework_Services_AbstractMetadata_ResponseSerializer.htm" />
+  <HelpKINode Title="ResponseText enumeration member" Url="html/T_Hummingbird_TestFramework_Automation_FunctionalConditions_MessagePart.htm" />
   <HelpKINode Title="ResponseText property">
     <HelpKINode Title="Message.ResponseText Property " Url="html/P_Hummingbird_TestFramework_Messaging_Message_ResponseText.htm" />
     <HelpKINode Title="ReportItem.ResponseText Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_ReportItem_ResponseText.htm" />
@@ -3143,8 +3263,8 @@
   <HelpKINode Title="REST_JSON enumeration member" Url="html/T_Hummingbird_TestFramework_ExtensionProject_ServiceType.htm" />
   <HelpKINode Title="REST_XML enumeration member" Url="html/T_Hummingbird_TestFramework_ExtensionProject_ServiceType.htm" />
   <HelpKINode Title="result property">
-    <HelpKINode Title="testsuiteType.result Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_testsuiteType_result.htm" />
     <HelpKINode Title="testcaseType.result Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_testcaseType_result.htm" />
+    <HelpKINode Title="testsuiteType.result Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_testsuiteType_result.htm" />
   </HelpKINode>
   <HelpKINode Title="Result property">
     <HelpKINode Title="AbstractSqlTestStep.Result Property " Url="html/P_Hummingbird_TestFramework_Automation_AbstractSqlTestStep_Result.htm" />
@@ -3183,6 +3303,7 @@
   <HelpKINode Title="resultType.time property" Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_resultType_time.htm" />
   <HelpKINode Title="resultType.total property" Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_resultType_total.htm" />
   <HelpKINode Title="ResumeNext enumeration member" Url="html/T_Hummingbird_TestFramework_Automation_OnErrorBehavior.htm" />
+  <HelpKINode Title="Right property" Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_ComplexExpression_Right.htm" />
   <HelpKINode Title="RootNamespace field" Url="html/F_Hummingbird_TestFramework_Global_RootNamespace.htm" />
   <HelpKINode Title="RootNamespace property" Url="html/P_Hummingbird_TestFramework_ExtensionProject_Project_RootNamespace.htm" />
   <HelpKINode Title="Rsa class">
@@ -3197,6 +3318,7 @@
   <HelpKINode Title="Run method">
     <HelpKINode Title="AutomationProject.Run Method " Url="html/M_Hummingbird_TestFramework_Automation_AutomationProject_Run.htm" />
     <HelpKINode Title="CommandLineTestStep.Run Method " Url="html/Overload_Hummingbird_TestFramework_Automation_CommandLineTestStep_Run.htm" />
+    <HelpKINode Title="ConditionalTestStep.Run Method " Url="html/Overload_Hummingbird_TestFramework_Automation_ConditionalTestStep_Run.htm" />
     <HelpKINode Title="DataDrivenTestCase.Run Method " Url="html/M_Hummingbird_TestFramework_Automation_DataDrivenTestCase_Run.htm" />
     <HelpKINode Title="DataGeneratorTestStep.Run Method " Url="html/Overload_Hummingbird_TestFramework_Automation_DataGeneratorTestStep_Run.htm" />
     <HelpKINode Title="DotNetScriptTestStepBase.Run Method " Url="html/Overload_Hummingbird_TestFramework_Automation_DotNetScriptTestStepBase_Run.htm" />
@@ -3218,6 +3340,7 @@
     <HelpKINode Title="AutomationProject.Save Method " Url="html/M_Hummingbird_TestFramework_Automation_AutomationProject_Save.htm" />
     <HelpKINode Title="CsvDataStorage.Save Method " Url="html/M_Hummingbird_TestFramework_Automation_CsvDataStorage_Save.htm" />
     <HelpKINode Title="DataStorage.Save Method " Url="html/M_Hummingbird_TestFramework_Automation_DataStorage_Save.htm" />
+    <HelpKINode Title="ExcelDataStorage.Save Method " Url="html/M_Hummingbird_TestFramework_Automation_ExcelDataStorage_Save.htm" />
     <HelpKINode Title="History.Save Method " Url="html/M_Hummingbird_TestFramework_Configuration_History_Save.htm" />
     <HelpKINode Title="MessageQueue.Save Method " Url="html/M_Hummingbird_TestFramework_Messaging_MessageQueue_Save.htm" />
     <HelpKINode Title="Profile.Save Method " Url="html/Overload_Hummingbird_TestFramework_Configuration_Profile_Save.htm" />
@@ -3302,6 +3425,7 @@
   <HelpKINode Title="SendRequestTestStep.RequestMetadataDisplayName property" Url="html/P_Hummingbird_TestFramework_Automation_SendRequestTestStep_RequestMetadataDisplayName.htm" />
   <HelpKINode Title="SendRequestTestStep.RequestMetadataId property" Url="html/P_Hummingbird_TestFramework_Automation_SendRequestTestStep_RequestMetadataId.htm" />
   <HelpKINode Title="SendRequestTestStep.RequestOptions property" Url="html/P_Hummingbird_TestFramework_Automation_SendRequestTestStep_RequestOptions.htm" />
+  <HelpKINode Title="SendRequestTestStep.RequestServiceName property" Url="html/P_Hummingbird_TestFramework_Automation_SendRequestTestStep_RequestServiceName.htm" />
   <HelpKINode Title="SendRequestTestStep.Run method" Url="html/Overload_Hummingbird_TestFramework_Automation_SendRequestTestStep_Run.htm" />
   <HelpKINode Title="SendRequestTestStep.SendRequestTestStep constructor" Url="html/M_Hummingbird_TestFramework_Automation_SendRequestTestStep__ctor.htm" />
   <HelpKINode Title="SendRequestTestStep.SuccessStatus field" Url="html/F_Hummingbird_TestFramework_Automation_SendRequestTestStep_SuccessStatus.htm" />
@@ -3560,9 +3684,24 @@
   <HelpKINode Title="Sha512.Decrypt method" Url="html/M_Hummingbird_TestFramework_Cryptography_Sha512_Decrypt.htm" />
   <HelpKINode Title="Sha512.Encrypt method" Url="html/M_Hummingbird_TestFramework_Cryptography_Sha512_Encrypt.htm" />
   <HelpKINode Title="Sha512.Sha512 constructor" Url="html/M_Hummingbird_TestFramework_Cryptography_Sha512__ctor.htm" />
-  <HelpKINode Title="SheetName property" Url="html/P_Hummingbird_TestFramework_Automation_ExcelDataSource_SheetName.htm" />
+  <HelpKINode Title="SheetName property">
+    <HelpKINode Title="ExcelDataSource.SheetName Property " Url="html/P_Hummingbird_TestFramework_Automation_ExcelDataSource_SheetName.htm" />
+    <HelpKINode Title="ExcelDataStorage.SheetName Property " Url="html/P_Hummingbird_TestFramework_Automation_ExcelDataStorage_SheetName.htm" />
+  </HelpKINode>
   <HelpKINode Title="ShowResult property" Url="html/P_Hummingbird_TestFramework_Configuration_Settings_ShowResult.htm" />
   <HelpKINode Title="Shutdown method" Url="html/M_Hummingbird_TestFramework_CodeGenerator_MemoryLogger_Shutdown.htm" />
+  <HelpKINode Title="SimpleExpression class">
+    <HelpKINode Title="SimpleExpression Class" Url="html/T_Hummingbird_TestFramework_Automation_FunctionalConditions_SimpleExpression.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_SimpleExpression__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hummingbird_TestFramework_Automation_FunctionalConditions_SimpleExpression.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hummingbird_TestFramework_Automation_FunctionalConditions_SimpleExpression.htm" />
+  </HelpKINode>
+  <HelpKINode Title="SimpleExpression.Evaluate method" Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_SimpleExpression_Evaluate.htm" />
+  <HelpKINode Title="SimpleExpression.MessagePart property" Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_SimpleExpression_MessagePart.htm" />
+  <HelpKINode Title="SimpleExpression.Operator property" Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_SimpleExpression_Operator.htm" />
+  <HelpKINode Title="SimpleExpression.SimpleExpression constructor" Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_SimpleExpression__ctor.htm" />
+  <HelpKINode Title="SimpleExpression.ToString method" Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_SimpleExpression_ToString.htm" />
+  <HelpKINode Title="SimpleExpression.Value property" Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_SimpleExpression_Value.htm" />
   <HelpKINode Title="SimpleResponseCondition class">
     <HelpKINode Title="SimpleResponseCondition Class" Url="html/T_Hummingbird_TestFramework_Automation_ResponseConditions_SimpleResponseCondition.htm" />
     <HelpKINode Title="constructor" Url="html/M_Hummingbird_TestFramework_Automation_ResponseConditions_SimpleResponseCondition__ctor.htm" />
@@ -3807,6 +3946,7 @@
   <HelpKINode Title="StartWindowsServiceTestStep.StartWindowsServiceTestStep constructor" Url="html/M_Hummingbird_TestFramework_Automation_StartWindowsServiceTestStep__ctor.htm" />
   <HelpKINode Title="StartWindowsServiceTestStep.Timeout property" Url="html/P_Hummingbird_TestFramework_Automation_StartWindowsServiceTestStep_Timeout.htm" />
   <HelpKINode Title="StartWindowsServiceTestStep.UserName property" Url="html/P_Hummingbird_TestFramework_Automation_StartWindowsServiceTestStep_UserName.htm" />
+  <HelpKINode Title="Status enumeration member" Url="html/T_Hummingbird_TestFramework_Automation_FunctionalConditions_MessagePart.htm" />
   <HelpKINode Title="Status property">
     <HelpKINode Title="AbstractAssertion.Status Property " Url="html/P_Hummingbird_TestFramework_Automation_Assertions_AbstractAssertion_Status.htm" />
     <HelpKINode Title="AbstractTestItem.Status Property " Url="html/P_Hummingbird_TestFramework_Automation_AbstractTestItem_Status.htm" />
@@ -3815,7 +3955,11 @@
   </HelpKINode>
   <HelpKINode Title="StatusCode property" Url="html/P_Hummingbird_TestFramework_Services_HttpResponseAttribute_StatusCode.htm" />
   <HelpKINode Title="StatusString property" Url="html/P_Hummingbird_TestFramework_Messaging_Message_StatusString.htm" />
-  <HelpKINode Title="Steps property" Url="html/P_Hummingbird_TestFramework_Automation_TestCase_Steps.htm" />
+  <HelpKINode Title="StepId property" Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_TestStepResultCondition_StepId.htm" />
+  <HelpKINode Title="Steps property">
+    <HelpKINode Title="TestCase.Steps Property " Url="html/P_Hummingbird_TestFramework_Automation_TestCase_Steps.htm" />
+    <HelpKINode Title="TestStepGroup.Steps Property " Url="html/P_Hummingbird_TestFramework_Automation_TestStepGroup_Steps.htm" />
+  </HelpKINode>
   <HelpKINode Title="Stop enumeration member">
     <HelpKINode Title="ScenarioStatus Enumeration" Url="html/T_Hummingbird_TestFramework_Automation_ScenarioStatus.htm" />
     <HelpKINode Title="ServiceControlActions Enumeration" Url="html/T_Hummingbird_TestFramework_ServiceControlActions.htm" />
@@ -3987,18 +4131,39 @@
   <HelpKINode Title="TestStepBase.UpdateId method" Url="html/M_Hummingbird_TestFramework_Automation_TestStepBase_UpdateId.htm" />
   <HelpKINode Title="TestStepCount property" Url="html/P_Hummingbird_TestFramework_Automation_TestCase_TestStepCount.htm" />
   <HelpKINode Title="TestStepEditors property" Url="html/P_Hummingbird_TestFramework_Global_TestStepEditors.htm" />
+  <HelpKINode Title="TestStepGroup class">
+    <HelpKINode Title="TestStepGroup Class" Url="html/T_Hummingbird_TestFramework_Automation_TestStepGroup.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hummingbird_TestFramework_Automation_TestStepGroup__ctor.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_Hummingbird_TestFramework_Automation_TestStepGroup.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hummingbird_TestFramework_Automation_TestStepGroup.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hummingbird_TestFramework_Automation_TestStepGroup.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TestStepGroup.DeleteItem method" Url="html/M_Hummingbird_TestFramework_Automation_TestStepGroup_DeleteItem.htm" />
+  <HelpKINode Title="TestStepGroup.Parent property" Url="html/P_Hummingbird_TestFramework_Automation_TestStepGroup_Parent.htm" />
+  <HelpKINode Title="TestStepGroup.Steps property" Url="html/P_Hummingbird_TestFramework_Automation_TestStepGroup_Steps.htm" />
+  <HelpKINode Title="TestStepGroup.TestStepGroup constructor" Url="html/M_Hummingbird_TestFramework_Automation_TestStepGroup__ctor.htm" />
+  <HelpKINode Title="TestStepResultCondition class">
+    <HelpKINode Title="TestStepResultCondition Class" Url="html/T_Hummingbird_TestFramework_Automation_FunctionalConditions_TestStepResultCondition.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_TestStepResultCondition__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hummingbird_TestFramework_Automation_FunctionalConditions_TestStepResultCondition.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hummingbird_TestFramework_Automation_FunctionalConditions_TestStepResultCondition.htm" />
+  </HelpKINode>
+  <HelpKINode Title="TestStepResultCondition.Evaluate method" Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_TestStepResultCondition_Evaluate.htm" />
+  <HelpKINode Title="TestStepResultCondition.ExpectedStatus property" Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_TestStepResultCondition_ExpectedStatus.htm" />
+  <HelpKINode Title="TestStepResultCondition.StepId property" Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_TestStepResultCondition_StepId.htm" />
+  <HelpKINode Title="TestStepResultCondition.TestStepResultCondition constructor" Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_TestStepResultCondition__ctor.htm" />
+  <HelpKINode Title="TestSuite class">
+    <HelpKINode Title="constructor" Url="html/M_Hummingbird_TestFramework_Automation_TestSuite__ctor.htm" />
+    <HelpKINode Title="TestSuite Class" Url="html/T_Hummingbird_TestFramework_Automation_TestSuite.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hummingbird_TestFramework_Automation_TestSuite.htm" />
+    <HelpKINode Title="events" Url="html/Events_T_Hummingbird_TestFramework_Automation_TestSuite.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hummingbird_TestFramework_Automation_TestSuite.htm" />
+  </HelpKINode>
   <HelpKINode Title="testsuite class">
-    <HelpKINode Title="methods" Url="html/Methods_T_Hummingbird_TestFramework_Automation_Report_JUnit_testsuite.htm" />
     <HelpKINode Title="testsuite Class" Url="html/T_Hummingbird_TestFramework_Automation_Report_JUnit_testsuite.htm" />
     <HelpKINode Title="constructor" Url="html/M_Hummingbird_TestFramework_Automation_Report_JUnit_testsuite__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hummingbird_TestFramework_Automation_Report_JUnit_testsuite.htm" />
     <HelpKINode Title="properties" Url="html/Properties_T_Hummingbird_TestFramework_Automation_Report_JUnit_testsuite.htm" />
-  </HelpKINode>
-  <HelpKINode Title="TestSuite class">
-    <HelpKINode Title="TestSuite Class" Url="html/T_Hummingbird_TestFramework_Automation_TestSuite.htm" />
-    <HelpKINode Title="constructor" Url="html/M_Hummingbird_TestFramework_Automation_TestSuite__ctor.htm" />
-    <HelpKINode Title="events" Url="html/Events_T_Hummingbird_TestFramework_Automation_TestSuite.htm" />
-    <HelpKINode Title="methods" Url="html/Methods_T_Hummingbird_TestFramework_Automation_TestSuite.htm" />
-    <HelpKINode Title="properties" Url="html/Properties_T_Hummingbird_TestFramework_Automation_TestSuite.htm" />
   </HelpKINode>
   <HelpKINode Title="TestSuite enumeration member">
     <HelpKINode Title="ReportItemType Enumeration" Url="html/T_Hummingbird_TestFramework_Automation_Report_ReportItemType.htm" />
@@ -4145,13 +4310,16 @@
   </HelpKINode>
   <HelpKINode Title="Timestamp property" Url="html/P_Hummingbird_TestFramework_Automation_Report_MessageReportItem_Timestamp.htm" />
   <HelpKINode Title="timestamp property" Url="html/P_Hummingbird_TestFramework_Automation_Report_JUnit_testsuite_timestamp.htm" />
+  <HelpKINode Title="Title enumeration member" Url="html/T_Hummingbird_TestFramework_Automation_FunctionalConditions_MessagePart.htm" />
   <HelpKINode Title="Title property" Url="html/P_Hummingbird_TestFramework_Messaging_Message_Title.htm" />
   <HelpKINode Title="ToEnum(Of T) method" Url="html/M_Hummingbird_TestFramework_Utilities_ToEnum__1.htm" />
   <HelpKINode Title="ToEnum&lt;T&gt; method" Url="html/M_Hummingbird_TestFramework_Utilities_ToEnum__1.htm" />
   <HelpKINode Title="Token property" Url="html/P_Hummingbird_TestFramework_Services_RequestOptions_Token.htm" />
   <HelpKINode Title="ToString method">
     <HelpKINode Title="AbstractMetadata.ToString Method " Url="html/M_Hummingbird_TestFramework_Services_AbstractMetadata_ToString.htm" />
+    <HelpKINode Title="ComplexExpression.ToString Method " Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_ComplexExpression_ToString.htm" />
     <HelpKINode Title="ComplexResponseCondition.ToString Method " Url="html/Overload_Hummingbird_TestFramework_Automation_ResponseConditions_ComplexResponseCondition_ToString.htm" />
+    <HelpKINode Title="ConditionalTestStep.ToString Method " Url="html/M_Hummingbird_TestFramework_Automation_ConditionalTestStep_ToString.htm" />
     <HelpKINode Title="ContainsAssertion.ToString Method " Url="html/M_Hummingbird_TestFramework_Automation_Assertions_ContainsAssertion_ToString.htm" />
     <HelpKINode Title="DataDrivenTestCase.ToString Method " Url="html/M_Hummingbird_TestFramework_Automation_DataDrivenTestCase_ToString.htm" />
     <HelpKINode Title="GenericHttpRequest.ToString Method " Url="html/M_Hummingbird_TestFramework_Services_GenericHttpRequest_ToString.htm" />
@@ -4159,10 +4327,12 @@
     <HelpKINode Title="LoadTestCase.ToString Method " Url="html/M_Hummingbird_TestFramework_Automation_LoadTestCase_ToString.htm" />
     <HelpKINode Title="LogMessage.ToString Method " Url="html/M_Hummingbird_TestFramework_LogMessage_ToString.htm" />
     <HelpKINode Title="Message.ToString Method " Url="html/M_Hummingbird_TestFramework_Messaging_Message_ToString.htm" />
+    <HelpKINode Title="MessageQueueCondition.ToString Method " Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_MessageQueueCondition_ToString.htm" />
     <HelpKINode Title="PathValidationAssertion.ToString Method " Url="html/M_Hummingbird_TestFramework_Automation_Assertions_PathValidationAssertion_ToString.htm" />
     <HelpKINode Title="PerformanceThreshold.ToString Method " Url="html/M_Hummingbird_TestFramework_Automation_PerformanceThreshold_ToString.htm" />
     <HelpKINode Title="ResponseCondition.ToString Method " Url="html/Overload_Hummingbird_TestFramework_Automation_ResponseConditions_ResponseCondition_ToString.htm" />
     <HelpKINode Title="SerializationException.ToString Method " Url="html/M_Hummingbird_TestFramework_Serialization_SerializationException_ToString.htm" />
+    <HelpKINode Title="SimpleExpression.ToString Method " Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_SimpleExpression_ToString.htm" />
     <HelpKINode Title="SimpleResponseCondition.ToString Method " Url="html/Overload_Hummingbird_TestFramework_Automation_ResponseConditions_SimpleResponseCondition_ToString.htm" />
     <HelpKINode Title="SoapFaultAssertion.ToString Method " Url="html/M_Hummingbird_TestFramework_Automation_Assertions_SoapFaultAssertion_ToString.htm" />
     <HelpKINode Title="SpikeTestCase.ToString Method " Url="html/M_Hummingbird_TestFramework_Automation_SpikeTestCase_ToString.htm" />
@@ -4174,6 +4344,7 @@
     <HelpKINode Title="Utilities.ToString Method " Url="html/Overload_Hummingbird_TestFramework_Utilities_ToString.htm" />
     <HelpKINode Title="Variable(T).ToString Method " Url="html/M_Hummingbird_TestFramework_Variable_1_ToString.htm" />
     <HelpKINode Title="Variable.ToString Method " Url="html/M_Hummingbird_TestFramework_Variable_ToString.htm" />
+    <HelpKINode Title="VariableValueCondition.ToString Method " Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_VariableValueCondition_ToString.htm" />
     <HelpKINode Title="Version.ToString Method " Url="html/M_Hummingbird_TestFramework_Version_ToString.htm" />
     <HelpKINode Title="XPathValidationAssertion.ToString Method " Url="html/M_Hummingbird_TestFramework_Automation_Assertions_XPathValidationAssertion_ToString.htm" />
   </HelpKINode>
@@ -4189,12 +4360,13 @@
   <HelpKINode Title="TripleDes.Decrypt method" Url="html/M_Hummingbird_TestFramework_Cryptography_TripleDes_Decrypt.htm" />
   <HelpKINode Title="TripleDes.Encrypt method" Url="html/M_Hummingbird_TestFramework_Cryptography_TripleDes_Encrypt.htm" />
   <HelpKINode Title="TripleDes.TripleDes constructor" Url="html/M_Hummingbird_TestFramework_Cryptography_TripleDes__ctor.htm" />
-  <HelpKINode Title="Type property" Url="html/P_Hummingbird_TestFramework_EditorTypeAttribute_Type.htm" />
+  <HelpKINode Title="TrueSteps property" Url="html/P_Hummingbird_TestFramework_Automation_ConditionalTestStep_TrueSteps.htm" />
   <HelpKINode Title="type property">
     <HelpKINode Title="testsuiteTestcaseError.type Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_JUnit_testsuiteTestcaseError_type.htm" />
     <HelpKINode Title="testsuiteTestcaseFailure.type Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_JUnit_testsuiteTestcaseFailure_type.htm" />
     <HelpKINode Title="testsuiteType.type Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_testsuiteType_type.htm" />
   </HelpKINode>
+  <HelpKINode Title="Type property" Url="html/P_Hummingbird_TestFramework_EditorTypeAttribute_Type.htm" />
   <HelpKINode Title="UncompressString method" Url="html/M_Hummingbird_TestFramework_Utilities_UncompressString.htm" />
   <HelpKINode Title="UnderLoad enumeration member" Url="html/T_Hummingbird_TestFramework_Automation_ScenarioStatus.htm" />
   <HelpKINode Title="UnderPeakLoad enumeration member" Url="html/T_Hummingbird_TestFramework_Automation_ScenarioStatus.htm" />
@@ -4269,14 +4441,14 @@
   <HelpKINode Title="UserName enumeration member" Url="html/T_Hummingbird_TestFramework_Services_AuthenticationModes.htm" />
   <HelpKINode Title="Username property">
     <HelpKINode Title="OpenApiServiceOptions.Username Property " Url="html/P_Hummingbird_TestFramework_CodeGenerator_OpenApiServiceOptions_Username.htm" />
+    <HelpKINode Title="Service.Username Property " Url="html/P_Hummingbird_TestFramework_ExtensionProject_Service_Username.htm" />
     <HelpKINode Title="Credential.Username Property " Url="html/P_Hummingbird_TestFramework_Configuration_Credential_Username.htm" />
     <HelpKINode Title="RequestOptions.Username Property " Url="html/P_Hummingbird_TestFramework_Services_RequestOptions_Username.htm" />
     <HelpKINode Title="WsdlServiceOptions.Username Property " Url="html/P_Hummingbird_TestFramework_CodeGenerator_WsdlServiceOptions_Username.htm" />
-    <HelpKINode Title="Service.Username Property " Url="html/P_Hummingbird_TestFramework_ExtensionProject_Service_Username.htm" />
   </HelpKINode>
   <HelpKINode Title="UserName property">
-    <HelpKINode Title="AbstractSqlTestStep.UserName Property " Url="html/P_Hummingbird_TestFramework_Automation_AbstractSqlTestStep_UserName.htm" />
     <HelpKINode Title="StartWindowsServiceTestStep.UserName Property " Url="html/P_Hummingbird_TestFramework_Automation_StartWindowsServiceTestStep_UserName.htm" />
+    <HelpKINode Title="AbstractSqlTestStep.UserName Property " Url="html/P_Hummingbird_TestFramework_Automation_AbstractSqlTestStep_UserName.htm" />
   </HelpKINode>
   <HelpKINode Title="UseSoap12 property" Url="html/P_Hummingbird_TestFramework_Services_RequestOptions_UseSoap12.htm" />
   <HelpKINode Title="UseXmlSerializer property" Url="html/P_Hummingbird_TestFramework_CodeGenerator_WsdlServiceOptions_UseXmlSerializer.htm" />
@@ -4316,22 +4488,23 @@
     <HelpKINode Title="WcfEndpointBehavior.Validate Method " Url="html/M_Hummingbird_TestFramework_Services_WcfEndpointBehavior_Validate.htm" />
     <HelpKINode Title="WcfServiceBehaviorAttribute.Validate Method " Url="html/M_Hummingbird_TestFramework_Services_WcfServiceBehaviorAttribute_Validate.htm" />
   </HelpKINode>
-  <HelpKINode Title="value property">
-    <HelpKINode Title="testsuiteProperty.value Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_JUnit_testsuiteProperty_value.htm" />
-    <HelpKINode Title="propertyType.value Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_propertyType_value.htm" />
-  </HelpKINode>
   <HelpKINode Title="Value property">
     <HelpKINode Title="CustomParameter.Value Property " Url="html/P_Hummingbird_TestFramework_Configuration_CustomParameter_Value.htm" />
-    <HelpKINode Title="SavedResponse.Value Property " Url="html/P_Hummingbird_TestFramework_Configuration_SavedResponse_Value.htm" />
-    <HelpKINode Title="testsuiteTestcaseFailure.Value Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_JUnit_testsuiteTestcaseFailure_Value.htm" />
-    <HelpKINode Title="Variable(T).Value Property " Url="html/P_Hummingbird_TestFramework_Variable_1_Value.htm" />
-    <HelpKINode Title="Variable.Value Property " Url="html/P_Hummingbird_TestFramework_Variable_Value.htm" />
     <HelpKINode Title="MeasurePoint.Value Property " Url="html/P_Hummingbird_TestFramework_Automation_MeasurePoint_Value.htm" />
     <HelpKINode Title="Parameter.Value Property " Url="html/P_Hummingbird_TestFramework_Services_Parameter_Value.htm" />
     <HelpKINode Title="PerformanceThreshold.Value Property " Url="html/P_Hummingbird_TestFramework_Automation_PerformanceThreshold_Value.htm" />
     <HelpKINode Title="SavedRequest.Value Property " Url="html/P_Hummingbird_TestFramework_Configuration_SavedRequest_Value.htm" />
+    <HelpKINode Title="SavedResponse.Value Property " Url="html/P_Hummingbird_TestFramework_Configuration_SavedResponse_Value.htm" />
+    <HelpKINode Title="SimpleExpression.Value Property " Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_SimpleExpression_Value.htm" />
     <HelpKINode Title="SimpleResponseCondition.Value Property " Url="html/P_Hummingbird_TestFramework_Automation_ResponseConditions_SimpleResponseCondition_Value.htm" />
     <HelpKINode Title="testsuiteTestcaseError.Value Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_JUnit_testsuiteTestcaseError_Value.htm" />
+    <HelpKINode Title="testsuiteTestcaseFailure.Value Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_JUnit_testsuiteTestcaseFailure_Value.htm" />
+    <HelpKINode Title="Variable(T).Value Property " Url="html/P_Hummingbird_TestFramework_Variable_1_Value.htm" />
+    <HelpKINode Title="Variable.Value Property " Url="html/P_Hummingbird_TestFramework_Variable_Value.htm" />
+  </HelpKINode>
+  <HelpKINode Title="value property">
+    <HelpKINode Title="propertyType.value Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_NUnit_propertyType_value.htm" />
+    <HelpKINode Title="testsuiteProperty.value Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_JUnit_testsuiteProperty_value.htm" />
   </HelpKINode>
   <HelpKINode Title="ValueMapping class">
     <HelpKINode Title="ValueMapping Class" Url="html/T_Hummingbird_TestFramework_Automation_ValueMapping.htm" />
@@ -4392,6 +4565,19 @@
     <HelpKINode Title="ReportItem.Variables Property " Url="html/P_Hummingbird_TestFramework_Automation_Report_ReportItem_Variables.htm" />
     <HelpKINode Title="VariableDataGenerator.Variables Property " Url="html/P_Hummingbird_TestFramework_Automation_DataGenerator_VariableDataGenerator_Variables.htm" />
   </HelpKINode>
+  <HelpKINode Title="VariableValueCondition class">
+    <HelpKINode Title="VariableValueCondition Class" Url="html/T_Hummingbird_TestFramework_Automation_FunctionalConditions_VariableValueCondition.htm" />
+    <HelpKINode Title="constructor" Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_VariableValueCondition__ctor.htm" />
+    <HelpKINode Title="methods" Url="html/Methods_T_Hummingbird_TestFramework_Automation_FunctionalConditions_VariableValueCondition.htm" />
+    <HelpKINode Title="properties" Url="html/Properties_T_Hummingbird_TestFramework_Automation_FunctionalConditions_VariableValueCondition.htm" />
+  </HelpKINode>
+  <HelpKINode Title="VariableValueCondition.Evaluate method" Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_VariableValueCondition_Evaluate.htm" />
+  <HelpKINode Title="VariableValueCondition.ExpectedValue property" Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_VariableValueCondition_ExpectedValue.htm" />
+  <HelpKINode Title="VariableValueCondition.IsCaseSensitive property" Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_VariableValueCondition_IsCaseSensitive.htm" />
+  <HelpKINode Title="VariableValueCondition.Name property" Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_VariableValueCondition_Name.htm" />
+  <HelpKINode Title="VariableValueCondition.Operator property" Url="html/P_Hummingbird_TestFramework_Automation_FunctionalConditions_VariableValueCondition_Operator.htm" />
+  <HelpKINode Title="VariableValueCondition.ToString method" Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_VariableValueCondition_ToString.htm" />
+  <HelpKINode Title="VariableValueCondition.VariableValueCondition constructor" Url="html/M_Hummingbird_TestFramework_Automation_FunctionalConditions_VariableValueCondition__ctor.htm" />
   <HelpKINode Title="VBScriptTestStep class">
     <HelpKINode Title="VBScriptTestStep Class" Url="html/T_Hummingbird_TestFramework_Automation_VBScriptTestStep.htm" />
     <HelpKINode Title="constructor" Url="html/M_Hummingbird_TestFramework_Automation_VBScriptTestStep__ctor.htm" />
