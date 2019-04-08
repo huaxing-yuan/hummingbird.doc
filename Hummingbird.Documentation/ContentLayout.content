@@ -1,0 +1,131 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Topics>
+  <Topic id="adfed5fa-e082-4cef-a125-8136797ca112" visible="True" isDefault="true" title="Introduction" />
+  <Topic id="cc0c083a-e518-476d-96fb-d94ba4226850" visible="True" isExpanded="true" title="Installation">
+    <Topic id="a95ea83d-733b-4a07-b290-438514fbcbb5" visible="True" title="ClickOnce Installer" />
+    <Topic id="f7a36b1b-4cf2-4130-99c9-460787e5b2fe" visible="True" title="Windows Installer" />
+    <Topic id="cb60599c-39e3-48df-b079-03533657ba3a" visible="True" />
+    <Topic id="a28565f7-10ec-48ca-9251-efd6cab90c8d" visible="True" title="Nightly or stable version" />
+  </Topic>
+  <Topic id="b7e96bd4-1139-4eaf-bab6-1376c4cf7a39" visible="True" isExpanded="true" title="Hummingbird App">
+    <Topic id="ab9e58ea-f1c6-4564-ae2a-674b49dbe40e" visible="True" isExpanded="true" title="Manual Testing">
+      <Topic id="a58d6d26-1331-4fad-ab62-991d6e0153ba" visible="True" title="Request Message Editor">
+        <Topic id="c261a1c4-a8f3-4396-a437-342927926842" visible="True" title="Select a service to test" />
+        <Topic id="1fe93b81-ec04-477c-9a14-12b8c64eff58" visible="True" title="Object-Model based editor" />
+        <Topic id="203facbf-47c0-4fe4-a9a0-0b26647802e1" visible="True" title="Service Options" />
+        <Topic id="335dd917-b6ca-4724-84e8-cb0fca1e77f6" visible="True" title="Search tags and values" />
+        <Topic id="d5124af7-8a51-4067-982b-2709d70b10bd" visible="True" title="Test Environments" />
+        <Topic id="835dd184-c432-4ec5-8ed5-193cd1925fde" visible="True" title="Saved &amp; Favorited requests" />
+      </Topic>
+      <Topic id="49130667-01d2-4c61-a56c-0c6616b0bd25" visible="True" title="Transaction History" />
+      <Topic id="318b5440-d670-4eb4-b94c-de5befe8f489" visible="True" title="Service Simulation">
+        <Topic id="56cbbd63-2ff8-4be1-bf13-582921671164" visible="True" title="Start &amp; Stop service simulation" />
+        <Topic id="8bd03b78-7d8c-4e05-9ea1-da0ada2ff7e0" visible="True" title="Configure services replies" />
+        <Topic id="cecf9e5f-0cae-41c7-bc45-f65c6a64ca82" visible="True" title="Reply errors or Faults" />
+        <Topic id="c99ef87d-4ac6-4498-ae48-a2533a584d5c" visible="True" title="Conditional reply" />
+        <Topic id="92011cd0-e0fe-41c5-9fc8-21df7bcae4a3" visible="True" title="Register HTTP Port for Simulation" />
+      </Topic>
+      <Topic id="baaec5c0-0559-40ef-8a58-a7c474110e7a" visible="True" />
+    </Topic>
+    <Topic id="3842ef58-f825-4f5a-8cbf-f5f5dba28f66" visible="True" isExpanded="true" title="System Settings">
+      <Topic id="a0bc4270-f160-48d5-be6d-0bbae11c721f" visible="True" title="General Settings" />
+      <Topic id="82e437e1-c9bf-449f-8ed3-28859423e766" visible="True" title="Test Settings" />
+      <Topic id="def45c86-9ffa-4692-85bf-ef997b501e27" visible="True" title="Profile management" />
+      <Topic id="fb6150ac-4773-4457-afc2-e203cf917dc8" visible="True" title="Extension management" />
+      <Topic id="56eb7976-d13a-4a6e-8b27-5f96f7fd4f63" visible="True" title="Certificate" />
+    </Topic>
+    <Topic id="d67b78dd-d49c-4d49-a81a-a5699956cad2" visible="True" title="Statistics &amp; Dashboard" />
+    <Topic id="9ff0530d-805e-41f8-9a47-7e9f0b148986" visible="True" isExpanded="true" title="Test Automation">
+      <Topic id="00a512e0-20a6-44c5-a074-90292eb3d15e" visible="True" isSelected="true" title="Automation project" />
+      <Topic id="32acde8a-8896-4478-ab9f-695b8cf8b996" visible="True" title="Test suite" />
+      <Topic id="bcabaa26-de5c-4ba6-9aa4-afeb75f0f93b" visible="True" title="Test case" />
+      <Topic id="ad599380-0a49-4a75-9cde-5a909bd5c5f7" visible="True" title="Data driven test case" />
+      <Topic id="52612865-a9c0-42da-9918-404c1185502f" visible="True" title="Test steps">
+        <Topic id="27a87929-6f39-498e-bf18-44ca27e621bb" visible="True" title="Test Step : Call a service" />
+        <Topic id="87776400-f558-4333-a140-ab004eb22c95" visible="True" title="Test Step : Coded step with C#" />
+        <Topic id="d5703e45-9614-4d72-9ccb-fdf6621e8ba8" visible="True" title="Test Step : Coded step with VB.NET" />
+        <Topic id="e0280de6-9180-4cd7-8be3-2acbbb59ab94" visible="True" title="Test Step : Extract property" />
+        <Topic id="751622a1-2660-4209-b316-410d6be3163d" visible="True" title="Test Step : Run command line" />
+        <Topic id="bf192fa5-b493-43cd-9736-15237aa90633" visible="True" title="Test Step : Run SQL query (SQL Server)" />
+        <Topic id="1358e8c0-984a-4d28-a930-bf5d1dca1ffc" visible="True" title="Test Step : Control service simulation" />
+        <Topic id="adf4a3dd-8393-4a39-9c48-3bb4f13f23a9" visible="True" title="Test Step : Update service simulation data" />
+        <Topic id="64edb9fe-ae4e-4d09-b162-f957c15c002a" visible="True" title="Test Step : Control windows service" />
+        <Topic id="624fb338-0aee-4017-9a63-cc98df773e48" visible="True" title="Test Step : Data generator (for Performance test)" />
+      </Topic>
+      <Topic id="bb8d40f8-2ecc-4562-a512-78897edfc213" visible="True" title="Assertions">
+        <Topic id="915dc915-97c1-4bf8-8e44-609c0f04d96b" visible="True" title="Contains assertion" />
+        <Topic id="babe98f9-0378-447c-8ce3-813165d6cd71" visible="True" title="Not Contains assertion" />
+        <Topic id="06f73143-47ef-4dcb-b014-76b45eaaf8bd" visible="True" title="Soap Fault assertion" />
+        <Topic id="57a6ec57-21ce-4a7a-bb05-2fbfe11f6528" visible="True" title="Path Validation assertion" />
+        <Topic id="f73f8343-33ea-4b1e-b8b6-1fc1fac39616" visible="True" title="XPath Validation assertion" />
+      </Topic>
+      <Topic id="6fddf818-3ff3-459e-be6b-fdf7c8c1e258" visible="True" title="View test report" />
+      <Topic id="7ad36a65-c4fe-4ec8-aaaa-86798c78a3db" visible="True" title="Export test report" />
+      <Topic id="99fc60b8-a87a-4446-a32c-6cd295998794" visible="True" title="Test profiles" />
+      <Topic id="4095bfa1-de0f-4bb3-8d01-a342cb75970b" visible="True" title="Variables of test cases" />
+    </Topic>
+    <Topic id="6ce70faa-33cc-43b6-b432-2e34c2dfba08" visible="True" title="Performance Test">
+      <Topic id="bf94f281-14d4-4bff-99a2-a756ba832f3c" visible="True" title="Configuration of a performance test" />
+      <Topic id="bd122bdb-ecb5-4843-b7ab-094eeeac7c79" visible="True" title="Use data generator to variablize test data" />
+      <Topic id="1090146e-8de2-436b-aa2d-0723dc384fe0" visible="True" title="The balise load test" />
+      <Topic id="1b898ce4-712b-4277-9b7b-b9fb82b828f4" visible="True" title="The Stress test" />
+      <Topic id="95d63e39-f326-426c-a55e-38b8a94bff18" visible="True" title="The Spike test" />
+      <Topic id="544454ba-e0ea-4861-822d-69b4537585e4" visible="True" title="Real-time monitoring of test execution" />
+      <Topic id="596579b8-a72d-40b8-9906-dacb6cf83b82" visible="True" title="View performance test report" />
+    </Topic>
+    <Topic id="3257f138-3965-4572-b1b0-71bea0f30c58" visible="True" title="Integrated Tools">
+      <Topic id="ec66f221-52f0-4163-b38a-625ba7068625" visible="True" title="Extension designer" />
+      <Topic id="aabbf083-c695-4641-a842-9110849f9764" visible="True" title="Regular expression tool" />
+      <Topic id="517e1d6c-4f27-44ed-ba9d-942150de4e2e" visible="True" title="Hash and cryptography tool" />
+      <Topic id="287ac45f-d0f8-40f5-94c2-b7e69bd4f168" visible="True" title="Base64 Encoding &amp; Decoding" />
+      <Topic id="6d2f8757-2347-4c5e-b0c2-eec95c9e76f7" visible="True" title="XML Compare" />
+      <Topic id="2310fc25-502c-4c3e-84cd-1c994d0779c4" visible="True" title="XPath Validation tool" />
+    </Topic>
+    <Topic id="e78cf04c-f791-428d-9774-285da3299fb4" visible="True" title="Extension Designer">
+      <Topic id="39b195cc-f022-42a9-9717-f7ebf6566989" visible="True" title="Import service description from WSDL (SOAP)" />
+      <Topic id="bad61af6-1854-4946-b44a-83c1bc5ef839" visible="True" title="Import service description from OpenAPI" />
+    </Topic>
+  </Topic>
+  <Topic id="2e6d1708-8537-4394-9166-93fd258026db" visible="True" title="Hummingbird CLI">
+    <Topic id="e65ca291-07ab-44fb-9125-ebe92420a911" visible="True" title="Run automated tests" />
+    <Topic id="068f06ff-ff8a-4dab-a5f4-7818452ec3c6" visible="True" title="Convert Test reports" />
+    <Topic id="92f20cb5-8ade-4b52-9eeb-46f0fa6c5ced" visible="True" title="Start Service Simulation" />
+    <Topic id="54e2ecbf-fdf8-4152-be79-13a47adb39b0" visible="True" title="Install extension" />
+  </Topic>
+  <Topic id="19acd7ec-541f-489d-9e6d-5676fa17e619" visible="True" title="Report Viewer" />
+  <Topic id="7f9648dc-e6bf-4b09-b157-a07fc822c529" visible="True" isExpanded="true" title="Advanced Topics">
+    <Topic id="a0b8aa94-f536-4514-93c0-1ad725e297f8" visible="True" title="Test Framework Architecture" />
+    <Topic id="29a04cb1-051f-4bc1-a97c-1c6421700b87" visible="True" title="Import from WSDL" />
+    <Topic id="78eb89e5-e3de-4b5f-b547-f96da7a1f483" visible="True" title="Define SOAP Services" />
+    <Topic id="a8fb2df2-98d6-4afb-b2d3-1be4d9de20ed" visible="True" title="Define REST Services" />
+    <Topic id="fbdf16e5-4fa3-485d-a600-41043cdf0e8a" visible="True" title="Customize UI for Test Data Editing" />
+    <Topic id="ca399a5b-0007-4d69-9a0b-79a6dd04dcff" visible="True" title="Customize UI for Test Object visualization" />
+    <Topic id="4d5fe090-c9a8-4041-8024-e7fb92f959b8" visible="True" title="Implement Client or Server simulation" />
+    <Topic id="aa6c417c-30b2-4a25-9c4f-25b57d67c03b" visible="True" title="Install a custom certificate" />
+    <Topic id="dabca189-bcad-480c-9502-a0cfebbf428e" visible="True" title="Register portsfor HTTP and SSL" />
+    <Topic id="075021f2-456c-47fb-a63c-ae2ed630c36b" visible="True">
+      <Topic id="a19f81ad-3a8f-480e-9f54-a6ee6588dc14" visible="True" title="Extension Example : SMS-C Server Simulation" />
+      <Topic id="1156504f-cc9b-48ab-b084-22091254181d" visible="True" title="Extension Example : LDAP Client" />
+    </Topic>
+  </Topic>
+  <Topic id="21dd7de2-8f8a-495e-af08-e857492bddce" visible="True" title="CI/CD Integration">
+    <Topic id="8bba8f69-adcb-4008-bbe9-f4d028a1a36b" visible="True" title="Integration with Azure DevOps (VSTS)" />
+    <Topic id="9b613a76-91e6-4985-b7cd-47ed527a0b5d" visible="True" title="Integration with Jenkins" />
+    <Topic id="99da60ac-a12e-4d3d-a355-33cd0b1e2f7a" visible="True" title="Publish Test Reports" />
+  </Topic>
+  <Topic id="9b00346a-3452-4358-9b23-a723ca895eda" visible="True" title="Community Extensions" />
+  <Topic id="8976ef7f-8241-49fb-bd22-6de1214a0f89" visible="True" title="Auxiliary projects" />
+  <Topic id="b7ea64b1-c391-4c21-bb04-436cde134a1f" visible="True" title="Glossary" />
+  <Topic id="f6c13f49-3bc8-42cd-9dae-a3756e715983" visible="True" isExpanded="true" apiParentMode="InsertBefore" title="Version History">
+    <HelpKeywords>
+      <HelpKeyword index="K" term="version, history" />
+    </HelpKeywords>
+    <Topic id="73e3e7d8-6d8e-4f07-84b8-5302e38cd7af" visible="True" title="December 2018 release" />
+    <Topic id="c5dcf625-414c-4037-bd0e-d0f45ec38bb1" visible="True" title="October 2018 release">
+      <HelpKeywords>
+        <HelpKeyword index="K" term="version, 1.0.0.0" />
+      </HelpKeywords>
+    </Topic>
+    <Topic id="fe99fdbe-e2f7-4ae0-ba47-bfa257c51467" visible="True" title="August 2018 release" />
+  </Topic>
+</Topics>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="19acd7ec-541f-489d-9e6d-5676fa17e619" revisionNumber="1">
+  <developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+
+    <summary>
+      <para>Hummingbird report viewer is an independent application to view the automation test results. It provides an organized and graphical interface to show test results in both global and detailed information.</para>
+    </summary>
+
+
+    <introduction>
+      <para>You can see statistical information such as passed tests and pass rate, global execution duration. For detailed information, you can see the request, response of each test step, each assertion. That gives not only the way to report, but also a way to investigate.</para>
+      <mediaLink>
+        <image placement="center" xlink:href="rv"/>
+      </mediaLink>
+      <para>On the left side, a tree view that represents each Test Suite, Test Case and details of the Test Step, you can find easily if a step is passed or failed, and measurement to estimate the performance of application. </para>
+      <para>The panel on the right side shows the detail of the selected item. For example, the request and the response if it is a step to call a web service.</para>
+    </introduction>
+
+    <!-- Add one or more top-level section elements.  These are collapsible.
+         If using <autoOutline />, add an address attribute to identify it
+         and specify a title so that it can be jumped to with a hyperlink. -->
+    <section address="Section1">
+      <title>Open a report</title>
+      <content>
+        <!-- Uncomment this to create a sub-section outline
+        <autoOutline /> -->
+        <para>To open a report, open Report Viewer, following window will be shown.</para>
+        <mediaLink>
+          <image placement="center" xlink:href="openreport"/>
+        </mediaLink>
+        <para>Drag or Drop a report file (*.apr) from Windows Explorer into the window will open the report</para>
+      </content>
+    </section>
+
+    <relatedTopics>
+
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

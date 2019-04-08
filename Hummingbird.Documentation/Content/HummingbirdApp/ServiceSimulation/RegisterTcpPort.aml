@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="92011cd0-e0fe-41c5-9fc8-21df7bcae4a3" revisionNumber="1">
+  <developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <summary>
+      <para>When a service simulation starts, the system will register a HTTP Port and redirects the HTTP traffics of this port to Hummingbird Test Framework.</para>
+      <para>In Windows 7 and higher, TCP Port registration is reserved to administrator. When service simulation starts for the first time, an UAC window will appear. You must have administrator rights to pass it.</para>
+    </summary>
+
+    <!-- Add one or more top-level section elements.  These are collapsible.
+         If using <autoOutline />, add an address attribute to identify it
+         and specify a title so that it can be jumped to with a hyperlink. -->
+    <section address="Section1">
+      <title>With Administrator rights</title>
+      <content>
+        <mediaLink>
+          <image placement="center" xlink:href="uac"/>
+        </mediaLink>
+        <para>When your account is part of Administrators, a following windows will be shown when services simulation starts for the first time. </para>
+        <para>You can press <literal>Yes</literal> to accept the registration. To avoid security issues, Before click Yes button on UAC, make sure that the running script is <literal>RegisterHttpPort.bat</literal> from Hummingbird installation folder. Detailed information can be seen by clicking the link <literal>Show details</literal>
+        </para>
+      </content>
+    </section>
+
+    <section address="Section2">
+      <title>Without Administrator rights</title>
+      <content>
+        <para>Without Administrator rights, you must enter a username and password of an administrator account. In an enterprise environment, contact your IT Department and ask them to register ports for you.</para>
+        <para>Once port is registered, you don't need administrator rights anymore: Port registration is only necessary for the first time when a virtual server starts. No UAC pop-up again until the TCP Port for the virtual server is changed.</para>
+      </content>
+    </section>
+
+    <section address="Section2">
+      <title>Register HTTP Port manually</title>
+      <content>
+        <para>HTTP Port can be registered manually via a command line instruction. If you are an Administrator of the testing machine, you could run the following command line to register the HTTP port for HTTP Server and SOAP Server:</para>
+        <code title="Register HTTP Port" language="bat">
+          REM Replace [PORT] with the HTTP Port to register, i.e: 8080
+          REM Replace [USER] with the account name who will running hummingbird for simulation. set [USER] to everyone will allow anyone run service simulation on the port [PORT]
+          netsh.exe http add urlacl url=http://+:[PORT]/ user=[USER]
+        </code>
+      </content>
+    </section>
+
+    <relatedTopics>
+      <!-- One or more of the following:
+           - A local link
+           - An external link
+           - A code entity reference
+
+      <link xlink:href="Other Topic's ID"/>
+      <link xlink:href="Other Topic's ID">Link inner text</link>
+
+      <externalLink>
+          <linkText>Link text</linkText>
+          <linkAlternateText>Optional alternate link text</linkAlternateText>
+          <linkUri>URI</linkUri>
+      </externalLink>
+
+      <codeEntityReference>API member ID</codeEntityReference>
+
+      Examples:
+
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+      <externalLink>
+          <linkText>SHFB on GitHub</linkText>
+          <linkAlternateText>Go to GitHub</linkAlternateText>
+          <linkUri>https://GitHub.com/EWSoftware/SHFB</linkUri>
+      </externalLink>
+
+      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+      -->
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

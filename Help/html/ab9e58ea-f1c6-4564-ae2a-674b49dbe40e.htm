@@ -1,0 +1,71 @@
+﻿<html><head><meta http-equiv="X-UA-Compatible" content="IE=edge" /><link rel="shortcut icon" href="../icons/favicon.ico" /><link rel="stylesheet" type="text/css" href="../styles/branding.css" /><link rel="stylesheet" type="text/css" href="../styles/branding-en-US.css" /><script type="text/javascript" src="../scripts/branding.js"> </script><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>Manual Testing</title><meta name="Language" content="en-us" /><meta name="Microsoft.Help.Id" content="ab9e58ea-f1c6-4564-ae2a-674b49dbe40e" /><meta name="Description" content="Testing is a key step in the software development process to ensure the behavior of the software is correct in prior to release software to end users. While the software may be complex and composed with several components which communicates to each other." /><meta name="Microsoft.Help.ContentType" content="Concepts" /><meta name="BrandingAware" content="true" /><link rel="stylesheet" type="text/css" href="../styles/branding-Website.css" /><script type="text/javascript" src="../scripts/jquery-3.3.1.min.js"></script><script type="text/javascript" src="../scripts/branding-Website.js"></script><script type="text/javascript" src="../scripts/clipboard.min.js"></script></head><body onload="OnLoad('cs')"><input type="hidden" id="userDataCache" class="userDataStyle" /><div class="pageHeader" id="PageHeader">The Hummingbird Project<form id="SearchForm" method="get" action="#" onsubmit="javascript:TransferToSearchPage(); return false;"><input id="SearchTextBox" type="text" maxlength="200" /><button id="SearchButton" type="submit"></button></form></div><div class="pageBody"><div class="leftNav" id="leftNav"><div id="tocNav"><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html\adfed5fa-e082-4cef-a125-8136797ca112.htm" title="The Hummingbird Project" tocid="roottoc">The Hummingbird Project</a></div><div class="toclevel0" data-toclevel="0"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/b7e96bd4-1139-4eaf-bab6-1376c4cf7a39.htm" title="Hummingbird App" tocid="b7e96bd4-1139-4eaf-bab6-1376c4cf7a39">Hummingbird App</a></div><div class="toclevel1 current" data-toclevel="1" data-childrenloaded="true"><a class="tocExpanded" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/ab9e58ea-f1c6-4564-ae2a-674b49dbe40e.htm" title="Manual Testing" tocid="ab9e58ea-f1c6-4564-ae2a-674b49dbe40e">Manual Testing</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/a58d6d26-1331-4fad-ab62-991d6e0153ba.htm" title="Request Message Editor" tocid="a58d6d26-1331-4fad-ab62-991d6e0153ba">Request Message Editor</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/49130667-01d2-4c61-a56c-0c6616b0bd25.htm" title="Transaction History" tocid="49130667-01d2-4c61-a56c-0c6616b0bd25">Transaction History</a></div><div class="toclevel2" data-toclevel="2"><a class="tocCollapsed" onclick="javascript: Toggle(this);" href="#!" /><a data-tochassubtree="true" href="../html/318b5440-d670-4eb4-b94c-de5befe8f489.htm" title="Service Simulation" tocid="318b5440-d670-4eb4-b94c-de5befe8f489">Service Simulation</a></div><div class="toclevel2" data-toclevel="2"><a data-tochassubtree="false" href="../html/baaec5c0-0559-40ef-8a58-a7c474110e7a.htm" title="List of all services" tocid="baaec5c0-0559-40ef-8a58-a7c474110e7a">List of all services</a></div></div><div id="tocResizableEW" onmousedown="OnMouseDown(event);"></div><div id="TocResize" class="tocResize"><img id="ResizeImageIncrease" src="../icons/TocOpen.gif" onclick="OnIncreaseToc()" alt="Click or drag to resize" title="Click or drag to resize" /><img id="ResizeImageReset" src="../icons/TocClose.gif" style="display:none" onclick="OnResetToc()" alt="Click or drag to resize" title="Click or drag to resize" /></div></div><div class="topicContent" id="TopicContent"><table class="titleTable"><tr><td class="titleColumn"><h1>Manual Testing</h1></td></tr></table><span class="introStyle"></span> <div class="summary"><p>Testing is a key step in the software development process to ensure the behavior of the software is correct in prior to release software to end users. While the software may be complex and composed with several components which communicates to each other. So we need tests to ensure <span class="literal">Each component</span> works as expected and they <span class="literal">Communicate</span> correctly with each other.</p><p>Each component will be invoked by either the user with user interface, or another piece of software. In the same time, it may invoke other components or software: These components provide data or result that your application do not have, your application needs the result to continue its process. </p><p>Of course, These components may be developed by another team or even another organization, often not available or stable during the component test phrase. Thats why Hummingbird provides the way to simulate the caller of your application, and also the way to simulate other components that your application depends on: it receives data from your application, and provide result as you defined to meet test objective.</p><p>The first functionality is often called <span class="literal">Driver</span> or <span class="literal">Injector</span>, and the second functionality is called <span class="literal">Stub</span> or <span class="literal">Service Simulation</span>.</p><p>In this section we will discuss how to test your application with the Driver, and how to simulate service you depends on with Service Simulation.</p></div><div class="collapsibleAreaRegion" id="Section1"><span class="collapsibleRegionTitle" onclick="SectionExpandCollapse('ID0RB')" onkeypress="SectionExpandCollapse_CheckKey('ID0RB', event)" tabindex="0"><img id="ID0RBToggle" class="collapseToggle" src="../icons/SectionExpanded.png" />Test Runner</span></div><div id="ID0RBSection" class="collapsibleSection"><p>
+          With test runner, hummingbird can be used both as Driver and Stub:
+        </p><ul><li><p><strong>Driver</strong>: replaces a component that takes care of the
+            control and/or the calling of a component or system. That means you can call a
+            web service under test with hummingbird.
+          </p></li><li><p><strong>Stub</strong>, also called <strong>Service Simulation</strong> or <strong>
+              Service
+              Virtualization
+            </strong>, is used to simulate the component or system of which your
+            application calls.
+          </p></li></ul><p>
+          In hummingbird, that are combined in the same user
+          interface. To start manual testing, go to the Tab Testing -&gt; Test Runner.
+        </p><p>As shown by the image below:</p><p><div class="mediaNear"><img alt="Test Runner" src="../media/test_runner.png" /></div></p><p>
+          On the left side, the software listed all Virtual Services
+          you want to use. For example: The <strong>SOAP Server</strong> is used to simulate all
+          SOAP Web Services, described by a WSDL document. And the <strong>HTTP Server</strong> is
+          used to simulate all low level HTTP requests or the REST web services.
+        </p><p>
+          If you need other virtual services, click on link <strong>
+            Add/Remove
+            Servers
+          </strong> to show and activate available virtual servers installed. When a
+          virtual server is available, it doesn’t mean the server is running.
+        </p><p>
+          You can click on the link <strong>Start services</strong> to start
+          simulation for the services of all virtual servers, or start and stop
+          individual virtual server. When a virtual server is running, a green border
+          will be shown on its left side.
+        </p><p>
+          Another part of the screen is <strong>Messages</strong>, it records
+          every incoming and outgoing transactions. Incoming message means virtual server
+          has received a request from your application and replied as configured.
+          Outgoing message means you are using hummingbird to call the web services
+          exposed by your application. You can understand the direction by the
+          icon.
+        </p><ul><li><p><span class="media"><img alt="image 011" src="../media/image011.png" /></span> This icon indicates an outgoing
+            message
+          </p></li><li><p><span class="media"><img alt="image 012" src="../media/image012.png" /></span> This icon indicates an incoming
+            message.
+          </p></li><li><p><span class="media"><img alt="image 013" src="../media/image013.png" /></span> This icon indicates the call is
+            performed with an authentication process, such as Basic Authentication that
+            uses a Username/Password pair, or a Windows Integrated Authentication.
+          </p></li><li><p><span class="media"><img alt="image 014" src="../media/image014.png" /></span> This icon indicates the call is
+            performed with a secured transport level, such as HTTPS
+          </p></li></ul><p>
+          The message has a status, shown in different colors,
+          indicates a Technical result. Commonly, if the server send the reply with HTTP
+          5xx or HTTP 4xx status code, the request is considered as Failed. Other
+          technical issues such as Timeout, Firewall, and Connection issue, the status
+          will also be tagged as Failed. To understand the status and its meaning, please
+          refers to [TODO: Link to Hummingbird.TestFramework.Messaging.MessageStatus]
+        </p><p>
+          Finally, you have two button, gives you access to the two
+          main functionality
+        </p><ul><li><p>
+              Send Request: Allows to test services: All services is organized
+              here.
+            </p></li><li><p>
+              Server Replies: Allows to configure the service simulation
+              behavior.
+            </p></li></ul></div></div></div><div id="pageFooter" class="pageFooter"><a href="https://github.com/huaxing-yuan/hummingbird.ui.doc/issues" target="_blank" class="icon fas fa-comments"></a> <a href="http://www.hummingbird-alm.com" target="_blank" class="icon fas fa-home"></a> <a href="https://github.com/huaxing-yuan" target="_blank" class="icon fab fa-github"></a> <a href="https://www.linkedin.com/in/huaxing-yuan-6954349a/" target="_blank" class="icon fab fa-linkedin-in"></a><p>© Copyright 2014-2018 Huaxing YUAN, All rights reserved</p></div><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-52438309-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-52438309-2');
+</script>
+</body></html>

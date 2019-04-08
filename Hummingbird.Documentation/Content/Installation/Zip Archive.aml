@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="cb60599c-39e3-48df-b079-03533657ba3a" revisionNumber="1">
+  <developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <section address="_Toc515307886">
+      <!--h2-->
+      <title>Zip archive</title>
+      <content>
+
+        <para>
+          Hummingbird App does not register anything on your operation
+          system. You could download the latest version of the Zip archive, un-zip them
+          to your favorite folder, then launch Hummingbird.exe directly.
+        </para>
+
+        <para>
+          <mediaLink>
+            <image xlink:href="image006" />
+          </mediaLink>
+        </para>
+
+      </content>
+    </section>
+
+    <section address="_Toc515307887">
+      <!--h3-->
+      <title>Updating and Upgrading</title>
+      <content>
+        <para>
+          When you want to update or upgrade Hummingbird app to latest
+          version, you can download the latest version of Zip archive and un-zip in the
+          same location as before, or to a different location if you want to run them
+          side by side.
+        </para>
+      </content>
+    </section>
+  </developerConceptualDocument>
+</topic>

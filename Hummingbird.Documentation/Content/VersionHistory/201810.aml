@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="c5dcf625-414c-4037-bd0e-d0f45ec38bb1" revisionNumber="1">
+	<developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<introduction>
+			<para>
+        The October 2018 release of Hummingbird provides significant improvement to let your QA teams test better REST API Services, within an integrated environment, and fluid, natural user experience.
+      </para>
+      <autoOutline />
+    </introduction>
+
+    <section address="Section1">
+      <title>Hummingbird Extension Designer supports both OpenAPI and WSDL</title>
+      <content>
+        <para>You can import service description from OpenAPI document either in JSON or YAML format. Both OpenAPI 2.0 (Swagger) and 3.0 are supported.</para>
+      </content>
+    </section>
+
+    <section address="Section2">
+      <title>Overall user experience improvements</title>
+      <content>
+        <para>You can import service description from OpenAPI document either in JSON or YAML format. Both OpenAPI 2.0 (Swagger) and 3.0 are supported.</para>
+      </content>
+      <sections>
+        <section address="SubSection1">
+          <title>Improved request options panel</title>
+          <content>
+            <para>When sending a request, you can assign the request with options, such as authentication, message format and custom HTTP headers.</para>
+          </content>
+        </section>
+        <section address="SubSection2">
+          <title>Improved syntax highlighting and document folding</title>
+          <content>
+            <para>The syntax highlighting is improved for different type of documents, the built-in request message editor recognizes automatically document format and choose the best syntax highlighting scheme for XML or JSON documents.</para>
+          </content>
+        </section>
+      </sections>
+    </section>
+
+    <section adresse="SubSection4">
+      <title>TLS 1.2 support</title>
+      <content>
+        <para>Hummingbird now supports also secured HTTPS connection using TLS 1.2, in addition to TLS1.0 and TLS 1.1. Tests of web services can be done with a more secured connection.</para>
+      </content>
+    </section>
+    <section adresse="SubSection5">
+      <title>Multi-language support</title>
+      <content>
+        <para>The software support multi-language, Developers and QA Engineers can now work with their native language. With the help of Machine Learning based translation service, Hummingbird supports now 11 languages, including: English, German, French, Spanish, Italian, Portuguese, Greek, Japanese, Korean, Russian, Simplified and Traditional Chinese. In addition to machine translations, a resource repository is available on GitHub, participation of improving the localized resources are warmly welcomed: https://github.com/huaxing-yuan/hummingbird.i18n </para>
+      </content>
+    </section>
+
+    
+    <section adresse="SubSection6">
+      <title>CLI and ReportViewer</title>
+      <content>
+        <para>Hummingbird CLI is a command line tool to let you run automated tests from the Command Line interface. This tool can be included with-in a DevOps pipeline let you run automated test in each Build and Release process. Hummingbird CLI generates JUnit compatible test result, which is recognized by most of the DevOps platforms.</para>
+        <para>Report Viewer is an independent tool to view an automated test result in a graphic way. It gives you an in-depth view to understand where and why tests are failed and let you localize errors easily.</para>
+      </content>
+    </section>
+
+    
+    <relatedTopics>
+			<link xlink:href="f6c13f49-3bc8-42cd-9dae-a3756e715983" />
+		</relatedTopics>
+
+	</developerConceptualDocument>
+</topic>

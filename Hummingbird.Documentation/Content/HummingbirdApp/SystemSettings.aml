@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="3842ef58-f825-4f5a-8cbf-f5f5dba28f66" revisionNumber="1">
+  <developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <introduction>
+      <para>
+        System settings let you to control the behavior of Hummingbird, Test settings and manage profiles.
+      </para>
+    </introduction>
+
+    <section address="_Toc515307896">
+      <!--h2-->
+      <title>General Settings</title>
+      <content>
+
+        <para>
+          Controls the behavior of Hummingbird including log, system behavior, display language and theme.
+        </para>
+
+      </content>
+    </section>
+
+    <section address="_Toc515307897">
+      <!--h2-->
+      <title>Test Settings</title>
+      <content>
+
+        <para>
+          Here you can changes the parameter for Hummingbird Test Framework itself: The parameters for all services, System Variables, Custom Variables, Test Environments and Credentials.
+        </para>
+      </content>
+    </section>
+    
+    <section>
+      <!--h2-->
+      <title>Profile management</title>
+      <content>
+
+        <para>Manage test profiles.</para>
+      </content>
+    </section>
+
+
+    <section>
+      <!--h2-->
+      <title>Extensions</title>
+      <content>
+        <para>Install and manage extensions.</para>
+      </content>
+    </section>
+
+    <section>
+      <!--h2-->
+      <title>Certificate</title>
+      <content>
+        <para>Install the test SSL certificate that allows to run service simulation with SSL connection.</para>
+      </content>
+    </section>
+
+
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

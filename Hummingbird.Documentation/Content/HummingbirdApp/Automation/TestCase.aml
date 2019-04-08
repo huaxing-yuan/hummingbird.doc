@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="bcabaa26-de5c-4ba6-9aa4-afeb75f0f93b" revisionNumber="1">
+  <developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <!--
+    <summary>
+      <para>Optional summary abstract</para>
+    </summary>
+    -->
+
+    <introduction>
+
+      <para>A Test Case is a specification of the inputs, testing procedure and expected results. These different testing procedure is defined in "Test Steps". </para>
+      <para>There are also different kinds of Test Cases to achieved different test objectives.</para>
+    </introduction>
+
+    <!-- Add one or more top-level section elements.  These are collapsible.
+         If using <autoOutline />, add an address attribute to identify it
+         and specify a title so that it can be jumped to with a hyperlink. -->
+    <section address="Section1">
+      <title>Test case for functional test</title>
+      <content>
+        <!-- Uncomment this to create a sub-section outline
+        <autoOutline /> -->
+        <para>Add one or more sections with content</para>
+      </content>
+      <sections>
+        <section address="SubSection1">
+          <title>Ordinary Test Case</title>
+          <content>
+            <para>A normal Test Case contains a set of steps where Automation engine will execute them one after another.</para>
+          </content>
+        </section>
+        <section address="SubSection2">
+          <title>Data-driven Test case</title>
+          <content>
+            <para>A Data Driven Test case contains in addition a Data Source, That automation engine will read data from an external source (Excel spreadsheet, CSV file of SQL database) and assigns them to variables. Then execute all the test steps for every iteration.</para>
+          </content>
+        </section>
+      </sections> -->
+    </section>
+
+    <section address="Section2">
+      <title>Test case for performance test</title>
+      <content>
+        <!-- Uncomment this to create a sub-section outline
+        <autoOutline /> -->
+        <para>There are also some Load Test Cases allows you to run API performance test within an automation project.</para>
+        <para>
+          Performance test cases can only be added into a <literal>Load Test Suite</literal>
+        </para>
+        <para>
+          There are different kind performance test models provided to achieve different test objectives, including:
+        </para>
+
+        <list>
+          <listItem>
+            <para>Basic Load Test</para>
+          </listItem>
+          <listItem>
+            <para>Stress Test</para>
+          </listItem>
+          <listItem>
+            <para>Spike Test</para>
+          </listItem>
+          <listItem>
+            <para>Custom Load Test</para>
+          </listItem>
+        </list>
+        <para>
+          For more information please refer to: <link xlink:href="6ce70faa-33cc-43b6-b432-2e34c2dfba08"/>
+        </para>
+      </content>
+    </section>
+    <relatedTopics>
+
+      <link xlink:href="ad599380-0a49-4a75-9cde-5a909bd5c5f7"/>
+      <link xlink:href="6ce70faa-33cc-43b6-b432-2e34c2dfba08"/>
+
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

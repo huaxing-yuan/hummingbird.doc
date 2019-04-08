@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="b7ea64b1-c391-4c21-bb04-436cde134a1f" revisionNumber="1">
+  <developerGlossaryDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <glossary>
+      <title>Terms used in Hummingbird and Test Framework</title>
+
+      <!-- Glossary division.  You can use these to group entries.  If you only
+           have one group, you can omit it and list the glossaryEntry elements
+           directly.
+
+           If used, be sure to give each glossaryDiv a unique address attribute
+           and a title element.  These will be used to create an index at the
+           top of the glossary page.
+
+           Glossary divisions will appear in the order defined in the topic.
+           Glossary entries will be sorted by the first term for the entry.
+           Terms are sorted by their value. -->
+      <glossaryEntry>
+        <terms>
+          <term>Test Environment</term>
+        </terms>
+        <definition>
+          <para>Test environment keeps value used in System Variables, Custom Variables and Credentials.</para>
+        </definition>
+      </glossaryEntry>
+
+      <glossaryEntry>
+        <terms>
+          <term>Http Header</term>
+        </terms>
+        <definition>
+          <para>...</para>
+        </definition>
+      </glossaryEntry>
+
+    </glossary>
+  </developerGlossaryDocument>
+</topic>

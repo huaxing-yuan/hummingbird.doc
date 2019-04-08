@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="7f9648dc-e6bf-4b09-b157-a07fc822c529" revisionNumber="1">
+  <developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <!--
+    <summary>
+      <para>Optional summary abstract</para>
+    </summary>
+    -->
+
+    <!-- Add one or more top-level section elements.  These are collapsible.
+         If using <autoOutline />, add an address attribute to identify it
+         and specify a title so that it can be jumped to with a hyperlink. -->
+    <section address="Section1">
+      <title>Advanced Customization Guide</title>
+      <content>
+        <!-- Uncomment this to create a sub-section outline
+        <autoOutline /> -->
+        <para>In this section, we will introduce the system architecture of Hummingbird and Test Framework, you can build your own extension to extend the ability of Hummingbird: Specific Services based on HTTP or SOAP, Services based on special protocol, Tool extension and Custom Editors.</para>
+        <para>In order to understand articles in this section, we assume that you have sufficient knowledges on:</para>
+        <list>
+          <listItem>
+            <para>Basic .NET Programming knowledges (C# or VB.NET)</para>
+          </listItem>
+          <listItem>
+            <para>
+              XML, SOAP, REST Web Service specifications
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Windows Communication Foundation (WCF) for implementing special web services
+            </para>
+          </listItem>
+          <listItem>
+            <para>Windows Presentation Foundation (WPF) for custom Tools and Editors</para>
+          </listItem>
+        </list>
+        <para>As the advanced customization is done by programming, it is recommended to use an IDE, There are many free IDE you can use, for example: Visual Studio Community Edition</para>
+        <para>To start the development, we have already published the Test Framework and UI Framework as packages on nuget.org. Just grab the package from nuget.org and then start coding.</para>
+      </content>
+      <sections>
+        <section address="SubSection1">
+          <title>Basic Architecture</title>
+          <content>
+            <para>Following diagram shows the architecture of the Hummingbird and the parts customizable</para>
+          </content>
+        </section>
+        <section address="SubSection2">
+          <title>Customize a SOAP Web Service</title>
+          <content>
+            <para>Steps to import and configure a SOAP Web Service using Visual Studio.</para>
+          </content>
+        </section>
+        <section address="SubSection3">
+          <title>Customize a REST Web Service (XML)</title>
+          <content>
+            <para>Steps to import and configure a RESTful Web Service based on XML</para>
+          </content>
+        </section>
+        <section address="SubSection4">
+          <title>Customize a REST Web Service (JSON)</title>
+          <content>
+            <para>Steps to import and configure a RESTful Web Service based on JSON</para>
+          </content>
+        </section>
+        <section address="SubSection5">
+          <title>Create services based on new protocol for Test</title>
+          <content>
+            <para>Steps to create a special service to test by implementing a new network protocol</para>
+            <para>Example: Test Directory Services with LDAP protocol</para>
+          </content>
+        </section>
+        <section address="SubSection6">
+          <title>Create services based on new protocol for simulation</title>
+          <content>
+            <para>Steps to create a special service to simulate</para>
+            <para>Example: Simulate send and receive of SMS Messages between mobile network operator and customers</para>
+          </content>
+        </section>
+        <section address="SubSection6">
+          <title>Customize User Interface for test case editing</title>
+          <content>
+            <para>Example: Use custom editor to edit LDAP requests</para>
+          </content>
+        </section>
+      </sections>
+    </section>
+
+    <relatedTopics>
+      <!-- One or more of the following:
+           - A local link
+           - An external link
+           - A code entity reference
+
+      <link xlink:href="Other Topic's ID"/>
+      <link xlink:href="Other Topic's ID">Link inner text</link>
+
+      <externalLink>
+          <linkText>Link text</linkText>
+          <linkAlternateText>Optional alternate link text</linkAlternateText>
+          <linkUri>URI</linkUri>
+      </externalLink>
+
+      <codeEntityReference>API member ID</codeEntityReference>
+
+      Examples:
+
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+      <externalLink>
+          <linkText>SHFB on GitHub</linkText>
+          <linkAlternateText>Go to GitHub</linkAlternateText>
+          <linkUri>https://GitHub.com/EWSoftware/SHFB</linkUri>
+      </externalLink>
+
+      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+      -->
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

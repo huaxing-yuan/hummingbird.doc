@@ -1,0 +1,797 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <!-- The configuration and platform will be used to determine which assemblies to include from solution and
+				 project documentation sources -->
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>eadb3ee8-db3d-4ced-9535-0320d2232708</ProjectGuid>
+    <SHFBSchemaVersion>2017.9.26.0</SHFBSchemaVersion>
+    <!-- AssemblyName, Name, and RootNamespace are not used by SHFB but Visual Studio adds them anyway -->
+    <AssemblyName>Hummingbird.TestFramework.Doc</AssemblyName>
+    <RootNamespace>Hummingbird.TestFramework.Doc</RootNamespace>
+    <Name>Hummingbird.Doc</Name>
+    <!-- SHFB properties -->
+    <FrameworkVersion>.NET Framework 4.6</FrameworkVersion>
+    <OutputPath>..\Help\</OutputPath>
+    <HtmlHelpName>Hummingbird.Doc</HtmlHelpName>
+    <Language>en-US</Language>
+    <TransformComponentArguments>
+      <Argument Key="logoFile" Value="" />
+      <Argument Key="logoHeight" Value="" />
+      <Argument Key="logoWidth" Value="" />
+      <Argument Key="logoAltText" Value="" />
+      <Argument Key="logoPlacement" Value="left" />
+      <Argument Key="logoAlignment" Value="left" />
+      <Argument Key="maxVersionParts" Value="" />
+      <Argument Key="defaultLanguage" Value="cs" />
+      <Argument Key="includeEnumValues" Value="true" />
+      <Argument Key="baseSourceCodeUrl" Value="" />
+      <Argument Key="requestExampleUrl" Value="" />
+    </TransformComponentArguments>
+    <SaveComponentCacheCapacity>100</SaveComponentCacheCapacity>
+    <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
+    <HelpFileFormat>Website</HelpFileFormat>
+    <IndentHtml>False</IndentHtml>
+    <KeepLogFile>True</KeepLogFile>
+    <DisableCodeBlockComponent>False</DisableCodeBlockComponent>
+    <CleanIntermediates>True</CleanIntermediates>
+    <HelpFileVersion>1.0.0.0</HelpFileVersion>
+    <MaximumGroupParts>2</MaximumGroupParts>
+    <NamespaceGrouping>True</NamespaceGrouping>
+    <SyntaxFilters>Standard</SyntaxFilters>
+    <SdkLinkTarget>Blank</SdkLinkTarget>
+    <RootNamespaceContainer>True</RootNamespaceContainer>
+    <PresentationStyle>VS2013</PresentationStyle>
+    <Preliminary>False</Preliminary>
+    <NamingMethod>MemberName</NamingMethod>
+    <HelpTitle>The Hummingbird Project</HelpTitle>
+    <ContentPlacement>AboveNamespaces</ContentPlacement>
+    <DocumentationSources>
+      <DocumentationSource sourceFile="..\Source\Hummingbird.TestFramework.xml" />
+      <DocumentationSource sourceFile="..\Source\Hummingbird.TestFramework.dll" />
+    </DocumentationSources>
+    <VisibleItems>Attributes, InheritedMembers, InheritedFrameworkMembers, Protected, ProtectedInternalAsProtected, EditorBrowsableNever, NonBrowsable</VisibleItems>
+    <ApiFilter>
+      <Filter entryType="Namespace" fullName="XamlGeneratedNamespace" isExposed="False" xmlns="" />
+    </ApiFilter>
+    <WarnOnMissingSourceContext>False</WarnOnMissingSourceContext>
+    <FooterText>&amp;lt%3ba href=&amp;quot%3bhttps://github.com/huaxing-yuan/hummingbird.ui.doc/issues&amp;quot%3b target=&amp;quot%3b_blank&amp;quot%3b class=&amp;quot%3bicon fas fa-comments&amp;quot%3b&amp;gt%3b&amp;lt%3b/a&amp;gt%3b &amp;lt%3ba href=&amp;quot%3bhttp://www.hummingbird-alm.com&amp;quot%3b target=&amp;quot%3b_blank&amp;quot%3b class=&amp;quot%3bicon fas fa-home&amp;quot%3b&amp;gt%3b&amp;lt%3b/a&amp;gt%3b &amp;lt%3ba href=&amp;quot%3bhttps://github.com/huaxing-yuan&amp;quot%3b target=&amp;quot%3b_blank&amp;quot%3b class=&amp;quot%3bicon fab fa-github&amp;quot%3b&amp;gt%3b&amp;lt%3b/a&amp;gt%3b &amp;lt%3ba href=&amp;quot%3bhttps://www.linkedin.com/in/huaxing-yuan-6954349a/&amp;quot%3b target=&amp;quot%3b_blank&amp;quot%3b class=&amp;quot%3bicon fab fa-linkedin-in&amp;quot%3b&amp;gt%3b&amp;lt%3b/a&amp;gt%3b</FooterText>
+    <CopyrightText>&amp;#169%3b Copyright 2014-2018 Huaxing YUAN, All rights reserved</CopyrightText>
+    <RootNamespaceTitle>Hummingbird SDK References</RootNamespaceTitle>
+    <ComponentConfigurations>
+      <ComponentConfig id="Code Block Component" enabled="True">
+        <component id="Code Block Component">
+          <basePath value="{@HtmlEncProjectFolder}" />
+          <outputPaths>{@HelpFormatOutputPaths}</outputPaths>
+          <allowMissingSource value="false" />
+          <removeRegionMarkers value="false" />
+          <colorizer syntaxFile="{@SHFBFolder}PresentationStyles\Colorizer\highlight.xml" styleFile="{@SHFBFolder}PresentationStyles\Colorizer\highlight.xsl" stylesheet="{@SHFBFolder}PresentationStyles\Colorizer\highlight.css" scriptFile="{@SHFBFolder}PresentationStyles\Colorizer\highlight.js" disabled="{@DisableCodeBlockComponent}" language="cs" tabSize="0" numberLines="true" outlining="false" keepSeeTags="false" defaultTitle="true" />
+        </component>
+      </ComponentConfig>
+      <ComponentConfig id="Syntax Component" enabled="True">
+        <component id="Syntax Component">
+          <syntax input="/document/reference" output="/document/syntax" renderReferenceLinks="false" />
+          <generators>
+    {@SyntaxFilters}
+</generators>
+          <containerElement name="codeSnippetGroup" addNoExampleTabs="true" includeOnSingleSnippets="false" groupingEnabled="{@CodeSnippetGrouping}" />
+          <configurations>
+            <generator id="C#" />
+            <generator id="Visual Basic">
+              <includeLineContinuation value="false" />
+            </generator>
+            <generator id="Visual Basic Usage">
+              <includeLineContinuation value="false" />
+            </generator>
+            <generator id="Managed C++" />
+            <generator id="F#" />
+            <generator id="J#" />
+            <generator id="JScript" />
+            <generator id="JavaScript" />
+            <generator id="XAML Usage" />
+            <generator id="ASP.NET" />
+            <generator id="X#" />
+          </configurations>
+        </component>
+      </ComponentConfig>
+    </ComponentConfigurations>
+    <PlugInConfigurations>
+      <PlugInConfig id="Additional Reference Links" enabled="False">
+        <configuration>
+          <targets>
+            <target htmlSdkLinkType="None" helpViewerSdkLinkType="Id" websiteSdkLinkType="None" helpFileProject="D:\Projets\Github\hummingbird.ui\Hummingbird.UI.Docs\Hummingbird.UI.Doc.shfbproj" />
+          </targets>
+        </configuration>
+      </PlugInConfig>
+      <PlugInConfig id="Additional Content Only" enabled="False">
+        <configuration />
+      </PlugInConfig>
+    </PlugInConfigurations>
+    <ProjectSummary>&amp;lt%3bpara&amp;gt%3bHummingbird Test Framework provides all functionalities that can be used for manual testing, service simulation, test automation and performance test. These functionalities are organized as follows:&amp;lt%3b/para&amp;gt%3b
+&amp;lt%3bpara&amp;gt%3bHummingbird.TestFramework.Services provides all classes that used for service protocol definition and implementation, service simulation. To implement user driver, service simulation and extends existing protocols such as SOAP or HTTP, you need to refer classes used in this namespace. &amp;lt%3b/para&amp;gt%3b
+&amp;lt%3bpara&amp;gt%3bHummingbird.TestFramework.Automation provides classes and methods used for Test Automation, Assertions, Test Reports&amp;lt%3b/para&amp;gt%3b
+&amp;lt%3bpara&amp;gt%3bHummingbird.TestFramework.Messaging defines classes used to store each transaction such as Web Service calls and calls received by service simulation. &amp;lt%3b/para&amp;gt%3b
+</ProjectSummary>
+    <NamespaceSummaries>
+      <NamespaceSummaryItem name="Hummingbird.TestFramework" isDocumented="True" xmlns="" />
+    </NamespaceSummaries>
+    <HeaderText>
+    </HeaderText>
+    <HtmlSdkLinkType>Msdn</HtmlSdkLinkType>
+    <BinaryTOC>True</BinaryTOC>
+    <IncludeFavorites>False</IncludeFavorites>
+    <WebsiteSdkLinkType>Msdn</WebsiteSdkLinkType>
+    <WebsiteAdContent>&amp;lt%3b!-- Global site tag %28gtag.js%29 - Google Analytics --&amp;gt%3b
+&amp;lt%3bscript async=&amp;quot%3basync&amp;quot%3b src=&amp;quot%3bhttps://www.googletagmanager.com/gtag/js%3fid=UA-52438309-2&amp;quot%3b&amp;gt%3b&amp;lt%3b/script&amp;gt%3b
+&amp;lt%3bscript&amp;gt%3b
+  window.dataLayer = window.dataLayer || []%3b
+  function gtag%28%29{dataLayer.push%28arguments%29%3b}
+  gtag%28&amp;#39%3bjs&amp;#39%3b, new Date%28%29%29%3b
+
+  gtag%28&amp;#39%3bconfig&amp;#39%3b, &amp;#39%3bUA-52438309-2&amp;#39%3b%29%3b
+&amp;lt%3b/script&amp;gt%3b
+</WebsiteAdContent>
+    <AppendMarkdownFileExtensionsToUrls>False</AppendMarkdownFileExtensionsToUrls>
+  </PropertyGroup>
+  <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
+			 the build.  The others are optional common platform types that may appear. -->
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x64' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x64' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|Win32' ">
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|Win32' ">
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Content" />
+    <Folder Include="Content\CICD\" />
+    <Folder Include="Content\Customization\Examples" />
+    <Folder Include="Content\HummingbirdApp" />
+    <Folder Include="Content\HummingbirdApp\ManualTesting" />
+    <Folder Include="Content\HummingbirdApp\Automation" />
+    <Folder Include="Content\HummingbirdApp\extension designer" />
+    <Folder Include="Content\HummingbirdApp\tools" />
+    <Folder Include="Content\HummingbirdApp\Performance" />
+    <Folder Include="Content\HummingbirdApp\SystemSettings" />
+    <Folder Include="Content\HummingbirdApp\ServiceSimulation" />
+    <Folder Include="Content\Installation" />
+    <Folder Include="Content\HummingbirdCLI" />
+    <Folder Include="Content\Customization" />
+    <Folder Include="Content\Glossary" />
+    <Folder Include="Content\VersionHistory" />
+    <Folder Include="icons" />
+    <Folder Include="media" />
+    <Folder Include="styles\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="base 64 tool.aml" />
+    <None Include="Content\AdvancedCustomization.aml" />
+    <None Include="Content\AuxiliaryProjects.aml" />
+    <None Include="Content\CICD\PublishReports.aml" />
+    <None Include="Content\CICD\RunWithinJenkins.aml" />
+    <None Include="Content\CICD\RunWithinVSTS.aml" />
+    <None Include="Content\Customization\Architecture.aml" />
+    <None Include="Content\Customization\CustomizeUITestData.aml" />
+    <None Include="Content\Customization\CustomizeUITestResult.aml" />
+    <None Include="Content\Customization\CustomSOAPService.aml" />
+    <None Include="Content\Customization\CustomRestservices.aml" />
+    <None Include="Content\Customization\Examples\ExampleLDAP.aml" />
+    <None Include="Content\Customization\Examples\ExampleMMSC.aml" />
+    <None Include="Content\Customization\ImplementClientServer.aml" />
+    <None Include="Content\Customization\ImportWSDL.aml" />
+    <None Include="Content\Customization\InstallcustomCertificate.aml" />
+    <None Include="Content\Customization\RegisterPorts.aml" />
+    <None Include="Content\DevOps.aml" />
+    <None Include="Content\CommunityExtensions.aml" />
+    <None Include="Content\Examples.aml" />
+    <None Include="Content\Glossary\TestEnvironment.aml" />
+    <None Include="Content\HummingbirdApp.aml" />
+    <None Include="Content\HummingbirdApp\Automation\Assertions.aml" />
+    <None Include="Content\HummingbirdApp\Automation\AutomationProjectOrganization.aml" />
+    <None Include="Content\HummingbirdApp\Automation\Call a service test step.aml" />
+    <None Include="Content\HummingbirdApp\Automation\Coded Test Step CS.aml" />
+    <None Include="Content\HummingbirdApp\Automation\Coded Test Step VB.aml" />
+    <None Include="Content\HummingbirdApp\Automation\Contains Assertion.aml" />
+    <None Include="Content\HummingbirdApp\Automation\Export test report.aml" />
+    <None Include="Content\HummingbirdApp\Automation\Extract Property test step.aml" />
+    <None Include="Content\HummingbirdApp\Automation\Not Contains Assertion.aml" />
+    <None Include="Content\HummingbirdApp\Automation\PathValidation.aml" />
+    <None Include="Content\HummingbirdApp\Automation\Run command line test step.aml" />
+    <None Include="Content\HummingbirdApp\Automation\Run SQL Query test step.aml" />
+    <None Include="Content\HummingbirdApp\Automation\Service simulation control test step.aml" />
+    <None Include="Content\HummingbirdApp\Automation\SoapFaultAssertion.aml" />
+    <None Include="Content\HummingbirdApp\Automation\test profile.aml" />
+    <None Include="Content\HummingbirdApp\Automation\Test variables.aml" />
+    <None Include="Content\HummingbirdApp\Automation\TestAutomation.aml" />
+    <None Include="Content\HummingbirdApp\Automation\DataDrivenTestCase.aml" />
+    <None Include="Content\HummingbirdApp\Automation\TestCase.aml" />
+    <None Include="Content\HummingbirdApp\Automation\TestSteps.aml" />
+    <None Include="Content\HummingbirdApp\Automation\TestSuite.aml" />
+    <None Include="Content\HummingbirdApp\Automation\Update service simulation data test step.aml" />
+    <None Include="Content\HummingbirdApp\Automation\Variable data generator test step.aml" />
+    <None Include="Content\HummingbirdApp\Automation\View test report.aml" />
+    <None Include="Content\HummingbirdApp\Automation\Windows service controller test step.aml" />
+    <None Include="Content\HummingbirdApp\Automation\XPathValidation.aml" />
+    <None Include="Content\HummingbirdApp\extension designer\ExtensionDesigner.aml" />
+    <None Include="Content\HummingbirdApp\extension designer\import opanapi.aml" />
+    <None Include="Content\HummingbirdApp\extension designer\import wsdl.aml" />
+    <None Include="Content\HummingbirdApp\List of all services.aml" />
+    <None Include="Content\HummingbirdApp\ManualTesting.aml" />
+    <None Include="Content\HummingbirdApp\ManualTesting\DetermineReply.aml" />
+    <None Include="Content\HummingbirdApp\ManualTesting\HistoryAndFavorites.aml" />
+    <None Include="Content\HummingbirdApp\ManualTesting\SwitchTestEnvironments.aml" />
+    <None Include="Content\HummingbirdApp\ManualTesting\TransactionHistory.aml" />
+    <None Include="Content\HummingbirdApp\ManualTesting\SelectService.aml" />
+    <None Include="Content\HummingbirdApp\ManualTesting\ReplyAsFault.aml" />
+    <None Include="Content\HummingbirdApp\ManualTesting\Search in History.aml" />
+    <None Include="Content\HummingbirdApp\ManualTesting\Search.aml" />
+    <None Include="Content\HummingbirdApp\ManualTesting\SendRequest.aml" />
+    <None Include="Content\HummingbirdApp\ManualTesting\ServiceOptions.aml" />
+    <None Include="Content\HummingbirdApp\ManualTesting\TreeViewEditor.aml" />
+    <None Include="Content\HummingbirdApp\ManualTesting\UseOptions.aml" />
+    <None Include="Content\HummingbirdApp\ManualTesting\RequestMessageEditor.aml" />
+    <None Include="Content\HummingbirdApp\Performance\Basic load test.aml" />
+    <None Include="Content\HummingbirdApp\Performance\Load configuration and load graph.aml" />
+    <None Include="Content\HummingbirdApp\Performance\PerformanceTest.aml" />
+    <None Include="Content\HummingbirdApp\Performance\real time monitoring.aml" />
+    <None Include="Content\HummingbirdApp\Performance\Spike test.aml" />
+    <None Include="Content\HummingbirdApp\Performance\StressTest.aml" />
+    <None Include="Content\HummingbirdApp\Performance\Use generator to variabilise test data.aml" />
+    <None Include="Content\HummingbirdApp\Performance\view test report.aml" />
+    <None Include="Content\HummingbirdApp\ServiceSimulation.aml" />
+    <None Include="Content\HummingbirdApp\ServiceSimulation\ControlSimulation.aml" />
+    <None Include="Content\HummingbirdApp\ServiceSimulation\ConfigureReplies.aml" />
+    <None Include="Content\HummingbirdApp\ServiceSimulation\RegisterTcpPort.aml" />
+    <None Include="Content\HummingbirdApp\Statistics.aml" />
+    <None Include="Content\HummingbirdApp\SystemSettings.aml" />
+    <None Include="Content\HummingbirdApp\SystemSettings\Certificate.aml" />
+    <None Include="Content\HummingbirdApp\SystemSettings\GeneralSettings.aml" />
+    <None Include="Content\HummingbirdApp\SystemSettings\ManageExtensions.aml" />
+    <None Include="Content\HummingbirdApp\SystemSettings\ManageTestProfiles.aml" />
+    <None Include="Content\HummingbirdApp\SystemSettings\Test Settings.aml" />
+    <None Include="Content\HummingbirdApp\tools\Extension designer.aml" />
+    <None Include="Content\HummingbirdApp\tools\IntegratedTools.aml" />
+    <None Include="Content\HummingbirdCLI\ConvertReports.aml" />
+    <None Include="Content\HummingbirdCLI\HummingbirdCli.aml" />
+    <None Include="Content\HummingbirdCLI\install extension.aml" />
+    <None Include="Content\HummingbirdCLI\RunTests.aml" />
+    <None Include="Content\HummingbirdCLI\StartServiceSimulation.aml" />
+    <None Include="Content\Installation.aml" />
+    <None Include="Content\Installation\ClickOnce.aml" />
+    <None Include="Content\Installation\WindowsInstaller.aml" />
+    <None Include="Content\Installation\Zip Archive.aml" />
+    <None Include="Content\Introduction.aml" />
+    <None Include="Content\NightlyOrStable.aml" />
+    <None Include="Content\ReportViewer.aml" />
+    <None Include="Content\Terminologies.aml" />
+    <None Include="Content\VersionHistory\201808.aml" />
+    <None Include="Content\VersionHistory\201810.aml" />
+    <None Include="Content\VersionHistory\201812.aml" />
+    <None Include="Content\VersionHistory\VersionHistory.aml" />
+    <Content Include="icons\favicon.ico" />
+    <None Include="hash and cryptography tool.aml" />
+    <None Include="regular expression tool.aml" />
+    <None Include="xml compare.aml" />
+    <None Include="xpath validator.aml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ContentLayout Include="ContentLayout.content" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons\Help.png" />
+    <Content Include="styles\branding-Website.css" />
+    <Content Include="styles\branding.css" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons\AlertCaution.png">
+      <ImageId>AlertCaution</ImageId>
+      <AlternateText>Alert Caution</AlternateText>
+    </Content>
+    <Content Include="icons\AlertNote.png">
+      <ImageId>AlertNote</ImageId>
+      <AlternateText>Alert Note</AlternateText>
+    </Content>
+    <Content Include="icons\AlertSecurity.png">
+      <ImageId>AlertSecurity</ImageId>
+      <AlternateText>Alert Security</AlternateText>
+    </Content>
+    <Content Include="icons\CFW.gif">
+      <ImageId>CFW</ImageId>
+      <AlternateText>CFW</AlternateText>
+    </Content>
+    <Content Include="icons\CodeExample.png">
+      <ImageId>CodeExample</ImageId>
+      <AlternateText>Code Example</AlternateText>
+    </Content>
+    <Content Include="icons\privclass.gif">
+      <ImageId>privclass</ImageId>
+      <AlternateText>privclass</AlternateText>
+    </Content>
+    <Content Include="icons\privdelegate.gif">
+      <ImageId>privdelegate</ImageId>
+      <AlternateText>privdelegate</AlternateText>
+    </Content>
+    <Content Include="icons\privenumeration.gif">
+      <ImageId>privenumeration</ImageId>
+      <AlternateText>privenumeration</AlternateText>
+    </Content>
+    <Content Include="icons\privevent.gif">
+      <ImageId>privevent</ImageId>
+      <AlternateText>privevent</AlternateText>
+    </Content>
+    <Content Include="icons\privfield.gif">
+      <ImageId>privfield</ImageId>
+      <AlternateText>privfield</AlternateText>
+    </Content>
+    <Content Include="icons\privinterface.gif">
+      <ImageId>privinterface</ImageId>
+      <AlternateText>privinterface</AlternateText>
+    </Content>
+    <Content Include="icons\privmethod.gif">
+      <ImageId>privmethod</ImageId>
+      <AlternateText>privmethod</AlternateText>
+    </Content>
+    <Content Include="icons\privoperator.gif">
+      <ImageId>privoperator</ImageId>
+      <AlternateText>privoperator</AlternateText>
+    </Content>
+    <Content Include="icons\privproperty.gif">
+      <ImageId>privproperty</ImageId>
+      <AlternateText>privproperty</AlternateText>
+    </Content>
+    <Content Include="icons\privstructure.gif">
+      <ImageId>privstructure</ImageId>
+      <AlternateText>privstructure</AlternateText>
+    </Content>
+    <Content Include="icons\protclass.gif">
+      <ImageId>protclass</ImageId>
+      <AlternateText>protclass</AlternateText>
+    </Content>
+    <Content Include="icons\protdelegate.gif">
+      <ImageId>protdelegate</ImageId>
+      <AlternateText>protdelegate</AlternateText>
+    </Content>
+    <Content Include="icons\protenumeration.gif">
+      <ImageId>protenumeration</ImageId>
+      <AlternateText>protenumeration</AlternateText>
+    </Content>
+    <Content Include="icons\protevent.gif">
+      <ImageId>protevent</ImageId>
+      <AlternateText>protevent</AlternateText>
+    </Content>
+    <Content Include="icons\protfield.gif">
+      <ImageId>protfield</ImageId>
+      <AlternateText>protfield</AlternateText>
+    </Content>
+    <Content Include="icons\protinterface.gif">
+      <ImageId>protinterface</ImageId>
+      <AlternateText>protinterface</AlternateText>
+    </Content>
+    <Content Include="icons\protmethod.gif">
+      <ImageId>protmethod</ImageId>
+      <AlternateText>protmethod</AlternateText>
+    </Content>
+    <Content Include="icons\protoperator.gif">
+      <ImageId>protoperator</ImageId>
+      <AlternateText>protoperator</AlternateText>
+    </Content>
+    <Content Include="icons\protproperty.gif">
+      <ImageId>protproperty</ImageId>
+      <AlternateText>protproperty</AlternateText>
+    </Content>
+    <Content Include="icons\protstructure.gif">
+      <ImageId>protstructure</ImageId>
+      <AlternateText>protstructure</AlternateText>
+    </Content>
+    <Content Include="icons\pubclass.gif">
+      <ImageId>pubclass</ImageId>
+      <AlternateText>pubclass</AlternateText>
+    </Content>
+    <Content Include="icons\pubdelegate.gif">
+      <ImageId>pubdelegate</ImageId>
+      <AlternateText>pubdelegate</AlternateText>
+    </Content>
+    <Content Include="icons\pubenumeration.gif">
+      <ImageId>pubenumeration</ImageId>
+      <AlternateText>pubenumeration</AlternateText>
+    </Content>
+    <Content Include="icons\pubevent.gif">
+      <ImageId>pubevent</ImageId>
+      <AlternateText>pubevent</AlternateText>
+    </Content>
+    <Content Include="icons\pubextension.gif">
+      <ImageId>pubextension</ImageId>
+      <AlternateText>pubextension</AlternateText>
+    </Content>
+    <Content Include="icons\pubfield.gif">
+      <ImageId>pubfield</ImageId>
+      <AlternateText>pubfield</AlternateText>
+    </Content>
+    <Content Include="icons\pubinterface.gif">
+      <ImageId>pubinterface</ImageId>
+      <AlternateText>pubinterface</AlternateText>
+    </Content>
+    <Content Include="icons\pubmethod.gif">
+      <ImageId>pubmethod</ImageId>
+      <AlternateText>pubmethod</AlternateText>
+    </Content>
+    <Content Include="icons\puboperator.gif">
+      <ImageId>puboperator</ImageId>
+      <AlternateText>puboperator</AlternateText>
+    </Content>
+    <Content Include="icons\pubproperty.gif">
+      <ImageId>pubproperty</ImageId>
+      <AlternateText>pubproperty</AlternateText>
+    </Content>
+    <Content Include="icons\pubstructure.gif">
+      <ImageId>pubstructure</ImageId>
+      <AlternateText>pubstructure</AlternateText>
+    </Content>
+    <Content Include="icons\search.png">
+      <ImageId>search</ImageId>
+      <AlternateText>search</AlternateText>
+    </Content>
+    <Content Include="icons\SectionCollapsed.gif">
+      <ImageId>SectionCollapsed</ImageId>
+      <AlternateText>Section Collapsed</AlternateText>
+    </Content>
+    <Content Include="icons\SectionExpanded.gif">
+      <ImageId>SectionExpanded</ImageId>
+      <AlternateText>Section Expanded</AlternateText>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons\TocClose.gif">
+      <ImageId>TocClose</ImageId>
+      <AlternateText>Toc Close</AlternateText>
+    </Content>
+    <Content Include="icons\TocCollapsed.gif">
+      <ImageId>TocCollapsed</ImageId>
+      <AlternateText>Toc Collapsed</AlternateText>
+    </Content>
+    <Content Include="icons\TocExpanded.gif">
+      <ImageId>TocExpanded</ImageId>
+      <AlternateText>Toc Expanded</AlternateText>
+    </Content>
+    <Content Include="icons\TocOpen.gif">
+      <ImageId>TocOpen</ImageId>
+      <AlternateText>Toc Open</AlternateText>
+    </Content>
+    <Content Include="styles\bg.jpg">
+      <ImageId>bg</ImageId>
+      <AlternateText>bg</AlternateText>
+    </Content>
+    <Content Include="styles\header_bg.jpg">
+      <ImageId>header_bg</ImageId>
+      <AlternateText>header bg</AlternateText>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="media\automation_contextmenu.png">
+      <ImageId>automation_contextmenu</ImageId>
+      <AlternateText>automation contextmenu</AlternateText>
+    </Image>
+    <Image Include="media\automation_execution.gif">
+      <ImageId>automation_execution</ImageId>
+      <AlternateText>automation execution</AlternateText>
+    </Image>
+    <Image Include="media\automation_preface.png">
+      <ImageId>automation_preface</ImageId>
+      <AlternateText>automation preface</AlternateText>
+    </Image>
+    <Image Include="media\automation_project.png">
+      <ImageId>automation_project</ImageId>
+      <AlternateText>automation project</AlternateText>
+    </Image>
+    <Image Include="media\btn_options.png">
+      <ImageId>btn_options</ImageId>
+      <AlternateText>btn options</AlternateText>
+    </Image>
+    <Image Include="media\compare.png">
+      <ImageId>compare</ImageId>
+      <AlternateText>compare</AlternateText>
+    </Image>
+    <Image Include="media\editor_search.gif">
+      <ImageId>editor_search</ImageId>
+      <AlternateText>editor search</AlternateText>
+    </Image>
+    <Image Include="media\edit_request_message.png">
+      <ImageId>edit_request_message</ImageId>
+      <AlternateText>edit request message</AlternateText>
+    </Image>
+    <Image Include="media\edit_trigger.png">
+      <ImageId>edit_trigger</ImageId>
+      <AlternateText>edit trigger</AlternateText>
+    </Image>
+    <Image Include="media\edit_trigger_object.png">
+      <ImageId>edit_trigger_object</ImageId>
+      <AlternateText>edit trigger object</AlternateText>
+    </Image>
+    <Image Include="media\extension_designer.png">
+      <ImageId>extension_designer</ImageId>
+      <AlternateText>extension designer</AlternateText>
+    </Image>
+    <Image Include="media\find.png">
+      <ImageId>find</ImageId>
+      <AlternateText>find</AlternateText>
+    </Image>
+    <Image Include="media\image001.png">
+      <ImageId>image001</ImageId>
+      <AlternateText>image 001</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\image002.png">
+      <ImageId>image002</ImageId>
+      <AlternateText>image 002</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\image003.png">
+      <ImageId>image003</ImageId>
+      <AlternateText>image 003</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\image004.png">
+      <ImageId>image004</ImageId>
+      <AlternateText>image 004</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\image005.png">
+      <ImageId>image005</ImageId>
+      <AlternateText>image 005</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\image006.png">
+      <ImageId>image006</ImageId>
+      <AlternateText>image 006</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\image007.png">
+      <ImageId>image007</ImageId>
+      <AlternateText>image 007</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\image008.png">
+      <ImageId>image008</ImageId>
+      <AlternateText>image 008</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\image009.png">
+      <ImageId>image009</ImageId>
+      <AlternateText>image 009</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\image010.png">
+      <ImageId>image010</ImageId>
+      <AlternateText>image 010</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\image011.png">
+      <ImageId>image011</ImageId>
+      <AlternateText>image 011</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\image012.png">
+      <ImageId>image012</ImageId>
+      <AlternateText>image 012</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\image013.png">
+      <ImageId>image013</ImageId>
+      <AlternateText>image 013</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\image014.png">
+      <ImageId>image014</ImageId>
+      <AlternateText>image 014</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\multi_reply.png">
+      <ImageId>multi_reply</ImageId>
+      <AlternateText>multi reply</AlternateText>
+    </Image>
+    <Image Include="media\profile_management.png">
+      <ImageId>profile_management</ImageId>
+      <AlternateText>profile management</AlternateText>
+    </Image>
+    <Image Include="media\request_object.png">
+      <ImageId>request_object</ImageId>
+      <AlternateText>request object</AlternateText>
+    </Image>
+    <Image Include="media\service_list.png">
+      <ImageId>service_list</ImageId>
+      <AlternateText>service list</AlternateText>
+    </Image>
+    <Image Include="media\test_runner.png">
+      <ImageId>test_runner</ImageId>
+      <AlternateText>Test Runner</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\image016.png">
+      <ImageId>image016</ImageId>
+      <AlternateText>image 016</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\image017.png">
+      <ImageId>image017</ImageId>
+      <AlternateText>image 017</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\image018.png">
+      <ImageId>image018</ImageId>
+      <AlternateText>image 018</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\image019.png">
+      <ImageId>image019</ImageId>
+      <AlternateText>image 019</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\image020.png">
+      <ImageId>image020</ImageId>
+      <AlternateText>image 020</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\image021.png">
+      <ImageId>image021</ImageId>
+      <AlternateText>image 021</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\image022.png">
+      <ImageId>image022</ImageId>
+      <AlternateText>image 022</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\image023.png">
+      <ImageId>image023</ImageId>
+      <AlternateText>image 023</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\i_aobject.png">
+      <ImageId>i_aobject</ImageId>
+      <AlternateText>i aobject</AlternateText>
+    </Image>
+    <Image Include="media\i_array.png">
+      <ImageId>i_array</ImageId>
+      <AlternateText>i array</AlternateText>
+    </Image>
+    <Image Include="media\i_enum.png">
+      <ImageId>i_enum</ImageId>
+      <AlternateText>i enum</AlternateText>
+    </Image>
+    <Image Include="media\i_field.png">
+      <ImageId>i_field</ImageId>
+      <AlternateText>i field</AlternateText>
+    </Image>
+    <Image Include="media\i_object.png">
+      <ImageId>i_object</ImageId>
+      <AlternateText>i object</AlternateText>
+    </Image>
+    <Image Include="media\i_property.png">
+      <ImageId>i_property</ImageId>
+      <AlternateText>i property</AlternateText>
+    </Image>
+    <Image Include="media\i_xml.png">
+      <ImageId>i_xml</ImageId>
+      <AlternateText>i xml</AlternateText>
+    </Image>
+    <Image Include="media\openreport.png">
+      <ImageId>openreport</ImageId>
+      <AlternateText>openreport</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\popup_abstract.png">
+      <ImageId>popup_abstract</ImageId>
+      <AlternateText>popup abstract</AlternateText>
+    </Image>
+    <Image Include="media\popup_array.png">
+      <ImageId>popup_array</ImageId>
+      <AlternateText>popup array</AlternateText>
+    </Image>
+    <Image Include="media\popup_datavalidation.png">
+      <ImageId>popup_datavalidation</ImageId>
+      <AlternateText>popup datavalidation</AlternateText>
+    </Image>
+    <Image Include="media\popup_enum.png">
+      <ImageId>popup_enum</ImageId>
+      <AlternateText>popup enum</AlternateText>
+    </Image>
+    <Image Include="media\rename_message.gif">
+      <ImageId>rename_message</ImageId>
+      <AlternateText>rename message</AlternateText>
+    </Image>
+    <Image Include="media\request_error.png">
+      <ImageId>request_error</ImageId>
+      <AlternateText>request error</AlternateText>
+    </Image>
+    <Image Include="media\request_history.png">
+      <ImageId>request_history</ImageId>
+      <AlternateText>request history</AlternateText>
+    </Image>
+    <Image Include="media\reset.png">
+      <ImageId>reset</ImageId>
+      <AlternateText>reset</AlternateText>
+    </Image>
+    <Image Include="media\rv.png">
+      <ImageId>rv</ImageId>
+      <AlternateText>rv</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\search_message.png">
+      <ImageId>search_message</ImageId>
+      <AlternateText>search message</AlternateText>
+    </Image>
+    <Image Include="media\selectservice.png">
+      <ImageId>selectservice</ImageId>
+      <AlternateText>selectservice</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\SendRequest.png">
+      <ImageId>SendRequest</ImageId>
+      <AlternateText>Send Request</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\ServerReplies.png">
+      <ImageId>ServerReplies</ImageId>
+      <AlternateText>Server Replies</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\serviceselector.png">
+      <ImageId>serviceselector</ImageId>
+      <AlternateText>serviceselector</AlternateText>
+    </Image>
+    <Image Include="media\service_options.png">
+      <ImageId>service_options</ImageId>
+      <AlternateText>service options</AlternateText>
+    </Image>
+    <Image Include="media\startservice.png">
+      <ImageId>startservice</ImageId>
+      <AlternateText>startservice</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\switch_env.gif">
+      <ImageId>switch_env</ImageId>
+      <AlternateText>switch env</AlternateText>
+    </Image>
+    <Image Include="media\switch_faviorite_request.gif">
+      <ImageId>switch_faviorite_request</ImageId>
+      <AlternateText>switch faviorite request</AlternateText>
+    </Image>
+    <Image Include="media\uac.png">
+      <ImageId>uac</ImageId>
+      <AlternateText>uac</AlternateText>
+      <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\view_request_object.png">
+      <ImageId>view_request_object</ImageId>
+      <AlternateText>view request object</AlternateText>
+    </Image>
+  </ItemGroup>
+  <!-- Import the SHFB build targets -->
+  <Import Project="$(SHFBROOT)\SandcastleHelpFileBuilder.targets" />
+  <!-- The pre-build and post-build event properties must appear *after* the targets file import in order to be
+			 evaluated correctly. -->
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'PRO' ">
+    <OutputPath>bin\PRO\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'PRO_DEBUG' ">
+    <OutputPath>..\..\..\Github\hummingbird.testframework.doc\</OutputPath>
+  </PropertyGroup>
+</Project>

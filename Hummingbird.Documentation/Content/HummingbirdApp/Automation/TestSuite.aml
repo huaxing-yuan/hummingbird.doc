@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="32acde8a-8896-4478-ab9f-695b8cf8b996" revisionNumber="1">
+  <developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <!--
+    <summary>
+      <para>Optional summary abstract</para>
+    </summary>
+    -->
+
+    <introduction>
+      <!-- Uncomment this to generate an outline of the section and sub-section
+           titles.  Specify a numeric value as the inner text to limit it to
+           a specific number of sub-topics when creating the outline.  Specify
+           zero (0) to limit it to top-level sections only.  -->
+      <!-- <autoOutline /> -->
+
+      <para>Test Suite contains a collection of Test Cases. The test automation engine implemented in Hummingbird project supports two kind of test suites: </para>
+      <list>
+        <listItem>
+          <para>
+            <literal>Normal test suite</literal>: consists of test cases related to Functional test. Automation engine will run the test cases one after another.</para>
+        </listItem>
+        <listItem>
+          <para>
+            <literal>Load test suite</literal>: consists of test cases related to Performance Test. Only performance test cases can be inserted into a Load test suite. Automation engine will run ALL the performance test cases simultaneously.</para>
+        </listItem>
+      </list>
+      <alert>
+        A Load test suite aims to run one or more performance test scenarios in the SAME time, to simulate loads on different services. If you want to run performance test cases one after another, please place them into different Load Test Suites.
+      </alert>
+    </introduction>
+
+    <!-- Add one or more top-level section elements.  These are collapsible.
+         If using <autoOutline />, add an address attribute to identify it
+         and specify a title so that it can be jumped to with a hyperlink. -->
+    <section address="Section1">
+      <title>Actions</title>
+      <content>
+        <!-- Uncomment this to create a sub-section outline
+        <autoOutline /> -->
+        <para>On the top of detailed view there are several buttons users can interact with</para>
+        <list>
+          <listItem>
+            <para>Run test suite: Execute all test cases of the current test suite</para>
+          </listItem>
+          <listItem>
+            <para>Stop: When test is launched, stop the test execution.</para>
+          </listItem>
+        </list>
+      </content>
+      <!-- If a section contains a sections element, its content creates
+           sub-sections.  These are not collapsible.
+      <sections>
+          <section address="SubSection1">
+              <title>Sub-section 1</title>
+              <content>
+                  <para>Sub-section content.</para>
+              </content>
+          </section>
+          <section address="SubSection2">
+              <title>Sub-section 2</title>
+              <content>
+                  <para>Sub-section content.</para>
+              </content>
+          </section>
+      </sections> -->
+    </section>
+
+    <section>
+      <title>Custom Variables</title>
+      <content>
+        <para>
+          Custom variables holds variables declared by the user. The variables declared in the Project level can be accessed in the whole automation project level.
+        </para>
+        <alert>
+          In Hummingbird test framework, variables can be declared and used at any level: Project, Test Suite, Test Case and Test Step.
+        </alert>
+      </content>
+    </section>
+
+    <section>
+      <title>Runtime variables</title>
+      <content>
+        <para>
+          Runtime variables cannot be declared by the user. They are declared and assigned by the automation script itself. For example, for Data Generator, Data Driven Test Case.
+        </para>
+        <para>
+          Runtime variables are more priority than Custom Variables. When there are variables of the same name in both Custom Variables and Runtime Variables, the value from Runtime variables will be used.
+        </para>
+      </content>
+    </section>
+
+    <section>
+      <title>Variable rules</title>
+      <content>
+        <para>Automation engine will use the variable following the rules described as below:</para>
+
+        <para>
+          1. Variables are private, and can be accessed only in its scope. For example, Variables declared in the Test Case can be accessed in all its Test Steps, but cannot be accessed from its container Test Suite or another Test Case.
+        </para>
+        <para>
+          2. Variables are retrieved from the nearest level when there are more than one variables having the same name. For example: If the variables of the same name is declared in Test Suite and Test Case, for a Test Step, the one declared in Test Case will be used.
+        </para>
+        <para>
+          3. For the same level, runtime (script defined) variables are more priority than custom (user defined) variables
+        </para>
+      </content>
+    </section>
+    
+    <relatedTopics>
+      <!-- One or more of the following:
+           - A local link
+           - An external link
+           - A code entity reference
+
+      <link xlink:href="Other Topic's ID"/>
+      <link xlink:href="Other Topic's ID">Link inner text</link>
+
+      <externalLink>
+          <linkText>Link text</linkText>
+          <linkAlternateText>Optional alternate link text</linkAlternateText>
+          <linkUri>URI</linkUri>
+      </externalLink>
+
+      <codeEntityReference>API member ID</codeEntityReference>
+
+      Examples:
+
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+      <externalLink>
+          <linkText>SHFB on GitHub</linkText>
+          <linkAlternateText>Go to GitHub</linkAlternateText>
+          <linkUri>https://GitHub.com/EWSoftware/SHFB</linkUri>
+      </externalLink>
+
+      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+      -->
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
+

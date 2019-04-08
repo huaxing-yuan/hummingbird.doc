@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="1fe93b81-ec04-477c-9a14-12b8c64eff58" revisionNumber="1">
+  <developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <!--
+    <summary>
+      <para>Optional summary abstract</para>
+    </summary>
+    -->
+
+    <introduction>
+      <para>Object-Model request editor uses advanced technologies to help you build requests faster and better. The intelligent editor propose structures and values based on Object models generated from Service Definition.</para>
+      <autoOutline />
+    </introduction>
+
+
+    <section address="Section1">
+      <title>Understanding the message structure</title>
+      <content>
+        <!-- Uncomment this to create a sub-section outline
+        <autoOutline /> -->
+        <para>Whatever the type of service is, the request message editor gives you a constant and direct way to build request messages. Object-Model request editor uses Icons to help you identify objects and properties:</para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <mediaLinkInline>
+                <image xlink:href="i_object" />
+              </mediaLinkInline>: The element is an object, represents a complex structure.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <mediaLinkInline>
+                <image xlink:href="i_aobject" />
+              </mediaLinkInline>: The element is an abstract object, it can represent some complex structure of different types.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <mediaLinkInline>
+                <image xlink:href="i_array" />
+              </mediaLinkInline>: The element is an array, represents a list of complex structures or values
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <mediaLinkInline>
+                <image xlink:href="i_property" />
+              </mediaLinkInline>: The element is a property, represents a simple value (integer, float, string, boolean)
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <mediaLinkInline>
+                <image xlink:href="i_enum" />
+              </mediaLinkInline>: The element is an enumeration, represents a simple value has restricted possibilities
+            </para>
+          </listItem>
+        </list>
+      </content>
+      <!-- If a section contains a sections element, its content creates
+           sub-sections.  These are not collapsible.
+      <sections>
+          <section address="SubSection1">
+              <title>Sub-section 1</title>
+              <content>
+                  <para>Sub-section content.</para>
+              </content>
+          </section>
+          <section address="SubSection2">
+              <title>Sub-section 2</title>
+              <content>
+                  <para>Sub-section content.</para>
+              </content>
+          </section>
+      </sections> -->
+    </section>
+
+    <section address="Section2">
+      <title>Right Click for more information</title>
+      <content>
+        <para>At any time, you can right click on an element to get more information and do actions related to the selected object:</para>
+      </content>
+      <sections>
+        <section address="SubSection1">
+          <title>On an object or abstract object</title>
+          <content>
+            <para>Hummingbird will propose to initialize the object or set the object to null. On an abstract object, Hummingbird will list all possible objects that can be placed in the current context, Such as: Compatible Sub-Types, Allowed elements specified in the Service Description.</para>
+            <mediaLink>
+              <image xlink:href="popup_abstract" />
+            </mediaLink>
+          </content>
+        </section>
+        <section address="SubSection2">
+          <title>On an array</title>
+          <content>
+            <para>Hummingbird will propose to insert an element on top of the list, or Append an element at the bottom</para>
+            <mediaLink>
+              <image xlink:href="popup_array" />
+            </mediaLink>
+          </content>
+        </section>
+        <section address="SubSection3">
+          <title>On an boolean or enumeration</title>
+          <content>
+            <para>Hummingbird will propose you a list of possible values to choose.</para>
+            <mediaLink>
+              <image xlink:href="popup_enum" />
+            </mediaLink>
+          </content>
+        </section>
+      </sections>
+    </section>
+
+    <section address="Section3">
+      <title>Data validation</title>
+      <content>
+        <para>In all case, the Object-Model request editor validates your input value against the type. If the input is not valid, you will get notified.</para>
+        <mediaLink>
+          <image xlink:href="popup_datavalidation" />
+        </mediaLink>
+      </content>
+    </section>
+
+    <relatedTopics>
+      <!-- One or more of the following:
+           - A local link
+           - An external link
+           - A code entity reference
+
+      <link xlink:href="Other Topic's ID"/>
+      <link xlink:href="Other Topic's ID">Link inner text</link>
+
+      <externalLink>
+          <linkText>Link text</linkText>
+          <linkAlternateText>Optional alternate link text</linkAlternateText>
+          <linkUri>URI</linkUri>
+      </externalLink>
+
+      <codeEntityReference>API member ID</codeEntityReference>
+
+      Examples:
+
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+      <externalLink>
+          <linkText>SHFB on GitHub</linkText>
+          <linkAlternateText>Go to GitHub</linkAlternateText>
+          <linkUri>https://GitHub.com/EWSoftware/SHFB</linkUri>
+      </externalLink>
+
+      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+      -->
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

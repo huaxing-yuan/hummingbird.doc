@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="cc0c083a-e518-476d-96fb-d94ba4226850" revisionNumber="1">
+  <developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <introduction>
+      <autoOutline />
+    </introduction>
+
+    <!-- Add one or more top-level section elements.  These are collapsible.
+         If using <autoOutline />, add an address attribute to identify it
+         and specify a title so that it can be jumped to with a hyperlink. -->
+    <section address="Section1">
+      <title>Prerequisites</title>
+      <content>
+        <para>
+          The Hummingbird project is built upon .NET Framework 4.6.
+          You must have .NET Framework 4.6 or above already installed before running the
+          software.
+        </para>
+
+        <para>
+          The following operation systems have already .NET Framework 4.6 pre-installed. 
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>Windows 10</para>
+          </listItem>
+          <listItem>
+            <para>Windows Server 2016</para>
+          </listItem>
+          <listItem>
+            <para>Or the newer version of Windows and Windows Server</para>
+          </listItem>          
+        </list>
+
+        <para>
+          When using following version of Windows, please make sure the .NET Framework 4.6 is installed. 
+          <externalLink>
+            <linkText>from this link.</linkText>
+            <linkUri>https://www.microsoft.com/en-US/download/details.aspx?id=30653</linkUri>
+          </externalLink>
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>Windows Vista SP2</para>
+          </listItem>
+          <listItem>
+            <para>Windows 7 SP1</para>
+          </listItem>
+          <listItem>
+            <para>Windows 8</para>
+          </listItem>
+          <listItem>
+            <para>Windows 8.1</para>
+          </listItem>
+          <listItem>
+            <para>Windows Server 2008 SP2</para>
+          </listItem>
+          <listItem>
+            <para>Windows Server 2008 R2 SP1</para>
+          </listItem>
+          <listItem>
+            <para>Windows Server 2012</para>
+          </listItem>
+          <listItem>
+            <para>Windows Server R2</para>
+          </listItem>
+        </list>
+      </content>
+    </section>
+
+    <section address="_Toc515307882">
+      <!--h1-->
+      <title>Installation instructions</title>
+      <content>
+        <para>
+          There are several ways to install Hummingbird according to
+          needs.
+        </para>
+
+        <para>
+          When running Hummingbird on a Desktop machine for Test and
+          Automation by using the GUI application, the best way is to install the
+          ClickOnce version. It gives you a way to easy install (by one click) and follow
+          the latest version. To install with ClickOnce, Please refer to ClickOnce
+          Installation
+        </para>
+
+        <para>
+          If you want run Hummingbird on a Server Machine, For
+          Testing, Automation and Command Line interface. You should use the Windows
+          Installer or Zip version.
+        </para>
+
+        <para>
+          To install Hummingbird, please choose the following installation guide
+        </para>
+        <alert class="caution">
+          <para>Download and install any version of Hummingbird, means you accept the License Agreement</para>
+        </alert>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <link xlink:href="a95ea83d-733b-4a07-b290-438514fbcbb5" />
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="f7a36b1b-4cf2-4130-99c9-460787e5b2fe"/>
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <link xlink:href="cb60599c-39e3-48df-b079-03533657ba3a" />
+            </para>
+          </listItem>
+        </list>
+
+        <alert class="note">
+          <para>
+            You can install multiple versions of Hummingbird from different media, But All hummingbird instances share the same copy of Profile, History and Settings.
+          </para>
+        </alert>
+      </content>
+    </section>
+
+    <section address="licence">
+      <title>License Agreement</title>
+      <content>
+        <para>The Hummingbird project is distributed under CC-BY-ND 3.0 License, You are free to copy, distribute, display and perform the work with it. For personal and commercial use.</para>
+        <para>In additional, Hummingbird Test Framework and UI framework is distributed under CC-BY 3.0 license that allows you not only use and work on it, but also to create and distribute derivative works based on it, for example: Build Extensions, Adaptations for your organization or for the clients your organization.</para>
+        <para>When distributing, representing the software, you must give appropriate credit, provide a link to the license and indicate if changes were made on the original software</para>
+        <para>You must accepts the license agreement before downloading and using the software</para>
+
+        <table>
+          <row>
+            <entry>
+              <para>Component</para>
+            </entry>
+            <entry>
+              <para>License</para>
+            </entry>
+            <entry>
+              <para>Remark</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>
+                Hummingbird App
+              </para>
+              <para>Hummingbird CLI</para>
+              <para> Hummingbird Report Viewer</para>
+
+            </entry>
+            <entry>
+              <para>
+                CC-BY-ND 3.0
+              </para>
+            </entry>
+            <entry>
+              <para>
+                Free for personal and commercial use
+              </para>
+              <para>Free to copy, distribute, display and perform the work            </para>
+              <para>
+                <legacyBold>Not Distribute</legacyBold> derivative works based on it
+              </para>
+
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>
+                Hummingbird Test Framework
+              </para>
+              <para>
+                Hummingbird UI
+              </para>
+            </entry>
+            <entry>
+              <para>
+                CC-BY 3.0
+              </para>
+            </entry>
+            <entry>
+              <para>
+                Free for personal and commercial use
+              </para>
+              <para>Free to copy, distribute, display and perform the work</para>
+              <para>
+                Distribute derivative works based on it
+              </para>
+            </entry>
+          </row>
+        </table>
+      </content>
+    </section>
+
+    <section address="copyright">
+      <title>Copyrights</title>
+      <content>
+
+        <para>Although Hummingbird is freeware, the author holds the copyright of the software and its components, and reserves the rights to improve, modify and decommission the software.</para>
+        <para>Unless the part that open sourced by the author, it is prohibits to disassembly or reverse engineering the software and/or its components.</para>
+      </content>
+
+    </section>
+
+
+    <section address="discalimer">
+      <title>Disclaimer</title>
+      <content>
+        <para>The software is provided ”as is” and the author disclaims all warranties with regard to this software including all implied warranties of merchantability and fitness. In no event shall the author be liable for any special, direct, indirect, or consequential damages or any damages whatsoever resulting from loss of use, data or profits, whether in an action of contract, negligence or other tortious action, arising out of or in connection with the use or performance of this software.</para>
+      </content>
+
+    </section>
+    
+    <relatedTopics />
+  </developerConceptualDocument>
+</topic>

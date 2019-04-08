@@ -1,0 +1,2002 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hummingbird.UI</name>
+    </assembly>
+    <members>
+        <member name="T:Hummingbird.UI.AppBarButton">
+            <summary>
+            AppBarButton are expected to be present in a <see cref="T:Hummingbird.UI.ModernWindow"/> Status bar, displays an vector icon and small text label under it.
+            According to targeting version of the OS, you can change if a circle is visible outside the icon.
+            Similar to <see cref="T:Hummingbird.UI.AppBarIcon"/> and <see cref="T:Hummingbird.UI.ModernLink"/>, you specify the icon by a icon key from more than 1200 vector XAML icons or using the Segoe UI Symbol or Segoe UI MDL2 icon set if targeting Windows 8/8.1 or Windows 10
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.AppBarButton.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.UI.AppBarButton"/> class.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.AppBarButton.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.AppBarButton.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="F:Hummingbird.UI.AppBarButton.IconKeyProperty">
+            <summary>
+            The icon key property
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.AppBarButton.IconKey">
+            <summary>
+            Gets or sets the Icon Key of this AppbarButton.
+            </summary>
+            <value>
+             Hummingbird UI contains more than 1200 modern style icons and you can also use. please refer to Hummingbird UI Icon list to see these icons and keys.
+             If you are assigning an unavailable Icon key, you will get a cross icon.
+            </value>
+        </member>
+        <member name="F:Hummingbird.UI.AppBarButton.CaptionProperty">
+            <summary>
+            The caption property
+            </summary>
+            <dpdoc />
+        </member>
+        <member name="P:Hummingbird.UI.AppBarButton.Caption">
+            <summary>
+            Gets or sets the caption of the button, shown under the icon with small font.
+            </summary>
+            <remarks>
+            By default, the text is hidden. Only the icon is visible. when the mouse pointer is hover on the button, the text will be shown.
+            </remarks>
+        </member>
+        <member name="F:Hummingbird.UI.AppBarButton.IsToggleButtonProperty">
+            <summary>
+            The is toggle button property
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.AppBarButton.IsToggleButton">
+            <summary>
+            Gets or sets the value if the button is used as a ToggleButton.
+            </summary>
+            <value>
+            True if the AppbarButton is Toggle Button, and the value IsChecked can be used to determine the check status.
+            False if the AppbarButton is push button
+            </value>
+        </member>
+        <member name="F:Hummingbird.UI.AppBarButton.IsCheckedProperty">
+            <summary>
+            The is checked property
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.AppBarButton.IsChecked">
+            <summary>
+            Gets or sets the check status of the button, if the current button is used as toggle button. (IsToggleButton = True)
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.AppBarButton.IsCircleVisible">
+            <summary>
+            Gets or Sets a value to indicate if a circle is visible outside the icon.
+            </summary>
+            <value>
+              <c>true</c> to draw a circle outside the icon (Windows Phone and Windows 8.1 style; otherwise, <c>false</c> (Windows 10 style).
+            </value>
+        </member>
+        <member name="F:Hummingbird.UI.AppBarButton.IsCircleVisibleProperty">
+            <summary>
+            The is circle visible property
+            </summary>
+        </member>
+        <member name="T:Hummingbird.UI.AppBarIcon">
+            <summary>
+            Icon which identified by its IconKey and have circle around it.
+            </summary>
+            <remarks>
+            AppBarIcon shows an vector icon using the same resources from other modern controls like <see cref="T:Hummingbird.UI.ModernLink"/> and <see cref="T:Hummingbird.UI.AppBarButton"/>.
+            You specify the icon by using the IconKey from more than 1200 samples available or using the icons from Segoe UI Symbol (Windows 8+), or Segoe UI MDL2 (Windows 10).
+            You can decide if the icon is around by a circle with property <see cref="P:Hummingbird.UI.AppBarIcon.IsCircleVisible"/>.
+            AppBarIcon uses Foreground Brush, you can not change the color directly. if you want to change the color of the icon, changes the Foreground of its container.
+            </remarks>
+        </member>
+        <member name="M:Hummingbird.UI.AppBarIcon.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.UI.AppBarIcon"/> class.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.AppBarIcon.IconKey">
+            <summary>
+            Gets or sets the Icon Key of this AppbarButton.
+            </summary>
+            <value>
+             Hummingbird UI contains more than 1000 modern style icons. please refer to Hummingbird UI Icon list to see these icons and keys.
+            </value>
+        </member>
+        <member name="F:Hummingbird.UI.AppBarIcon.IconKeyProperty">
+            <summary>
+            The DependencyProperty of <see cref="P:Hummingbird.UI.AppBarIcon.IconKey"/>
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.AppBarIcon.IsCircleVisible">
+            <summary>
+            Gets or Sets a value to indicate if a circle is visible outside the icon.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.AppBarIcon.IsCircleVisibleProperty">
+            <summary>
+            The DependencyProperty of <see cref="P:Hummingbird.UI.AppBarIcon.IsCircleVisible"/>
+            </summary>
+        </member>
+        <member name="T:Hummingbird.UI.BasicWindow">
+            <summary>
+            Basic Window is classic window which contains a control box with contents. it is used to hosts all other windows except for main window.
+            </summary>
+            <remarks>
+            BasicWindow should be used to all other windows than the main window. You can build the window content the same way as you are building a classic WPF Window. 
+            The styles, animations will be applied automatically.
+            </remarks>
+        </member>
+        <member name="P:Hummingbird.UI.BasicWindow.IsDarkTheme">
+            <summary>
+            Gets the value if the current theme is dark background and white text.
+            </summary>
+            <remarks>
+            In your application, you can use this property to detect the changes of the theme, and adapt for example background image according to the theme applied.
+            </remarks>
+        </member>
+        <member name="P:Hummingbird.UI.BasicWindow.HasLoaded">
+            <summary>
+            Gets or Sets the value to indicate if all components and loading logics has done. 
+            </summary>
+            <remarks>
+            You should manually set HasLoaded = true after initializing all sub contents.
+            </remarks>
+        </member>
+        <member name="F:Hummingbird.UI.BasicWindow.HasLoadedProperty">
+            <summary>
+            The DependencyProperty for the property HasLoaded
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.BasicWindow.SideBar">
+            <summary>
+            Gets or sets the Sidebar shown on the right side of the window
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.BasicWindow.SideBarProperty">
+            <summary>
+            The DependencyProperty for SideBar
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.BasicWindow.SideBarTitle">
+            <summary>
+            Gets or sets the Title of the sidebar title.
+            </summary>
+            <value>
+            The side bar title.
+            </value>
+        </member>
+        <member name="P:Hummingbird.UI.BasicWindow.SideBarMaxWidth">
+            <summary>
+            Gets or sets the maximum width of the <see cref="P:Hummingbird.UI.BasicWindow.SideBar"/> panel. the default value is 350 pixels
+            </summary>
+            <value>
+            The maximum width of the side bar.
+            </value>
+        </member>
+        <member name="F:Hummingbird.UI.BasicWindow.SideBarMaxWidthProperty">
+            <summary>
+            The <see cref="T:System.Windows.DependencyProperty"/> holding the Maximum width of the SideBar.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.BasicWindow.SideBarMinWidth">
+            <summary>
+            Gets or sets the minimum width of the <see cref="P:Hummingbird.UI.BasicWindow.SideBar"/> panel. the default value is 300 pixels.
+            </summary>
+            <value>
+            The minimum width of the side bar.
+            </value>
+        </member>
+        <member name="F:Hummingbird.UI.BasicWindow.SideBarMinWidthProperty">
+            <summary>
+            The <see cref="T:System.Windows.DependencyProperty"/> holding the Minimum width of the SideBar.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.BasicWindow.SideBarTitleProperty">
+            <summary>
+            The DependencyProperty for SideBarTitle
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.BasicWindow.SideBarVisibility">
+            <summary>
+            Gets or sets the <see cref="T:System.Windows.Visibility"/> of The SideBar
+            </summary>
+            <value>
+            The <see cref="T:System.Windows.Visibility"/> indicates if the <see cref="P:Hummingbird.UI.BasicWindow.SideBar"/> is Visible.
+            </value>
+        </member>
+        <member name="F:Hummingbird.UI.BasicWindow.SideBarVisibilityProperty">
+            <summary>
+            The DependencyProperty for SideBarVisibility
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.BasicWindow.Id">
+            <summary>
+            Gets or sets the identifier of the Window.
+            </summary>
+            <value>
+            The identifier is used to identify the parameters stored (for example: windows size and position or other customizable values).
+            To properly use these functions, please assign a different Guid in the constructor.
+            </value>
+        </member>
+        <member name="P:Hummingbird.UI.BasicWindow.DefaultStyle">
+            <summary>
+            Gets or sets the default style of the Window. 
+            </summary>
+            <value>
+            The default style.
+            </value>
+        </member>
+        <member name="M:Hummingbird.UI.BasicWindow.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.UI.BasicWindow"/> class.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.BasicWindow.HasControlBoxProperty">
+            <summary>
+            The has control box property, indicate if the windows contains the control box (Minimize, Maximum and Close button)
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.BasicWindow.HasControlBox">
+            <summary>
+            Gets or Sets the value to indicate if current window has Control Box (including Minimize, Maximize and Close button)
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.BasicWindow.WindowStatus">
+            <summary>
+            Gets or Sets the value to visually shows the status of the current window, by different border colors.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.BasicWindow.WindowStatusProperty">
+            <summary>
+            The Dependency Property for <see cref="P:Hummingbird.UI.BasicWindow.WindowStatus"/> property
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.BasicWindow.Commands">
+            <summary>
+            Gets or Sets an collection of UIElements as Commands, these commands will be show on the Title Bar.
+            </summary>
+            <remarks>Use only buttons and Menu Items in Commands.</remarks>
+        </member>
+        <member name="F:Hummingbird.UI.BasicWindow.CommandsProperty">
+            <summary>
+            The commands property
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.BasicWindow.UpdateIcon">
+            <summary>
+            Update the Icon to adapt the changes of theme.
+            </summary>
+            <remarks>
+            This function will be called automatically when initalizing the Windows and applying the theme.
+            But If the theme is changed by the code after application loads, you must call this function manually.
+            </remarks>
+        </member>
+        <member name="M:Hummingbird.UI.BasicWindow.UpdateBackground">
+            <summary>
+            Updates the background to adapt the changes of theme
+            </summary>
+            <remarks>
+            This function will be called automatically when initalizing the Windows and applying the theme.
+            But If the theme is changed by the code after application loads, you must call this function manually.
+            </remarks>
+        </member>
+        <member name="F:Hummingbird.UI.BasicWindow.IsBusyProperty">
+            <summary>
+            The DependencyProperty for IsBusy property
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.BasicWindow.IsBusy">
+            <summary>
+            Gets or Sets the value to indicate if the current window Is Busy.
+            </summary>
+            <remarks>
+            When a window is busy, it will have semi-transparent masks and user can not interact with the UI until the windows turns no busy.
+            </remarks>
+        </member>
+        <member name="P:Hummingbird.UI.BasicWindow.LightIcon">
+            <summary>
+            Icon used for Light theme.
+            </summary>
+            <remarks>To make the Icon visible in light theme, the icon itself should be Dark enough. </remarks>
+        </member>
+        <member name="P:Hummingbird.UI.BasicWindow.DarkIcon">
+            <summary>
+            Icon used for Dark theme.
+            </summary>
+            <remarks>To make the Icon visible in dark theme, the icon itself should be light enough. </remarks>
+        </member>
+        <member name="P:Hummingbird.UI.BasicWindow.DefaultLightIcon">
+            <summary>
+            Gets or Sets the Default Icon used in Light themes.
+            </summary>
+            <remarks>
+            When This icon is set, it will be applied to all instance of BasicWindow and ModernWindow in your application.
+            If an BasicWindow and ModernWindow has defined their own LightIcon, then the DefaultLightIcon will not be applied.
+            If you have multiple Window in the application, set DefaultLightIcon and DefaultDarkIcon in the main window.
+            </remarks>
+        </member>
+        <member name="P:Hummingbird.UI.BasicWindow.DefaultDarkIcon">
+            <summary>
+            Gets or Sets the Default Icon used in Dark themes.
+            </summary>
+            <remarks>
+            When This icon is set, it will be applied to all instance of BasicWindow and ModernWindow in your application.
+            If an BasicWindow and ModernWindow has defined their own DarkIcon, then the DefaultDarkIcon will not be applied.
+            If you have multiple Window in the application, set DefaultLightIcon and DefaultDarkIcon in the main window.
+            </remarks>
+        </member>
+        <member name="P:Hummingbird.UI.BasicWindow.DefaultLightBackground">
+            <summary>
+            Gets or Sets the Default background image used in light themes.
+            </summary>
+            <remarks>
+            When This icon is set, it will be applied to all instance of BasicWindow and ModernWindow in your application.
+            If an BasicWindow and ModernWindow has defined their own LightBackground, then this property will not be used.
+            </remarks>
+        </member>
+        <member name="P:Hummingbird.UI.BasicWindow.DefaultDarkBackground">
+            <summary>
+            Gets or Sets the Default background image used in Dark themes.
+            </summary>
+            <remarks>
+             When This icon is set, it will be applied to all instance of BasicWindow and ModernWindow in your application.
+             If an BasicWindow and ModernWindow has defined their own DarkBackground, then this property will not be used.
+            </remarks>
+        </member>
+        <member name="P:Hummingbird.UI.BasicWindow.LightBackground">
+            <summary>
+            Background image used for Light theme. the background image itself must be light enough (While).
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.BasicWindow.DarkBackground">
+            <summary>
+            Background image used for Dark theme. the background image itself must be dark enough (Black).
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.BasicWindow.ShowMessageBox(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.String)">
+            <summary>
+            Show a MessageBox
+            </summary>
+            <param name="Caption">Title of the MessageBox</param>
+            <param name="Message">Message</param>
+            <param name="Buttons">Buttons to show in the MessageBox</param>
+            <param name="Image">MessageBox Image (not used)</param>
+            <param name="Details">Detailed error message, can include stack traces and large text to give more detailed information to users.</param>
+            <returns>The <see cref="T:System.Windows.MessageBoxResult"/> value according to which button is clicked.</returns>
+        </member>
+        <member name="P:Hummingbird.UI.BasicWindow.IsTitleHighlighted">
+            <summary>
+            Gets or Sets a value to indicate where the Title bar is highlighted.
+            </summary>
+            <value>
+            When highlighted, the Titlebar background is shown with HighlightBrush.
+            </value>
+        </member>
+        <member name="F:Hummingbird.UI.BasicWindow.IsTitleHighlightedProperty">
+            <summary>
+            The is title highlighted property
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.BasicWindow.ShowInformation(System.String,System.String)">
+            <summary>
+            Show an In line information in the current window.
+            </summary>
+            <param name="title">Title of the information window.</param>
+            <param name="content">Content of the information window.</param>
+        </member>
+        <member name="M:Hummingbird.UI.BasicWindow.ShowToastNotification(System.String,Hummingbird.UI.NotificationLevel,System.Action,System.Int32)">
+            <summary>
+            Shows the toast notification.
+            </summary>
+            <param name="content">The content of the toast notification message.</param>
+            <param name="level">The notification level.</param>
+            <param name="callbackAction">This action will be called if the user clicked on the Toast Notification.</param>
+            <param name="timeout">The timeout in second when the notification hides itself, default value is 0</param>
+            <remarks>
+            If multiple toast notification is shown, they will shown one under another.
+            </remarks>
+        </member>
+        <member name="M:Hummingbird.UI.BasicWindow.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.BasicWindow.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="T:Hummingbird.UI.Converters.BooleanToVisibilityConverterReversed">
+            <summary>
+            Convert <see cref="T:System.Boolean"/> value to <see cref="T:System.Windows.Visibility"/>.
+            </summary>
+            <remarks>
+            If the value is True, the binding element will be <see cref="F:System.Windows.Visibility.Collapsed"/>, otherwise, the element will be <see cref="F:System.Windows.Visibility.Visible"/>
+            </remarks>
+            <seealso cref="T:System.Windows.Data.IValueConverter" />
+        </member>
+        <member name="M:Hummingbird.UI.Converters.BooleanToVisibilityConverterReversed.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Hummingbird.UI.Converters.BooleanToVisibilityConverterReversed.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Hummingbird.UI.Converters.NamespaceDoc">
+            <summary>
+            <para>
+            <see cref="N:Hummingbird.UI.Converters"/> Namespace contains some converters used in UI elements to achieve DataBinding and MVVM. You can reuse these converters if necessary.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Hummingbird.UI.Converters.IntToVisibilityConverterReversed">
+            <summary>
+            Convert <see cref="T:System.Int32"/> value to <see cref="T:System.Windows.Visibility"/>.
+            </summary>
+            <remarks>
+            If the value is 0, the binding element will be <see cref="F:System.Windows.Visibility.Collapsed"/>, otherwise, the element will be <see cref="F:System.Windows.Visibility.Visible"/>
+            </remarks>
+            <seealso cref="T:System.Windows.Data.IValueConverter" />
+        </member>
+        <member name="M:Hummingbird.UI.Converters.IntToVisibilityConverterReversed.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Hummingbird.UI.Converters.IntToVisibilityConverterReversed.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Hummingbird.UI.Converters.StringToIntArrayTypeConverter">
+            <summary>
+            A converter converts from <see cref="T:System.String"/> to Array of <see cref="T:System.Int32"/>
+            </summary>
+            <remarks>
+            The input string must in form of integer numbers separated by comma (,)
+            </remarks>
+        </member>
+        <member name="M:Hummingbird.UI.Converters.StringToIntArrayTypeConverter.CanConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Type)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Hummingbird.UI.Converters.StringToIntArrayTypeConverter.ConvertFrom(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object)">
+            <inheritdoc/>
+        </member>
+        <member name="M:Hummingbird.UI.Converters.StringToIntArrayTypeConverter.ConvertTo(System.ComponentModel.ITypeDescriptorContext,System.Globalization.CultureInfo,System.Object,System.Type)">
+            <inheritdoc/>
+        </member>
+        <member name="T:Hummingbird.UI.Converters.StringToResourceConverter">
+            <summary>
+            This converter is used to convert a <see cref="T:System.String"/> value to an UI Element. especially used in <see cref="P:Hummingbird.UI.AppBarButton.IconKey"/> Property.
+            </summary>
+            <seealso cref="T:System.Windows.Data.IValueConverter" />
+            <remarks>
+            The accept string are:
+            <list type="bullet">
+            <item>"appbar_*" for built-in XAML vector icons, usable for all version of Windows.</item>
+            <item>"symbol_*" for Icons defined in Segoe UI Symbol font, available in Windows 8, Windows 8.1 and Windows 10</item>
+            <item>"mdl2_*" for Icons defined in Segoe UI MDL2 Asset font, available in Windows 10</item>
+            </list>
+            </remarks>
+        </member>
+        <member name="M:Hummingbird.UI.Converters.StringToResourceConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value produced by the binding source.</param>
+            <param name="targetType">The type of the binding target property.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="M:Hummingbird.UI.Converters.StringToResourceConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts a value.
+            </summary>
+            <param name="value">The value that is produced by the binding target.</param>
+            <param name="targetType">The type to convert to.</param>
+            <param name="parameter">The converter parameter to use.</param>
+            <param name="culture">The culture to use in the converter.</param>
+            <returns>
+            A converted value. If the method returns null, the valid null value is used.
+            </returns>
+        </member>
+        <member name="T:Hummingbird.UI.ClassicMessageBox">
+            <summary>
+            Interaction logic for ModernMessageBox.xaml
+            </summary>
+            <summary>
+            ClassicMessageBox
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.ClassicMessageBox.ShowMessageBox(System.Windows.DependencyObject,System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.String)">
+            <summary>
+            Shows the message box.
+            </summary>
+            <param name="child">The component calling the message box.</param>
+            <param name="Caption">The caption (header).</param>
+            <param name="Message">The message (content)</param>
+            <param name="Buttons">The buttons of message box</param>
+            <param name="Image">The icon indicating the level of the message (this parameter is not yet used in the current version of UI Framework).</param>
+            <param name="DetailedError">The detailed error.</param>
+            <returns>The <see cref="T:System.Windows.MessageBoxResult"/> value indication the choose of the user.</returns>
+        </member>
+        <member name="M:Hummingbird.UI.ClassicMessageBox.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Hummingbird.UI.ContentDetached">
+            <summary>
+            This content is shown when in a ModernWindow, a content is detached.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.ContentDetached.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.UI.ContentDetached"/> class.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.ContentDetached.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Hummingbird.UI.DetachedWindowHost">
+            <summary>
+            This is a Window Host for all detached contents
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.DetachedWindowHost.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Hummingbird.UI.DotStyles">
+            <summary>
+            The dot style of Modern Progress bar
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.DotStyles.Circle">
+            <summary>
+            The dot is represented by a circle
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.DotStyles.Rectangle">
+            <summary>
+            The dot is represented by a rectangle
+            </summary>
+        </member>
+        <member name="T:Hummingbird.UI.GridWithPadding">
+            <summary>
+            A Grid with Padding. Modified from the original article: https://www.codeproject.com/Articles/107468/WPF-Padded-Grid
+            </summary>
+            <remarks>
+            When using GridWithPadding, you can set a global padding value instead of setting the Margin of every children element.
+            </remarks>
+        </member>
+        <member name="P:Hummingbird.UI.GridWithPadding.Padding">
+            <summary>
+            Padding of all grid children elements.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.GridWithPadding.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.UI.GridWithPadding"/> class.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.GridWithPadding.GetMarginProperty(System.Windows.DependencyObject)">
+            <summary>
+            Gets the margin property.
+            </summary>
+            <param name="dependencyObject">The dependency object.</param>
+            <returns>The Margin Property of the given dependency object</returns>
+        </member>
+        <member name="T:Hummingbird.UI.IconCheckBox">
+            <summary>
+            A Check box with Icon and description
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.IconCheckBox.IsChecked">
+            <summary>
+            Gets or Sets a value whether the CheckBox is checked.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.IconCheckBox.IsCheckedProperty">
+            <summary>
+            The DependencyProperty for IsChecked property
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.IconCheckBox.ImageSource">
+            <summary>
+            Gets or Sets the ImageSource of the Icon
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.IconCheckBox.ImageSourceProperty">
+            <summary>
+            The image source property
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.IconCheckBox.Header">
+            <summary>
+            Gets or Sets the header of the IconCheckBox
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.IconCheckBox.HeaderProperty">
+            <summary>
+            The header property
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.IconCheckBox.Description">
+            <summary>
+            Gets or Sets the description of the <see cref="T:Hummingbird.UI.IconCheckBox" />
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.IconCheckBox.DescriptionProperty">
+            <summary>
+            The DependencyProperty for the Description property
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.IconCheckBox.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.UI.IconCheckBox"/> class.
+            </summary>
+        </member>
+        <member name="T:Hummingbird.UI.ModernCounter">
+            <summary>
+            Modern Counter is a little history report UI elements.
+            </summary>
+            <summary>
+            ModernCounter
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernCounter.TextColor">
+            <summary>
+            Gets or Sets the Color of the text and Graph, with animation when the value has changed.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernCounter.DisplayNumber">
+            <summary>
+            Gets an integer value as the counter (it sums up all values in the Data)
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernCounter.Data">
+            <summary>
+            Gets or Sets an Integer Array to holds the history. When Data is Set DisplayNumber will be updated as the sum of the integer values
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernCounter.Header">
+            <summary>
+            Gets or Sets the header of the ModernCounter
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.ModernCounter.HeaderProperty">
+            <summary>
+            The header property
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.ModernCounter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.UI.ModernCounter"/> class.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.ModernCounter.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Hummingbird.UI.ModernMenuItem">
+            <summary>
+            The MVVM style Menu Item used in ModernWindow.
+            </summary>
+            <seealso cref="T:System.Windows.Controls.Control" />
+            <remarks>
+            ModernWindow has a special menu system with 3 levels: Level 1 and Level 2 is on the top-left corner, showing horizontally. Level 3 is on the left side.
+            Each MenuItem has a header which represents its title, then a ContentType object which holds a Type object. The Type object must be a subclass of ModernContent
+            </remarks>
+            <see cref="P:Hummingbird.UI.ModernWindow.MainMenu"/>
+        </member>
+        <member name="M:Hummingbird.UI.ModernMenuItem.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.UI.ModernMenuItem"/> class.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.ModernMenuItem.ItemsProperty">
+            <summary>
+            The items property
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernMenuItem.Items">
+            <summary>
+            Sub menu items of the current MenuItem.
+            </summary>
+            <remarks>
+            Hummingbird UI supports 3 level menu. All sub-items of the 3rd level menu item will be ignored and will not be shown in the User interface
+            </remarks>
+        </member>
+        <member name="F:Hummingbird.UI.ModernMenuItem.HeaderProperty">
+            <summary>
+            The header property
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernMenuItem.Header">
+            <summary>
+            Header of the UI, the text to be shown.
+            </summary>
+            <remarks>
+            Design recommendation: For first level menu item, use full lower case characters. For 2nd and 3rd level menu item, use full UPPER case characters.
+            </remarks>
+        </member>
+        <member name="F:Hummingbird.UI.ModernMenuItem.IsSelectedProperty">
+            <summary>
+            The is selected property
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernMenuItem.IsSelected">
+            <summary>
+            If the current menu item is selected.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernMenuItem.Delay">
+            <summary>
+            Delay indicator when showing animation. Internal use only
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernMenuItem.Parent">
+            <summary>
+            Parent Menu Item, for internal use only
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernMenuItem.Index">
+            <summary>
+            Index of the menu item in the same level, for internal use only
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernMenuItem.Key">
+            <summary>
+            Identifier of the MenuItem. The Key is used especially to navigate to 
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernMenuItem.ContentType">
+            <summary>
+            A subtype of ModernContent, represents the content of this menu item. Hummingbird UI uses MVVM techniques to manage Menu and the instantiation of the content. To increases the performance, once the view is instantiated, it will be cached.
+            </summary>
+        </member>
+        <member name="T:Hummingbird.UI.ModernContent">
+            <summary>
+            Custom UserControl used in BasicWindow or ModernWindow
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernContent.StrongName">
+            <summary>
+            Unique identifier of this ModernContent, it is usually used to save personal data per control
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.ModernContent.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.UI.ModernContent"/> class.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernContent.IsDarkTheme">
+            <summary>
+            Gets the value if the current theme is dark background and white text.
+            </summary>
+            <remarks>
+            In your application, you can use this property to detect the changes of the theme, and adapt for example background image according to the theme applied.
+            </remarks>
+        </member>
+        <member name="P:Hummingbird.UI.ModernContent.HasLoaded">
+            <summary>
+            Gets or Sets a value indicates if the Load operation is done for this control. you need to pass manually this indicator to True once initialization has done.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.ModernContent.#ctor(Hummingbird.UI.ModernWindow)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.UI.ModernContent"/> class.
+            </summary>
+            <param name="parent">The parent.</param>
+        </member>
+        <member name="P:Hummingbird.UI.ModernContent.DetachedName">
+            <summary>
+            Gets or Sets the value of Window name showing in Title bar, when the current ModernContent is detached.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.ModernContent.DetachedNameProperty">
+            <summary>
+            The Dependency property for DetachedName
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.ModernContent.CanBeClosed">
+            <summary>
+            Calls before closing the window. By default this function triggers Closing event. if the event is canceled, the result is false.
+            If the Closing event is not defined, then True will be returned.
+            This function can be overridden, to prompt user to save changes before content closing.
+            </summary>
+            <returns>True indicating that the content can be closed, or False that the content cannot be closed.</returns>
+        </member>
+        <member name="E:Hummingbird.UI.ModernContent.Closing">
+            <summary>
+            When the content will be replaced in a ModernWindow, this event will be fired in order to save the changes.
+            </summary>
+            <remarks>
+            Assign <see cref="P:System.ComponentModel.CancelEventArgs.Cancel"/> = True to cancel the closing operation. 
+            </remarks>
+        </member>
+        <member name="P:Hummingbird.UI.ModernContent.ParentWindow">
+            <summary>
+            The BasicWindow object who holds the current ModernContent
+            </summary>
+            <remarks>
+            <para>If the ModernContent does not held by a BasicWindow or ModernWindow, null value will be returned.</para>
+            <para>The method <see cref="M:Hummingbird.UI.ModernContent.ShowInformation(System.String,System.String)"/>, <see cref="M:Hummingbird.UI.ModernContent.ShowMessageBox(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.String)"/>, <see cref="M:Hummingbird.UI.ModernContent.ShowToastNotification(System.String,Hummingbird.UI.NotificationLevel,System.Action,System.Int32)"/> uses this property
+            to show information in the right position. if the current ModernContent does not hold by a <see cref="T:Hummingbird.UI.BasicWindow"/> or <see cref="T:Hummingbird.UI.ModernWindow"/> these methods fails.</para>
+            </remarks>
+        </member>
+        <member name="M:Hummingbird.UI.ModernContent.ShowMessageBox(System.String,System.String,System.Windows.MessageBoxButton,System.Windows.MessageBoxImage,System.String)">
+            <summary>
+            Show a MessageBox
+            </summary>
+            <param name="Title">Title of the MessageBox</param>
+            <param name="Message">Message</param>
+            <param name="Buttons">Buttons to show in the MessageBox</param>
+            <param name="Image">MessageBox Image (not used)</param>
+            <param name="Details">Detailed error message, can include stack traces and large text</param>
+            <returns>The <see cref="T:System.Windows.MessageBoxResult"/> value according to which button is clicked.</returns>
+        </member>
+        <member name="M:Hummingbird.UI.ModernContent.ShowMessageBox(System.String,System.String,System.String)">
+            <summary>
+            Shows the message box with detailed error message.
+            </summary>
+            <param name="Title">Title of the MessageBox.</param>
+            <param name="Message">Content of the message.</param>
+            <param name="Details">The details message (can contains detailed error messages)</param>
+            <returns>The <see cref="T:System.Windows.MessageBoxResult"/> value according to which button is clicked.</returns>
+        </member>
+        <member name="M:Hummingbird.UI.ModernContent.ShowInformation(System.String,System.String)">
+            <summary>
+            Show an Windows 8.1 style information panel in the current window.
+            </summary>
+            <param name="title">Title of the information window.</param>
+            <param name="content">Content of the information window.</param>
+        </member>
+        <member name="M:Hummingbird.UI.ModernContent.ShowToastNotification(System.String,Hummingbird.UI.NotificationLevel,System.Action,System.Int32)">
+            <summary>
+            Shows a toast notification of given Content and Level.
+            </summary>
+            <param name="content">The content of the toast notification message.</param>
+            <param name="level">The notification level.</param>
+            <param name="callbackAction">This action will be called if the user clicked on the Toast Notification.</param>
+            <param name="timeout">The timeout in second when the notification hides itself, default value is 5</param>
+        </member>
+        <member name="F:Hummingbird.UI.ModernContent.IsDetachableProperty">
+            <summary>
+            The is detachable property
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernContent.IsDetachable">
+            <summary>
+            Gets or Sets a value indicates if the current content can be detached.
+            </summary>
+            <remarks>
+            When the content can be detached, an icon will be shown in your ModernWindow.
+            When detached, the content will be shown in an independent window, This functionality is useful when you have multi-screen.
+            </remarks>
+        </member>
+        <member name="P:Hummingbird.UI.ModernContent.StatusBar">
+            <summary>
+            Gets or Sets the statusBar of the ModernContent. 
+            </summary>
+            <remarks>
+            This status bar will replace the default status bar of the ModernWindow if the current ModernContent is the active content.
+            If you do not have specific status bar items, assign this property to NULL, the default status bar will be remained.
+            StatusBar is used only in ModernWindow, if you have a ModernContent in BasicWindow, this StatusBar will not be shown.
+            </remarks>
+        </member>
+        <member name="P:Hummingbird.UI.ModernContent.CommandArea">
+            <summary>
+            Gets or Sets the CommandArea of the ModernContent. 
+            </summary>
+            <remarks>
+            Command Area is a little space to holds some controls on the right side of the ModernWindow, at the same level of MainMenu.
+            CommandArea is used only in ModernWindow
+            </remarks>
+        </member>
+        <member name="M:Hummingbird.UI.ModernContent.HasNoValidationError(System.Windows.DependencyObject)">
+            <summary>
+            Determines whether this content contains validation errors of binding.
+            </summary>
+            <param name="obj">The Root dependency object.</param>
+            <returns>
+              <c>true</c> if at least one controls are errors; otherwise, <c>false</c>.
+            </returns>
+        </member>
+        <member name="M:Hummingbird.UI.ModernContent.HasNoValidationError">
+            <summary>
+            Determines whether this content contains validation errors of Data Binding.
+            </summary>
+            <returns>
+              <c>true</c> if at least one controls are errors; otherwise, <c>false</c>.
+            </returns>
+            <remarks>
+            You can check the value before saving, closing to ensure all user input is correct.
+            </remarks>
+        </member>
+        <member name="M:Hummingbird.UI.ModernContent.Dispose">
+            <summary>
+            Performs application-defined tasks associated with freeing, releasing, or resetting unmanaged resources.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.ModernContent.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="P:Hummingbird.UI.ModernContent.ContentChanged">
+            <summary>
+            Gets or sets a value indicating whether the data held in this ModernContent has been changed.
+            </summary>
+            <value>
+              <c>true</c> if the content is changed; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:Hummingbird.UI.ModernLink">
+            <summary>
+            ModernLink is a Hyperlink style UI element with Modern Icon
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.ModernLink.IconKeyProperty">
+            <summary>
+            The icon key property
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernLink.IconKey">
+            <summary>
+            Gets or sets the Icon Key of this ModernLink.
+            </summary>
+            <value>
+             Hummingbird UI Icon Key
+             </value>
+        </member>
+        <member name="P:Hummingbird.UI.ModernLink.IconSize">
+            <summary>
+            Gets or sets the size of the icon appeared in the ModernLink.
+            </summary>
+            <value>
+            The size of the icon, default value is 24;
+            </value>
+        </member>
+        <member name="F:Hummingbird.UI.ModernLink.IconSizeProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for IconSize.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernLink.IconForegroundBrush">
+            <summary>
+            ForegroundBrush for the icon.
+            </summary>
+            <value>
+            The icon foreground brush.
+            </value>
+        </member>
+        <member name="F:Hummingbird.UI.ModernLink.IconForegroundBrushProperty">
+            <summary>
+            The icon foreground brush property
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.ModernLink.TextProperty">
+            <summary>
+            The text property
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernLink.Text">
+            <summary>
+            Text of the link
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernLink.Description">
+            <summary>
+            Gets or sets the description showing under the Text with smaller font size
+            </summary>
+            <value>
+            The description.
+            </value>
+        </member>
+        <member name="F:Hummingbird.UI.ModernLink.DescriptionProperty">
+            <summary>
+            The <see cref="T:System.Windows.DependencyProperty"/> of <see cref="P:Hummingbird.UI.ModernLink.Description"/>
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.ModernLink.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.UI.ModernLink"/> class.
+            </summary>
+        </member>
+        <member name="E:Hummingbird.UI.ModernLink.Click">
+            <summary>
+            Occurs when user clicks this ModernLink.
+            </summary>
+        </member>
+        <member name="T:Hummingbird.UI.ModernPresenter">
+            <summary>
+            A container control which holds others controls panning horizontally.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.ModernPresenter.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.UI.ModernPresenter"/> class.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernPresenter.IsScrollBarHidden">
+            <summary>
+            Gets or sets a value indicating whether this to hide the Scroll Bar even on mouse over.
+            </summary>
+            <value>
+              <c>true</c> if this always hide Scroll Bar; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="F:Hummingbird.UI.ModernPresenter.IsScrollBarHiddenProperty">
+            <summary>
+            The DependencyProperty declaration for <see cref="P:Hummingbird.UI.ModernPresenter.IsScrollBarHidden"/>
+            </summary>
+        </member>
+        <member name="T:Hummingbird.UI.ModernProgressBar">
+            <summary>
+            A Windows 8.1 style progress bar. shows some dots move from left to right. intend to use in application busy mode.
+            </summary>
+            <summary>
+            ModernProgressBar
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernProgressBar.DotStyle">
+            <summary>
+            Gets or sets the dot style of the progress bar
+            </summary>
+            <value>
+            The dot style.
+            </value>
+        </member>
+        <member name="F:Hummingbird.UI.ModernProgressBar.DotStyleProperty">
+            <summary>
+            The dot style backed DependencyProperty
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernProgressBar.Radius">
+            <summary>
+            Gets or sets the radius of the Circle or Rectangle of the dots.
+            </summary>
+            <value>
+            The radius in integer, default value is 4 point
+            </value>
+        </member>
+        <member name="F:Hummingbird.UI.ModernProgressBar.RadiusProperty">
+            <summary>
+            The backed DependencyProperty for <see cref="P:Hummingbird.UI.ModernProgressBar.Radius"/>
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.ModernProgressBar.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.UI.ModernProgressBar"/> class.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.ModernProgressBar.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Hummingbird.UI.ModernSwitch">
+            <summary>
+            A Windows 8 style Switch control. It can replace <see cref="T:System.Windows.Controls.CheckBox"/> in some conditions.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernSwitch.IsChecked">
+            <summary>
+            Gets or Sets if the switch is checked.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.ModernSwitch.IsCheckedProperty">
+            <summary>
+            The is checked property
+            </summary>
+        </member>
+        <member name="E:Hummingbird.UI.ModernSwitch.IsCheckedChanged">
+            <summary>
+            An event handler invokes when the value of IsChecked property changes
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernSwitch.CheckedText">
+            <summary>
+            Text to show when the ModernSwitch is checked.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.ModernSwitch.CheckedTextProperty">
+            <summary>
+            The checked text property
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernSwitch.UnCheckedText">
+            <summary>
+            Text to show when the ModernSwitch is unchecked.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.ModernSwitch.UnCheckedTextProperty">
+            <summary>
+            The un checked text property
+            </summary>
+        </member>
+        <member name="T:Hummingbird.UI.ModernTile">
+            <summary>
+            A Windows 8 start menu style Tile with Icon, Header and background color.
+            </summary>
+            <seealso cref="T:System.Windows.Controls.UserControl" />
+        </member>
+        <member name="P:Hummingbird.UI.ModernTile.Header">
+            <summary>
+            Header of the Tile
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.ModernTile.HeaderProperty">
+            <summary>
+            The header property
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernTile.Icon">
+            <summary>
+            Icon of the Tile
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.ModernTile.IconProperty">
+            <summary>
+            The icon property
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.ModernTile.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.UI.ModernTile"/> class.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernTile.CornerRadius">
+            <summary>
+            Gets or sets the corner radius of the current modern tile
+            </summary>
+            <value>
+            The corner radius in <see cref="T:System.Double"/>.
+            </value>
+        </member>
+        <member name="F:Hummingbird.UI.ModernTile.CornerRadiusProperty">
+            <summary>
+            The <see cref="T:System.Windows.DependencyProperty"/> of <see cref="P:Hummingbird.UI.ModernTile.CornerRadius"/>
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernTile.StartColor">
+            <summary>
+            Gets or sets the start color for Gradient background.
+            </summary>
+            <value>
+            The start color.
+            </value>
+        </member>
+        <member name="F:Hummingbird.UI.ModernTile.StartColorProperty">
+            <summary>
+            The start color property
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernTile.EndColor">
+            <summary>
+            Gets or sets the end color for gradient background
+            </summary>
+            <value>
+            The end color.
+            </value>
+        </member>
+        <member name="F:Hummingbird.UI.ModernTile.EndColorProperty">
+            <summary>
+            The end color property
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernTile.UseGradient">
+            <summary>
+            Gets or sets a value indicating whether gradient background is used.
+            </summary>
+            <value>
+              <c>true</c> if the background color is rended with Gradient colors; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="F:Hummingbird.UI.ModernTile.UseGradientProperty">
+            <summary>
+            The use gradient property
+            </summary>
+        </member>
+        <member name="T:Hummingbird.UI.ModernWindow">
+            <summary>
+            ModernWindow, represents Modern UI style Window object, which holds its contents in MVVM techniques.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.ModernWindow.ClearCache">
+            <summary>
+            Release the memory for cached objects, and start immediate a Garbage collection.
+            </summary>
+            <remarks>
+            Hummingbird UI holds the loaded contents in the cache to increase the performance, but it uses memory.
+            </remarks>
+        </member>
+        <member name="M:Hummingbird.UI.ModernWindow.InvokeAvatarClicked(System.Object,System.Windows.Input.MouseEventArgs)">
+            <summary>
+            Invokes the AvatarClicked event .
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="e">The <see cref="T:System.Windows.Input.MouseEventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:Hummingbird.UI.ModernWindow.ShowBackstage">
+            <summary>
+            Shows the backstage control. Backstage is intended to hold application setting, like what Office 2016 did.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernWindow.AvatarText">
+            <summary>
+            Gets or sets the text shown at the left side of the avatar
+            </summary>
+            <value>
+            The avatar text.
+            </value>
+        </member>
+        <member name="F:Hummingbird.UI.ModernWindow.AvatarTextProperty">
+            <summary>
+             Using a DependencyProperty as the backing store for AvatarText.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.ModernWindow.LoadContentSub(Hummingbird.UI.ModernContent,System.Boolean@,System.Windows.Media.Animation.Storyboard)">
+            <summary>
+            Sub function of content loading
+            </summary>
+            <param name="content">The content.</param>
+            <param name="AnimationShown">if set to <c>true</c> </param>
+            <param name="story">The StoryBoard</param>
+            <returns></returns>
+        </member>
+        <member name="M:Hummingbird.UI.ModernWindow.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.UI.ModernWindow"/> class.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernWindow.IsAvatarVisible">
+            <summary>Gets or sets a value indicating whether the avatar is visible.</summary>
+            <value>
+              <c>true</c> if the avatar is visible; otherwise, <c>false</c>.</value>
+        </member>
+        <member name="F:Hummingbird.UI.ModernWindow.IsAvatarVisibleProperty">
+            <summary>
+            The <see cref="T:System.Windows.DependencyProperty"/> for <see cref="P:Hummingbird.UI.ModernWindow.IsAvatarVisible"/>
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernWindow.AvatarSize">
+            <summary>
+            Gets or sets the size of the avatar icon.
+            </summary>
+            <value>
+            The size of the avatar.
+            </value>
+        </member>
+        <member name="F:Hummingbird.UI.ModernWindow.AvatarSizeProperty">
+            <summary>
+            The <see cref="T:System.Windows.DependencyProperty"/> for <see cref="P:Hummingbird.UI.ModernWindow.AvatarSize"/>
+            </summary>
+        </member>
+        <member name="E:Hummingbird.UI.ModernWindow.AvatarClicked">
+            <summary>
+            Occurs when Avatar icon is clicked.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernWindow.AvatarBrush">
+            <summary>
+            Gets or sets the avatar brush. it can be any type of <see cref="T:System.Windows.Media.Brush"/> that will be shown as Avatar if <see cref="P:Hummingbird.UI.ModernWindow.IsAvatarVisible"/> is set to <see langword="true"/>
+            </summary>
+            <value>
+            The avatar brush.
+            </value>
+        </member>
+        <member name="F:Hummingbird.UI.ModernWindow.AvatarBrushProperty">
+            <summary>
+            The <see cref="T:System.Windows.DependencyProperty"/> for <see cref="P:Hummingbird.UI.ModernWindow.AvatarBrush"/>
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.ModernWindow.MainMenuProperty">
+            <summary>
+            The main menu property
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernWindow.MainMenu">
+            <summary>
+            Main menu of the ModernWindow. Hummingbird UI holds a 3-level-menu system. 
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.ModernWindow.BackstagePanelProperty">
+            <summary>
+            The backstage panel property
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernWindow.BackstagePanel">
+            <summary>
+            A TabControl object shown as backstage panel. usually this panel can be used to adjust application settings.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.ModernWindow.StatusBarProperty">
+            <summary>
+            The status bar property
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernWindow.StatusBar">
+            <summary>
+            StatusBar of the ModernWindow. Used like the CommandBar, intended to hold several <see cref="T:Hummingbird.UI.AppBarButton"/> objects.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernWindow.DefaultStatusBar">
+            <summary>
+            Default status bar of ModernWindow, when an ModernContent has not defined status bar, this status bar will be shown.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernWindow.CommandArea">
+            <summary>
+            A little area which present on the upper-right corner, on the same level as MainMenu.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.ModernWindow.CommandAreaProperty">
+            <summary>
+            The command area property
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.ModernWindow.NavigateTo(System.String)">
+            <summary>
+            Navigate to a select menu item by the key path.
+            KeyPath is the path composite with the Key of ModernItem separated with |
+            </summary>
+            <param name="KeyPath">The KeyPath of menu Items</param>
+            <returns>the Task object</returns>
+            <example>
+            Giving Menu Items MENU1 which has sub items as MENU1_1 and MENU1_2. if you want to navigate directly to MENU1_2, you can call:
+            NavigateTo("MENU1|MENU1_2")
+            </example>
+        </member>
+        <member name="P:Hummingbird.UI.ModernWindow.IsContentDetachable">
+            <summary>
+            Gets the value if the current active content is detachable
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.ModernWindow.IsContentDetachableProperty">
+            <summary>
+            The is content detachable property
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ModernWindow.IsContentDetached">
+            <summary>
+            Gets the value if the current active content has already detached.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.ModernWindow.IsContentDetachedProperty">
+            <summary>
+            The is content detached property
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.ModernWindow.UpdateIcon">
+            <summary>
+            Update the Icon to adapt the changes of theme.
+            </summary>
+            <remarks>
+            This function will be called automatically when initalizing the Windows and applying the theme.
+            But If the theme is changed by the code after application loads, you must call this function manually.
+            </remarks>
+        </member>
+        <member name="T:Hummingbird.UI.MultiSelectComboBox">
+            <summary>
+            Interaction logic for MultiSelectComboBox.xaml
+            </summary>
+            <summary>
+            MultiSelectComboBox
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.MultiSelectComboBox.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.UI.MultiSelectComboBox"/> class.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.MultiSelectComboBox.ItemsSource2Property">
+            <summary>
+            The items source property
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.MultiSelectComboBox.SelectedItemsProperty">
+            <summary>
+            The selected items property
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.MultiSelectComboBox.TextProperty">
+            <summary>
+            The text property
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.MultiSelectComboBox.DefaultTextProperty">
+            <summary>
+            The default text property
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.MultiSelectComboBox.ItemsSource">
+            <summary>
+            Gets or sets a collection used to generate the content of the <see cref="T:System.Windows.Controls.ItemsControl" />.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.MultiSelectComboBox.SelectedItems">
+            <summary>
+            Gets or sets the selected items.
+            </summary>
+            <value>
+            The selected items.
+            </value>
+        </member>
+        <member name="P:Hummingbird.UI.MultiSelectComboBox.Text">
+            <summary>
+            Gets or sets the text of the currently selected item.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.MultiSelectComboBox.DefaultText">
+            <summary>
+            Gets or sets the default text.
+            </summary>
+            <value>
+            The default text.
+            </value>
+        </member>
+        <member name="E:Hummingbird.UI.MultiSelectComboBox.SelectedItemsChanged">
+            <summary>
+            Occurs when selected items changed.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.MultiSelectComboBox.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Hummingbird.UI.Node">
+            <summary>
+            Node in a MultiSelectComboBox
+            </summary>
+            <seealso cref="T:System.ComponentModel.INotifyPropertyChanged" />
+        </member>
+        <member name="M:Hummingbird.UI.Node.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.UI.Node"/> class.
+            </summary>
+            <param name="title">The title.</param>
+        </member>
+        <member name="P:Hummingbird.UI.Node.Title">
+            <summary>
+            Gets or sets the title.
+            </summary>
+            <value>
+            The title.
+            </value>
+        </member>
+        <member name="P:Hummingbird.UI.Node.IsSelected">
+            <summary>
+            Gets or sets a value indicating whether this instance is selected.
+            </summary>
+            <value>
+              <c>true</c> if this instance is selected; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="E:Hummingbird.UI.Node.PropertyChanged">
+            <summary>
+            Occurs when property value has changed.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.Node.NotifyPropertyChanged(System.String)">
+            <summary>
+            Notifies all subscribers of PropertyChanged event listener that the property value has changed.
+            </summary>
+            <param name="propertyName">Name of the property.</param>
+        </member>
+        <member name="T:Hummingbird.UI.NamespaceDoc">
+            <summary>
+            <para>
+            <see cref="N:Hummingbird.UI"/> Namespace provides easy to use classes to build User Friendly, Interactive and responsive WPF applications.
+            The <see cref="T:Hummingbird.UI.ModernWindow"/> class provides a MVVM enabled application building experience with Modern UI design.
+            The <see cref="T:Hummingbird.UI.BasicWindow"/> class provides a classcial WPF Window applying the styles and colors applied in the application.
+            The whole library comes with 10 built-in themes including Light and Dark themes with the possibilty to use your own theme definition.
+            </para>
+            <para>
+            To easily build application with professional feel and look, Hummingbird UI library comes with more than 1200 community-led vectors icons.
+            And gives the possibility to use Windows 8.1 and Windows 10 icon fonts in <see cref="T:Hummingbird.UI.AppBarButton"/>, <see cref="T:Hummingbird.UI.AppBarIcon"/> and <see cref="T:Hummingbird.UI.ModernLink"/>.
+            Simply give a string value <see cref="P:Hummingbird.UI.AppBarIcon.IconKey"/>.
+            </para>
+            </summary>
+        </member>
+        <member name="T:Hummingbird.UI.ProgressBarSmoother">
+            <summary>
+            <para>Shows animation to the ProgressBar when the value has changed</para>
+            </summary>
+            <example>
+            The following example shows how to attach the ProgressBarSmoother to a <see cref="T:System.Windows.Controls.ProgressBar" />, When the Binding object Progress changes, the changes will be shown with animation
+            <code>
+            <![CDATA[<ProgressBar Grid.Row="1" Maximum="100" ui:ProgressBarSmoother.Value="{Binding Progress}" Style="{DynamicResource ThinProgressBarNoTrack}"/>]]>
+            </code>
+            </example>
+        </member>
+        <member name="M:Hummingbird.UI.ProgressBarSmoother.GetValue(System.Windows.DependencyObject)">
+            <summary>
+            Gets the smooth value.
+            </summary>
+            <param name="obj">The DependencyObject which contains a double value.</param>
+            <returns>the <see cref="T:System.Double"/> value within the Dependency Object</returns>
+        </member>
+        <member name="M:Hummingbird.UI.ProgressBarSmoother.SetValue(System.Windows.DependencyObject,System.Double)">
+            <summary>
+            Sets the smooth value.
+            </summary>
+            <param name="obj">The object.</param>
+            <param name="value">The value.</param>
+        </member>
+        <member name="F:Hummingbird.UI.ProgressBarSmoother.ValueProperty">
+            <summary>
+            The smooth value property
+            </summary>
+        </member>
+        <member name="T:Hummingbird.UI.SaveAsImageExtender">
+            <summary>
+            <see cref="T:Hummingbird.UI.SaveAsImageExtender"/> gives the ability to save any content of a <see cref="T:System.Windows.FrameworkElement"/> as image. 
+            </summary>
+            <remarks>
+            When this extender is attached with <see cref="F:Hummingbird.UI.SaveAsImageExtender.IsActiveProperty"/> = <see langword="true"/>, user can right click the element to export it's content to clipboard as Image.
+            </remarks>
+        </member>
+        <member name="M:Hummingbird.UI.SaveAsImageExtender.GetIsActive(System.Windows.DependencyObject)">
+            <summary>
+            Gets if the current Extender is used on the given Dependency Object
+            </summary>
+            <param name="sender">The sender.</param>
+            <returns>
+              <see langword="true" /> if the extender is used, otherwise <see langword="false" />
+            </returns>
+        </member>
+        <member name="M:Hummingbird.UI.SaveAsImageExtender.SetIsActive(System.Windows.DependencyObject,System.Boolean)">
+            <summary>
+            Sets the use extender.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="isActive">if set to <c>true</c> [use extender].</param>
+        </member>
+        <member name="F:Hummingbird.UI.SaveAsImageExtender.IsActiveProperty">
+            <summary>
+            The is active property
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.SaveAsImageExtender.SaveAsImageExtenderProperty">
+            <summary>
+            The item extender property
+            </summary>
+        </member>
+        <member name="T:Hummingbird.UI.ModernControls.BasicWindowHandler">
+            <summary>
+            Description of ModernWindowHandler.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.ModernControls.BasicWindowHandler.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.ModernControls.ModernSwitchHandler.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Hummingbird.UI.ModernControls.ModernWindowHandler">
+            <summary>
+            Description of ModernWindowHandler.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.ModernControls.ModernWindowHandler.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Hummingbird.UI.SyncTreeViewItem">
+            <summary>
+            Treeview item with "IsSynced" property
+            </summary>
+            <seealso cref="T:System.Windows.Controls.TreeViewItem" />
+        </member>
+        <member name="F:Hummingbird.UI.SyncTreeViewItem.IsSyncedProperty">
+            <summary>
+            The is synced property
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.SyncTreeViewItem.IsSynced">
+            <summary>
+            Gets or sets a value indicating whether this instance is synced.
+            </summary>
+            <value>
+              <c>true</c> if this instance is synced; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:Hummingbird.UI.TextBlockAutoToolTip">
+            <summary>
+            Shows a ToolTip over a TextBlock when its text is trimmed. Applies this class to the TextBox directly in XAML.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.TextBlockAutoToolTip.EnabledProperty">
+            <summary>
+            The property indicates to enable the TextBlockAutoToolTip to attached <see cref="T:System.Windows.Controls.TextBlock"/>
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.TextBlockAutoToolTip.SetEnabled(System.Windows.DependencyObject,System.Boolean)">
+            <summary>
+            Sets the Enabled attached property on a TextBlock control.
+            </summary>
+            <param name="dependencyObject">The TextBlock control.</param>
+            <param name="enabled">The value.</param>
+        </member>
+        <member name="T:Hummingbird.UI.ToastNotificationWindow">
+            <summary>
+            The standard ToastNotification
+            </summary>
+            <seealso cref="T:System.Windows.Window" />
+            <seealso cref="T:System.Windows.Markup.IComponentConnector" />
+        </member>
+        <member name="M:Hummingbird.UI.ToastNotificationWindow.#ctor(System.Windows.Window,System.String,Hummingbird.UI.NotificationLevel,System.Action,System.Int32)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.UI.ToastNotificationWindow" /> class.
+            </summary>
+            <param name="parent">The parent.</param>
+            <param name="information">The information.</param>
+            <param name="level">The level.</param>
+            <param name="CallBackAction">This action will be called if the user clicked on this Toast Notification</param>
+            <param name="timeout">The timeout in second when the notification hides itself, default value is 10</param>
+        </member>
+        <member name="M:Hummingbird.UI.ToastNotificationWindow.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.UI.ToastNotificationWindow"/> class.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ToastNotificationWindow.Information">
+            <summary>
+            Gets or sets the information to be shown
+            </summary>
+            <value>
+            The information.
+            </value>
+        </member>
+        <member name="F:Hummingbird.UI.ToastNotificationWindow.InformationProperty">
+            <summary>
+            The information property
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.ToastNotificationWindow.NotificationLevel">
+            <summary>
+            Gets or sets the notification level.
+            </summary>
+            <value>
+            The notification level.
+            </value>
+        </member>
+        <member name="F:Hummingbird.UI.ToastNotificationWindow.NotificationLevelProperty">
+            <summary>
+            The notification level property
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.ToastNotificationWindow.InitializeComponent">
+            <summary>
+            InitializeComponent
+            </summary>
+        </member>
+        <member name="T:Hummingbird.UI.NotificationLevel">
+            <summary>
+            Level of the notification, colors and behaviors will be different according to the level.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.NotificationLevel.Information">
+            <summary>
+            The notification is an Information
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.NotificationLevel.Good">
+            <summary>
+            The notification is a validation (will shows in green)
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.NotificationLevel.Warning">
+            <summary>
+            The notification is a Warning (will shows in yellow)
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.NotificationLevel.Error">
+            <summary>
+            The notification is an Error
+            </summary>
+        </member>
+        <member name="T:Hummingbird.UI.TreeViewItemExtender">
+            <summary>
+            Shows grid lines in a treeview item by using this extender
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.TreeViewItemExtender.UseExtenderProperty">
+            <summary>
+            The use extender property
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.TreeViewItemExtender.GetUseExtender(System.Windows.DependencyObject)">
+            <summary>
+            Gets if the current Extender is used on the given Dependency Object
+            </summary>
+            <param name="sender">The sender.</param>
+            <returns><see langword="true"/> if the extender is used, otherwise <see langword="false"/> </returns>
+        </member>
+        <member name="M:Hummingbird.UI.TreeViewItemExtender.SetUseExtender(System.Windows.DependencyObject,System.Boolean)">
+            <summary>
+            Sets the use extender.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="useExtender">if set to <c>true</c> [use extender].</param>
+        </member>
+        <member name="F:Hummingbird.UI.TreeViewItemExtender.ItemExtenderProperty">
+            <summary>
+            The item extender property
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.TreeViewItemExtender.IsLastOneProperty">
+            <summary>
+            The is last one property
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.TreeViewItemExtender.IsToggleButtonVisibleProperty">
+            <summary>
+            The is toggle button visible property
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.TreeViewItemExtender.GetIsToggleButtonVisible(System.Windows.DependencyObject)">
+            <summary>
+            Gets if the toggle button is visible.
+            </summary>
+            <param name="sender">The sender.</param>
+            <returns><see langword="true"/> is the ToggleButton of the TreeViewItem is visible, otherwise <see langword="false"/></returns>
+        </member>
+        <member name="M:Hummingbird.UI.TreeViewItemExtender.SetIsToggleButtonVisible(System.Windows.DependencyObject,System.Boolean)">
+            <summary>
+            Sets if the toggle button visible.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="isToggleButtonVisible">if set to <c>true</c> [is toggle button visible].</param>
+        </member>
+        <member name="M:Hummingbird.UI.TreeViewItemExtender.GetIsLastOne(System.Windows.DependencyObject)">
+            <summary>
+            Gets if the current tree view item is last one in its level.
+            </summary>
+            <param name="sender">The sender.</param>
+            <returns><see langword="true"/> is the element is last one in the list, otherwise <see langword="false"/></returns>
+        </member>
+        <member name="M:Hummingbird.UI.TreeViewItemExtender.SetIsLastOne(System.Windows.DependencyObject,System.Boolean)">
+            <summary>
+            Sets if the current tree view item is last one in its level.
+            </summary>
+            <param name="sender">The sender.</param>
+            <param name="isLastOne">set to <c>true</c> it is the last item in its level</param>
+        </member>
+        <member name="M:Hummingbird.UI.TreeViewItemExtender.#ctor(System.Windows.Controls.TreeViewItem)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.UI.TreeViewItemExtender"/> class.
+            </summary>
+            <param name="item">The item.</param>
+        </member>
+        <member name="T:Hummingbird.UI.UIHelper">
+            <summary>
+            Helper functions for UI, to get Parents of specified type.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.UIHelper.ParentOfType``1(System.Windows.DependencyObject)">
+            <summary>
+            Gets a Parent of specific type of an Element
+            </summary>
+            <typeparam name="T">Type of the parent to find</typeparam>
+            <param name="element">The element of which the parent will be found</param>
+            <returns>The DependencyObject of type T, which is the parent of the UIElement element</returns>
+        </member>
+        <member name="M:Hummingbird.UI.UIHelper.GetParents(System.Windows.DependencyObject)">
+            <summary>
+            Gets the parents.
+            </summary>
+            <param name="element">The element.</param>
+            <returns>An Enumerable list containing all visual parents of an element </returns>
+            <exception cref="T:System.ArgumentNullException">element</exception>
+        </member>
+        <member name="F:Hummingbird.UI.WatermarkAdorner.contentPresenter">
+            <summary>
+            <see cref="T:System.Windows.Controls.ContentPresenter"/> that holds the watermark
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.WatermarkAdorner.#ctor(System.Windows.UIElement,System.Object)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.UI.WatermarkAdorner"/> class
+            </summary>
+            <param name="adornedElement"><see cref="T:System.Windows.UIElement"/> to be adorned</param>
+            <param name="watermark">The watermark</param>
+        </member>
+        <member name="P:Hummingbird.UI.WatermarkAdorner.VisualChildrenCount">
+            <summary>
+            Gets the number of children for the <see cref="T:System.Windows.Media.ContainerVisual"/>.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.UI.WatermarkAdorner.Control">
+            <summary>
+            Gets the control that is being adorned
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.WatermarkAdorner.GetVisualChild(System.Int32)">
+            <summary>
+            Returns a specified child <see cref="T:System.Windows.Media.Visual"/> for the parent <see cref="T:System.Windows.Media.ContainerVisual"/>.
+            </summary>
+            <param name="index">A 32-bit signed integer that represents the index value of the child <see cref="T:System.Windows.Media.Visual"/>. The value of index must be between 0 and <see cref="P:Hummingbird.UI.WatermarkAdorner.VisualChildrenCount"/> - 1.</param>
+            <returns>The child <see cref="T:System.Windows.Media.Visual"/>.</returns>
+        </member>
+        <member name="M:Hummingbird.UI.WatermarkAdorner.MeasureOverride(System.Windows.Size)">
+            <summary>
+            Implements any custom measuring behavior for the adorner.
+            </summary>
+            <param name="constraint">A size to constrain the adorner to.</param>
+            <returns>A <see cref="T:System.Windows.Size"/> object representing the amount of layout space needed by the adorner.</returns>
+        </member>
+        <member name="M:Hummingbird.UI.WatermarkAdorner.ArrangeOverride(System.Windows.Size)">
+            <summary>
+            When overridden in a derived class, positions child elements and determines a size for a <see cref="T:System.Windows.FrameworkElement"/> derived class. 
+            </summary>
+            <param name="finalSize">The final area within the parent that this element should use to arrange itself and its children.</param>
+            <returns>The actual size used.</returns>
+        </member>
+        <member name="T:Hummingbird.UI.WatermarkService">
+            <summary>
+            Show a watermark on the text box
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.WatermarkService.WatermarkProperty">
+            <summary>
+            Watermark Attached Dependency Property
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.WatermarkService.itemsControls">
+            <summary>
+            Dictionary of ItemsControls
+            </summary>
+        </member>
+        <member name="M:Hummingbird.UI.WatermarkService.GetWatermark(System.Windows.DependencyObject)">
+            <summary>
+            Gets the Watermark property.  This dependency property indicates the watermark for the control.
+            </summary>
+            <param name="d"><see cref="T:System.Windows.DependencyObject"/> to get the property from</param>
+            <returns>The value of the Watermark property</returns>
+        </member>
+        <member name="M:Hummingbird.UI.WatermarkService.SetWatermark(System.Windows.DependencyObject,System.Object)">
+            <summary>
+            Sets the Watermark property.  This dependency property indicates the watermark for the control.
+            </summary>
+            <param name="d"><see cref="T:System.Windows.DependencyObject"/> to set the property on</param>
+            <param name="value">value of the property</param>
+        </member>
+        <member name="M:Hummingbird.UI.WatermarkService.OnWatermarkChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Handles changes to the Watermark property.
+            </summary>
+            <param name="d"><see cref="T:System.Windows.DependencyObject"/> that fired the event</param>
+            <param name="e">A <see cref="T:System.Windows.DependencyPropertyChangedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Hummingbird.UI.WatermarkService.Control_GotKeyboardFocus(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handle the GotFocus event on the control
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">A <see cref="T:System.Windows.RoutedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Hummingbird.UI.WatermarkService.Control_Loaded(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Handle the Loaded and LostFocus event on the control
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">A <see cref="T:System.Windows.RoutedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Hummingbird.UI.WatermarkService.ItemsSourceChanged(System.Object,System.EventArgs)">
+            <summary>
+            Event handler for the items source changed event
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">A <see cref="T:System.EventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Hummingbird.UI.WatermarkService.ItemsChanged(System.Object,System.Windows.Controls.Primitives.ItemsChangedEventArgs)">
+            <summary>
+            Event handler for the items changed event
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">A <see cref="T:System.Windows.Controls.Primitives.ItemsChangedEventArgs"/> that contains the event data.</param>
+        </member>
+        <member name="M:Hummingbird.UI.WatermarkService.RemoveWatermark(System.Windows.UIElement)">
+            <summary>
+            Remove the watermark from the specified element
+            </summary>
+            <param name="control">Element to remove the watermark from</param>
+        </member>
+        <member name="M:Hummingbird.UI.WatermarkService.ShowWatermark(System.Windows.Controls.Control)">
+            <summary>
+            Show the watermark on the specified control
+            </summary>
+            <param name="control">Control to show the watermark on</param>
+        </member>
+        <member name="M:Hummingbird.UI.WatermarkService.ShouldShowWatermark(System.Windows.Controls.Control)">
+            <summary>
+            Indicates whether or not the watermark should be shown on the specified control
+            </summary>
+            <param name="c"><see cref="T:System.Windows.Controls.Control"/> to test</param>
+            <returns>true if the watermark should be shown; false otherwise</returns>
+        </member>
+        <member name="T:Hummingbird.UI.WindowBorderType">
+            <summary>
+            Type of the WindowBorder
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.WindowBorderType.Normal">
+            <summary>
+            Window is in Normal state
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.WindowBorderType.Busy">
+            <summary>
+            Window is in Busy State
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.WindowBorderType.Good">
+            <summary>
+            Window is in Good state, a Green style border will be shown
+            </summary>
+        </member>
+        <member name="F:Hummingbird.UI.WindowBorderType.Bad">
+            <summary>
+            Window is in Bad state, a Red border will be shown
+            </summary>
+        </member>
+        <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
+            <summary>
+            GeneratedInternalTypeHelper
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateInstance(System.Type,System.Globalization.CultureInfo)">
+            <summary>
+            CreateInstance
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.GetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            GetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.SetPropertyValue(System.Reflection.PropertyInfo,System.Object,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            SetPropertyValue
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.CreateDelegate(System.Type,System.Object,System.String)">
+            <summary>
+            CreateDelegate
+            </summary>
+        </member>
+        <member name="M:XamlGeneratedNamespace.GeneratedInternalTypeHelper.AddEventHandler(System.Reflection.EventInfo,System.Object,System.Delegate)">
+            <summary>
+            AddEventHandler
+            </summary>
+        </member>
+    </members>
+</doc>

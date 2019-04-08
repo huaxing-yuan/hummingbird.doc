@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="a0bc4270-f160-48d5-be6d-0bbae11c721f" revisionNumber="1">
+  <developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <!--
+    <summary>
+      <para>Optional summary abstract</para>
+    </summary>
+    -->
+
+    <introduction>
+      <para>General settings stores configuration of system behaviors, theme colors and font size.</para>
+      <autoOutline />
+      <mediaLink>
+        <image xlink:href="image020" placement="center"/>
+      </mediaLink>
+    </introduction>
+
+    <!-- Add one or more top-level section elements.  These are collapsible.
+         If using <autoOutline />, add an address attribute to identify it
+         and specify a title so that it can be jumped to with a hyperlink. -->
+    <section address="sysbehaviors">
+      <!--h2-->
+      <title>System behaviors</title>
+      <content>
+
+        <list class="nobullet">
+          <listItem>
+            <para>
+              <legacyBold>Log Path</legacyBold>: The path where hummingbird stores the application logs. </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Log Level</legacyBold>: The level of details how the logs are stored. Lower the level is, more logs will be generated.</para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Language</legacyBold>: Display language used with Hummingbird APP. Text, Date Time format, decimal point will also be changed.
+            </para>
+            <alert class="important">
+              <para>
+                display language is applied to
+                Hummingbird application itself. Messages from Test Framework will always be English,
+                and message from the system depends on your operating system configuration. You
+                need to restart Hummingbird Application before the change on display language
+                are effective.
+              </para>
+            </alert>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>CSV Separator</legacyBold>: Default separator used for a CSV files</para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Max saved requests per service</legacyBold>: Maximum number of different requests kept for each service in the request history. </para>
+          </listItem>
+          <listItem>
+            <para><legacyBold>Max messages</legacyBold>: Maximum number of messages kept in the transaction history. Keep too many messages will lead high memory usage. It is recommended to keep less than 1000 messages please valorize with a reasonable number. </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>When sending a request</legacyBold>: The behavior of hummingbird when sending requests. By default, <literal>Wait and show result directly</literal> means that test runner will wait and show the response message from application. If you are working more on synchronized services, it is recommended to keep this option. <literal>Close window and show result on-demand</literal> means test runner will close itself when sending requests, when working on asynchronized services and use service simulation to verify message sent from your application, it is recommended to use this option.</para>
+          </listItem>
+        </list>
+
+
+
+
+
+
+      </content>
+    </section>
+
+    <section address="theme">
+      <title>Theme color</title>
+      <content>
+        <para>
+          <legacyBold>Your preferred theme color</legacyBold>
+        </para>
+
+        <para>
+          You can choose from 10 predefined color schemes. Change is
+          taken account immediately.
+        </para>
+      </content>
+    </section>
+
+    <section address="font">
+      <title>
+        Font size
+      </title>
+      <content>
+        <para>
+          Hummingbird is already a DPI-Aware application, it adapts
+          automatically to your DPI settings. If you want some additional zoom on high
+          resolution display adapters, you can increase font size by choosing Large. Change
+          is taken account immediately.
+        </para>
+      </content>
+    </section>
+    
+    
+    <relatedTopics>
+      <!-- One or more of the following:
+           - A local link
+           - An external link
+           - A code entity reference
+
+      <link xlink:href="Other Topic's ID"/>
+      <link xlink:href="Other Topic's ID">Link inner text</link>
+
+      <externalLink>
+          <linkText>Link text</linkText>
+          <linkAlternateText>Optional alternate link text</linkAlternateText>
+          <linkUri>URI</linkUri>
+      </externalLink>
+
+      <codeEntityReference>API member ID</codeEntityReference>
+
+      Examples:
+
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+      <externalLink>
+          <linkText>SHFB on GitHub</linkText>
+          <linkAlternateText>Go to GitHub</linkAlternateText>
+          <linkUri>https://GitHub.com/EWSoftware/SHFB</linkUri>
+      </externalLink>
+
+      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+      -->
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

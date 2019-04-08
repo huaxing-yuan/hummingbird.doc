@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="adfed5fa-e082-4cef-a125-8136797ca112" revisionNumber="1">
+  
+  <developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <introduction>
+      <para>
+        Hummingbird is a complete solution for API testing, but not
+        only for API Testing.
+      </para>
+
+
+      <alert class="note">
+        <para>
+          The documentation is in progress and will take time to accomplish. Mean while, if you have any questions or problems, please opens a issue on the
+          <externalLink>
+            <linkText>Github Project: hummingbird.doc</linkText>
+            <linkUri>https://huaxing-yuan.github.io/hummingbird.doc/</linkUri>
+            <linkTarget>_blank</linkTarget>
+          </externalLink>
+        </para>
+      </alert>
+    </introduction>
+    
+    <!-- Add one or more top-level section elements.  These are collapsible.
+         If using <autoOutline />, add an address attribute to identify it
+         and specify a title so that it can be jumped to with a hyperlink. -->
+    <section address="Section1">
+      <content>
+        <para>
+          <legacyBold>Manual Testing</legacyBold>
+        </para>
+        <para>
+          It features a world-class test editor to help testers run
+          test cases faster and easier, hides technical complexity of different type of
+          services, provides a unique and friendly user interface. No special technical
+          skill is needed to test a web service.
+        </para>
+        <para>
+          <legacyBold>Service Simulation</legacyBold>
+        </para>
+        <para>
+          It come with a service simulation module to let you simulate
+          the behavior of decencies of your application: Test completely and test
+          earlier, no more need to wait until the dependency service is ready.
+        </para>
+        <para>
+          <legacyBold>Test Automation</legacyBold>
+        </para>
+        <para>
+          It includes a test automation engine allows you to build and
+          run automated tests either from the <legacyBold>Hummingbird Application</legacyBold> or the <legacyBold>
+            Hummingbird
+            CLI
+          </legacyBold> (Command Line interface).
+        </para>
+        <para>
+          To instantly import your services definition, Hummingbird
+          has also an <legacyBold>Extension Designer</legacyBold>, allows you to import, manage and maintain Web
+          Services from WSDL. You can then share the extensions with the team.
+        </para>
+
+
+
+        <mediaLink>
+          <caption placement="after">Default interface of Hummingbird APP</caption>
+          <image placement="center" xlink:href="image009" />
+        </mediaLink>
+      </content>
+    </section>
+
+    <section address="SubSection1">
+      <title>Hummingbird is composed of the following components</title>
+      <content>
+        <list class="bullet">
+          <listItem>
+            <para>
+              <legacyBold>Hummingbird App:</legacyBold> The main application provides an integrated
+              environment for Test, service simulation, test automation and more
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Hummingbird CLI:</legacyBold> A command line application allows to run
+              automated test and service simulation without user interface, ideally it can be
+              integrated with your favorite continues integration platform.
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              <legacyBold>Hummingbird Report Viewer:</legacyBold> Visualize the result of automated
+              tests graphically, easily provide data for analyzing
+            </para>
+          </listItem>
+        </list>
+        <para>
+          Hummingbird is based on an open architecture allows
+          customizing the application to meet your needs: Either implements a new service
+          protocol, provides a graphical user interface to edit special test data or make
+          a new service simulation. You may learn and use Hummingbird Test Framework to
+          build new extensions.
+        </para>
+
+        <para>
+          In additional, Hummingbird is also built with a Modern UI
+          framework: Hummingbird UI which gives you better user experiences than any
+          other similar software.
+        </para>
+      </content>
+    </section>
+
+    <section address="SubSection2">
+      <title>Table of contents</title>
+      <content>
+        <table>
+          <row>
+            <entry>
+              <para>FOR ALL</para>
+            </entry>
+            <entry>
+              <para>FOR TESTERS</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <list class="nobullet">
+                <listItem>
+                  <para>Introduction</para>
+                </listItem>
+                <listItem>
+                  <para>Installation</para>
+                </listItem>
+                <listItem>
+                  <para>Hummingbird App</para>
+                  <list class="bullet">
+                    <listItem>
+                      <para>
+                        Manual Test
+                      </para>
+                    </listItem>
+                    <listItem>
+                      <para>
+
+                        Service Simulation
+                      </para>
+                    </listItem>
+                    <listItem>
+                      <para>
+
+                        System Settings
+                      </para>
+                    </listItem>
+                    <listItem>
+                      <para>
+
+                        Statistic and Dashboard
+                      </para>
+                    </listItem>
+                    <listItem>
+                      <para>
+
+                        Automated Test
+                      </para>
+                    </listItem>
+                    <listItem>
+                      <para>
+                        Service Performance Test
+                      </para>
+                    </listItem>
+                    <listItem>
+                      <para>
+                        Integrated tools
+                      </para>
+                    </listItem>
+                    <listItem>
+                      <para>
+                        Extension Designer
+                      </para>
+                    </listItem>
+                  </list>
+                </listItem>
+                <listItem>
+                  <para>Hummingbird CLI</para>
+                  <list class="bullet">
+                    <listItem>
+                      <para>
+
+                        Run automated tests
+                      </para>
+                    </listItem>
+                    <listItem>
+                      <para>
+
+                        Convert test reports
+                      </para>
+                    </listItem>
+                    <listItem>
+                      <para>
+
+                        Start service simulation
+                      </para>
+                    </listItem>
+                  </list>
+                </listItem>
+
+
+
+                <listItem>
+                  <para>Report Viewer</para>
+                </listItem>
+                <listItem>
+                  <para>
+                    Visualize and analyze test results
+                  </para>
+                </listItem>
+                <listItem>
+                  <para>Glossary</para>
+                </listItem>
+              </list>
+            </entry>
+            <entry>
+              <list class="nobullet">
+                <listItem>
+                  <para>Test a Service manually</para>
+                  <list class="bullet">
+                    <listItem>
+                      <para>
+                        Organization of the Service
+                      </para>
+                    </listItem>
+                    <listItem>
+                      <para>
+                        Introduction of Test Editor
+                      </para>
+                    </listItem>
+                    <listItem>
+                      <para>
+                        Test a Web Service Soap
+                      </para>
+                    </listItem>
+                    <listItem>
+                      <para>
+                        Test a Web Service Rest
+                      </para>
+                    </listItem>
+                  </list>
+                </listItem>
+                <listItem>
+                  <para>Using and configure Service Simulation</para>
+                  <list class="bullet">
+                    <listItem>
+                      <para>
+                        Start and Stop service simulation
+                      </para>
+                    </listItem>
+                    <listItem>
+                      <para>
+                        Configure the response of service simulation
+                      </para>
+                    </listItem>
+                    <listItem>
+                      <para>
+                        Multi-condition based response for service simulation.
+                      </para>
+                    </listItem>
+                  </list>
+                </listItem>
+                <listItem>
+                  <para>Using an Extension</para>
+                  <list class="bullet">
+                    <listItem>
+                      <para>
+                        Definition of an Extensions
+                      </para>
+                    </listItem>
+                    <listItem>
+                      <para>
+                        Install, Update, Disable or Delete an Extension
+                      </para>
+                    </listItem>
+                    <listItem>
+                      <para>
+                        Using Extension Designer
+                      </para>
+                    </listItem>
+                  </list>
+                </listItem>
+                <listItem>
+                  <para>Test Automation</para>
+                  <list class="bullet">
+                    <listItem>
+                      <para>
+                        Create an automation project
+                      </para>
+                    </listItem>
+                    <listItem>
+                      <para>Advanced Test Steps</para>
+                      <list class="bullet">
+                        <listItem>
+                          <para>
+                            Coded Test Step (C#, VB.NET)
+                          </para>
+                        </listItem>
+                        <listItem>
+                          <para>
+                            Service Simulation Test Step (Start, Stop, Update data)
+                          </para>
+                        </listItem>
+                        <listItem>
+                          <para>
+                            Windows Service Test Step
+                          </para>
+                        </listItem>
+                        <listItem>
+                          <para>
+                            SQL related Test Step
+                          </para>
+                        </listItem>
+                      </list>
+                    </listItem>
+                    <listItem>
+                      <para>
+                        Data Driven Test case
+                      </para>
+                    </listItem>
+                  </list>
+                </listItem>
+              </list>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>FOR DEVELOPERS</para>
+            </entry>
+            <entry>
+              <para>FOR OPS</para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <list>
+                <listItem>
+                  <para>Introduction of Test Framework</para>
+                </listItem>
+                <listItem>
+                  <para>
+
+                    Architecture of the Test Framework
+                  </para>
+                </listItem>
+                <listItem>
+                  <para>
+                    Extensible functionalities
+                  </para>
+                  <list class="bullet">
+                    <listItem>
+                      <para>
+                        Import Web Services from WSDL
+                      </para>
+                    </listItem>
+                    <listItem>
+                      <para>
+                        Define custom rest web services
+                      </para>
+
+                    </listItem>
+                    <listItem>
+                      <para>
+                        Create a graphical user interface to edit test data
+                      </para>
+
+                    </listItem>
+                    <listItem>
+                      <para>
+                        Create a graphical user interface to visualize test result
+                      </para>
+
+                    </listItem>
+                    <listItem>
+                      <para>
+                        Implements a  new type of Client or Service simulation
+                      </para>
+
+                    </listItem>
+                  </list>
+                </listItem>
+                <listItem>
+                  <para>Examples</para>
+                  <list class="bullet">
+                    <listItem>
+                      <para>
+
+                        Extension example: MMS-C Server Simulation
+                      </para>
+                    </listItem>
+                    <listItem>
+                      <para>
+
+                        Extension example: LDAP Client
+                      </para>
+
+                    </listItem>
+                  </list>
+                </listItem>
+                <listItem>
+                  <para>Hummingbird Test Framework References</para>
+                </listItem>
+              </list>
+            </entry>
+            <entry>
+              <list>
+                <listItem>
+                  <para>Deploy Hummingbird with its extensions</para>
+                </listItem>
+                <listItem>
+                  <para>Run automated test within CI/CD pipeline</para>
+                  <list class="bullet">
+                    <listItem>
+                      <para>
+
+                        Visual Studio Team Services / Visual Studio Team Foundation
+                        Services
+                      </para>
+                    </listItem>
+                    <listItem>
+                      <para>
+
+                        Jenkins
+                      </para>
+                    </listItem>
+                  </list>
+
+                </listItem>
+
+                <listItem>
+                  <para>Integration of test Reports</para>
+                  <list class="bullet">
+                    <listItem>
+                      <para>
+                        Convert test reports
+                      </para>
+                    </listItem>
+                  </list>
+                </listItem>
+              </list>
+            </entry>
+          </row>
+        </table>
+      </content>
+    </section>
+
+
+    <relatedTopics>
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>

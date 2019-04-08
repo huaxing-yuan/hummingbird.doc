@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<topic id="9ff0530d-805e-41f8-9a47-7e9f0b148986" revisionNumber="1">
+  <developerConceptualDocument
+    xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
+    xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <!--
+    <summary>
+      <para>Optional summary abstract</para>
+    </summary>
+    -->
+
+    <!-- Add one or more top-level section elements.  These are collapsible.
+         If using <autoOutline />, add an address attribute to identify it
+         and specify a title so that it can be jumped to with a hyperlink. -->
+    <section address="Section1">
+      <title>Test automation with Hummingbird</title>
+      <content>
+        <!-- Uncomment this to create a sub-section outline
+        <autoOutline /> -->
+        <para>Hummingbird comes with a flexible and powerful automation engine, plus a fluent user interface, test automation can be done in an efficient way. </para>
+        <para>Automated tests are organized into Test Suites, and the test itself consists of different Test Steps. Hummingbird provides different kind of test step of accomplish better and easier test automation for API.</para>
+        <mediaLink>
+          <image xlink:href="automation_project" placement="center"/>
+        </mediaLink>
+        <para>In these section, you will understand:</para>
+        <list class="bullet">
+          <listItem>
+            <para>
+              The structure and composition of an automation project:
+            </para>
+            <list class="bullet">
+              <listItem>
+                <para>
+                  <link xlink:href="32acde8a-8896-4478-ab9f-695b8cf8b996" />
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  <link xlink:href="bcabaa26-de5c-4ba6-9aa4-afeb75f0f93b" />
+                </para>
+              </listItem>
+              <listItem>
+                <para>
+                  <link xlink:href="52612865-a9c0-42da-9918-404c1185502f" />
+                </para>
+              </listItem>
+
+            </list>
+          </listItem>
+          <listItem>
+            <para>
+              How to use Variables
+            </para>
+          </listItem>
+          <listItem>
+            <para>Use assertions to verify expected results</para>
+          </listItem>
+          <listItem>
+            <para>View and export test report</para>
+          </listItem>
+          <listItem>
+            <para>Configure test profiles</para>
+          </listItem>
+
+        </list>
+        <para>
+          Hummingbird’s automation engine features also API Performance Testing, to know more about performance testing, please refers to:  <link xlink:href="6ce70faa-33cc-43b6-b432-2e34c2dfba08" /> 
+        </para>
+      </content>
+    </section>
+
+    <section address="Section2">
+      <title>Start Automation !</title>
+      <content>
+        <para>To start with Test Automation, you can choose automation in the menu, the interface will be similar to image below:</para>
+        <mediaLink>
+          <image xlink:href="automation_preface" placement="center"/>
+        </mediaLink>
+        <para>Useful links gives you a quick way to go the right place in this documentation, and understand how every piece of test automation works. </para>
+        <para>Starts from here gives you the ability to Start a new automation project or Open an existing project.</para>
+        <para>All recent projects will listed under “Recent projects”, gives an immediate way to pick from where you left.</para>
+        <alert class="note">
+          <para>
+            Note: In this documentation, we will use <literal>Test Item</literal> to represent all test automation items. When we refer a Test Item, it can be any of: Automation Project, Test Suite, Test Case and all Test Steps.
+          </para>
+        </alert>
+      </content>
+    </section>
+
+    <section address="Section3">
+      <title>Automation project editor</title>
+      <content>
+        <para>
+          Either create a new project, or open an existing project. The content of the project will be shown in the following interface:
+        </para>
+        <para>
+          On the left, the structure of the current automation project. It is organized in 3 level: Test Suite, Test Case, and Test step, where the root node represents the automation project itself.
+        </para>
+        <para>
+          Right-Click on any of the nodes will shows the context menu where some actions you can do. Such as: create Test Cases into a Test Tuite, Create different kind of test steps into test case.
+        </para>
+        
+      </content>
+      <sections>
+        <section address="SubSection1">
+          <title>Common keyboard shortcuts</title>
+          <content>
+            <para>In Hummingbird you can use well-known keyboard shortcuts, such as Copy (CTRL+C), Paste (CTRL+V) and Rename (F2).</para>
+            <para>When copy-paste the nodes, hummingbird detects automatically the indention of the user. If pasting a “Test Case” on another “Test Case”, this test case will be insert after the selected “Test Case”; pasting a “Test Case” on a “Test Suite” will naturally append the pasted test case into the current Test suite. </para>
+          </content>
+        </section>
+        <section address="SubSection2">
+          <title>Drag and drop</title>
+          <content>
+            <para>Drag and drop is also supported, you can use mouse to drag and drop test items on another one.</para>
+          </content>
+        </section>
+        <section address="SubSection3">
+          <title>Test item details.</title>
+          <content>
+            <para>
+              Once a test item is selected, related information will be shown on the right part. In some cases the detailed information of test item is organized in different Tabs.
+            </para>
+            <para>
+              Fore more information about each test item details, please refer to the sub links.
+            </para>
+          </content>
+        </section>
+      </sections>
+    </section>
+   
+        
+        <relatedTopics>
+      <!-- One or more of the following:
+           - A local link
+           - An external link
+           - A code entity reference
+
+      <link xlink:href="Other Topic's ID"/>
+      <link xlink:href="Other Topic's ID">Link inner text</link>
+
+      <externalLink>
+          <linkText>Link text</linkText>
+          <linkAlternateText>Optional alternate link text</linkAlternateText>
+          <linkUri>URI</linkUri>
+      </externalLink>
+
+      <codeEntityReference>API member ID</codeEntityReference>
+
+      Examples:
+
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8270" />
+      <link xlink:href="00e97994-e9e6-46e0-b420-5be86b2f8278">Some other topic</link>
+
+      <externalLink>
+          <linkText>SHFB on GitHub</linkText>
+          <linkAlternateText>Go to GitHub</linkAlternateText>
+          <linkUri>https://GitHub.com/EWSoftware/SHFB</linkUri>
+      </externalLink>
+
+      <codeEntityReference>T:TestDoc.TestClass</codeEntityReference>
+      <codeEntityReference>P:TestDoc.TestClass.SomeProperty</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.#ctor(System.String,System.Int32)</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.ToString</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.FirstMethod</codeEntityReference>
+      <codeEntityReference>M:TestDoc.TestClass.SecondMethod(System.Int32,System.String)</codeEntityReference>
+      -->
+    </relatedTopics>
+  </developerConceptualDocument>
+</topic>
