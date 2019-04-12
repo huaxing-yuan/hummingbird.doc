@@ -212,6 +212,130 @@
             Sets the test case reference to the underlying test step.
             </summary>
         </member>
+        <member name="T:Hummingbird.TestFramework.Automation.JsonWebTokenStepActions">
+            <summary>
+            Determines the action of <see cref="T:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep"/> to run.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.JsonWebTokenStepActions.Generation">
+            <summary>
+            Generates a Json Web Token
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.JsonWebTokenStepActions.Validation">
+            <summary>
+            Validates a Json Web Token
+            </summary>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep">
+            <summary>
+            Json Web Token (JWT) test step aimed to integrate JWT generation and validation seamlessly within an automation project.
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.TestStepBase" />
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep"/> class.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.Action">
+            <summary>
+            Gets or sets the action of this test step
+            </summary>
+            <value>
+            A valid value from enumeration <see cref="T:Hummingbird.TestFramework.Automation.JsonWebTokenStepActions"/>
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.Algorithm">
+            <summary>
+            Gets or sets the signing or encryption algorithm.
+            </summary>
+            <value>
+            One of supported signing or encryption algorithm defined in <see cref="F:Hummingbird.TestFramework.Util.JsonWebTokenUtility.SignatureAlgorithms"/> 
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.SymmetricKey">
+            <summary>
+            Gets or sets the symmetric key. used only if the signature algorithm uses symmetric key, ex: HS256
+            </summary>
+            <value>
+            The symmetric key, in the form specified by <see cref="P:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.KeyFormat"/>
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.KeyFormat">
+            <summary>
+            Gets or sets the key format.
+            </summary>
+            <value>
+            The key format.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.CertificatePath">
+            <summary>
+            Gets or sets a PKCS#12 certificate used to sign a token using asymmetric algorithm like RSA, ECDSA or PSS.
+            </summary>
+            <value>
+            The certificate path.
+            </value>
+            <remarks>
+            <para>For security reasons:</para>
+            <list type="bullet">
+            <item><para>Use ONLY test certificate for test propose, NEVER use a production certificate.</para></item>
+            <item><para>NEVER shares your PKCS#12 certificate that contains the private key.</para></item>
+            </list>
+             
+            </remarks>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.CertificatePassword">
+            <summary>
+            Gets or sets the password used to protect the given PKCS#12 certificate.
+            </summary>
+            <value>
+            The certificate password.
+            </value>
+            <remarks>
+            For security reasons, The password is encrypted in saved automation project. If the password is forgotten, in no case it can be recovered.
+            </remarks>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.Payload">
+            <summary>
+            Gets or sets the payload used in the Json Web Token
+            </summary>
+            <value>
+            An <see cref="T:System.Collections.ObjectModel.ObservableCollection`1"/> containing several <see cref="T:Hummingbird.TestFramework.Util.TokenClaim"/>s.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.Run">
+            <summary>
+            Runs this instance. Do not implement StartTime, Duration. Write information in the <see cref="P:Hummingbird.TestFramework.Automation.TestStepBase.Information" /> field, it will be shown in the log automatically.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.JwtSecurityTokenString">
+            <summary>
+            Gets or sets the JWT security token in its string format.
+            </summary>
+            <value>
+            An <see cref="T:System.String"/> value that represents JwtSecurityTokenString of the current object
+            </value>
+            <remarks>
+            <para>When this test step is used to generate security token, The generated token is saved in this property.</para>
+            <para>When this test step is used to validate security token, You should assign the token in this property.</para>
+            </remarks>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.JwtSecurityToken">
+            <summary>
+            Gets or sets the JWT security token in its object format.
+            </summary>
+            <value>
+            The JWT security token.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.GenerateToken">
+            <summary>
+            Generates the token with given parameters. 
+            </summary>
+            <returns>A <see cref="P:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.JwtSecurityToken"/> that generated with given parameter.</returns>
+        </member>
         <member name="T:Hummingbird.TestFramework.Automation.TableDataGeneratorTestStep">
             <summary>
             A test step that generates variable from a list of possible values.
@@ -11878,6 +12002,26 @@
             The text.
             </value>
         </member>
+        <member name="T:Hummingbird.TestFramework.Util.ClaimValueType">
+            <summary>
+            The value type of a claim used in the JWT token.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Util.ClaimValueType.String">
+            <summary>
+            Claim value is <see cref="F:Hummingbird.TestFramework.Util.ClaimValueType.String"/>
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Util.ClaimValueType.Numeric">
+            <summary>
+            Claim is numeric value (integer)
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Util.ClaimValueType.Decimal">
+            <summary>
+            Claim is decimal value (float point)
+            </summary>
+        </member>
         <member name="M:Hummingbird.TestFramework.Util.GenericHttpRequestUtil.GetObject(Hummingbird.TestFramework.Services.GenericHttpResponse,System.String,System.Type,Hummingbird.TestFramework.Services.AbstractMetadata,Hummingbird.TestFramework.Serialization.AbstractSerializer,System.Collections.Generic.List{Hummingbird.TestFramework.Serialization.SerializationException})">
             <summary>
             Gets the representative object from a GenericHttpResponse object
@@ -11913,6 +12057,142 @@
             <param name="Paths">The paths.</param>
             <param name="Cookies">The cookies.</param>
             <param name="body">The body.</param>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Util.JsonWebTokenUtility">
+            <summary>
+            Utility class that can be used to generate and validate Json Web Tokens (JWT)
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Util.JsonWebTokenUtility.WellKnownHeaderDescriptions">
+            <summary>
+            List of Well known headers and their descriptions
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Util.JsonWebTokenUtility.SignatureAlgorithms">
+            <summary>
+            The supported signature algorithms
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Util.JsonWebTokenUtility.WellKnownClaimDescriptions">
+            <summary>
+            List of well known claims used in JWT payload and their descriptions.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Util.JsonWebTokenUtility.WellknownClaims">
+            <summary>
+            The definition of the well known claims used in a JWT payload.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.JsonWebTokenUtility.CreateHmacShaToken(System.String,System.String,System.IdentityModel.Tokens.Jwt.JwtPayload,System.String@)">
+            <summary>
+            Creates a Json Web Token (JWT) by given parameters (using symmetric algorithm HMAC-SHA) 
+            </summary>
+            <param name="base64Key">The base64url encoded secret. The key size must match selected <paramref name="algorithm" />, for example with HS256, the key size must &gt;= 256 bits.</param>
+            <param name="algorithm">The signature or encryption algorithm, choose one from <see cref="T:Microsoft.IdentityModel.Tokens.SecurityAlgorithms" />.</param>
+            <param name="payload">The Jwt payload.</param>
+            <param name="token">The string representation of the web token that can be used by the client.</param>
+            <returns>A Json Web Token generated with given parameters</returns>
+            <remarks>
+            According to the section 4 &amp; 5 of RFC 4648, the Url Base64 encoding method used in JWT signature is different from regular Base 64 Encoding.
+            </remarks>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.JsonWebTokenUtility.CreateRsaToken(System.Security.Cryptography.X509Certificates.X509Certificate2,System.String,System.IdentityModel.Tokens.Jwt.JwtPayload,System.String@)">
+            <summary>
+            Creates a Json Web Token (JWT) by given parameters (using asymmetric algorithm RSA) 
+            </summary>
+            <param name="pkcs12Certificate">An PKCS#12 certificate containing the private key. Certificate must uses RSA as <paramref name="algorithm" /> and the key length must longer than selected length.</param>
+            <param name="algorithm">The signature or encryption algorithm, choose one from <see cref="T:Microsoft.IdentityModel.Tokens.SecurityAlgorithms" />.</param>
+            <param name="payload">The JWT payload.</param>
+            <param name="token">The string representation of the web token that can be used by the client.</param>
+            <returns>A Json Web Token generated with given parameters</returns>
+            <remarks>
+            The certificate must use RSA as algorithm, Or an exception will be thrown. use this function is the <paramref name="algorithm"/> is rather RS256, RS384 or RS512.
+            </remarks>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.JsonWebTokenUtility.CreateEcdsaToken(System.Security.Cryptography.X509Certificates.X509Certificate2,System.String,System.IdentityModel.Tokens.Jwt.JwtPayload,System.String@)">
+            <summary>
+            Creates a Json Web Token (JWT) by given parameters (using asymmetric algorithm Ecdsa) 
+            </summary>
+            <param name="pkcs12Certificate">An PKCS#12 certificate containing the private key. Certificate must uses ECC as <paramref name="algorithm" /> and the key length must longer than selected length.</param>
+            <param name="algorithm">The signature or encryption algorithm, choose one from <see cref="T:Microsoft.IdentityModel.Tokens.SecurityAlgorithms" />.</param>
+            <param name="payload">The JWT payload.</param>
+            <param name="token">The string representation of the web token that can be used by the client.</param>
+            <returns>A Json Web Token generated with given parameters</returns>
+            <remarks>
+            The certificate must use ECC as algorithm, Or an exception will be thrown. use this function is the <paramref name="algorithm"/> is rather EC256, EC384 or EC512.
+            </remarks>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.JsonWebTokenUtility.CreateSecurityToken(Microsoft.IdentityModel.Tokens.SecurityKey,System.String,System.IdentityModel.Tokens.Jwt.JwtPayload,System.String@)">
+            <summary>
+            Creates a Json Web Token (JWT) by given parameters (using a given security key.) 
+            </summary>
+            <param name="securityKey">An security key used to sign the token. The <see cref="T:Microsoft.IdentityModel.Tokens.SecurityKey"/> must compatible with selected algorithm.</param>
+            <param name="algorithm">The signature or encryption algorithm, choose one from <see cref="T:Microsoft.IdentityModel.Tokens.SecurityAlgorithms" />.</param>
+            <param name="payload">The JWT payload.</param>
+            <param name="token">The string representation of the web token that can be used by the client.</param>
+            <returns>A Json Web Token generated with given parameters</returns>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Util.KeyFormat">
+            <summary>
+            The format of a string representation used in the symmetric key.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Util.KeyFormat.Hexadecimal">
+            <summary>
+            The key is in form of hexadecimal string
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Util.KeyFormat.Base64UrlEncoded">
+            <summary>
+            The key is in form of Base64URL encoded string
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Util.KeyFormat.Base64Encoded">
+            <summary>
+            The key is in form of classic Base64 encoded string
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Util.KeyFormat.OrdinaryString">
+            <summary>
+            The key is in form of ordinary string
+            </summary>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Util.TokenClaim">
+            <summary>
+            Defines a Claim used in a Security Token or Json Web Token (JWT)
+            </summary>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Util.TokenClaim.Name">
+            <summary>
+            Gets or sets the name of the token
+            </summary>
+            <value>
+            The name.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Util.TokenClaim.Value">
+            <summary>
+            Gets or sets the current value of the token
+            </summary>
+            <value>
+            The value.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Util.TokenClaim.ValueType">
+            <summary>
+            Gets or sets the type of the value
+            </summary>
+            <value>
+            The type of the claim.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Util.TokenClaim.DefaultValue">
+            <summary>
+            Gets or sets the default value by a delegation function
+            </summary>
+            <value>
+            The default value.
+            </value>
         </member>
         <member name="T:Hummingbird.TestFramework.Util.FastReplacer">
             <summary>
