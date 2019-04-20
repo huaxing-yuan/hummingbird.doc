@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<shfbBuild product="Sandcastle Help File Builder and Tools" version="2019.4.7.0" projectFile="D:\Projets\Github\hummingbird.testframework.doc\Hummingbird.Documentation\Hummingbird.Doc.shfbproj" started="12/04/2019 19:15:42">
+<shfbBuild product="Sandcastle Help File Builder and Tools" version="2019.4.7.0" projectFile="D:\Projets\Github\hummingbird.testframework.doc\Hummingbird.Documentation\Hummingbird.Doc.shfbproj" started="20/04/2019 22:19:03">
 <buildStep step="Initializing">
 Finding tools...
 The Sandcastle tools are located in &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\&#39;
@@ -17,29 +17,35 @@ Copyright &#169; 2006-2019, Eric Woodruff, All Rights Reserved
 Portions Copyright &#169; 2014, Sam Harwell, All Rights Reserved
 -------------------------------
 Clearing any prior web/markdown output...
+    Ignoring folder &#39;D:\Projets\Github\hummingbird.testframework.doc\Docs\media&#39;: The process cannot access the file &#39;automation_preface.png&#39; because it is being used by another process.
+    Ignoring folder &#39;D:\Projets\Github\hummingbird.testframework.doc\Docs\styles&#39;: The process cannot access the file &#39;bg.jpg&#39; because it is being used by another process.
 </buildStep>
 <buildStep step="ValidatingDocumentationSources">
 Validating and copying documentation source information
 Source: D:\Projets\Github\hummingbird.testframework.doc\Source\Hummingbird.TestFramework.xml
 Source: D:\Projets\Github\hummingbird.testframework.doc\Source\Hummingbird.TestFramework.dll
     Found assembly &#39;D:\Projets\Github\hummingbird.testframework.doc\Source\Hummingbird.TestFramework.dll&#39;
+Source: D:\Projets\Github\hummingbird.testframework.doc\Source\Hummingbird.TestFramework.Automation.dll
+    Found assembly &#39;D:\Projets\Github\hummingbird.testframework.doc\Source\Hummingbird.TestFramework.Automation.dll&#39;
+Source: D:\Projets\Github\hummingbird.testframework.doc\Source\Hummingbird.TestFramework.Automation.xml
 
 Copying XML comments files
     D:\Projets\Github\hummingbird.testframework.doc\Source\Hummingbird.TestFramework.xml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\Hummingbird.TestFramework.xml
+    D:\Projets\Github\hummingbird.testframework.doc\Source\Hummingbird.TestFramework.Automation.xml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\Hummingbird.TestFramework.Automation.xml
 </buildStep>
 <buildStep step="GenerateSharedContent">
 Generating shared content files (en-US, English (United States))...
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
-</plugIn>    Last step completed in 00:00:00,0244
+</plugIn>    Last step completed in 00:00:00,0029
 </buildStep>
 <buildStep step="GenerateApiFilter">
 Generating API filter for MRefBuilder...
-    Last step completed in 00:00:00,0166
+    Last step completed in 00:00:00,0107
 </buildStep>
 <buildStep step="GenerateReflectionInfo">
 Generating reflection information...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe - GenerateRefInfo.proj]
-Build started 12/04/2019 19:15:45.
+Build started 20/04/2019 22:19:06.
 Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\GenerateRefInfo.proj&quot; on node 1 (default targets).
 PrepareForBuild:
   Creating directory &quot;obj\Debug\&quot;.
@@ -48,20 +54,20 @@ GenerateRefInfo:
   Copyright ? 2006-2019, Microsoft Corporation, All Rights Reserved.
   Portions Copyright ? 2006-2019, Eric Woodruff, All Rights Reserved.
   No source code context base path specified.  Source context information is unavailable.
-  Loaded 1 assemblies for reflection and 1 dependency assemblies.
-  Wrote information on 19 namespaces, 246 types, and 1633 members
+  Loaded 2 assemblies for reflection and 1 dependency assemblies.
+  Wrote information on 19 namespaces, 246 types, and 1635 members
   Copying file from &quot;reflection.org&quot; to &quot;reflection.all&quot;.
   XslTransform (v2019.4.7.0)
   Copyright ? 2006-2019, Microsoft Corporation, All Rights Reserved.
   Portions Copyright ? 2006-2019, Eric Woodruff, All Rights Reserved.
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\MergeDuplicates.xsl&#39;.
 Done Building Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\GenerateRefInfo.proj&quot; (default targets).
-    Last step completed in 00:00:01,5245
+    Last step completed in 00:00:01,3797
 </buildStep>
 <buildStep step="TransformReflectionInfo">
 Transforming reflection output...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe - TransformManifest.proj]
-Build started 12/04/2019 19:15:47.
+Build started 20/04/2019 22:19:07.
 Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\TransformManifest.proj&quot; on node 1 (default targets).
 TransformManifest:
   XslTransform (v2019.4.7.0)
@@ -107,11 +113,11 @@ TransformManifest:
   Portions Copyright ? 2006-2019, Eric Woodruff, All Rights Reserved.
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\ProductionTransforms\ReflectionToManifest.xsl&#39;.
 Done Building Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\TransformManifest.proj&quot; (default targets).
-    Last step completed in 00:00:02,4306
+    Last step completed in 00:00:02,5449
 </buildStep>
 <buildStep step="GenerateNamespaceSummaries">
 Generating namespace summary information...
-    Last step completed in 00:00:00,1522
+    Last step completed in 00:00:00,1444
 </buildStep>
 <buildStep step="GenerateInheritedDocumentation">
 Generating inherited documentation...
@@ -124,13 +130,14 @@ Reflection information will be retrieved from &#39;reflection.xml&#39;
 Inherited documentation will be written to &#39;_InheritedDocs_.xml&#39;
 Indexing C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.6\*.xml
 Indexing D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\Hummingbird.TestFramework.xml
-Indexed 159387 members in 127 file(s).  1 file(s) to scan for &lt;inheritdoc /&gt; tags.
+Indexing D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\Hummingbird.TestFramework.Automation.xml
+Indexed 159389 members in 128 file(s).  2 file(s) to scan for &lt;inheritdoc /&gt; tags.
 Merging inherited documentation...
 
 SHFB: Warning GID0004: No comments found for member &#39;M:Hummingbird.TestFramework.Extensibility.HtmlViewExtension.Dispose(System.Boolean)&#39;
 
 Documentation merged successfully
-    Last step completed in 00:00:01,5206
+    Last step completed in 00:00:01,4171
 </buildStep>
 <buildStep step="CopyConceptualContent">
 Copying conceptual content...
@@ -444,14 +451,14 @@ Generating conceptual topic files
     D:\Projets\Github\hummingbird.testframework.doc\Hummingbird.Documentation\Content\VersionHistory\201810.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\ddueXml\c5dcf625-414c-4037-bd0e-d0f45ec38bb1.xml
     Parsing topic file &#39;D:\Projets\Github\hummingbird.testframework.doc\Hummingbird.Documentation\Content\VersionHistory\201808.aml&#39;
     D:\Projets\Github\hummingbird.testframework.doc\Hummingbird.Documentation\Content\VersionHistory\201808.aml -&gt; D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\ddueXml\fe99fdbe-e2f7-4ae0-ba47-bfa257c51467.xml
-    Last step completed in 00:00:01,7635
+    Last step completed in 00:00:00,8796
 </buildStep>
 <buildStep step="CreateConceptualTopicConfigs">
 Creating conceptual topic configuration files...
     Companion files
     _ContentMetadata_.xml
     Merging topic IDs into manifest.xml
-    Last step completed in 00:00:00,1960
+    Last step completed in 00:00:00,0347
 </buildStep>
 <buildStep step="CopyAdditionalContent">
 Copying additional content files...
@@ -504,16 +511,16 @@ D:\Projets\Github\hummingbird.testframework.doc\Hummingbird.Documentation\icons\
 D:\Projets\Github\hummingbird.testframework.doc\Hummingbird.Documentation\icons\TocOpen.gif -&gt; D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\Output\Website\icons\TocOpen.gif
 D:\Projets\Github\hummingbird.testframework.doc\Hummingbird.Documentation\styles\bg.jpg -&gt; D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\Output\Website\styles\bg.jpg
 D:\Projets\Github\hummingbird.testframework.doc\Hummingbird.Documentation\styles\header_bg.jpg -&gt; D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\Output\Website\styles\header_bg.jpg
-    Last step completed in 00:00:00,2292
+    Last step completed in 00:00:00,1395
 </buildStep>
 <buildStep step="MergeTablesOfContents">
 Merging conceptual and additional tables of contents...
-    Last step completed in 00:00:00,0049
+    Last step completed in 00:00:00,0000
 </buildStep>
 <buildStep step="GenerateIntermediateTableOfContents">
 Generating intermediate table of contents file...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe - GenerateIntermediateTOC.proj]
-Build started 12/04/2019 19:15:53.
+Build started 20/04/2019 22:19:12.
 Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\GenerateIntermediateTOC.proj&quot; on node 1 (default targets).
 GenerateIntermediateTOC:
   XslTransform (v2019.4.7.0)
@@ -522,12 +529,12 @@ GenerateIntermediateTOC:
   Applying XSL transformation &#39;C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\\ProductionTransforms\CreateVSToc.xsl&#39;.
 Done Building Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\GenerateIntermediateTOC.proj&quot; (default targets).
 Generating conceptual content intermediate TOC file...
-    Last step completed in 00:00:00,4097
+    Last step completed in 00:00:00,4087
 </buildStep>
 <buildStep step="CreateBuildAssemblerConfigs">
 Creating Sandcastle configuration files...
     sandcastle.config
-    Last step completed in 00:00:00,3287
+    Last step completed in 00:00:00,2668
 </buildStep>
 <buildStep step="MergeCustomConfigs">
 Merging custom build component configurations
@@ -539,12 +546,12 @@ D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\sandcastle.config
     Replacing default configuration for &#39;Code Block Component&#39; with the custom configuration
     Replacing default configuration for &#39;Syntax Component&#39; with the custom configuration
     Removing unused ExampleComponent.
-    Last step completed in 00:00:00,0127
+    Last step completed in 00:00:00,0078
 </buildStep>
 <buildStep step="BuildTopics">
 Building help topics...
 [C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\MSBuild\15.0\Bin\MSBuild.exe - BuildTopics.proj]
-Build started 12/04/2019 19:15:54.
+Build started 20/04/2019 22:19:13.
 Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\BuildTopics.proj&quot; on node 1 (default targets).
 BuildTopics:
   BuildAssembler (v2019.4.7.0)
@@ -1051,20 +1058,20 @@ BuildAssembler : warning : ResolveReferenceLinksComponent: [M:Hummingbird.TestFr
 BuildAssembler : warning : ResolveReferenceLinksComponent: [M:Hummingbird.TestFramework.Util.JsonWebTokenUtility.CreateSecurityToken(Microsoft.IdentityModel.Tokens.SecurityKey,System.String,System.IdentityModel.Tokens.Jwt.JwtPayload,System.String@)] MSDN URL not found for target &#39;T:Microsoft.IdentityModel.Tokens.SecurityAlgorithms&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\BuildTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [M:Hummingbird.TestFramework.Util.JsonWebTokenUtility.CreateSecurityToken(Microsoft.IdentityModel.Tokens.SecurityKey,System.String,System.IdentityModel.Tokens.Jwt.JwtPayload,System.String@)] MSDN URL not found for target &#39;T:System.IdentityModel.Tokens.Jwt.JwtPayload&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\BuildTopics.proj]
 BuildAssembler : warning : ResolveReferenceLinksComponent: [M:Hummingbird.TestFramework.Util.JsonWebTokenUtility.CreateSecurityToken(Microsoft.IdentityModel.Tokens.SecurityKey,System.String,System.IdentityModel.Tokens.Jwt.JwtPayload,System.String@)] MSDN URL not found for target &#39;T:System.IdentityModel.Tokens.Jwt.JwtSecurityToken&#39;. [D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\BuildTopics.proj]
+BuildAssembler : warning : ShowMissingComponent: [M:Hummingbird.TestFramework.Util.JsonWebTokenUtility.GetBase64Key(System.String,Hummingbird.TestFramework.Util.KeyFormat)] Missing &lt;returns&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\BuildTopics.proj]
 BuildAssembler : warning : ShowMissingComponent: [G:Hummingbird.TestFramework.Automation] Missing &lt;summary&gt; documentation [D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\BuildTopics.proj]
-  Processed 2361 topic(s)
-  500 warning(s)
+  Processed 2363 topic(s)
+  501 warning(s)
   CopyFromIndexComponent: &quot;metadata&quot; in-memory cache entries used: 1 of 15.
   ResolveArtLinksComponent: Copying media files...
-  ResolveReferenceLinksComponent: 5 entries added to the MSDN content ID cache.  New cache size: 803 entries
   CopyFromIndexComponent: &quot;reflection&quot; in-memory cache entries used: 15 of 15.
-  CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 8 of 30.
+  CopyFromIndexComponent: &quot;comments&quot; in-memory cache entries used: 9 of 30.
 Done Building Project &quot;D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\BuildTopics.proj&quot; (default targets).
-    Last step completed in 00:00:27,1463
+    Last step completed in 00:00:28,7234
 </buildStep>
 <buildStep step="CombiningIntermediateTocFiles">
 Combining conceptual and API intermediate TOC files...
-    Last step completed in 00:00:00,0146
+    Last step completed in 00:00:00,0341
 </buildStep>
 <buildStep step="ExtractingHtmlInfo">
 Extracting HTML info for HTML Help 1 and/or website...
@@ -1076,11 +1083,11 @@ E-Mail: Eric@EWoodruff.us
 Using LCID &#39;1033&#39;, code page &#39;65001&#39;, encoding charset &#39;UTF-8&#39;.
 
 Processing website files in D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\Output\Website
-Processed 2361 HTML files
+Processed 2363 HTML files
 Sorting keywords and generating See Also indices
 Saving website keyword index to D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\WebKI.xml
 Saving website table of contents to D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\WebTOC.xml
-    Last step completed in 00:00:01,6171
+    Last step completed in 00:00:01,2894
 </buildStep>
 <buildStep step="CopyStandardHelpContent">
 Copying standard help content...
@@ -1119,18 +1126,18 @@ C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyle
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\branding-Website.js -&gt; D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\Output\Website\scripts\branding-Website.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\clipboard.min.js -&gt; D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\Output\Website\scripts\clipboard.min.js
 C:\Program Files (x86)\EWSoftware\Sandcastle Help File Builder\PresentationStyles\VS2013\Web\scripts\jquery-3.3.1.min.js -&gt; D:\Projets\Github\hummingbird.testframework.doc\Docs\Working\Output\Website\scripts\jquery-3.3.1.min.js
-    Last step completed in 00:00:00,1385
+    Last step completed in 00:00:00,1180
 </buildStep>
 <buildStep step="GenerateHelpFormatTableOfContents">
 Generating website table of contents file...
-    Last step completed in 00:00:00,0010
+    Last step completed in 00:00:00,0000
 </buildStep>
 <buildStep step="GenerateFullTextIndex">
 Generating full-text index for the website...
 
 <plugIn name="Lightweight Website Style" behavior="After" priority="1000">
 Adding lightweight search and TOC elements to each topic...
-</plugIn>    Last step completed in 00:00:02,7856
+</plugIn>    Last step completed in 00:00:02,7992
 </buildStep>
 <buildStep step="CopyingWebsiteFiles">
 Copying website files to output folder...
@@ -1141,16 +1148,16 @@ Copied 1500 files
 Copied 2000 files
 Copied 2500 files
 Copied 3000 files
-Copied 3171 files for the website content
-    Last step completed in 00:00:05,4133
+Copied 3173 files for the website content
+    Last step completed in 00:00:04,9634
 </buildStep>
 <buildStep step="CleanIntermediates">
 Removing intermediate files...
-    Last step completed in 00:00:02,8393
+    Last step completed in 00:00:02,4215
 </buildStep>
 <buildStep step="Completed">
 
-Build completed successfully at 12/04/2019 19:16:34.  Total time: 00:00:51,5733
+Build completed successfully at 20/04/2019 22:19:53.  Total time: 00:00:49,9671
 
 </buildStep>
 </shfbBuild>

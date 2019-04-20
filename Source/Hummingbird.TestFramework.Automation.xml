@@ -1,0 +1,1364 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hummingbird.TestFramework.Automation</name>
+    </assembly>
+    <members>
+        <member name="T:Hummingbird.TestFramework.Automation.AbstractSqlTestStep">
+            <summary>
+            Base class of <see cref="T:Hummingbird.TestFramework.Automation.SqlQueryTestStep"/>
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.TestStepBase" />
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.AbstractSqlTestStep.Server">
+            <summary>
+            Gets or sets the server name (FQN, Host name or IP address)
+            </summary>
+            <value>
+            The server.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.AbstractSqlTestStep.DatabaseName">
+            <summary>
+            Gets or sets the name of the database.
+            </summary>
+            <value>
+            The name of the database.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.AbstractSqlTestStep.SqlAuthenticationMode">
+            <summary>
+            Gets or sets the SQL authentication mode.
+            </summary>
+            <value>
+            The SQL authentication mode, <see cref="P:Hummingbird.TestFramework.Automation.AbstractSqlTestStep.SqlAuthenticationMode"/>
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.AbstractSqlTestStep.UserName">
+            <summary>
+            Gets or sets the UserName to access to base if User/Password mode is used
+            </summary>
+            <value>
+            The UserName
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.AbstractSqlTestStep.Password">
+            <summary>
+            Gets or sets the password to access to base if User/Password mode is used. This field is not saved directly when saved to files.
+            </summary>
+            <value>
+            The clear password that is used to authenticate users to the database. the clear password is not stored.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.AbstractSqlTestStep.TestConnectivity(System.String@)">
+            <summary>
+            Tests the connectivity from the current settings
+            </summary>
+            <returns><see langword="true"/> if the connectivity is OK, <see langword="false"/> if the connection is failed</returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.AbstractSqlTestStep.GetConnectionString">
+            <summary>
+            Gets the connection string from the current test step settings
+            </summary>
+            <returns>a <see cref="T:System.String"/> representation of the connection strings.</returns>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.AbstractSqlTestStep.EncPassword">
+            <summary>
+            Gets or sets the Encrypted password.
+            </summary>
+            <value>
+            The enc password.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.AbstractSqlTestStep.ResultType">
+            <summary>
+            Gets or sets the <see cref="T:Hummingbird.TestFramework.Automation.SqlResultType"/> of the current Query or Stored Procedure
+            </summary>
+            <value>
+            <see cref="T:Hummingbird.TestFramework.Automation.SqlResultType"/> represents the type of the query result
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.AbstractSqlTestStep.Result">
+            <summary>
+            Gets or SQL execution result, according to the resultType.
+            <para>If <see cref="P:Hummingbird.TestFramework.Automation.AbstractSqlTestStep.ResultType" /> is set to <see cref="F:Hummingbird.TestFramework.Automation.SqlResultType.Nothing" />, the property will contains the number of rows affected.</para><para>If <see cref="P:Hummingbird.TestFramework.Automation.AbstractSqlTestStep.ResultType" /> is set to <see cref="F:Hummingbird.TestFramework.Automation.SqlResultType.ScalarValue" />, the property will contains the returned value. </para><para>If <see cref="P:Hummingbird.TestFramework.Automation.AbstractSqlTestStep.ResultType" /> is set to <see cref="F:Hummingbird.TestFramework.Automation.SqlResultType.Query" />, the property will contains the returned data in an Array </para>
+            </summary>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.AbstractSqlTestStep.ResultTable">
+            <summary>
+            Gets the SQL Query result in DataTable representation.
+            </summary>
+            <value>
+            The result table.
+            </value>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.CommandLineTestStep">
+            <summary>
+            Test Step that executes an external program
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.TestStepBase" />
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.CommandLineTestStep.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.TestFramework.Automation.CommandLineTestStep"/> class.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.CommandLineTestStep.FileName">
+            <summary>
+            Gets or sets the executable (.exe, .bat) file to launch.
+            </summary>
+            <value>
+            The executable.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.CommandLineTestStep.Arguments">
+            <summary>
+            Gets or sets the arguments for the command line. If the argument contains space, it must be quoted
+            </summary>
+            <value>
+            The arguments.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.CommandLineTestStep.ErrorStreamAsFailed">
+            <summary>
+            Gets or sets a value indicating whether to Fail the test if at least a message is written in Standard Error output
+            </summary>
+            <value>
+              <c>true</c> Set status Failed if at least a message is written in standard error output; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.CommandLineTestStep.Timeout">
+            <summary>
+            Gets or sets the Timeout where the test step will wait for command line execution. 
+            The command line test step will wait until the program ends its execution, if timeout arrived and the program is still running, its process will be killed.
+            </summary>
+            <value>
+            An integer value indicate in Seconds the timeout
+            </value>
+            <remarks>
+            Hummingbird Test Framework will try to close also the programs opened by the target executable from the process tree, but according to the complexity of the environment this behavior cannot be guaranteed. Make sure you are running an executable under control and for a good reason.
+            </remarks>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.CommandLineTestStep.WorkingDirectory">
+            <summary>
+            Gets or sets the working directory. If the property is <see langword="null"/> or Empty, the working directory will be set to the same directory of the Project File
+            </summary>
+            <value>
+            The working directory.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.CommandLineTestStep.Run">
+            <summary>
+            Runs this instance.
+            </summary>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.CSharpScriptTestStep">
+            <summary>
+            A custom C# script test step, which automation test can writes a specific test step using C# language.
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.TestStepBase" />
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.CSharpScriptTestStep.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.TestFramework.Automation.CSharpScriptTestStep"/> class.
+            </summary>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.CsvDataSource">
+            <summary>
+            Provide data from CSV file
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.DataSource" />
+            <remarks>
+            The property <see cref="P:Hummingbird.TestFramework.Automation.CsvDataSource.FileName"/> and <see cref="P:Hummingbird.TestFramework.Automation.CsvDataSource.Separator"/> support token replacement.
+            </remarks>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.CsvDataSource.FileName">
+            <summary>
+            Gets or sets the File name which to import the data. If <see cref="P:Hummingbird.TestFramework.Automation.DataSource.HasHeader"/> is set to <see langword="true"/>, the first row of CSV is considered as headers
+            </summary>
+            <value>
+            The name of the file.
+            </value>
+            <remarks>
+            If the FileName does not contain a Full Path, the resolver will try to find the filename from path related to the current Automation Project.
+            </remarks>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.CsvDataSource.Separator">
+            <summary>
+            Gets or sets the separator of the CSV file, the default separator depends on your localization settings. For example, for US based culture 
+            </summary>
+            <value>
+            The separator, it can be a comma (,) a semicolon (;) a pipe (|) or another user defined separator
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.CsvDataSource.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.TestFramework.Automation.CsvDataSource"/> class.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.CsvDataSource.ImportData(Hummingbird.TestFramework.Automation.TestCase)">
+            <summary>
+            Imports the data from the Comma-separated value (CSV) File specified in <see cref="P:Hummingbird.TestFramework.Automation.CsvDataSource.FileName"/> property.
+            </summary>
+            <param name="testCase">The referenced test case.</param>
+            <returns>
+              <see cref="T:System.Boolean" /> value indicating if the Import is successful.
+            </returns>
+            <exception cref="T:System.InvalidOperationException">You are using a relative path but the project has not yet saved. When using relative path, the project must have been saved.</exception>
+            <remarks>
+            The Headers will be persisted but the data will not: It will not be saved with the Test Automation project, every run Hummingbird Test Framework will re-import the data from defined location.
+            </remarks>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.CsvDataStorage">
+            <summary>
+            Writes test or intermediate data to a CSV file
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.DataSource" />
+            <remarks>
+            The property <see cref="P:Hummingbird.TestFramework.Automation.CsvDataStorage.FileName"/> and <see cref="P:Hummingbird.TestFramework.Automation.CsvDataStorage.Separator"/> support token replacement.
+            </remarks>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.CsvDataStorage.Save(Hummingbird.TestFramework.Automation.TestCase)">
+            <summary>
+            This method should be implemented by sub classes by storing data to adapted place: Excel, CSV or SQL Database.
+            </summary>
+            <param name="testCase"></param>
+            <exception cref="T:System.InvalidOperationException">You are using a relative path but the project has not yet saved. Please save the project before using relative path.</exception>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.CsvDataStorage.FileName">
+            <summary>
+            Gets or sets the File name which data will be written. If <see cref="P:Hummingbird.TestFramework.Automation.DataStorage.HasHeader"/> is set to <see langword="true"/>, the first row of CSV will be headers.
+            </summary>
+            <value>
+            The name of the file.
+            </value>
+            <remarks>
+            If the FileName does not contain a Full Path, the resolver will try to find the filename from path related to the current Automation Project.
+            If the file does not exists
+            </remarks>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.CsvDataStorage.Separator">
+            <summary>
+            Gets or sets the separator of the CSV file, the default separator depends on your localization settings. For example, for US based culture 
+            </summary>
+            <value>
+            The separator, it can be a comma (,) a semicolon (;) a pipe (|) or another user defined separator
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.CsvDataStorage.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.TestFramework.Automation.CsvDataStorage"/> class.
+            </summary>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.CustomLoadTestCase">
+            <summary>
+            A custom load test case that users can customize the load as will.
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.LoadTestCase" />
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.CustomLoadTestCase.CustomControlPoints">
+            <summary>
+            Gets or sets a list of time point and the expected load at that point
+            </summary>
+            <value>
+            The custom loads as a list of <see cref="T:Hummingbird.TestFramework.Automation.MeasurePoint"/>s, for each point the <see cref="P:Hummingbird.TestFramework.Automation.MeasurePoint.Time"/> indicates the control point in second, and <see cref="P:Hummingbird.TestFramework.Automation.MeasurePoint.Value"/> represents a expected load at that point.
+            </value>
+              
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.CustomLoadTestCase.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.TestFramework.Automation.CustomLoadTestCase"/> class.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.CustomLoadTestCase.GetLoadGraph">
+            <summary>
+            Gets the expect load graph measure points. That graph can be shown as a simulation of the loads
+            </summary>
+            <returns>
+            An array of measure points that can be shown in a Cartesian Chart
+            </returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.CustomLoadTestCase.CheckParameters">
+            <summary>
+            Checks the validity of test parameters.
+            </summary>
+            <returns>
+              <see langword="true" /> - If all parameters are valid, <see langword="false" /> if at least one parameter has error. <see cref="P:Hummingbird.TestFramework.Automation.AbstractTestItem.DisplayMessage" /> contains the error message.
+            </returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.CustomLoadTestCase.RaiseControlPointsChanged">
+            <summary>
+            Raises the notification considering that the <see cref="P:Hummingbird.TestFramework.Automation.CustomLoadTestCase.CustomControlPoints"/> has been change.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.CustomLoadTestCase.GetEndTime(System.DateTime)">
+            <summary>
+            Gets the end time of the test depends on the specified start time.
+            </summary>
+            <param name="startTime">The start time.</param>
+            <returns>
+            A <see cref="T:System.DateTime" /> object that represents the end of the current test
+            </returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.CustomLoadTestCase.GetLoad(System.DateTime,System.TimeSpan)">
+            <summary>
+            Gets the number of iterations should be run at the current time.
+            </summary>
+            <param name="startTime">The Time where the load test begins. This time is used to determine in which state the current test scenario is running</param>
+            <param name="dx">The fragment of time where the current.</param>
+            <returns>
+            The number of iterations per second should be generated for the fragment of time.
+            </returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.CustomLoadTestCase.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.DataGeneratorTestStep">
+            <summary>
+            A test step that generates variable from a list of possible values.
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.TestStepBase" />
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.DataGeneratorTestStep.Run">
+            <summary>
+            Runs this instance. Do not implement StartTime, Duration. Write information in the <see cref="P:Hummingbird.TestFramework.Automation.TestStepBase.Information" /> field, it will be shown in the log automatically.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.DataGeneratorTestStep.DataGenerator">
+            <summary>
+            Gets or sets the data generator used for this test step.
+            </summary>
+            <value>
+            The data generator.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.DataGeneratorTestStep.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.TestFramework.Automation.DataGeneratorTestStep"/> class.
+            </summary>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.DataGenerator.AbstractDataGenerator">
+            <summary>
+            Generates test data for automated tests. For each iteration it generates data and fill the value to Test case variable.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.DataGenerator.AbstractDataGenerator.Name">
+            <summary>
+            Gets or sets the name of the current DataGenerator
+            </summary>
+            <value>
+            A <see cref="T:System.String"/> value represents the name of the current DataGenerator.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.DataGenerator.AbstractDataGenerator.Reset">
+            <summary>
+            Resets the cursor to 0.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.DataGenerator.AbstractDataGenerator.IsRandom">
+            <summary>
+            Gets or sets a value indicating whether to generate data randomly.
+            </summary>
+            <value>
+              <c>true</c> choose a random value for a variable; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.DataGenerator.AbstractDataGenerator.Generate(Hummingbird.TestFramework.Automation.TestCase)">
+            <summary>
+            Generates data at the current cursor and move the cursor to next position. or generates data at random position when <see cref="P:Hummingbird.TestFramework.Automation.DataGenerator.AbstractDataGenerator.IsRandom"/> is set to <see langword="true"/>
+            </summary>
+            <returns>An collection of variable and its values.</returns>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.DataGenerator.TableDataGenerator">
+            <summary>
+            Generates test data from a Table, each column represents a variable while each row represents an iteration.
+            </summary>
+            <remarks>
+            <para>The <see cref="T:Hummingbird.TestFramework.Automation.DataGenerator.TableDataGenerator"/> is used in an API Performance test case. For each iteration, it will select a data row and converts it's value into variable. 
+            </para>
+            <para>DataGenerator uses static cache to store data, the data will be loaded at the first time it will be called. Data is loaded from the file described in <see cref="P:Hummingbird.TestFramework.Automation.DataGenerator.TableDataGenerator.DataSource"/> property.</para>
+            </remarks>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.DataGenerator.AbstractDataGenerator" />
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.DataGenerator.TableDataGenerator.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.TestFramework.Automation.DataGenerator.TableDataGenerator"/> class.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.DataGenerator.TableDataGenerator.Id">
+            <summary>
+            Gets or sets the identifier of this <see cref="T:Hummingbird.TestFramework.Automation.DataGenerator.TableDataGenerator"/>
+            </summary>
+            <value>
+            The identifier.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.DataGenerator.TableDataGenerator.Generate(Hummingbird.TestFramework.Automation.TestCase)">
+            <summary>
+            Generates data at the current cursor and move the cursor to next position.
+            </summary>
+            <returns>
+            An collection of variable and its values.
+            </returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.DataGenerator.TableDataGenerator.Reset">
+            <summary>
+            Resets the cursor to 0.
+            </summary>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.DataGenerator.TableDataGenerator.DataSource">
+            <summary>
+            Gets or sets the data source of this DataGenerator
+            </summary>
+            <value>
+            The data source.
+            </value>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.DataGenerator.VariableDataGenerator">
+            <summary>
+            Generates data from a given list of possible values.
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.DataGenerator.AbstractDataGenerator" />
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.DataGenerator.VariableDataGenerator.Variables">
+            <summary>
+            Gets or sets a list of variables that this data generator will generator. The name of the variable will be replaced by one of the value, the Value of the variable represents a list of possible values.
+            </summary>
+            <value>
+            The variables.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.DataGenerator.VariableDataGenerator.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.TestFramework.Automation.DataGenerator.VariableDataGenerator"/> class.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.DataGenerator.VariableDataGenerator.Generate(Hummingbird.TestFramework.Automation.TestCase)">
+            <summary>
+            Generates data at the current cursor and move the cursor to next position.
+            </summary>
+            <returns>
+            An collection of variable and its values.
+            </returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.DataGenerator.VariableDataGenerator.Reset">
+            <summary>
+            Resets the cursor to 0.
+            </summary>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.DotNetScriptTestStepBase">
+            <summary>
+            Base class of C# Script Test Step and VB.NET Script Test Step.
+            </summary>
+            <remarks>
+            This test step does not support variable token replacement.
+            </remarks>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.DotNetScriptTestStepBase.vbProvider">
+            <summary>
+            The Visual Basic CodeDomProvider provider
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.DotNetScriptTestStepBase.csProvider">
+            <summary>
+            The C# CodeDomProvider
+            </summary>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.DotNetScriptTestStepBase.DotNetLanguage">
+            <summary>
+            Gets or sets the language used, default values is "C#".
+            </summary>
+            <value>
+            The .Net language.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.DotNetScriptTestStepBase.GetCodeDomProvider(System.String,System.CodeDom.Compiler.CompilerParameters@)">
+            <summary>
+            Gets the .Net Compiler for given language.
+            </summary>
+            <param name="language">The .NET Language: C# or VB</param>
+            <param name="parameters">The compilerParameters parameters.</param>
+            <returns>A <see cref="T:System.CodeDom.Compiler.CodeDomProvider"/> object that contains the Code document object provider, it is either a C# provider or a VB.NET provider</returns>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.DotNetScriptTestStepBase.Script">
+            <summary>
+            Gets or sets the C# Script to run
+            </summary>
+            <value>
+            The script to run. The script can use all the features of Test Framework.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.DotNetScriptTestStepBase.Run">
+            <summary>
+            Runs this instance.
+            </summary>
+            <exception cref="T:System.Exception">There is no entry point defined to your test step, The class must derives from Hummingbird.TestFramework.Automation.ScriptTestStepBase</exception>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.DotNetScriptTestStepBase.Compile(System.String,System.Collections.Generic.List{System.CodeDom.Compiler.CompilerError}@)">
+            <summary>
+            Compiles the specified code.
+            </summary>
+            <param name="code">The code.</param>
+            <param name="errors">The errors.</param>
+            <returns>A <see cref="T:System.Boolean"/> value indicates if the compilation is passed. <see langword="true"/>: compilation is passed, otherwise, <see langword="false"/></returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.DotNetScriptTestStepBase.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.ExcelDataSource">
+            <summary>
+            Provide data from EXCEL (Open XML Format) File.
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.DataSource" />
+            <remarks>
+            The property <see cref="P:Hummingbird.TestFramework.Automation.ExcelDataSource.FileName"/> support token replacement. ExcelDataSource support Open XML format Excel files.
+            </remarks> 
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.ExcelDataSource.FileName">
+            <summary>
+            Gets or sets the File name which to import the data. If <see cref="P:Hummingbird.TestFramework.Automation.DataSource.HasHeader"/> is set to <see langword="true"/>, the first row of excel data is considered as headers
+            </summary>
+            <value>
+            The name of the file
+            </value>
+            <remarks>
+            If the FileName does not contain a Full Path, the resolver will try to find the filename from path related to the current Automation Project.
+            </remarks>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.ExcelDataSource.RangeType">
+            <summary>
+            Gets or sets RangeType. When using <see cref="F:Hummingbird.TestFramework.Automation.SpreadsheetRangeType.NamedRange"/> or <see cref="F:Hummingbird.TestFramework.Automation.SpreadsheetRangeType.Table"/>, <see cref="P:Hummingbird.TestFramework.Automation.ExcelDataSource.SheetName"/> will be ignored.
+            </summary>
+            <value>
+            An <see cref="T:Hummingbird.TestFramework.Automation.SpreadsheetRangeType"/> value that represents RangeType of the current object.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.ExcelDataSource.RangeName">
+            <summary>
+            Gets or sets RangeName according to the value of <see cref="P:Hummingbird.TestFramework.Automation.ExcelDataSource.RangeType"/>
+            </summary>
+            <value>
+            An <see cref="T:System.String"/> value that represents RangeName of the current object
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.ExcelDataSource.SheetName">
+            <summary>
+            Gets or sets Name of the Sheet in a SpreadSheet document.
+            </summary>
+            <value>
+            An <see cref="T:System.String"/> value that represents SheetName of the current object
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.ExcelDataSource.ImportData(Hummingbird.TestFramework.Automation.TestCase)">
+            <summary>
+            Import Data from the given data source. After a successful import, the <see cref="P:Hummingbird.TestFramework.Automation.DataSource.Data" /> property will be filled.
+            If <see cref="P:Hummingbird.TestFramework.Automation.DataSource.HasHeader" /> is set to True, the <see cref="P:Hummingbird.TestFramework.Automation.DataSource.Headers" /> property will be automatically assigned.
+            </summary>
+            <param name="testCase">The test case who calling the importData Method</param>
+            <returns>
+            an <see cref="T:System.Int32" /> value represents the number of rows imported.
+            </returns>
+            <remarks>
+            The Headers will be persisted but the data will not: It will not be saved with the Test Automation project, every run Hummingbird Test Framework will re-import the data from defined location.
+            </remarks>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.ExcelDataStorage">
+            <summary>
+            Exports data to Excel WorkSheet
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.DataStorage" />
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.ExcelDataStorage.Save(Hummingbird.TestFramework.Automation.TestCase)">
+            <summary>
+            This method should be implemented by sub classes by storing data to adapted place: Excel, CSV or SQL Database.
+            </summary>
+            <param name="testCase"></param>
+            <exception cref="T:System.InvalidOperationException">You are using a relative path but the project has not yet saved. Please save the project before using relative path.</exception>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.ExcelDataStorage.FileName">
+            <summary>
+            Gets or sets the name of the Excel file where the data will be stored.
+            </summary>
+            <value>
+            The name of the file, either relative path or absolute or UNC path
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.ExcelDataStorage.SheetName">
+            <summary>
+            Gets or sets the Worksheet name where the data will be written.
+            </summary>
+            <value>
+            The name of the sheet.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.ExcelDataStorage.ExistingFileBehavior">
+            <summary>
+            Gets or sets the behavior to handling DataStorage when the target file exists.
+            </summary>
+            <value>
+            The existing file behavior.
+            </value>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.ExistingFileBehavior">
+            <summary>
+            The behavior or the data storage while handling a file to write but that file does alrealy exist.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.ExistingFileBehavior.Overwrite">
+            <summary>
+            Overwrite the data of the given worksheet but keeps data in other part of an spreedsheet.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.ExistingFileBehavior.Replace">
+            <summary>
+            The existing will be deleted and be replaced by the current one.
+            </summary>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.ExtractPropertyPair">
+            <summary>
+            Extract Property pair indicates where to find the value and transfer the value to a variable
+            </summary>
+            <seealso cref="T:System.ComponentModel.INotifyPropertyChanged" />
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.ExtractPropertyPair.Clone">
+            <summary>
+            Clones this instance.
+            </summary>
+            <returns>A clone of the current <see cref="T:Hummingbird.TestFramework.Automation.ExtractPropertyPair"/> instance.</returns>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.ExtractPropertyPair.PropertyName">
+            <summary>
+            <para>Gets or sets the Name of the property from the selected Test Step.</para>
+            <list>
+            <item>If <see cref="P:Hummingbird.TestFramework.Automation.ExtractPropertyPair.PropertyName"/> is <see cref="P:Hummingbird.TestFramework.Automation.TestStepBase.RequestText"/> or <see cref="P:Hummingbird.TestFramework.Automation.TestStepBase.ResponseText"/>, you must Select <see cref="P:Hummingbird.TestFramework.Automation.ExtractPropertyPair.PathType"/> and assign <see cref="P:Hummingbird.TestFramework.Automation.ExtractPropertyPair.Path"/> with either <see cref="F:Hummingbird.TestFramework.Automation.PropertyPathTypes.XPath"/> or <see cref="F:Hummingbird.TestFramework.Automation.PropertyPathTypes.JsonPath"/></item>
+            <item>If <see cref="P:Hummingbird.TestFramework.Automation.ExtractPropertyPair.PropertyName"/> is <see cref="P:Hummingbird.TestFramework.Automation.TestStepBase.RequestObject"/> or <see cref="P:Hummingbird.TestFramework.Automation.TestStepBase.ResponseObject"/>, The  <see cref="P:Hummingbird.TestFramework.Automation.ExtractPropertyPair.PathType"/> will be set to <see cref="F:Hummingbird.TestFramework.Automation.PropertyPathTypes.ObjectPath"/>, you must assign <see cref="P:Hummingbird.TestFramework.Automation.ExtractPropertyPair.Path"/> with an ObjectPath</item>
+            <item>Otherwise <see cref="P:Hummingbird.TestFramework.Automation.ExtractPropertyPair.PathType"/> and <see cref="P:Hummingbird.TestFramework.Automation.ExtractPropertyPair.Path"/> should be used.</item>
+            </list>
+            </summary>
+            <value>
+            The source property.
+            </value>
+        </member>
+        <member name="E:Hummingbird.TestFramework.Automation.ExtractPropertyPair.PropertyChanged">
+            <summary>
+            Occurs when the property value has changed.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.ExtractPropertyPair.PathType">
+            <summary>
+            <para>Gets or sets the Type of PropertyPath.</para>
+            <list>
+            <item>If the <see cref="P:Hummingbird.TestFramework.Automation.ExtractPropertyPair.PropertyName"/> is <see cref="P:Hummingbird.TestFramework.Automation.TestStepBase.RequestText"/> or <see cref="P:Hummingbird.TestFramework.Automation.TestStepBase.ResponseText"/>, you must Select <see cref="P:Hummingbird.TestFramework.Automation.ExtractPropertyPair.PathType"/> and assign <see cref="P:Hummingbird.TestFramework.Automation.ExtractPropertyPair.Path"/> with either <see cref="F:Hummingbird.TestFramework.Automation.PropertyPathTypes.XPath"/> or <see cref="F:Hummingbird.TestFramework.Automation.PropertyPathTypes.JsonPath"/></item>
+            <item>If the <see cref="P:Hummingbird.TestFramework.Automation.ExtractPropertyPair.PropertyName"/> is <see cref="P:Hummingbird.TestFramework.Automation.TestStepBase.RequestObject"/> or <see cref="P:Hummingbird.TestFramework.Automation.TestStepBase.ResponseObject"/>, The  <see cref="P:Hummingbird.TestFramework.Automation.ExtractPropertyPair.PathType"/> will be set to <see cref="F:Hummingbird.TestFramework.Automation.PropertyPathTypes.ObjectPath"/>, you must assign <see cref="P:Hummingbird.TestFramework.Automation.ExtractPropertyPair.Path"/> with an ObjectPath</item>
+            <item>Otherwise <see cref="P:Hummingbird.TestFramework.Automation.ExtractPropertyPair.PathType"/> and <see cref="P:Hummingbird.TestFramework.Automation.ExtractPropertyPair.Path"/> should be used.</item>
+            </list>
+            </summary>
+            <value>
+            The type of the path.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.ExtractPropertyPair.Path">
+            <summary>
+            <para>Gets or sets the expression indicated by <see cref="P:Hummingbird.TestFramework.Automation.ExtractPropertyPair.PathType"/> how to retrieve value from the <see cref="P:Hummingbird.TestFramework.Automation.ExtractPropertyPair.PropertyName"/></para>
+            <list type="bullet">
+            <item><para>XPath</para></item>
+            <item><para>ObjectPath</para></item>
+            <item><para>JsonPath</para></item>
+            </list>
+            </summary>
+            <value>
+            The property path.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.ExtractPropertyPair.VariableName">
+            <summary>
+            Gets or sets the name of the variable to assign the value. If the variable of that value does not exist, it will be created automatically.
+            </summary>
+            <value>
+            The name of the variable.
+            </value>
+            <remarks>
+            </remarks>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.ExtractPropertyPair.CurrentValue">
+            <summary>
+            Gets or sets the Value obtained from the current pair. the value is shown for information.
+            </summary>
+            <value>
+            An <see cref="T:System.String"/> value that represents CurrentValue of the current object
+            </value>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.ExtractPropertyTestStep">
+            <summary>
+            Extract Property Test Step is used to extract values from Request or Response
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.TestStepBase" />
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.ExtractPropertyTestStep.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.TestFramework.Automation.ExtractPropertyTestStep"/> class.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.ExtractPropertyTestStep.VariableLevel">
+            <summary>
+            Gets or sets the level of variable generated from the current test step.
+            </summary>
+            <value>
+            The variable level.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.ExtractPropertyTestStep.SourceStepId">
+            <summary>
+            Gets or sets the unique identifier of the Test Step where the property should be retrieved.
+            </summary>
+            <value>
+            The step identifier.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.ExtractPropertyTestStep.ExtractPropertyPairs">
+            <summary>
+            Gets the extract property pairs which retrieves a value from indicated location and assign the value to a variable.
+            </summary>
+            <value>
+            The extract property pairs.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.ExtractPropertyTestStep.Run">
+            <summary>
+            Runs this instance. Do not implement StartTime, Duration. Write information in the <see cref="P:Hummingbird.TestFramework.Automation.TestStepBase.Information" /> field, it will be shown in the log automatically.
+            </summary>
+            <returns>
+            A Message object contains the Request/Response, or <see langword="null" /> if the test step does not send or receive messages
+            </returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.ExtractPropertyTestStep.Evaluate(Hummingbird.TestFramework.Automation.ExtractPropertyPair,Hummingbird.TestFramework.Automation.AbstractTestItem,System.Boolean@)">
+            <summary>
+            Evaluates the specified <see cref="T:Hummingbird.TestFramework.Automation.ExtractPropertyPair" /> with the given <see cref="T:Hummingbird.TestFramework.Automation.AbstractTestItem" />
+            </summary>
+            <param name="pair">The <see cref="T:Hummingbird.TestFramework.Automation.ExtractPropertyPair" /> object specifies how to extract data.</param>
+            <param name="item">The <see cref="T:Hummingbird.TestFramework.Automation.AbstractTestItem" /> object specifies where to extract data</param>
+            <param name="hasError">if set to <c>true</c> the evaluation is failed.</param>
+            <returns>The extracted value from the given condition. If <paramref name="hasError"/> is true, the error message</returns>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.JsonWebTokenStepActions">
+            <summary>
+            Determines the action of <see cref="T:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep"/> to run.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.JsonWebTokenStepActions.Generation">
+            <summary>
+            Generates a Json Web Token
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.JsonWebTokenStepActions.Validation">
+            <summary>
+            Validates a Json Web Token
+            </summary>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep">
+            <summary>
+            Json Web Token (JWT) test step aimed to integrate JWT generation and validation seamlessly within an automation project.
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.TestStepBase" />
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep"/> class.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.Action">
+            <summary>
+            Gets or sets the action of this test step
+            </summary>
+            <value>
+            A valid value from enumeration <see cref="T:Hummingbird.TestFramework.Automation.JsonWebTokenStepActions"/>
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.Algorithm">
+            <summary>
+            Gets or sets the signing or encryption algorithm.
+            </summary>
+            <value>
+            One of supported signing or encryption algorithm defined in <see cref="F:Hummingbird.TestFramework.Util.JsonWebTokenUtility.SignatureAlgorithms"/> 
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.SymmetricKey">
+            <summary>
+            Gets or sets the symmetric key. used only if the signature algorithm uses symmetric key, ex: HS256
+            </summary>
+            <value>
+            The symmetric key, in the form specified by <see cref="P:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.KeyFormat"/>
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.KeyFormat">
+            <summary>
+            Gets or sets the key format.
+            </summary>
+            <value>
+            The key format.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.CertificatePath">
+            <summary>
+            Gets or sets a PKCS#12 certificate used to sign a token using asymmetric algorithm like RSA, ECDSA or PSS.
+            </summary>
+            <value>
+            The certificate path.
+            </value>
+            <remarks>
+            <para>For security reasons:</para>
+            <list type="bullet">
+            <item><para>Use ONLY test certificate for test propose, NEVER use a production certificate.</para></item>
+            <item><para>NEVER shares your PKCS#12 certificate that contains the private key.</para></item>
+            </list>
+             
+            </remarks>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.CertificatePassword">
+            <summary>
+            Gets or sets the password used to protect the given PKCS#12 certificate.
+            </summary>
+            <value>
+            The certificate password.
+            </value>
+            <remarks>
+            For security reasons, The password is encrypted in saved automation project. If the password is forgotten, in no case it can be recovered.
+            </remarks>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.Payload">
+            <summary>
+            Gets or sets the payload used in the Json Web Token
+            </summary>
+            <value>
+            An <see cref="T:System.Collections.ObjectModel.ObservableCollection`1"/> containing several <see cref="T:Hummingbird.TestFramework.Util.TokenClaim"/>s.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.Run">
+            <summary>
+            Runs this instance. Do not implement StartTime, Duration. Write information in the <see cref="P:Hummingbird.TestFramework.Automation.TestStepBase.Information" /> field, it will be shown in the log automatically.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.JwtSecurityTokenString">
+            <summary>
+            Gets or sets the JWT security token in its string format.
+            </summary>
+            <value>
+            An <see cref="T:System.String"/> value that represents JwtSecurityTokenString of the current object
+            </value>
+            <remarks>
+            <para>When this test step is used to generate security token, The generated token is saved in this property.</para>
+            <para>When this test step is used to validate security token, You should assign the token in this property.</para>
+            </remarks>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.JwtSecurityToken">
+            <summary>
+            Gets or sets the JWT security token in its object format.
+            </summary>
+            <value>
+            The JWT security token.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.GenerateToken">
+            <summary>
+            Generates the token with given parameters. 
+            </summary>
+            <returns>A <see cref="P:Hummingbird.TestFramework.Automation.JsonWebTokenTestStep.JwtSecurityToken"/> that generated with given parameter.</returns>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.PropertyPathTypes">
+            <summary>
+            Type of the path indicates how to retrieve data from a TestStep
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.PropertyPathTypes.PropertyName">
+            <summary>
+            Gets the value directly from the Property by given name, if the property is not string, the <see cref="M:System.Object.ToString"/> will be called.
+            </summary>
+            <remarks> To avoid ambiguous for numeric values, the value will be converted to international standard format regardless the current culture settings.
+            For example. The DateTime will be in ISO936 DateTime format, the decimal point will always be a point.
+            </remarks>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.PropertyPathTypes.XPath">
+            <summary>
+            This option is available only if The Property is <see cref="P:Hummingbird.TestFramework.Automation.TestStepBase.RequestText"/> or <see cref="P:Hummingbird.TestFramework.Automation.TestStepBase.ResponseText"/>, considering the value is an XML document.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.PropertyPathTypes.ObjectPath">
+            <summary>
+            This options is available only if the Property is <see cref="P:Hummingbird.TestFramework.Automation.TestStepBase.RequestObject"/> or <see cref="P:Hummingbird.TestFramework.Automation.TestStepBase.ResponseObject"/>, object path can be generated via standard ObjectEditor
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.PropertyPathTypes.JsonPath">
+            <summary>
+            This option is available only if The Property is <see cref="P:Hummingbird.TestFramework.Automation.TestStepBase.RequestText"/> or <see cref="P:Hummingbird.TestFramework.Automation.TestStepBase.ResponseText"/>, considering the value is an JSON document.
+            </summary>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.ServiceControlActions">
+            <summary>
+            Action to control the service simulation, used by <see cref="T:Hummingbird.TestFramework.Automation.StartServiceSimulationTestStep"/>
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.ServiceControlActions.Start">
+            <summary>
+            Starts the service simulation
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.ServiceControlActions.Stop">
+            <summary>
+            Stops the service simulation
+            </summary>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.SpikeTestCase">
+            <summary>
+            
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.LoadTestCase" />
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.SpikeTestCase.ExpectedSpikeLoad">
+            <summary>
+            Gets or sets the expected peak load. The peak load must greater or equals to <see cref="P:Hummingbird.TestFramework.Automation.LoadTestCase.ExpectedLoad"/>
+            </summary>
+            <value>
+            The expected peak load.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.SpikeTestCase.NumberOfSpikes">
+            <summary>
+            Gets or sets number of peak loads during the test. Performance test engine will generate this number of peak loads during the test.
+            </summary>
+            <value>
+            An <see cref="T:System.Int32"/> value that represents the number of peak loads
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.SpikeTestCase.SpikeDuration">
+            <summary>
+            Gets or sets the duration of peak load.
+            </summary>
+            <value>
+            The duration of the peak.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.SpikeTestCase.GetLoadGraph">
+            <summary>
+            Gets the expect load graph measure points. That graph can be shown as a simulation of the loads
+            </summary>
+            <returns>
+            An array of measure points that can be shown in a Cartesian Chart
+            </returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.SpikeTestCase.GetLoad(System.DateTime,System.TimeSpan)">
+            <summary>
+            Gets the number of iterations should be run at the current time.
+            </summary>
+            <param name="startTime">The Time where the load test begins. This time is used to determine in which state the current test scenario is running</param>
+            <param name="dx">The fragment of time where the current.</param>
+            <returns>
+            The number of iterations per second should be generated for the fragment of time.
+            </returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.SpikeTestCase.GetEndTime(System.DateTime)">
+            <summary>
+            Gets the end time of the test depends on the specified start time.
+            </summary>
+            <param name="startTime">The start time.</param>
+            <returns>
+            A <see cref="T:System.DateTime" /> object that represents the end of the current test
+            </returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.SpikeTestCase.CheckParameters">
+            <summary>
+            Checks the validity of test parameters.
+            </summary>
+            <returns>
+              <see langword="true" /> - If all parameters are valid, <see langword="false" /> if at least one parameter has error. <see cref="P:Hummingbird.TestFramework.Automation.AbstractTestItem.DisplayMessage" /> contains the error message.
+            </returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.SpikeTestCase.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.SpreadsheetRangeType">
+            <summary>
+            Type of the Range
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.SpreadsheetRangeType.NamedRange">
+            <summary>
+            Named Range, specifies a name that refers to the range of cells.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.SpreadsheetRangeType.Table">
+            <summary>
+            Table, specifies the name of a Table
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.SpreadsheetRangeType.Cells">
+            <summary>
+            Range, specifies the range between of two cells. for example: "A1:C3" returns all 9 cells from A1 to C3.
+            </summary>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.SqlAuthenticationMode">
+            <summary>
+            Mode of authentication to connect to a SQL Database
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.SqlAuthenticationMode.Windows">
+            <summary>
+            Windows authentication mode, with this mode Test Framework use currently user's windows identity to connect to database.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.SqlAuthenticationMode.Server">
+            <summary>
+            Server authentication mode, with this mode Test Framework provides credential (User/Password) of a local SQL Server database
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.SqlAuthenticationMode.Mixed">
+            <summary>
+            Mixed authentication mode, Test Framework authenticates user with windows identity in addition with a local SQL server account
+            </summary>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.SqlQueryTestStep">
+            <summary>
+            Runs an SQL Query. This test step is available only in professional version.
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.AbstractSqlTestStep" />
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.SqlQueryTestStep.Query">
+            <summary>
+            Gets or sets the SQL Query that will be executed.
+            </summary>
+            <value>
+            The query.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.SqlQueryTestStep.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.TestFramework.Automation.SqlQueryTestStep"/> class.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.SqlQueryTestStep.Run">
+            <summary>
+            Runs this instance.
+            </summary>
+            <returns>Nothing</returns>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.SqlResultType">
+            <summary>
+            Type of the SQL Query execution
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.SqlResultType.Nothing">
+            <summary>
+            The SQL Query returns nothing.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.SqlResultType.ScalarValue">
+            <summary>
+            The SQL Query returns a scalar value. for example the Identifier of the inserted rows or the number of deleted lines.
+            If the query returns a data table, this method returns only the first column of the first row.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.SqlResultType.Query">
+            <summary>
+            The SQL Query returns a Data table and stored in a <see cref="T:System.String"/> in CSV Format. For example the Select SQL command
+            </summary>
+            <remarks>
+            Test Framework uses your current settings of CSVSeperator from <see cref="P:Hummingbird.TestFramework.Configuration.Settings.CSVSeparator"/>, DateTime, Decimal and other numeric values are represented as the current culture/language settings.
+            </remarks>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.StartServiceSimulationTestStep">
+            <summary>
+            Test step that start's a Service simulation server such as HTTP Server or SOAP Server
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.TestStepBase" />
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.StartServiceSimulationTestStep.ServiceStrongName">
+            <summary>
+            Gets or sets the unique identifier of the service stub.
+            </summary>
+            <value>
+            The service stub identifier.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.StartServiceSimulationTestStep.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.TestFramework.Automation.StartServiceSimulationTestStep"/> class.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.StartServiceSimulationTestStep.Action">
+            <summary>
+            Gets or sets the Action to control the current Service Simulation test step
+            </summary>
+            <value>
+            <see cref="F:Hummingbird.TestFramework.Automation.ServiceControlActions.Start"/> or <see cref="F:Hummingbird.TestFramework.Automation.ServiceControlActions.Stop"/>
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.StartServiceSimulationTestStep.UseDefaultParameters">
+            <summary>
+            Gets or sets a value indicating whether use the default parameters from test profile, For example the service ports.
+            If the automation has no profile associated, then the current test profile will be used.
+            </summary>
+            <value>
+              <c>true</c> if parameters from Profile will be used; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.StartServiceSimulationTestStep.Parameters">
+            <summary>
+            Gets or sets the parameters used for the service.
+            </summary>
+            <value>
+            The parameters to be used for the test. if <see cref="P:Hummingbird.TestFramework.Automation.StartServiceSimulationTestStep.UseDefaultParameters"/> is set to False, these parameters will be used.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.StartServiceSimulationTestStep.ServiceName">
+            <summary>
+            Gets or sets the display name of the selected service stub.
+            </summary>
+            <value>
+            The display name.
+            </value>
+            <remarks>
+            When automation test is running on another machine without installed the virtualized server stub (for example 3rd party services), this name can help tester to prepare better the prerequisites.
+            </remarks>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.StartServiceSimulationTestStep.Run">
+            <summary>
+            Runs this test step to Start an service simulation
+            </summary>
+            <returns>Nothing (null object)</returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.StartServiceSimulationTestStep.RestoreParameters">
+            <summary>
+            Restores the parameters if <see cref="P:Hummingbird.TestFramework.Automation.StartServiceSimulationTestStep.UseDefaultParameters"/> is set to <see langword="true"/> after the service stopped.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.StartServiceSimulationTestStep.Dispose(System.Boolean)">
+            <summary>
+            Releases unmanaged and - optionally - managed resources.
+            </summary>
+            <param name="disposing"><c>true</c> to release both managed and unmanaged resources; <c>false</c> to release only unmanaged resources.</param>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.StartWindowsServiceTestStep">
+            <summary>
+            This test step starts a windows service on the target machine.
+            </summary>
+            <remarks>
+            This action uses Windows Management Instrument interface to control service start or stop.
+            To ensure the test framework can start or stop the windows service, the running account must have sufficient right.
+            The action can not start or stop services protected by the operating system.
+            Use this action to start or stop the application under test, do not start or stop services provided by operating system itself.
+            </remarks>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.TestStepBase" />
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.StartWindowsServiceTestStep.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.TestFramework.Automation.StartWindowsServiceTestStep"/> class.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.StartWindowsServiceTestStep.ServiceName">
+            <summary>
+            Gets or sets the name of the windows service.
+            </summary>
+            <value>
+            The name of the service.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.StartWindowsServiceTestStep.MachineName">
+            <summary>
+            Gets or sets the name of the machine.
+            </summary>
+            <value>
+            The name of the machine where to start or stop the service.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.StartWindowsServiceTestStep.Action">
+            <summary>
+            Gets or sets the action to proceed, either Start or Stop
+            </summary>
+            <value>
+            The action.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.StartWindowsServiceTestStep.Timeout">
+            <summary>
+            Gets or sets the Timeout in seconds to wait for the service to start or to stop.
+            </summary>
+            <value>
+            The timeout
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.StartWindowsServiceTestStep.UserName">
+            <summary>
+            Gets or sets the name of the user.
+            </summary>
+            <value>
+            The name of the user.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.StartWindowsServiceTestStep.Password">
+            <summary>
+            Gets or sets the password.
+            </summary>
+            <value>
+            The password.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.StartWindowsServiceTestStep.EncPassword">
+            <summary>
+            Gets or sets the enc password.
+            </summary>
+            <value>
+            The enc password.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.StartWindowsServiceTestStep.Run">
+            <summary>
+            Runs this instance.
+            </summary>
+            <exception cref="T:System.Exception">
+            Timeout reached but the service is not in Running state
+            or
+            Timeout reached but the service is not in Stopped state
+            </exception>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.StressTestCase">
+            <summary>
+            A performance test model that takes the test in 2 stages: Normal Load and Peek Load.
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.LoadTestCase" />
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.StressTestCase.ExpectedPeakLoad">
+            <summary>
+            Gets or sets the expected peak load. The peak load must greater or equals to <see cref="P:Hummingbird.TestFramework.Automation.LoadTestCase.ExpectedLoad"/>
+            </summary>
+            <value>
+            The expected peak load.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.StressTestCase.RampUpToPeakTime">
+            <summary>
+            Gets or sets the time in seconds that ramps up from expected load to peak load.
+            </summary>
+            <value>
+            The time in number of seconds that ramps up from expected load to peak load.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.StressTestCase.PeakDuration">
+            <summary>
+            Gets or sets the duration of the test under peak load.
+            </summary>
+            <value>
+            The duration of the peak.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.StressTestCase.CheckParameters">
+            <summary>
+            Checks the validity of test parameters.
+            </summary>
+            <returns>
+              <see langword="true" /> - If all parameters are valid, <see langword="false" /> if at least one parameter has error. <see cref="P:Hummingbird.TestFramework.Automation.AbstractTestItem.DisplayMessage" /> contains the error message.
+            </returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.StressTestCase.GetLoadGraph">
+            <summary>
+            Gets the expect load graph measure points. That graph can be shown as a simulation of the loads
+            </summary>
+            <returns>
+            An array of measure points that can be shown in a Cartesian Chart
+            </returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.StressTestCase.GetLoad(System.DateTime,System.TimeSpan)">
+            <summary>
+            Gets the number of iterations should be run at the current time.
+            </summary>
+            <param name="startTime">The Time where the load test begins. This time is used to determine in which state the current test scenario is running</param>
+            <param name="dx">The fragment of time where the current.</param>
+            <returns>
+            The number of iterations per second should be generated for the fragment of time.
+            </returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.StressTestCase.GetEndTime(System.DateTime)">
+            <summary>
+            Gets the end time of the test depends on the specified start time.
+            </summary>
+            <param name="startTime">The start time.</param>
+            <returns>
+            A <see cref="T:System.DateTime" /> object that represents the end of the current test
+            </returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.StressTestCase.ToString">
+            <summary>
+            Returns a <see cref="T:System.String" /> that represents this instance.
+            </summary>
+            <returns>
+            A <see cref="T:System.String" /> that represents this instance.
+            </returns>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.TableDataGeneratorTestStep">
+            <summary>
+            A test step that generates variable from a list of possible values.
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.TestStepBase" />
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.TableDataGeneratorTestStep.Run">
+            <summary>
+            Runs this instance. Do not implement StartTime, Duration. Write information in the <see cref="P:Hummingbird.TestFramework.Automation.TestStepBase.Information" /> field, it will be shown in the log automatically.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.TableDataGeneratorTestStep.DataGenerator">
+            <summary>
+            Gets or sets the data generator used for this test step.
+            </summary>
+            <value>
+            The data generator of type <see cref="T:Hummingbird.TestFramework.Automation.DataGenerator.TableDataGenerator"/>
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.TableDataGeneratorTestStep.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.TestFramework.Automation.TableDataGeneratorTestStep" /> class.
+            </summary>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.VariableLevels">
+            <summary>
+            Sets the level of the variables, it can be Global, TestSuite or TestCase
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.VariableLevels.TestCase">
+            <summary>
+            The variable is in the Test Case scope, they are not accessible when current test case is finished.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.VariableLevels.TestSuite">
+            <summary>
+            The variable is available in the Test Suite scope, they are not accessible from another Test Suite.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.VariableLevels.Project">
+            <summary>
+            The variable is available within the current automation project.
+            </summary>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.VBScriptTestStep">
+            <summary>
+            A custom C# script test step, which automation test can writes a specific test step using C# language.
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.TestStepBase" />
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.VBScriptTestStep.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.TestFramework.Automation.CSharpScriptTestStep"/> class.
+            </summary>
+        </member>
+    </members>
+</doc>

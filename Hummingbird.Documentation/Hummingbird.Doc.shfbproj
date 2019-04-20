@@ -51,6 +51,8 @@
     <DocumentationSources>
       <DocumentationSource sourceFile="..\Source\Hummingbird.TestFramework.xml" />
       <DocumentationSource sourceFile="..\Source\Hummingbird.TestFramework.dll" />
+      <DocumentationSource sourceFile="..\Source\Hummingbird.TestFramework.Automation.dll" />
+      <DocumentationSource sourceFile="..\Source\Hummingbird.TestFramework.Automation.xml" />
     </DocumentationSources>
     <VisibleItems>Attributes, InheritedMembers, InheritedFrameworkMembers, Protected, ProtectedInternalAsProtected, EditorBrowsableNever, NonBrowsable</VisibleItems>
     <ApiFilter>
