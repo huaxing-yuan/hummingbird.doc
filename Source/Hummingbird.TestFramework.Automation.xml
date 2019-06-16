@@ -344,6 +344,9 @@
             <summary>
             Generates test data for automated tests. For each iteration it generates data and fill the value to Test case variable.
             </summary>
+            <remarks>
+            All data generators should be used in repeatable test cases such as <see cref="T:Hummingbird.TestFramework.Automation.LoadTestCase"/> or <see cref="T:Hummingbird.TestFramework.Automation.DataDrivenTestCase"/>.
+            </remarks>
         </member>
         <member name="P:Hummingbird.TestFramework.Automation.DataGenerator.AbstractDataGenerator.Name">
             <summary>
@@ -371,6 +374,185 @@
             Generates data at the current cursor and move the cursor to next position. or generates data at random position when <see cref="P:Hummingbird.TestFramework.Automation.DataGenerator.AbstractDataGenerator.IsRandom"/> is set to <see langword="true"/>
             </summary>
             <returns>An collection of variable and its values.</returns>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.DataGenerator.AbstractDataRange">
+            <summary>
+            The abstract class of all DataRanges
+            </summary>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.DataGenerator.AbstractDataRange.MinValueInclusive">
+            <summary>
+            Gets or sets a value indicating whether the minimum value is inclusive.
+            </summary>
+            <value>
+              <c>true</c> if the minimum value is inclusive; otherwise, <c>false</c>.
+            </value>
+            
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.DataGenerator.AbstractDataRange.MaxValueInclusive">
+            <summary>
+            Gets or sets a value indicating whether the maximum value is inclusive.
+            </summary>
+            <value>
+              <c>true</c> if maximum value inclusive; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.DataGenerator.AbstractDataRange.Generate(System.Random)">
+            <summary>
+            Generates this instance.
+            </summary>
+            <param name="random"><see cref="T:System.Random"/> object used to generate random values.</param>
+            <returns>
+            An object containing generated random data with given parameters.
+            </returns>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.DataGenerator.DateTimeDataRange">
+            <summary>
+            Defines a range that a DateTime type of value will be generated randomly.
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.DataGenerator.AbstractDataRange" />
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.DataGenerator.DateTimeDataRange.MinValue">
+            <summary>
+            Gets or sets the minimum value.
+            </summary>
+            <value>
+            The minimum value.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.DataGenerator.DateTimeDataRange.MaxValue">
+            <summary>
+            Gets or sets the maximum value.
+            </summary>
+            <value>
+            The maximum value.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.DataGenerator.DateTimeDataRange.Generate(System.Random)">
+            <summary>
+            Generates this instance.
+            </summary>
+            <param name="random"><see cref="T:System.Random"/> object used to generate random values.</param>
+            <returns>
+            An object containing generated random data with given parameters.
+            </returns>
+            <exception cref="T:System.ArithmeticException">The MinValue can bot be larger than MaxValue</exception>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.DataGenerator.DoubleDataRange">
+            <summary>
+            Defines a range that a <see cref="T:System.Double"/> type of value will be generated randomly.
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.DataGenerator.AbstractDataRange" />
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.DataGenerator.DoubleDataRange.MinValue">
+            <summary>
+            Gets or sets the minimum value.
+            </summary>
+            <value>
+            The minimum value.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.DataGenerator.DoubleDataRange.MaxValue">
+            <summary>
+            Gets or sets the maximum value.
+            </summary>
+            <value>
+            The maximum value.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.DataGenerator.DoubleDataRange.Generate(System.Random)">
+            <summary>
+            Generates this instance.
+            </summary>
+            <param name="random"><see cref="T:System.Random" /> object used to generate random values.</param>
+            <returns>
+            An object containing generated random data with given parameters.
+            </returns>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.DataGenerator.IntegerDataRange">
+            <summary>
+            Defines a range that a <see cref="T:System.Int32"/> type of value will be generated randomly.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.DataGenerator.IntegerDataRange.MinValue">
+            <summary>
+            Gets or sets the minimum value.
+            </summary>
+            <value>
+            The minimum value.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.DataGenerator.IntegerDataRange.MaxValue">
+            <summary>
+            Gets or sets the maximum value.
+            </summary>
+            <value>
+            The maximum value.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.DataGenerator.IntegerDataRange.Generate(System.Random)">
+            <summary>
+            Generates this instance.
+            </summary>
+            <param name="random"><see cref="T:System.Random" /> object used to generate random values.</param>
+            <returns>
+            An object containing generated random data with given parameters.
+            </returns>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.DataGenerator.RandomDataGenerator">
+            <summary>
+            Generates random data from given range.
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.DataGenerator.AbstractDataGenerator" />
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.DataGenerator.RandomDataGenerator.Generate(Hummingbird.TestFramework.Automation.TestCase)">
+            <summary>
+            Generates data at the current cursor and move the cursor to next position. or generates data at random position when <see cref="P:Hummingbird.TestFramework.Automation.DataGenerator.AbstractDataGenerator.IsRandom" /> is set to <see langword="true" />
+            </summary>
+            <param name="testCase"></param>
+            <returns>
+            An collection of variable and its values.
+            </returns>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.DataGenerator.RandomDataGenerator.DataRules">
+            <summary>
+            Gets or sets a list of data rules that is used to generate values.
+            </summary>
+            <value>
+            The data rules.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.DataGenerator.RandomDataGenerator.Reset">
+            <summary>
+            Resets the cursor to 0.
+            </summary>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.DataGenerator.RandomDataRule">
+            <summary>
+            A rule that generates random values to an assigned variable name.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.DataGenerator.RandomDataRule.VariableName">
+            <summary>
+            Gets or sets the name of the variable.
+            </summary>
+            <value>
+            The name of the variable.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.DataGenerator.RandomDataRule.DataRange">
+            <summary>
+            Gets or sets the defined data range in one of the sub classes of <see cref="T:Hummingbird.TestFramework.Automation.DataGenerator.AbstractDataRange"/>
+            </summary>
+            <value>
+            The data range.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.DataGenerator.RandomDataRule.Generate">
+            <summary>
+            Generates the value, this function is called by DataGenerator
+            </summary>
+            <returns></returns>
         </member>
         <member name="T:Hummingbird.TestFramework.Automation.DataGenerator.TableDataGenerator">
             <summary>
@@ -426,7 +608,7 @@
         </member>
         <member name="P:Hummingbird.TestFramework.Automation.DataGenerator.VariableDataGenerator.Variables">
             <summary>
-            Gets or sets a list of variables that this data generator will generator. The name of the variable will be replaced by one of the value, the Value of the variable represents a list of possible values.
+            Gets or sets a list of variables that this data generator will generate. The name of the variable will be replaced by one of the value, the Value of the variable represents a list of possible values.
             </summary>
             <value>
             The variables.

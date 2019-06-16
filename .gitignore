@@ -2,7 +2,8 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/.vs/Hummingbird.Doc/v15
-/Hummingbird.Documentation/.vs/Hummingbird.Doc/v15
-/Hummingbird.Documentation/bin/PRO_DEBUG
-/Hummingbird.Documentation/obj/Debug
+.vs/
+Hummingbird.Documentation/.vs/Hummingbird.Doc/v15
+Hummingbird.Documentation/bin/PRO_DEBUG
+Hummingbird.Documentation/obj/Debug
+docs/

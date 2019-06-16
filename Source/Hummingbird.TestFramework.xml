@@ -779,7 +779,7 @@
             <summary>
             <para>Conditional test step evaluate its conditions and according to the result, runs PassedTestStep if the condition meet and runs FailedTestStep if the condition does not meet</para>
             <para>Either PassedTestStep or FailedTestStep can be NULL, in this case Automation engine will simply ignores the TestStep.</para>
-            <para>When the condition cannot be evaluated, IsExecuted </para>
+            <para>When the condition cannot be evaluated, IsExecuted.</para>
             </summary>
         </member>
         <member name="P:Hummingbird.TestFramework.Automation.ConditionalTestStep.Condition">
@@ -1753,12 +1753,15 @@
             Evaluates the performance thresholds.
             </summary>
         </member>
-        <member name="M:Hummingbird.TestFramework.Automation.LoadTestCase.EvaluateThreshold(Hummingbird.TestFramework.Automation.PerformanceThreshold)">
+        <member name="M:Hummingbird.TestFramework.Automation.LoadTestCase.EvaluateThreshold(Hummingbird.TestFramework.Automation.PerformanceThreshold,System.Double@)">
             <summary>
             Evaluates the performance threshold from the given definition.
             </summary>
             <param name="g">The performance threshold to be evaluated.</param>
-            <returns>True indicate if the performance threshold is passed, otherwise, False</returns>
+            <param name="calculatedValue">The calculated value.</param>
+            <returns>
+            True indicate if the performance threshold is passed, otherwise, False
+            </returns>
         </member>
         <member name="M:Hummingbird.TestFramework.Automation.LoadTestCase.GetIterationsFinished">
             <summary>
@@ -3399,6 +3402,21 @@
         <member name="M:Hummingbird.TestFramework.Automation.SendRequestTestStep.Run">
             <inheritdoc/>
         </member>
+        <member name="M:Hummingbird.TestFramework.Automation.SendRequestTestStep.BeforeRequestSending(System.Object)">
+            <summary>
+            Run some actions before the request can be sent: tokenization, etc
+            </summary>
+            <param name="request">The request.</param>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.SendRequestTestStep.ProcessingRules">
+            <summary>
+            Gets or sets the rules used to process requests and responses.
+            </summary>
+            <value>
+            A list of <see cref="T:Hummingbird.TestFramework.Automation.ProcessingRules.AbstractRule"/>s: whether <see cref="T:Hummingbird.TestFramework.Automation.ProcessingRules.MappingRule"/>s or <see cref="T:Hummingbird.TestFramework.Automation.ProcessingRules.VerificationRule"/>s.
+            </value>
+        </member>
         <member name="M:Hummingbird.TestFramework.Automation.SendRequestTestStep.Checkpoint(Hummingbird.TestFramework.Messaging.Message)">
             <inheritdoc/>
         </member>
@@ -3832,6 +3850,145 @@
             <param name="outObj">The object where the value should be applied.</param>
             <param name="outPath">The path of outObj to set the value</param>
         </member>
+        <member name="T:Hummingbird.TestFramework.Automation.ProcessingRules.AbstractRule">
+            <summary>
+            A rule that represents an action: either to map values to the request by given object path and value, or get value from response by given object path and expected value.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.ProcessingRules.AbstractRule.Name">
+            <summary>
+            Gets or sets the name of this ValueMappingRule
+            </summary>
+            <value>
+            The name of the rule. name will be shown to users.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.ProcessingRules.AbstractRule.ObjectPath">
+            <summary>
+            Gets or sets the object path how value will be mapped or retrieved.
+            </summary>
+            <value>
+            The object path.
+            </value>
+        </member>
+        <member name="E:Hummingbird.TestFramework.Automation.ProcessingRules.AbstractRule.PropertyChanged">
+            <summary>
+            Occurs when a property value changes.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.ProcessingRules.AbstractRule.Execute(System.Object,Hummingbird.TestFramework.Automation.AbstractTestItem)">
+            <summary>
+            Executes the rule on specified target.
+            </summary>
+            <param name="target">The object of which the rule will be executed.</param>
+            <param name="testItem">The <see cref="T:Hummingbird.TestFramework.Automation.AbstractTestItem"/> represents an test automation item.</param>
+            <returns>
+            a <see cref="T:System.Boolean" /> value represents if the execution is passed.
+            </returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.ProcessingRules.AbstractRule.Execute(Hummingbird.TestFramework.Messaging.Message,Hummingbird.TestFramework.Automation.AbstractTestItem)">
+            <summary>
+            Executes the rule on specified target.
+            </summary>
+            <param name="target">The <see cref="T:Hummingbird.TestFramework.Messaging.Message" /> object of which the rule will be executed</param>
+            <param name="testItem">The <see cref="T:Hummingbird.TestFramework.Automation.AbstractTestItem"/> represents an test automation item.</param>
+            <returns>
+            a <see cref="T:System.Boolean" /> value represents if the execution is passed.
+            </returns>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.ProcessingRules.AbstractRule.Information">
+            <summary>
+            Gets or sets the information about rule execution. information will not be persisted.
+            </summary>
+            <value>
+            The information may containing useful debug or error messages.
+            </value>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.ProcessingRules.MappingRule">
+            <summary>
+            <see cref="T:Hummingbird.TestFramework.Automation.ProcessingRules.MappingRule"/> represents a tokenization rule that maps a dynamic value into a Request before sending to the application under test.
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.ProcessingRules.AbstractRule" />
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.ProcessingRules.MappingRule.Value">
+            <summary>
+            Gets or sets the value. to represent a null value, use "NULL"
+            </summary>
+            <value>
+            The value.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.ProcessingRules.MappingRule.Execute(System.Object,Hummingbird.TestFramework.Automation.AbstractTestItem)">
+            <summary>
+            Executes the rule on specified target.
+            </summary>
+            <param name="target">The object of which the rule will be executed.</param>
+            <param name="testItem">The <see cref="T:Hummingbird.TestFramework.Automation.AbstractTestItem"/> represents an test automation item. If passed, <see cref="P:Hummingbird.TestFramework.Automation.ProcessingRules.MappingRule.Value"/> itself can contain variables.</param>
+            <returns>
+            a <see cref="T:System.Boolean" /> value represents if the execution is passed.
+            </returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.ProcessingRules.MappingRule.Execute(Hummingbird.TestFramework.Messaging.Message,Hummingbird.TestFramework.Automation.AbstractTestItem)">
+            <summary>
+            Executes the rule on specified target. This function works on <see cref="P:Hummingbird.TestFramework.Messaging.Message.RequestObject" />.
+            </summary>
+            <param name="target">The <see cref="T:Hummingbird.TestFramework.Messaging.Message" /> object of which the rule will be executed</param>
+            <param name="testItem">The <see cref="T:Hummingbird.TestFramework.Automation.AbstractTestItem"/> represents an test automation item. If passed, <see cref="P:Hummingbird.TestFramework.Automation.ProcessingRules.MappingRule.Value"/> itself can contain variables.</param>
+            <returns>
+            a <see cref="T:System.Boolean" /> value represents if the execution is passed.
+            </returns>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.ProcessingRules.VerificationRule">
+            <summary>
+            A rule that retrieves value from an object by <see cref="P:Hummingbird.TestFramework.Automation.ProcessingRules.AbstractRule.ObjectPath" /> and compare the value with <see cref="P:Hummingbird.TestFramework.Automation.ProcessingRules.VerificationRule.ExpectedValue" />
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.ProcessingRules.AbstractRule" />
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.ProcessingRules.VerificationRule.ExpectedValue">
+            <summary>
+            Gets or sets the expected value.
+            </summary>
+            <value>
+            The expected value.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.ProcessingRules.VerificationRule.CompareMethod">
+            <summary>
+            Gets or sets the how the expected value will be compared. The default method is EqualsTo
+            </summary>
+            <value>
+            The compare method.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.ProcessingRules.VerificationRule.IsCaseSensitive">
+            <summary>
+            Gets or sets a value indicating whether the comparison is case sensitive.
+            </summary>
+            <value>
+              <c>true</c> if the comparison is case sensitive; otherwise, <c>false</c>. The default value is false.
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.ProcessingRules.VerificationRule.Execute(System.Object,Hummingbird.TestFramework.Automation.AbstractTestItem)">
+            <summary>
+            Executes the rule on specified target. That verifies if the evaluated value is expected.
+            </summary>
+            <param name="target">The object of which the rule will be executed.</param>
+            <param name="testItem">The <see cref="T:Hummingbird.TestFramework.Automation.AbstractTestItem" /> represents an test automation item.</param>
+            <returns>
+            a <see cref="T:System.Boolean" /> value represents if the execution is passed.
+            </returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.ProcessingRules.VerificationRule.Execute(Hummingbird.TestFramework.Messaging.Message,Hummingbird.TestFramework.Automation.AbstractTestItem)">
+            <summary>
+            Executes the rule on specified target.
+            </summary>
+            <param name="target">The <see cref="T:Hummingbird.TestFramework.Messaging.Message" /> object of which the rule will be executed</param>
+            <param name="testItem">The <see cref="T:Hummingbird.TestFramework.Automation.AbstractTestItem" /> represents an test automation item.</param>
+            <returns>
+            a <see cref="T:System.Boolean" /> value represents if the execution is passed.
+            </returns>
+            <exception cref="T:System.NotImplementedException"></exception>
+        </member>
         <member name="T:Hummingbird.TestFramework.Automation.TestStatus">
             <summary>
             Representing the status of a Test, Test Step or a Test Suite
@@ -4246,10 +4403,10 @@
             This class provides methods to generate client and/or server proxies to test your 
             </summary>
         </member>
-        <member name="M:Hummingbird.TestFramework.CodeGenerator.WsdlServiceAnalyzer.ImportMetadataSection(System.Collections.Generic.List{System.String},System.ServiceModel.Description.MetadataSet,System.String)">
+        <member name="M:Hummingbird.TestFramework.CodeGenerator.WsdlServiceAnalyzer.ImportMetadataSection(System.Collections.Generic.List{System.String},System.ServiceModel.Description.MetadataSet,System.String,System.Collections.Generic.List{Hummingbird.TestFramework.LogMessage})">
             <summary>
             Import MetadataSection object into a MetadataSet.
-            This function will analyse WSDL and XSD files to include other WSDL or XML Schemas refered in the original Web Service Definition. 
+            This function will analyze WSDL and XSD files to include other WSDL or XML Schemas refereed in the original Web Service Definition. 
             To ensure the MetadataSet contains all set of metadata files (WSDL, XSD)
             </summary>
             <param name="includedFiles">A list of files already included, to avoid importing files already imported</param>
@@ -5974,7 +6131,7 @@
             </summary>
             <param name="this">String object</param>
             <param name="pattern">pattern to be found in the string object</param>
-            <param name="ignordCase">False, if the search is case sensitive, or True if the search is case insensitive</param>
+            <param name="ignoreCase">False, if the search is case sensitive, or True if the search is case insensitive</param>
             <returns>True if the pattern is found in the string, False if the pattern is not found.</returns>
         </member>
         <member name="M:Hummingbird.TestFramework.ExtensionMethods.Remove``1(System.Collections.ObjectModel.ObservableCollection{``0},System.Func{``0,System.Boolean})">
@@ -6078,6 +6235,27 @@
             <returns>
               <c>true</c> if the test item is professional only otherwise, <c>false</c>.
             </returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.ExtensionMethods.ToXmlString(System.Object)">
+            <summary>
+            Converts any Object to string representation in XML format.
+            </summary>
+            <param name="o">The object to be converted to XML.</param>
+            <returns>An XML document represented as String</returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.ExtensionMethods.ToStringOrXml(System.Object)">
+            <summary>
+            Converts any Object to string representation in String or XML format.
+            </summary>
+            <param name="o">The object to be converted to XML.</param>
+            <returns>If the object is simple types (value, string, enumeration) the string representation of the object. For complex object types :An XML document represented as String</returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.ExtensionMethods.ToArrayString(System.Collections.IEnumerable)">
+            <summary>
+            Converts a Array to the string, separated by return.
+            </summary>
+            <param name="a">The Array containing values</param>
+            <returns>a <see cref="T:System.String"/> contains all values in the given Array separated by return.</returns>
         </member>
         <member name="T:Hummingbird.TestFramework.ExtensionProject.ExtensionNode">
             <summary>
@@ -7729,6 +7907,22 @@
             <summary>
             Text representation of the request message. This message is often serialized in XML, JSON or Text from RequestObject
             </summary>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Messaging.Message.RequestHttpHeaders">
+            <summary>
+            Gets or sets the HTTP headers used in the Request
+            </summary>
+            <value>
+            The request HTTP headers.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Messaging.Message.ResponseHttpHeaders">
+            <summary>
+            Gets or sets the response HTTP headers.
+            </summary>
+            <value>
+            The response HTTP headers.
+            </value>
         </member>
         <member name="P:Hummingbird.TestFramework.Messaging.Message.ResponseText">
             <summary>
@@ -10712,6 +10906,30 @@
             Claim is decimal value (float point)
             </summary>
         </member>
+        <member name="T:Hummingbird.TestFramework.Util.FunctionLibrary">
+            <summary>
+            Function Libaray that is used to replace tokens everywhere using function evaluations.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.FunctionLibrary.GetDateTime(System.String)">
+            <summary>
+            Gets the Current Date Time with the given format.
+            </summary>
+            <param name="format">The custom date time format that will be used. <a href="https://docs.microsoft.com/en-us/dotnet/standard/base-types/custom-date-and-time-format-strings?view=netframework-4.8">See here for more information.</a> </param>
+            <returns>Current Date-Time with given format.</returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.FunctionLibrary.GetDate">
+            <summary>
+            Gets the current Date in ISO 8601 format. Example: 2019-12-31
+            </summary>
+            <returns>ISO 8601 format date representing the current date</returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.FunctionLibrary.GetGuid(System.String)">
+            <summary>
+            Gets a random unique identifier, in given format
+            </summary>
+            <returns></returns>
+        </member>
         <member name="M:Hummingbird.TestFramework.Util.GenericHttpRequestUtil.GetObject(Hummingbird.TestFramework.Services.GenericHttpResponse,System.String,System.Type,Hummingbird.TestFramework.Services.AbstractMetadata,Hummingbird.TestFramework.Serialization.AbstractSerializer,System.Collections.Generic.List{Hummingbird.TestFramework.Serialization.SerializationException})">
             <summary>
             Gets the representative object from a GenericHttpResponse object
@@ -11134,6 +11352,13 @@
             Writes the an message to the console, usually used by command line tool
             </summary>
             <param name="message">The message.</param>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Utilities.EscapeString(System.String)">
+            <summary>
+            Escapes the string which contains \r, \n or \t
+            </summary>
+            <param name="original">The original.</param>
+            <returns></returns>
         </member>
         <member name="M:Hummingbird.TestFramework.Utilities.WriteError(System.String,System.Boolean)">
             <summary>
