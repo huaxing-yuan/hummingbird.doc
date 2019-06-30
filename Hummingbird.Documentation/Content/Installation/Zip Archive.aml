@@ -10,9 +10,7 @@
       <content>
 
         <para>
-          Hummingbird App does not register anything on your operation
-          system. You could download the latest version of the Zip archive, un-zip them
-          to your favorite folder, then launch Hummingbird.exe directly.
+          Hummingbird is a clean software that can be used without installation. We provide also the latest ZIP archive to download. All you need to unzip it after download to a folder, then launch Hummingbird.exe directly.
         </para>
 
         <para>
@@ -24,6 +22,37 @@
       </content>
     </section>
 
+    <section address="unblock">
+      <title>Using in an enterprise environment</title>
+      <content>
+        <para>
+          In some enterprise environments, downloaded ZIP from unknown location is automatically blocked. You will need to unblock the archive before executables in the archive can be extracted.
+        </para>
+        <para>
+          To unblock the archive, Please perform the following actions:
+        </para>
+        <para>
+          <mediaLink>
+            <image xlink:href="unblock" />
+          </mediaLink>
+        </para>
+        <list class="bullet">
+          <listItem>
+            <para>Right-click on Hummingbird Zip archive, and select “Properties”</para>
+          </listItem>
+          <listItem>
+            <para>
+              Check “Unblock” as shown in the image above
+            </para>
+          </listItem>
+          <listItem>
+            <para>
+              Click “OK” to confirm
+            </para>
+          </listItem>
+        </list>
+      </content>
+    </section>
     <section address="_Toc515307887">
       <!--h3-->
       <title>Updating and Upgrading</title>
@@ -31,8 +60,7 @@
         <para>
           When you want to update or upgrade Hummingbird app to latest
           version, you can download the latest version of Zip archive and un-zip in the
-          same location as before, or to a different location if you want to run them
-          side by side.
+          same location as before, or to a different location if side-by-side execution is necessary.
         </para>
       </content>
     </section>

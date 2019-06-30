@@ -504,6 +504,10 @@
       <ImageId>compare</ImageId>
       <AlternateText>compare</AlternateText>
     </Image>
+    <Image Include="media\datadriventest1.png">
+      <ImageId>datadriventest1</ImageId>
+      <AlternateText>datadriventest 1</AlternateText>
+    </Image>
     <Image Include="media\editor_search.gif">
       <ImageId>editor_search</ImageId>
       <AlternateText>editor search</AlternateText>
@@ -601,6 +605,10 @@
     <Image Include="media\multi_reply.png">
       <ImageId>multi_reply</ImageId>
       <AlternateText>multi reply</AlternateText>
+    </Image>
+    <Image Include="media\perf_execution.gif">
+      <ImageId>perf_execution</ImageId>
+      <AlternateText>perf execution</AlternateText>
     </Image>
     <Image Include="media\profile_management.png">
       <ImageId>profile_management</ImageId>
@@ -773,6 +781,10 @@
       <ImageId>uac</ImageId>
       <AlternateText>uac</AlternateText>
       <CopyToMedia>True</CopyToMedia>
+    </Image>
+    <Image Include="media\unblock.png">
+      <ImageId>unblock</ImageId>
+      <AlternateText>unblock</AlternateText>
     </Image>
     <Image Include="media\view_request_object.png">
       <ImageId>view_request_object</ImageId>
