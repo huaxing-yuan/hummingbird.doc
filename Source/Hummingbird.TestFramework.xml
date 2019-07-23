@@ -443,6 +443,32 @@
             A <see cref="T:System.String" /> that represents this instance.
             </returns>
         </member>
+        <member name="T:Hummingbird.TestFramework.Automation.Assertions.MessageCompareAssertion">
+            <summary>
+            Checks if the whole Request or Response is expected.
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.Assertions.AbstractAssertion" />
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.Assertions.MessageCompareAssertion.GenerateName">
+            <summary>
+            Generates the name of the Assertion.
+            </summary>
+            <returns>
+            The name of the assertion
+            </returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.Assertions.MessageCompareAssertion.InternalAssert(Hummingbird.TestFramework.Automation.TestStepBase)">
+            <summary>
+            Asserts the specified test step.
+            </summary>
+            <param name="RelatedTestStep">The related test step.</param>
+            <returns>
+            Boolean indicates if the assertion is passed. <see langword="true" /> if the assertion is passed, <c>False</c> if the assertion is failed.
+            </returns>
+            <remarks>
+            If the assertion is failed, more detailed information may be provided in <see cref="P:Hummingbird.TestFramework.Automation.Assertions.AbstractAssertion.Information" /> Property
+            </remarks>
+        </member>
         <member name="T:Hummingbird.TestFramework.Automation.Assertions.NotContainsAssertion">
             <summary>
             Checks if a text pattern does not occur in the Request or Response.
@@ -907,6 +933,22 @@
             The Data Driven Test case will generate n test cases and their results in the report.
             </remarks>
         </member>
+        <member name="P:Hummingbird.TestFramework.Automation.DataDrivenTestCase.LogLevel">
+            <summary>
+            Level of log details for the data driven test case.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.DataDrivenTestCase.ParallelThreads">
+            <summary>
+            Gets or sets the parallel threads can be used to run this data driven test case
+            </summary>
+            <value>
+            The number of parallel threads that can be used to run the data driven test case.
+            </value>
+            <remarks>
+            In community edition, the maximum of parallel thread is limited to 2, In professional edition, the limit is 8
+            </remarks>
+        </member>
         <member name="P:Hummingbird.TestFramework.Automation.DataDrivenTestCase.Progress">
             <summary>
             Gets or sets the progress of the current Data Driven test case.
@@ -941,6 +983,22 @@
             </summary>
             <value>
             The test instance.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.DataDrivenTestCase.ServiceNames">
+            <summary>
+            Gets or sets the name of services used during the test.
+            </summary>
+            <value>
+            The service names.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.DataDrivenTestCase.ServiceResponseTime">
+            <summary>
+            Gets or sets the service response time.
+            </summary>
+            <value>
+            The service response time.
             </value>
         </member>
         <member name="M:Hummingbird.TestFramework.Automation.DataDrivenTestCase.Run(System.Int64,Hummingbird.TestFramework.Configuration.Profile)">
@@ -1636,7 +1694,7 @@
             Gets or sets the total iterations have been launched during the test at the moment X
             </summary>
             <value>
-            The total iterations launched, this value will be increased during the time;
+            The total iterations launched, this value will increase during the time;
             </value>
         </member>
         <member name="P:Hummingbird.TestFramework.Automation.LoadTestCase._iterationsExpected">
@@ -1771,20 +1829,28 @@
               <see cref="T:System.Int32" /> value represents the total number of iterations finished.
             </returns>
         </member>
-        <member name="M:Hummingbird.TestFramework.Automation.LoadTestCase.GetIterationsFailed">
-            <summary>
-            Gets number of total Iterations failed.
-            </summary>
-            <returns>
-              <see cref="T:System.Int32" /> value represents the total number of iterations failed.
-            </returns>
-        </member>
         <member name="M:Hummingbird.TestFramework.Automation.LoadTestCase.GetActualIterationPassrate">
             <summary>
             Gets the average pass rate of Iterations.
             </summary>
             <returns>
             A <see cref="T:System.Double" /> value represents the average pass-rate of executed iterations.
+            </returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.LoadTestCase.GetIterationsPassed">
+            <summary>
+            Gets number of total Iterations passed.
+            </summary>
+            <returns>
+              <see cref="T:System.Int32" /> value represents the total number of iterations passed.
+            </returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.LoadTestCase.GetIterationsFailed">
+            <summary>
+            Gets number of total Iterations failed.
+            </summary>
+            <returns>
+              <see cref="T:System.Int32" /> value represents the total number of iterations failed.
             </returns>
         </member>
         <member name="M:Hummingbird.TestFramework.Automation.LoadTestCase.GetCurrentExpectedLoad">
@@ -1937,17 +2003,17 @@
         </member>
         <member name="T:Hummingbird.TestFramework.Automation.LoadTestLogLevels">
             <summary>
-            The enumeration value indicates the level of log details in a performance test report.
+            The enumeration value indicates the level of log details in a performance test or data driven test report.
             </summary>
         </member>
         <member name="F:Hummingbird.TestFramework.Automation.LoadTestLogLevels.ErrorMessages">
             <summary>
-            Error messages should be logged
+            Error messages should be logged.
             </summary>
         </member>
         <member name="F:Hummingbird.TestFramework.Automation.LoadTestLogLevels.AllMessages">
             <summary>
-            All messages should be logged, including successful and failed transactions.
+            All messages should be logged, including successful and failed transactions. Log all messages will make huge memory usage if there are many test iterations.
             </summary>
         </member>
         <member name="F:Hummingbird.TestFramework.Automation.LoadTestLogLevels.None">
@@ -2237,6 +2303,64 @@
             <summary>
             Occurs when a property value changes.
             </summary>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.Report.DataDrivenTestReportItem">
+            <summary>
+            An report item for <see cref="T:Hummingbird.TestFramework.Automation.DataDrivenTestCase"/> case.
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.Report.ReportItem" />
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.Report.DataDrivenTestReportItem.ServiceNames">
+            <summary>
+            Gets or sets the service Id to Name mapping
+            </summary>
+            <value>
+            An dictionary contain Key as ServiceMetadataId and Value as the name.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.Report.DataDrivenTestReportItem.TotalIterations">
+            <summary>Gets or sets the total iterations executed for the load test.</summary>
+            <value>The number of total iterations executed, ignored iterations are not counted.</value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.Report.DataDrivenTestReportItem.PassedIterations">
+            <summary>
+            Gets or sets the passed iterations.
+            </summary>
+            <value>
+            The passed iterations.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.Report.DataDrivenTestReportItem.FailedIterations">
+            <summary>
+            Gets or sets the failed iterations.
+            </summary>
+            <value>
+            The failed iterations.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.Report.DataDrivenTestReportItem.IgnoredIterations">
+            <summary>
+            Gets or sets the ignored iterations due to performance throttling.
+            </summary>
+            <value>
+            The ignored iterations.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.Report.DataDrivenTestReportItem.ServicePassrate">
+            <summary>
+            Gets or sets the pass rate operation by operation during the last execution. Only request operations are measured.
+            </summary>
+            <value>
+            The service pass rate operation by operation
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.Report.DataDrivenTestReportItem.ServiceResponseTime">
+            <summary>
+            Gets or sets the service response time.
+            </summary>
+            <value>
+            The service response time.
+            </value>
         </member>
         <member name="T:Hummingbird.TestFramework.Automation.Report.AutomatedTestReport">
             <summary>
@@ -2664,30 +2788,6 @@
             </summary>
             <value>
             The iteration cycle time.
-            </value>
-        </member>
-        <member name="P:Hummingbird.TestFramework.Automation.Report.LoadTestReportItem.ServiceNames">
-            <summary>
-            Gets or sets the service Id to Name mapping
-            </summary>
-            <value>
-            An dictionary contain Key as ServiceMetadataId and Value as the name.
-            </value>
-        </member>
-        <member name="P:Hummingbird.TestFramework.Automation.Report.LoadTestReportItem.ServicePassrate">
-            <summary>
-            Gets or sets the pass rate operation by operation during the last execution. Only request operations are measured.
-            </summary>
-            <value>
-            The service pass rate operation by operation
-            </value>
-        </member>
-        <member name="P:Hummingbird.TestFramework.Automation.Report.LoadTestReportItem.ServiceResponseTime">
-            <summary>
-            Gets or sets the service response time.
-            </summary>
-            <value>
-            The service response time.
             </value>
         </member>
         <member name="P:Hummingbird.TestFramework.Automation.Report.LoadTestReportItem.RawMessages">
@@ -3407,7 +3507,6 @@
             Run some actions before the request can be sent: tokenization, etc
             </summary>
             <param name="request">The request.</param>
-            <exception cref="T:System.NotImplementedException"></exception>
         </member>
         <member name="P:Hummingbird.TestFramework.Automation.SendRequestTestStep.ProcessingRules">
             <summary>
@@ -3788,6 +3887,16 @@
         <member name="F:Hummingbird.TestFramework.Automation.ThresholdTypes.IterationMaxCycleTime">
             <summary>
             The maximum cycle time in number of seconds for the execution of an iteration (all test steps).
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.ThresholdTypes.IgnoredIterations">
+            <summary>
+            The maximum number of iteration ignored due to performance throttling.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Automation.ThresholdTypes.IgnoredIterationsPercentage">
+            <summary>
+            The maximum number in percentage of iteration ignored due to performance throttling. Accepted a double value between 0 to 100.
             </summary>
         </member>
         <member name="T:Hummingbird.TestFramework.Automation.UpdateSimulationDataTestStep">
@@ -5445,6 +5554,33 @@
             <value>
             The maximum number in bytes of the console output can be displayed in automated test runner.
             The value must greater than 1024.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Configuration.Settings.MaxConcurrentUser">
+            <summary>
+            Gets or sets the maximum concurrent user that can be simulated during the performance test. The value is limited to 100 for community editon, and 1000 for professional edition.
+            </summary>
+            <value>
+            An integer value represents the maximum number of concurrent user which can be simulated by the performance test engine.
+            </value>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Configuration.Settings.MaxHttpConnections">
+            <summary>
+            Gets or sets the maximum HTTP connection can be made simultaneously. This setting affects to all protocols using HTTP.
+            </summary>
+            <value>
+            The maximum HTTP connections.
+            </value>
+            <remarks>
+            For community edition, the limit is 100. For professional edition, the limit is 2000
+            </remarks>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Configuration.Settings.MaxMessageSize">
+            <summary>
+            Gets or sets the maximum size of the message can be received. the default value is 1 megabytes. For performance consideration, messages larger that this limit will be abandoned.
+            </summary>
+            <value>
+            The maximum size of the message.
             </value>
         </member>
         <member name="T:Hummingbird.TestFramework.Configuration.UsageStatistic">
@@ -10906,6 +11042,402 @@
             Claim is decimal value (float point)
             </summary>
         </member>
+        <member name="T:Hummingbird.TestFramework.Util.Operation">
+            -
+            The data structure representing a diff is a List of Diff objects:
+            {Diff(Operation.DELETE, "Hello"), Diff(Operation.INSERT, "Goodbye"),
+             Diff(Operation.EQUAL, " world.")}
+            which means: delete "Hello", add "Goodbye" and keep " world."
+        </member>
+        <member name="T:Hummingbird.TestFramework.Util.Diff">
+            Class representing one diff operation.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.Diff.#ctor(Hummingbird.TestFramework.Util.Operation,System.String)">
+            Constructor.  Initializes the diff with the provided values.
+            @param operation One of INSERT, DELETE or EQUAL.
+            @param text The text being applied.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.Diff.ToString">
+            Display a human-readable version of this Diff.
+            @return text version.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.Diff.Equals(System.Object)">
+            Is this Diff equivalent to another Diff?
+            @param d Another Diff to compare against.
+            @return true or false.
+        </member>
+        <member name="T:Hummingbird.TestFramework.Util.Patch">
+            Class representing one patch operation.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.Patch.ToString">
+            Emulate GNU diff's format.
+            Header: @@ -382,8 +481,9 @@
+            Indices are printed as 1-based, not 0-based.
+            @return The GNU diff string.
+        </member>
+        <member name="T:Hummingbird.TestFramework.Util.DiffMatchPatch">
+            <summary>
+            Class containing the diff, match and patch methods.
+            Also Contains the behaviour settings.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Util.DiffMatchPatch.Diff_Timeout">
+            <summary>
+            Number of seconds to map a diff before giving up (0 for infinity).
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Util.DiffMatchPatch.Diff_EditCost">
+            <summary>
+            TCost of an empty edit operation in terms of edit characters.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Util.DiffMatchPatch.Match_Threshold">
+            <summary>
+            At what point is no match declared (0.0 = perfection, 1.0 = very loose).
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Util.DiffMatchPatch.Match_Distance">
+            <summary>
+            How far to search for a match (0 = exact location, 1000+ = broad match).
+            A match this many characters away from the expected location will add
+            1.0 to the score (0.0 is a perfect match).
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Util.DiffMatchPatch.Patch_DeleteThreshold">
+            <summary>
+            When deleting a large block of text (over ~64 characters), how close
+            do the contents have to be to match the expected contents. (0.0 =
+            perfection, 1.0 = very loose).  Note that Match_Threshold controls
+            how closely the end points of a delete need to match.
+            </summary>
+        </member>
+        <member name="F:Hummingbird.TestFramework.Util.DiffMatchPatch.Patch_Margin">
+            <summary>
+            Chunk size for context length.
+            </summary>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_main(System.String,System.String)">
+            Find the differences between two texts.
+            Run a faster, slightly less optimal diff.
+            This method allows the 'checklines' of diff_main() to be optional.
+            Most of the time checklines is wanted, so default to true.
+            @param text1 Old string to be diffed.
+            @param text2 New string to be diffed.
+            @return List of Diff objects.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_main(System.String,System.String,System.Boolean)">
+            Find the differences between two texts.
+            @param text1 Old string to be diffed.
+            @param text2 New string to be diffed.
+            @param checklines Speedup flag.  If false, then don't run a
+                line-level diff first to identify the changed areas.
+                If true, then run a faster slightly less optimal diff.
+            @return List of Diff objects.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_main(System.String,System.String,System.Boolean,System.DateTime)">
+            Find the differences between two texts.  Simplifies the problem by
+            stripping any common prefix or suffix off the texts before diffing.
+            @param text1 Old string to be diffed.
+            @param text2 New string to be diffed.
+            @param checklines Speedup flag.  If false, then don't run a
+                line-level diff first to identify the changed areas.
+                If true, then run a faster slightly less optimal diff.
+            @param deadline Time when the diff should be complete by.  Used
+                internally for recursive calls.  Users should set DiffTimeout
+                instead.
+            @return List of Diff objects.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_compute(System.String,System.String,System.Boolean,System.DateTime)">
+            Find the differences between two texts.  Assumes that the texts do not
+            have any common prefix or suffix.
+            @param text1 Old string to be diffed.
+            @param text2 New string to be diffed.
+            @param checklines Speedup flag.  If false, then don't run a
+                line-level diff first to identify the changed areas.
+                If true, then run a faster slightly less optimal diff.
+            @param deadline Time when the diff should be complete by.
+            @return List of Diff objects.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_lineMode(System.String,System.String,System.DateTime)">
+            Do a quick line-level diff on both strings, then rediff the parts for
+            greater accuracy.
+            This speedup can produce non-minimal diffs.
+            @param text1 Old string to be diffed.
+            @param text2 New string to be diffed.
+            @param deadline Time when the diff should be complete by.
+            @return List of Diff objects.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_bisect(System.String,System.String,System.DateTime)">
+            Find the 'middle snake' of a diff, split the problem in two
+            and return the recursively constructed diff.
+            See Myers 1986 paper: An O(ND) Difference Algorithm and Its Variations.
+            @param text1 Old string to be diffed.
+            @param text2 New string to be diffed.
+            @param deadline Time at which to bail if not yet complete.
+            @return List of Diff objects.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_bisectSplit(System.String,System.String,System.Int32,System.Int32,System.DateTime)">
+            Given the location of the 'middle snake', split the diff in two parts
+            and recurse.
+            @param text1 Old string to be diffed.
+            @param text2 New string to be diffed.
+            @param x Index of split point in text1.
+            @param y Index of split point in text2.
+            @param deadline Time at which to bail if not yet complete.
+            @return LinkedList of Diff objects.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_linesToChars(System.String,System.String)">
+            Split two texts into a list of strings.  Reduce the texts to a string of
+            hashes where each Unicode character represents one line.
+            @param text1 First string.
+            @param text2 Second string.
+            @return Three element Object array, containing the encoded text1, the
+                encoded text2 and the List of unique strings.  The zeroth element
+                of the List of unique strings is intentionally blank.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_linesToCharsMunge(System.String,System.Collections.Generic.List{System.String},System.Collections.Generic.Dictionary{System.String,System.Int32},System.Int32)">
+            Split a text into a list of strings.  Reduce the texts to a string of
+            hashes where each Unicode character represents one line.
+            @param text String to encode.
+            @param lineArray List of unique strings.
+            @param lineHash Map of strings to indices.
+            @param maxLines Maximum length of lineArray.
+            @return Encoded string.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_charsToLines(System.Collections.Generic.ICollection{Hummingbird.TestFramework.Util.Diff},System.Collections.Generic.IList{System.String})">
+            Rehydrate the text in a diff from a string of line hashes to real lines
+            of text.
+            @param diffs List of Diff objects.
+            @param lineArray List of unique strings.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_commonPrefix(System.String,System.String)">
+            Determine the common prefix of two strings.
+            @param text1 First string.
+            @param text2 Second string.
+            @return The number of characters common to the start of each string.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_commonSuffix(System.String,System.String)">
+            Determine the common suffix of two strings.
+            @param text1 First string.
+            @param text2 Second string.
+            @return The number of characters common to the end of each string.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_commonOverlap(System.String,System.String)">
+            Determine if the suffix of one string is the prefix of another.
+            @param text1 First string.
+            @param text2 Second string.
+            @return The number of characters common to the end of the first
+                string and the start of the second string.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_halfMatch(System.String,System.String)">
+            Do the two texts share a Substring which is at least half the length of
+            the longer text?
+            This speedup can produce non-minimal diffs.
+            @param text1 First string.
+            @param text2 Second string.
+            @return Five element String array, containing the prefix of text1, the
+                suffix of text1, the prefix of text2, the suffix of text2 and the
+                common middle.  Or null if there was no match.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_halfMatchI(System.String,System.String,System.Int32)">
+            Does a Substring of shorttext exist within longtext such that the
+            Substring is at least half the length of longtext?
+            @param longtext Longer string.
+            @param shorttext Shorter string.
+            @param i Start index of quarter length Substring within longtext.
+            @return Five element string array, containing the prefix of longtext, the
+                suffix of longtext, the prefix of shorttext, the suffix of shorttext
+                and the common middle.  Or null if there was no match.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_cleanupSemantic(System.Collections.Generic.List{Hummingbird.TestFramework.Util.Diff})">
+            Reduce the number of edits by eliminating semantically trivial
+            equalities.
+            @param diffs List of Diff objects.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_cleanupSemanticLossless(System.Collections.Generic.List{Hummingbird.TestFramework.Util.Diff})">
+            Look for single edits surrounded on both sides by equalities
+            which can be shifted sideways to align the edit to a word boundary.
+            e.g: The c<ins>at c</ins>ame. -> The <ins>cat </ins>came.
+            @param diffs List of Diff objects.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_cleanupSemanticScore(System.String,System.String)">
+            Given two strings, compute a score representing whether the internal
+            boundary falls on logical boundaries.
+            Scores range from 6 (best) to 0 (worst).
+            @param one First string.
+            @param two Second string.
+            @return The score.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_cleanupEfficiency(System.Collections.Generic.List{Hummingbird.TestFramework.Util.Diff})">
+            Reduce the number of edits by eliminating operationally trivial
+            equalities.
+            @param diffs List of Diff objects.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_cleanupMerge(System.Collections.Generic.List{Hummingbird.TestFramework.Util.Diff})">
+            Reorder and merge like edit sections.  Merge equalities.
+            Any edit section can move as long as it doesn't cross an equality.
+            @param diffs List of Diff objects.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_xIndex(System.Collections.Generic.List{Hummingbird.TestFramework.Util.Diff},System.Int32)">
+            loc is a location in text1, compute and return the equivalent location in
+            text2.
+            e.g. "The cat" vs "The big cat", 1->1, 5->8
+            @param diffs List of Diff objects.
+            @param loc Location within text1.
+            @return Location within text2.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_prettyHtml(System.Collections.Generic.List{Hummingbird.TestFramework.Util.Diff})">
+            Convert a Diff list into a pretty HTML report.
+            @param diffs List of Diff objects.
+            @return HTML representation.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_text1(System.Collections.Generic.List{Hummingbird.TestFramework.Util.Diff})">
+            Compute and return the source text (all equalities and deletions).
+            @param diffs List of Diff objects.
+            @return Source text.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_text2(System.Collections.Generic.List{Hummingbird.TestFramework.Util.Diff})">
+            Compute and return the destination text (all equalities and insertions).
+            @param diffs List of Diff objects.
+            @return Destination text.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_levenshtein(System.Collections.Generic.List{Hummingbird.TestFramework.Util.Diff})">
+            Compute the Levenshtein distance; the number of inserted, deleted or
+            substituted characters.
+            @param diffs List of Diff objects.
+            @return Number of changes.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_toDelta(System.Collections.Generic.List{Hummingbird.TestFramework.Util.Diff})">
+            Crush the diff into an encoded string which describes the operations
+            required to transform text1 into text2.
+            E.g. =3\t-2\t+ing  -> Keep 3 chars, delete 2 chars, insert 'ing'.
+            Operations are tab-separated.  Inserted text is escaped using %xx
+            notation.
+            @param diffs Array of Diff objects.
+            @return Delta text.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.diff_fromDelta(System.String,System.String)">
+            Given the original text1, and an encoded string which describes the
+            operations required to transform text1 into text2, compute the full diff.
+            @param text1 Source string for the diff.
+            @param delta Delta text.
+            @return Array of Diff objects or null if invalid.
+            @throws ArgumentException If invalid input.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.match_main(System.String,System.String,System.Int32)">
+            Locate the best instance of 'pattern' in 'text' near 'loc'.
+            Returns -1 if no match found.
+            @param text The text to search.
+            @param pattern The pattern to search for.
+            @param loc The location to search around.
+            @return Best match index or -1.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.match_bitap(System.String,System.String,System.Int32)">
+            Locate the best instance of 'pattern' in 'text' near 'loc' using the
+            Bitap algorithm.  Returns -1 if no match found.
+            @param text The text to search.
+            @param pattern The pattern to search for.
+            @param loc The location to search around.
+            @return Best match index or -1.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.match_bitapScore(System.Int32,System.Int32,System.Int32,System.String)">
+            Compute and return the score for a match with e errors and x location.
+            @param e Number of errors in match.
+            @param x Location of match.
+            @param loc Expected location of match.
+            @param pattern Pattern being sought.
+            @return Overall score for match (0.0 = good, 1.0 = bad).
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.match_alphabet(System.String)">
+            Initialise the alphabet for the Bitap algorithm.
+            @param pattern The text to encode.
+            @return Hash of character locations.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.patch_addContext(Hummingbird.TestFramework.Util.Patch,System.String)">
+            Increase the context until it is unique,
+            but don't let the pattern expand beyond Match_MaxBits.
+            @param patch The patch to grow.
+            @param text Source text.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.patch_make(System.String,System.String)">
+            Compute a list of patches to turn text1 into text2.
+            A set of diffs will be computed.
+            @param text1 Old text.
+            @param text2 New text.
+            @return List of Patch objects.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.patch_make(System.Collections.Generic.List{Hummingbird.TestFramework.Util.Diff})">
+            Compute a list of patches to turn text1 into text2.
+            text1 will be derived from the provided diffs.
+            @param diffs Array of Diff objects for text1 to text2.
+            @return List of Patch objects.
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Hummingbird.TestFramework.Util.DiffMatchPatch.patch_make(System.String,System.String,System.Collections.Generic.List{Hummingbird.TestFramework.Util.Diff})" -->
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.patch_make(System.String,System.Collections.Generic.List{Hummingbird.TestFramework.Util.Diff})">
+            Compute a list of patches to turn text1 into text2.
+            text2 is not provided, diffs are the delta between text1 and text2.
+            @param text1 Old text.
+            @param diffs Array of Diff objects for text1 to text2.
+            @return List of Patch objects.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.patch_deepCopy(System.Collections.Generic.List{Hummingbird.TestFramework.Util.Patch})">
+            Given an array of patches, return another array that is identical.
+            @param patches Array of Patch objects.
+            @return Array of Patch objects.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.patch_apply(System.Collections.Generic.List{Hummingbird.TestFramework.Util.Patch},System.String)">
+            Merge a set of patches onto the text.  Return a patched text, as well
+            as an array of true/false values indicating which patches were applied.
+            @param patches Array of Patch objects
+            @param text Old text.
+            @return Two element Object array, containing the new text and an array of
+                 bool values.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.patch_addPadding(System.Collections.Generic.List{Hummingbird.TestFramework.Util.Patch})">
+            Add some padding on text start and end so that edges can match something.
+            Intended to be called only from within patch_apply.
+            @param patches Array of Patch objects.
+            @return The padding string added to each side.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.patch_splitMax(System.Collections.Generic.List{Hummingbird.TestFramework.Util.Patch})">
+            Look through the patches and break up any which are longer than the
+            maximum limit of the match algorithm.
+            Intended to be called only from within patch_apply.
+            @param patches List of Patch objects.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.patch_toText(System.Collections.Generic.List{Hummingbird.TestFramework.Util.Patch})">
+            Take a list of patches and return a textual representation.
+            @param patches List of Patch objects.
+            @return Text representation of patches.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.patch_fromText(System.String)">
+            Parse a textual representation of patches and return a List of Patch
+            objects.
+            @param textline Text representation of patches.
+            @return List of Patch objects.
+            @throws ArgumentException If invalid input.
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.DiffMatchPatch.encodeURI(System.String)">
+             Encodes a string with URI-style % escaping.
+             Compatible with JavaScript's encodeURI function.
+            
+             @param str The string to encode.
+             @return The encoded string.
+        </member>
+        <member name="T:Hummingbird.TestFramework.Util.FileXmlUrlResolver">
+            <summary>
+            A <c>XmlUrlResolver</c> which supports *only* file lookup.
+            This avoids timeouts due to slow or blocked HTTP requests, 
+            while still solving all currently supported use cases - 
+            presumably because XML validation isn't currently on the list of use cases.
+            </summary>
+            <remarks>
+            See the following resources for further discussion:
+            https://docs.microsoft.com/en-us/dotnet/api/system.xml.xmlurlresolver?view=netframework-4.7.2
+            https://stackoverflow.com/questions/2558021/an-error-has-occurred-opening-extern-dtd-w3-org-xhtml1-transitional-dtd-503
+            https://msdn.microsoft.com/en-us/library/aa302284.aspx
+            </remarks>
+        </member>
         <member name="T:Hummingbird.TestFramework.Util.FunctionLibrary">
             <summary>
             Function Libaray that is used to replace tokens everywhere using function evaluations.
@@ -11120,6 +11652,26 @@
             <value>
             The default value.
             </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.XmlRepository.LoadXml(System.String,System.String)">
+            <summary>
+            Loads the specified XML into this repository, replacing any previously loaded XML.
+            </summary>
+            <param name="xml">XML markup. Can be <c>null</c>.</param>
+            <param name="baseUri">The base URI used to resolve relative paths for e.g. DTD references. Can be <c>null</c>.</param>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Util.XmlRepository.GetElement(System.Xml.Linq.XElement,System.Int32,System.Int32)">
+            <summary>
+            Gets the XML node located at the specified line and position.
+            </summary>
+            <param name="rootElement">The root element.</param>
+            <param name="lineNumber">One-based line number.</param>
+            <param name="linePosition">
+            One-based line position. The line position of an XML element is equal to the position 
+            of the first character in its name, not the position of the opening angle bracket.
+            E.g. the XML fragment "&lt;element /&gt;" has line position 2.
+            </param>
+            <returns>The matching XML node or <c>null</c> if no match was found.</returns>
         </member>
         <member name="T:Hummingbird.TestFramework.Util.FastReplacer">
             <summary>
@@ -11580,6 +12132,14 @@
             A <see cref="T:System.String" /> that represents this instance.
             </returns>
         </member>
+        <member name="M:Hummingbird.TestFramework.Utilities.FormatXml(System.String,System.Boolean@)">
+            <summary>
+            Format an XML document in indent mode (pretty print)
+            </summary>
+            <param name="original">original XML</param>
+            <param name="hasError">indicate if the format is done correctly.</param>
+            <returns>Formatted XML</returns>
+        </member>
         <member name="T:Hummingbird.TestFramework.Version">
             <summary>
             The object represents a Version. The reason to create a new Version class is because System.Versionis not serializable.
@@ -11632,6 +12192,26 @@
             <param name="major">The major.</param>
             <param name="minor">The minor.</param>
             <param name="build">The build number.</param>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Version.op_GreaterThan(Hummingbird.TestFramework.Version,Hummingbird.TestFramework.Version)">
+            <summary>
+            Implements the operator &gt; to compare two <see cref="T:Hummingbird.TestFramework.Version"/>
+            </summary>
+            <param name="v1">The version 1.</param>
+            <param name="v2">The version 2.</param>
+            <returns>
+            True if version 1 is greater than version 2, otherwise, false.
+            </returns>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Version.op_LessThan(Hummingbird.TestFramework.Version,Hummingbird.TestFramework.Version)">
+            <summary>
+            Implements the operator &lt; to compare two <see cref="T:Hummingbird.TestFramework.Version"/>
+            </summary>
+            <param name="v1">The version 1.</param>
+            <param name="v2">The version 2.</param>
+            <returns>
+            If version 1 is less than vesion 2, returns True else returns False;
+            </returns>
         </member>
         <member name="T:XamlGeneratedNamespace.GeneratedInternalTypeHelper">
             <summary>

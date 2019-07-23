@@ -6,7 +6,7 @@
     <members>
         <member name="T:Hummingbird.TestFramework.Automation.AbstractSqlTestStep">
             <summary>
-            Base class of <see cref="T:Hummingbird.TestFramework.Automation.SqlQueryTestStep"/>
+            Base class of <see cref="T:Hummingbird.TestFramework.Automation.SqlQueryTestStep"/>，This class is used to add an abstraction level between Sql Query and Sql Stored Procedure.
             </summary>
             <seealso cref="T:Hummingbird.TestFramework.Automation.TestStepBase" />
         </member>
@@ -15,7 +15,7 @@
             Gets or sets the server name (FQN, Host name or IP address)
             </summary>
             <value>
-            The server.
+            The name of SQL Server.
             </value>
         </member>
         <member name="P:Hummingbird.TestFramework.Automation.AbstractSqlTestStep.DatabaseName">
@@ -67,7 +67,7 @@
             Gets or sets the Encrypted password.
             </summary>
             <value>
-            The enc password.
+            The encrypted password.
             </value>
         </member>
         <member name="P:Hummingbird.TestFramework.Automation.AbstractSqlTestStep.ResultType">
@@ -94,7 +94,7 @@
         </member>
         <member name="T:Hummingbird.TestFramework.Automation.CommandLineTestStep">
             <summary>
-            Test Step that executes an external program
+            Test Step that executes an external command line, batch or application.
             </summary>
             <seealso cref="T:Hummingbird.TestFramework.Automation.TestStepBase" />
         </member>
@@ -108,7 +108,7 @@
             Gets or sets the executable (.exe, .bat) file to launch.
             </summary>
             <value>
-            The executable.
+            The executable filename
             </value>
         </member>
         <member name="P:Hummingbird.TestFramework.Automation.CommandLineTestStep.Arguments">
@@ -748,7 +748,7 @@
             an <see cref="T:System.Int32" /> value represents the number of rows imported.
             </returns>
             <remarks>
-            The Headers will be persisted but the data will not: It will not be saved with the Test Automation project, every run Hummingbird Test Framework will re-import the data from defined location.
+            The Headers will be persisted but the data will not: It will not be saved with the Test Automation project, every execution Hummingbird Test Framework will re-import the data from its original location.
             </remarks>
         </member>
         <member name="T:Hummingbird.TestFramework.Automation.ExcelDataStorage">
@@ -1541,6 +1541,28 @@
             <summary>
             Initializes a new instance of the <see cref="T:Hummingbird.TestFramework.Automation.CSharpScriptTestStep"/> class.
             </summary>
+        </member>
+        <member name="T:Hummingbird.TestFramework.Automation.WaitTestStep">
+            <summary>
+            Wait amount of seconds 
+            </summary>
+            <seealso cref="T:Hummingbird.TestFramework.Automation.TestStepBase" />
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.WaitTestStep.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Hummingbird.TestFramework.Automation.WaitTestStep"/> class.
+            </summary>
+        </member>
+        <member name="P:Hummingbird.TestFramework.Automation.WaitTestStep.TimeToWait">
+            <summary>
+            Gets or sets the number in seconds to wait.
+            </summary>
+            <value>
+            An <see cref="T:System.Int32"/> value that represents the amount of seconds to wait. 
+            </value>
+        </member>
+        <member name="M:Hummingbird.TestFramework.Automation.WaitTestStep.Run">
+            <inheritdoc/>
         </member>
     </members>
 </doc>

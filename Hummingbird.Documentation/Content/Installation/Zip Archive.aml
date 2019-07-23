@@ -4,13 +4,18 @@
     xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
     xmlns:xlink="http://www.w3.org/1999/xlink">
 
+    <introduction>
+      <para>
+        ZIP archive packages all executables and other files required, all components are available. You are free to un-zip the archive anywhere then the software will run.
+      </para>
+    </introduction>
     <section address="_Toc515307886">
       <!--h2-->
       <title>Zip archive</title>
       <content>
 
         <para>
-          Hummingbird is a clean software that can be used without installation. We provide also the latest ZIP archive to download. All you need to unzip it after download to a folder, then launch Hummingbird.exe directly.
+          Hummingbird is a clean software that can be used without installation (means we don't register anything in the system, registry or settings). We provide also the latest ZIP archive to download. All you need to unzip it after download to a folder, then launch Hummingbird.exe directly.
         </para>
 
         <para>
@@ -23,10 +28,10 @@
     </section>
 
     <section address="unblock">
-      <title>Using in an enterprise environment</title>
+      <title>Run in an enterprise environment</title>
       <content>
         <para>
-          In some enterprise environments, downloaded ZIP from unknown location is automatically blocked. You will need to unblock the archive before executables in the archive can be extracted.
+          In some enterprise environments, downloaded ZIP from unauthorized location is automatically blocked. You will need to unblock the archive before executables in the archive can be extracted.
         </para>
         <para>
           To unblock the archive, Please perform the following actions:

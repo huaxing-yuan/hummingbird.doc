@@ -5,6 +5,18 @@
     xmlns:xlink="http://www.w3.org/1999/xlink">
 
     <introduction>
+      <para>
+        According to the use case, you may choose one of the following installation methods. There are also two channels available: Stable release, and Nightly release.
+      </para>
+      <para>
+        Stable version will be released every month, it contains all new features completely developped, tested and available for different language.
+      </para>
+      <para>
+        Nightly version is released several times per week. It contains the latest features and bug fixes in preview mode. means these features may complete and available only in English.
+      </para>
+      <para>
+        Whatever the version used, Hummingbird introduced a news feed in the software. You will be notified when a new version is available.
+      </para>
       <autoOutline />
     </introduction>
 
@@ -15,13 +27,13 @@
       <title>Prerequisites</title>
       <content>
         <para>
-          The Hummingbird project is built upon .NET Framework 4.6.
-          You must have .NET Framework 4.6 or above already installed before running the
+          The Hummingbird project is built upon .NET Framework 4.6.1.
+          You must have .NET Framework 4.6.1 or later version installed before running the
           software.
         </para>
 
         <para>
-          The following operation systems have already .NET Framework 4.6 pre-installed. 
+          The following operation systems have already .NET Framework 4.6.1 pre-installed. 
         </para>
         <list class="bullet">
           <listItem>
@@ -36,7 +48,7 @@
         </list>
 
         <para>
-          When using following version of Windows, please make sure the .NET Framework 4.6 is installed. 
+          When using following version of Windows, please make sure the .NET Framework 4.6.1 is installed. 
           <externalLink>
             <linkText>from this link.</linkText>
             <linkUri>https://www.microsoft.com/en-US/download/details.aspx?id=30653</linkUri>
@@ -76,22 +88,15 @@
       <title>Installation instructions</title>
       <content>
         <para>
-          There are several ways to install Hummingbird according to
-          needs.
+          There are several ways to install Hummingbird according to your use case.
         </para>
 
         <para>
-          When running Hummingbird on a Desktop machine for Test and
-          Automation by using the GUI application, the best way is to install the
-          ClickOnce version. It gives you a way to easy install (by one click) and follow
-          the latest version. To install with ClickOnce, Please refer to ClickOnce
-          Installation
+          When using Hummingbird on a Desktop machine for Test and Automation by using the GUI application, the simplest way is to apply the ClickOnce version. It ensures that you are always running the latest version of software. To install with ClickOnce, Please refer to ClickOnce Installation. Please note that ClickOnce installer contains only Hummingbird app. Command Line Interface and Report Viewer is not included.
         </para>
 
         <para>
-          If you want run Hummingbird on a Server Machine, For
-          Testing, Automation and Command Line interface. You should use the Windows
-          Installer or Zip version.
+          If you planned to run Hummingbird on a Server Machine, or the machines used for DevOps pipeline. You should use the Windows Installer or Zip version to ensure all components – especially Hummingbird CLI – are included.
         </para>
 
         <para>
@@ -126,6 +131,13 @@
       </content>
     </section>
 
+    <section address="enterprise">
+      <title>Enterprise users</title>
+      <content>
+        <para>If you are using Hummingbird in your Enterprise PC, Downloading Executable files (Installer) may be blocked by Group Polocies set by your security departement. Please make sure you are authroized to use the software. In other hand, Except Service Simulation, All other features of Hummingbird do not require Administration previlege, you can use the ZIP version and follow the instructions</para>
+      </content>
+    </section>
+    
     <section address="licence">
       <title>License Agreement</title>
       <content>
@@ -176,9 +188,6 @@
               <para>
                 Hummingbird Test Framework
               </para>
-              <para>
-                Hummingbird UI
-              </para>
             </entry>
             <entry>
               <para>
@@ -195,6 +204,25 @@
               </para>
             </entry>
           </row>
+          <row>
+            <entry>
+              <para>
+                Hummingbird UI
+              </para>
+            </entry>
+            <entry>
+              <para>
+                MIT License
+              </para>
+            </entry>
+            <entry>
+              <para>
+                Open Source
+              </para>
+              <para>Free for personal and commercial use</para>
+            </entry>
+          </row>
+
         </table>
       </content>
     </section>

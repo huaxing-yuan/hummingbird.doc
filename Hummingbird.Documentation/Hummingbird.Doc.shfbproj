@@ -107,7 +107,7 @@
           </targets>
         </configuration>
       </PlugInConfig>
-      <PlugInConfig id="Additional Content Only" enabled="False">
+      <PlugInConfig id="Additional Content Only" enabled="True">
         <configuration />
       </PlugInConfig>
     </PlugInConfigurations>
@@ -527,6 +527,30 @@
     <Image Include="media\extension_designer.png">
       <ImageId>extension_designer</ImageId>
       <AlternateText>extension designer</AlternateText>
+    </Image>
+    <Image Include="media\Feature1.png">
+      <ImageId>Feature1</ImageId>
+      <AlternateText>Feature 1</AlternateText>
+    </Image>
+    <Image Include="media\Feature2.png">
+      <ImageId>Feature2</ImageId>
+      <AlternateText>Feature 2</AlternateText>
+    </Image>
+    <Image Include="media\Feature3.png">
+      <ImageId>Feature3</ImageId>
+      <AlternateText>Feature 3</AlternateText>
+    </Image>
+    <Image Include="media\Feature4.png">
+      <ImageId>Feature4</ImageId>
+      <AlternateText>Feature 4</AlternateText>
+    </Image>
+    <Image Include="media\Feature5.png">
+      <ImageId>Feature5</ImageId>
+      <AlternateText>Feature 5</AlternateText>
+    </Image>
+    <Image Include="media\Feature6.png">
+      <ImageId>Feature6</ImageId>
+      <AlternateText>Feature 6</AlternateText>
     </Image>
     <Image Include="media\find.png">
       <ImageId>find</ImageId>
