@@ -3,17 +3,11 @@
   <developerConceptualDocument
     xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
     xmlns:xlink="http://www.w3.org/1999/xlink">
-
-    <!--
-    <summary>
-      <para>Optional summary abstract</para>
-    </summary>
-    -->
-
-
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
+    <introduction>
+      <para>
+        ClickOnce installation simplifies the way to deploy and update the software. The application can be installed by a simple “Click”, and application takes care about updating itself. If you do everything within the Hummingbird App, and do not want to miss any latest features and bug fixes, Then ClickOnce is the ultimate solution.
+      </para>
+    </introduction>
     <section address="_Toc515307883">
       <!--h3-->
       <title>ClickOnce installation</title>
@@ -24,8 +18,7 @@
             <linkText>http://www.hummingbird-alm.com</linkText>
             <linkUri>http://www.hummingbird-alm.com</linkUri>
           </externalLink>,
-          Choose RESOURCES\Download Hummingbird, you will be navigated to the download
-          page or hummingbird.
+          Choose RESOURCES\Download Hummingbird, you will be navigated to the download page.
         </para>
 
         <para>
@@ -58,9 +51,9 @@
           </mediaLink>
         </para>
         <para>
-          According to the browsers you are using, the above dialog
-          may not appear, if the browser prompts about downloading the file <legacyBold>hummingbird.application</legacyBold>,
-          you could run it directly or download then run it locally.
+          ClickOnce installer is compatible with Internet Explorer. When using another browser, the above dialog
+          may not appear. If the browser prompts about downloading the file <legacyBold>hummingbird.application</legacyBold>,
+          you can run it directly or after downloading.
         </para>
         <alert class="note">
           <para>

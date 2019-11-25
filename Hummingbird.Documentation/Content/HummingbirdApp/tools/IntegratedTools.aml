@@ -11,43 +11,66 @@
     -->
 
     <introduction>
-      <!-- Uncomment this to generate an outline of the section and sub-section
-           titles.  Specify a numeric value as the inner text to limit it to
-           a specific number of sub-topics when creating the outline.  Specify
-           zero (0) to limit it to top-level sections only.  -->
-      <!-- <autoOutline /> -->
-
-      <para>Required introduction</para>
+      <para>When developing or testing, we often need some tools to perform some work. The most commonly used utilities is now integrated in Hummingbird Project.</para>
+      <para>Hummingbird Test Framework has a tool extension capability, that gives the way that developers can integrate their proper utility in Hummingbird App. We decided by intention to introduce some new featured utilities into an Open Source project. You may download, build or install it by yourself and discover how extented utilities work. </para>
+      <autoOutline />
     </introduction>
 
     <!-- Add one or more top-level section elements.  These are collapsible.
          If using <autoOutline />, add an address attribute to identify it
          and specify a title so that it can be jumped to with a hyperlink. -->
-    <section address="Section1">
-      <title>Optional section title</title>
+    <section address="diff">
+      <title>Diff Tool</title>
       <content>
-        <!-- Uncomment this to create a sub-section outline
-        <autoOutline /> -->
-        <para>Add one or more sections with content</para>
+        <para>This tool compares two document and shows visually the differences.</para>
       </content>
-      <!-- If a section contains a sections element, its content creates
-           sub-sections.  These are not collapsible.
-      <sections>
-          <section address="SubSection1">
-              <title>Sub-section 1</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-          <section address="SubSection2">
-              <title>Sub-section 2</title>
-              <content>
-                  <para>Sub-section content.</para>
-              </content>
-          </section>
-      </sections> -->
     </section>
 
+
+    <section address="regex">
+      <title>Regular Expression tool</title>
+      <content>
+        <para>Regular expression is very popular to validate shemas or extract data from text. This tools gives the possibility to validate your expression, in order to use it in test automation project, or other place.</para>
+      </content>
+    </section>
+
+
+    <section address="crypto">
+      <title>Hash &amp; Cryptography</title>
+      <content>
+        <para>Security is an important factor of the test. This tool helps you to handle different hash and cryptography algorithms. such as encrypt or decrypt a password</para>
+      </content>
+    </section>
+
+
+    <section address="base64">
+      <title>Base64 encoding</title>
+      <content>
+        <para>Base64 is widely used on the Web. With this tool, you can easily encode/decode text and binarys with Base64 String.</para>
+      </content>
+    </section>
+
+    <section address="xpath">
+      <title>XPath Validator</title>
+      <content>
+        <para>XPath validation tool evaluates the XPath from a given XML document to check if the XPath is desired. The tool can also generates XPath from anywhere of an XML document.</para>
+      </content>
+    </section>
+
+    <section address="jpath">
+      <title>JsonPath Validator</title>
+      <content>
+        <para>Similar to XPath validation tool, It evaluates a Json Path from a given JSON document.</para>
+      </content>
+    </section>
+
+    <section address="extension">
+      <title>Extension Designer</title>
+      <content>
+        <para>Finally, the most important one. Extension designer is used to import SOAP and REST web service definition and convert them to Extension. For SOAP services, The description is in WSDL format, Both SOAP 1.1 and SOAP 1.2 are supported.</para>
+        <para>For REST web services, you can import description from OpenAPI definition (either in JSON or YAML format), Both 2.0 (aka Swagger) and 3.0 are supported.</para>
+      </content>
+    </section>
     <relatedTopics>
       <!-- One or more of the following:
            - A local link

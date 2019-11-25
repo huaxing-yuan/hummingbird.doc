@@ -6,29 +6,118 @@
     xmlns:xlink="http://www.w3.org/1999/xlink">
 
     <introduction>
-      <para>
-        Hummingbird is a complete solution for API testing, but not
-        only for API Testing.
-      </para>
-
-
       <alert class="note">
         <para>
-          The documentation is in progress and will take time to accomplish. Mean while, if you have any questions or problems, please opens a issue on the
-          <externalLink>
+          The documentation is in progress and will take time to accomplish. Meanwhile, if you have any questions or problems, please open an issue on the          <externalLink>
             <linkText>Github Project: hummingbird.doc</linkText>
             <linkUri>https://huaxing-yuan.github.io/hummingbird.doc/</linkUri>
             <linkTarget>_blank</linkTarget>
           </externalLink>
+          Documentation project is also an Open source project, any contribution is appreciated!
         </para>
       </alert>
+      
+      <para>
+        Hummingbird is a complete, extensible and easy to use solution for API Testing.
+      </para>
+
+
+      <table>
+        <row>
+          <entry>
+            <mediaLink>
+              <image placement="center" xlink:href="Feature1" />
+            </mediaLink>
+          </entry>
+          <entry>
+            <para>
+              API MANUAL TESTING
+            </para>
+            <para>
+              Test any kind of services with the help of the intelligent and object model based test editor.
+            </para>
+          </entry>
+          <entry>
+            <mediaLink>
+              <image placement="center" xlink:href="Feature4" />
+            </mediaLink>
+          </entry>
+          <entry>
+            <para>
+              PERFORMANCE TEST
+            </para>
+            <para>
+              Simulate load and measure how your web services can handle it.
+            </para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <mediaLink>
+              <image placement="center" xlink:href="Feature2" />
+            </mediaLink>
+          </entry>
+          <entry>
+            <para>
+              SERVICE SIMULATION
+            </para>
+            <para>
+              Test earlier and easier your application by simulating services that your system depends on.
+            </para>
+          </entry>
+          <entry>
+            <mediaLink>
+              <image placement="center" xlink:href="Feature5" />
+            </mediaLink>
+          </entry>
+          <entry>
+            <para>
+              INTEGRATED TOOLS
+            </para>
+            <para>
+              Tools that developers / testers must have such as XPATH generation, Base64 encoding, Cryptography...
+            </para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <mediaLink>
+              <image placement="center" xlink:href="Feature3" />
+            </mediaLink>
+          </entry>
+          <entry>
+            <para>
+              TEST AUTOMATION
+            </para>
+            <para>
+              Build automated tests and run them on the fly, And integrate these test in your DevOps pipeline.
+            </para>
+          </entry>
+          <entry>
+            <mediaLink>
+              <image placement="center" xlink:href="Feature6" />
+            </mediaLink>
+          </entry>
+          <entry>
+            <para>
+              EXTENSIBILITY
+            </para>
+            <para>
+              Hummingbird is extensible. Integrate your idea and let the software serves you better.
+            </para>
+          </entry>
+
+        </row>
+      </table>
+
+
     </introduction>
-    
-    <!-- Add one or more top-level section elements.  These are collapsible.
-         If using <autoOutline />, add an address attribute to identify it
-         and specify a title so that it can be jumped to with a hyperlink. -->
+
+
     <section address="Section1">
       <content>
+
+        
         <para>
           <legacyBold>Manual Testing</legacyBold>
         </para>

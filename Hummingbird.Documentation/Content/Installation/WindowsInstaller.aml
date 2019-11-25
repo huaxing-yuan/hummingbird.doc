@@ -4,7 +4,11 @@
     xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5"
     xmlns:xlink="http://www.w3.org/1999/xlink">
 
-
+    <introduction>
+      <para>
+        Windows Installer is the standard way of software installation. 
+      </para>
+    </introduction>
     <section address="_Toc515307884">
       <title>Windows Installer</title>
       <content>
@@ -56,10 +60,12 @@
       <!--h3-->
       <title>Updating and Upgrading</title>
       <content>
-
+        <para>
+          Hummingbird installer will remove automatically the previous version and install the latest one. You don't need to uninstall previous version manually.
+        </para>
         <para>
           When you want to update or upgrade Hummingbird App to latest
-          version, you should download the latest version of Windows Installer and run it
+          version, you could download the latest version of Windows Installer and run it
           again. All your settings, histories and user profile will be conserved.
         </para>
 
